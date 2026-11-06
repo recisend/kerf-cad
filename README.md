@@ -24,3 +24,9 @@ Features: constrained sketches with a live solver; extrude, revolve, sweep and l
 ```bash
 cd mcp && npm install && npm run build && npm test
 ```
+
+## Example
+
+`examples/pipe-flange.kerf.json` was built entirely through the MCP server: a flange driven by an `#od` variable, a hub, a countersunk hole and a six-hole circular pattern. Open it in the web app with **Open**, or with the MCP `open_document` tool.
+
+![Pipe flange](examples/pipe-flange.png)

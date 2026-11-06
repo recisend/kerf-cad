@@ -1534,7 +1534,9 @@ function regionContains(r, pt) {
 }
 /* depth of nesting for default selection: count outer boundaries containing region */
 function regionDepth(regions, r) {
-  return regions.filter((o) => o !== r && o.area > r.area && pointInPoly(r.sample, o.outer.pts)).length;
+  // nesting depth by outline area: a ring's net area can be smaller than the disc inside it
+  const outline = (x) => Math.abs(signedArea(x.outer.pts));
+  return regions.filter((o) => o !== r && outline(o) > outline(r) && pointInPoly(r.sample, o.outer.pts)).length;
 }
 
 /* open path from sketch entities, chained end to end */

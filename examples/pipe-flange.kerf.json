@@ -1,0 +1,386 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Pipe flange",
+ "features": [
+  {
+   "id": "f1u9xt",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "od",
+    "value": "120 mm"
+   }
+  },
+  {
+   "id": "f2dlnd",
+   "type": "sketch",
+   "name": "Sketch 1",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "outer",
+       "type": "circle",
+       "c": "O",
+       "r": 60,
+       "construction": false
+      },
+      {
+       "id": "bore",
+       "type": "circle",
+       "c": "O",
+       "r": 25,
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c02kc",
+       "lp": [
+        6,
+        6
+       ],
+       "type": "diameter",
+       "e1": "outer",
+       "value": "#od"
+      },
+      {
+       "id": "c1w89",
+       "lp": [
+        6,
+        6
+       ],
+       "type": "diameter",
+       "e1": "bore",
+       "value": "#od * 0.42"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "outer",
+       "center": [
+        0,
+        0
+       ],
+       "diameter": 120
+      },
+      {
+       "type": "circle",
+       "id": "bore",
+       "center": [
+        0,
+        0
+       ],
+       "diameter": 50
+      }
+     ],
+     "constraints": [
+      {
+       "type": "diameter",
+       "entity": "outer",
+       "value": "#od"
+      },
+      {
+       "type": "diameter",
+       "entity": "bore",
+       "value": "#od * 0.42"
+      }
+     ]
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f3rdfj",
+   "type": "extrude",
+   "name": "Extrude 1",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f2dlnd",
+      "pt": [
+       -27.022956951958445,
+       -27.309140471347657
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "12",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": "Sketch 1"
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f2dlnd\",\"pt\":[-27.022956951958445,-27.309140471347657]}]"
+    }
+   }
+  },
+  {
+   "id": "f4zjcw",
+   "type": "sketch",
+   "name": "Sketch 2",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f3rdfj",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       -27.02295716603597,
+       -27.309141159057617,
+       12
+      ]
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "hub",
+       "type": "circle",
+       "c": "O",
+       "r": 35,
+       "construction": false
+      },
+      {
+       "id": "bore",
+       "type": "circle",
+       "c": "O",
+       "r": 25.2,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "hub",
+       "center": [
+        0,
+        0
+       ],
+       "diameter": 70
+      },
+      {
+       "type": "circle",
+       "id": "bore",
+       "center": [
+        0,
+        0
+       ],
+       "diameter": 50.4
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f3rdfj\",\"n\":[0,0,1],\"p\":[-27.02295716603597,-27.309141159057617,12]}]"
+    }
+   }
+  },
+  {
+   "id": "f5sc13",
+   "type": "extrude",
+   "name": "Extrude 2",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f4zjcw",
+      "pt": [
+       27.759494485004524,
+       10.103629710818442
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "16",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Sketch 2",
+      "region": 0
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f4zjcw\",\"pt\":[27.759494485004524,10.103629710818442]}]"
+    }
+   }
+  },
+  {
+   "id": "f6t9ua",
+   "type": "sketch",
+   "name": "Sketch 3",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f3rdfj",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       -8.79385217030843,
+       49.872416178385414,
+       12
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 47,
+       "y": 0
+      }
+     ],
+     "ents": [
+      {
+       "id": "bolt",
+       "type": "point",
+       "p": "p1"
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "point",
+       "id": "bolt",
+       "at": [
+        47,
+        0
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": {
+       "direction": "top",
+       "nth": 1
+      }
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f3rdfj\",\"n\":[0,0,1],\"p\":[-8.79385217030843,49.872416178385414,12]}]"
+    }
+   }
+  },
+  {
+   "id": "f7psbh",
+   "type": "hole",
+   "name": "Hole 1",
+   "params": {
+    "sketch": [
+     {
+      "kind": "sketch",
+      "id": "f6t9ua"
+     }
+    ],
+    "style": "csink",
+    "dia": "9",
+    "cboreDia": "11",
+    "cboreDepth": "6.4",
+    "csinkDia": "15",
+    "csinkAngle": "90",
+    "endType": "through",
+    "depth": "10",
+    "tipAngle": "118",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "sketch": "Sketch 3"
+    },
+    "__selres": {
+     "sketch": "[{\"kind\":\"sketch\",\"id\":\"f6t9ua\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8c3o1",
+   "type": "cpattern",
+   "name": "Circular pattern 1",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f7psbh"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "6",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Hole 1"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f7psbh\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f3rdfj": {
+   "name": "Flange",
+   "color": "#7f9fb8",
+   "material": "stainless",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 3,
+  "extrude": 2,
+  "hole": 1,
+  "cpattern": 1
+ }
+}
