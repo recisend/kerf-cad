@@ -1,0 +1,20 @@
+{
+  "name": "kerf-cad-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Kerf CAD: build, inspect, render and export parametric parts headlessly.",
+  "type": "module",
+  "bin": { "kerf-cad-mcp": "server.mjs" },
+  "main": "server.mjs",
+  "scripts": {
+    "build": "node build-kernel.mjs",
+    "test": "node test/smoke.mjs"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "three": "0.180.0",
+    "three-bvh-csg": "0.0.18",
+    "three-mesh-bvh": "0.9.7",
+    "zod": "4.6.7"
+  }
+}
