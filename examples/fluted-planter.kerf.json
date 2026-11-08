@@ -1,0 +1,242 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Fluted Planter",
+ "features": [
+  {
+   "id": "f39cxi",
+   "type": "variable",
+   "name": "Variable 3",
+   "params": {
+    "vname": "h",
+    "value": "75 mm"
+   }
+  },
+  {
+   "id": "f2fdid",
+   "type": "variable",
+   "name": "Variable 2",
+   "params": {
+    "vname": "r",
+    "value": "40 mm"
+   }
+  },
+  {
+   "id": "f12xc5",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "wall",
+    "value": "2.4 mm"
+   }
+  },
+  {
+   "id": "f4n5tk",
+   "type": "primitive",
+   "name": "Pot body",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "#h",
+    "r": "#r",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "0",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "f5akyu",
+   "type": "primitive",
+   "name": "Cavity",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "#h",
+    "r": "#r - #wall",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "#wall",
+    "op": "remove",
+    "targets": []
+   }
+  },
+  {
+   "id": "f63t94",
+   "type": "primitive",
+   "name": "Flute",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "#h",
+    "r": "3.2",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "41",
+    "y": "0",
+    "z": "0",
+    "op": "add",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f4n5tk"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f4n5tk\"}]"
+    }
+   }
+  },
+  {
+   "id": "f74e7r",
+   "type": "cpattern",
+   "name": "Flute ring",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f63t94"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "16",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Flute"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f63t94\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8smbc",
+   "type": "primitive",
+   "name": "Drain hole",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "#wall",
+    "r": "4",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "0",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f4n5tk"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f4n5tk\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9mzdf",
+   "type": "primitive",
+   "name": "Saucer body",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "12",
+    "r": "52",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "110",
+    "y": "0",
+    "z": "0",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "faqxan",
+   "type": "primitive",
+   "name": "Saucer well",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "12",
+    "r": "49.6",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "110",
+    "y": "0",
+    "z": "2.4",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f9mzdf"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 2"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f9mzdf\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f4n5tk": {
+   "name": "Planter",
+   "color": "#5f8f7a",
+   "material": "pla",
+   "hidden": false
+  },
+  "f9mzdf": {
+   "name": "Saucer",
+   "color": "#e8e1d4",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 3,
+  "primitive": 6,
+  "cpattern": 1
+ }
+}
