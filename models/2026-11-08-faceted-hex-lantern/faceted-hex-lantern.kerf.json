@@ -1,0 +1,784 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Faceted Hex Lantern - LED tealight",
+ "features": [
+  {
+   "id": "f1af33",
+   "type": "sketch",
+   "name": "Outer hex",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 1.959434878635765e-15,
+       "y": 32
+      },
+      {
+       "id": "p2",
+       "x": -27.71281292110203,
+       "y": 16.00000000000001
+      },
+      {
+       "id": "p3",
+       "x": -27.712812921102042,
+       "y": -15.999999999999991
+      },
+      {
+       "id": "p4",
+       "x": -5.878304635907295e-15,
+       "y": -32
+      },
+      {
+       "id": "p5",
+       "x": 27.712812921102028,
+       "y": -16.000000000000014
+      },
+      {
+       "id": "p6",
+       "x": 27.712812921102035,
+       "y": 16
+      }
+     ],
+     "ents": [
+      {
+       "id": "hex.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 32,
+       "construction": true
+      },
+      {
+       "id": "hex.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "hex.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "hex.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "hex.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "hex.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "hex.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0kpn",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c13xc",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c2kog",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c3rnw",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c4spa",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c5d3m",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c6zpp",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.1"
+      },
+      {
+       "id": "c7mzs",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.2"
+      },
+      {
+       "id": "c8ck5",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.3"
+      },
+      {
+       "id": "c9fv1",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.4"
+      },
+      {
+       "id": "c101vq",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "hex",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 32,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f249vu",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1af33",
+      "pt": [
+       -3.552713678800501e-15,
+       -1.7763568394002505e-15
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "70",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Outer hex"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1af33\",\"pt\":[-3.552713678800501e-15,-1.7763568394002505e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f36l9p",
+   "type": "sketch",
+   "name": "Inner cavity",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f249vu",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       1.1842378929335002e-15,
+       0,
+       70
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 1.846155049714635e-15,
+       "y": 30.15
+      },
+      {
+       "id": "p2",
+       "x": -26.110665924100818,
+       "y": 15.07500000000001
+      },
+      {
+       "id": "p3",
+       "x": -26.11066592410083,
+       "y": -15.07499999999999
+      },
+      {
+       "id": "p4",
+       "x": -5.538465149143904e-15,
+       "y": -30.15
+      },
+      {
+       "id": "p5",
+       "x": 26.110665924100815,
+       "y": -15.075000000000014
+      },
+      {
+       "id": "p6",
+       "x": 26.11066592410082,
+       "y": 15.075
+      }
+     ],
+     "ents": [
+      {
+       "id": "hexi.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 30.15,
+       "construction": true
+      },
+      {
+       "id": "hexi.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "hexi.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "hexi.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "hexi.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "hexi.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "hexi.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c039o",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "hexi.circle"
+      },
+      {
+       "id": "c1mbu",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "hexi.circle"
+      },
+      {
+       "id": "c2tkn",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "hexi.circle"
+      },
+      {
+       "id": "c33xo",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "hexi.circle"
+      },
+      {
+       "id": "c4yhy",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "hexi.circle"
+      },
+      {
+       "id": "c5npi",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "hexi.circle"
+      },
+      {
+       "id": "c6o4f",
+       "type": "equal",
+       "e1": "hexi.0",
+       "e2": "hexi.1"
+      },
+      {
+       "id": "c7ou6",
+       "type": "equal",
+       "e1": "hexi.0",
+       "e2": "hexi.2"
+      },
+      {
+       "id": "c894c",
+       "type": "equal",
+       "e1": "hexi.0",
+       "e2": "hexi.3"
+      },
+      {
+       "id": "c92t4",
+       "type": "equal",
+       "e1": "hexi.0",
+       "e2": "hexi.4"
+      },
+      {
+       "id": "c10lh2",
+       "type": "equal",
+       "e1": "hexi.0",
+       "e2": "hexi.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "hexi",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 30.15,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f249vu\",\"n\":[0,0,1],\"p\":[1.1842378929335002e-15,0,70]}]"
+    }
+   }
+  },
+  {
+   "id": "f47xtt",
+   "type": "extrude",
+   "name": "Cavity",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f36l9p",
+      "pt": [
+       -3.552713678800501e-15,
+       -1.7763568394002505e-15
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "67",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Inner cavity"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f36l9p\",\"pt\":[-3.552713678800501e-15,-1.7763568394002505e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f5pwyq",
+   "type": "sketch",
+   "name": "Window",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 8
+      },
+      {
+       "id": "p2",
+       "x": 10,
+       "y": 18
+      },
+      {
+       "id": "p3",
+       "x": 10,
+       "y": 48
+      },
+      {
+       "id": "p4",
+       "x": 0,
+       "y": 58
+      },
+      {
+       "id": "p5",
+       "x": -10,
+       "y": 48
+      },
+      {
+       "id": "p6",
+       "x": -10,
+       "y": 18
+      }
+     ],
+     "ents": [
+      {
+       "id": "win.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "win.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "win.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "win.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "win.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "win.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0n6o",
+       "type": "vertical",
+       "e1": "win.1"
+      },
+      {
+       "id": "c1fc9",
+       "type": "vertical",
+       "e1": "win.4"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "id": "win",
+       "points": [
+        [
+         0,
+         8
+        ],
+        [
+         10,
+         18
+        ],
+        [
+         10,
+         48
+        ],
+        [
+         0,
+         58
+        ],
+        [
+         -10,
+         48
+        ],
+        [
+         -10,
+         18
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6jvca",
+   "type": "extrude",
+   "name": "Window cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f5pwyq",
+      "pt": [
+       0,
+       34.666666666666664
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "40",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Window"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f5pwyq\",\"pt\":[0,34.666666666666664]}]"
+    }
+   }
+  },
+  {
+   "id": "f76q6y",
+   "type": "cpattern",
+   "name": "Window ring",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f6jvca"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "6",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Window cut"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f6jvca\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9vhm6",
+   "type": "chamfer",
+   "name": "Elephant-foot chamfer",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f249vu",
+      "a": [
+       1.9594349641362686e-15,
+       32,
+       0
+      ],
+      "b": [
+       27.712812423706055,
+       16,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f249vu",
+      "a": [
+       27.712812423706055,
+       -16,
+       0
+      ],
+      "b": [
+       27.712812423706055,
+       16,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f249vu",
+      "a": [
+       -27.712812423706055,
+       -16,
+       0
+      ],
+      "b": [
+       -27.712812423706055,
+       16,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f249vu",
+      "a": [
+       1.9594349641362686e-15,
+       32,
+       0
+      ],
+      "b": [
+       -27.712812423706055,
+       16,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f249vu",
+      "a": [
+       -27.712812423706055,
+       -16,
+       0
+      ],
+      "b": [
+       -5.878304468892332e-15,
+       -32,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f249vu",
+      "a": [
+       27.712812423706055,
+       -16,
+       0
+      ],
+      "b": [
+       -5.878304468892332e-15,
+       -32,
+       0
+      ]
+     }
+    ],
+    "distance": "0.8",
+    "asym": false,
+    "distance2": "4",
+    "__sel": {
+     "edges": {
+      "edges_of": "bottom"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f249vu\",\"a\":[1.9594349641362686e-15,32,0],\"b\":[27.712812423706055,16,0]},{\"kind\":\"edge\",\"part\":\"f249vu\",\"a\":[27.712812423706055,-16,0],\"b\":[27.712812423706055,16,0]},{\"kind\":\"edge\",\"part\":\"f249vu\",\"a\":[-27.712812423706055,-16,0],\"b\":[-27.712812423706055,16,0]},{\"kind\":\"edge\",\"part\":\"f249vu\",\"a\":[1.9594349641362686e-15,32,0],\"b\":[-27.712812423706055,16,0]},{\"kind\":\"edge\",\"part\":\"f249vu\",\"a\":[-27.712812423706055,-16,0],\"b\":[-5.878304468892332e-15,-32,0]},{\"kind\":\"edge\",\"part\":\"f249vu\",\"a\":[27.712812423706055,-16,0],\"b\":[-5.878304468892332e-15,-32,0]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f249vu": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 3,
+  "extrude": 3,
+  "cpattern": 1,
+  "chamfer": 1
+ }
+}
