@@ -1,0 +1,518 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Mushroom Desk Pen Cup",
+ "features": [
+  {
+   "id": "f11om3",
+   "type": "sketch",
+   "name": "Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 30,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 30,
+       "y": 36
+      },
+      {
+       "id": "p3",
+       "x": 50,
+       "y": 56
+      },
+      {
+       "id": "p4",
+       "x": 50,
+       "y": 59
+      },
+      {
+       "id": "p5",
+       "x": -0.03563320388349487,
+       "y": 9.891349514563073
+      },
+      {
+       "id": "p6",
+       "x": 0,
+       "y": 80
+      }
+     ],
+     "ents": [
+      {
+       "id": "line1",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "line2",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "line3",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "line4",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "arc5",
+       "type": "arc",
+       "c": "p5",
+       "p1": "p4",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "line6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0rlv",
+       "type": "horizontal",
+       "e1": "line1"
+      },
+      {
+       "id": "c1a64",
+       "type": "vertical",
+       "e1": "line2"
+      },
+      {
+       "id": "c26hr",
+       "type": "vertical",
+       "e1": "line4"
+      },
+      {
+       "id": "c31dk",
+       "type": "vertical",
+       "e1": "line6"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "line",
+       "from": [
+        0,
+        0
+       ],
+       "to": [
+        30,
+        0
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        30,
+        0
+       ],
+       "to": [
+        30,
+        36
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        30,
+        36
+       ],
+       "to": [
+        50,
+        56
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        50,
+        56
+       ],
+       "to": [
+        50,
+        59
+       ]
+      },
+      {
+       "type": "arc",
+       "start": [
+        50,
+        59
+       ],
+       "end": [
+        0,
+        80
+       ],
+       "mid": [
+        36,
+        70.03
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        0,
+        80
+       ],
+       "to": [
+        0,
+        0
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f25q0i",
+   "type": "revolve",
+   "name": "Mushroom Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f11om3",
+      "pt": [
+       21.166890059235655,
+       47.592291851266545
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f11om3\",\"pt\":[21.166890059235655,47.592291851266545]}]"
+    }
+   }
+  },
+  {
+   "id": "f30h9f",
+   "type": "plane",
+   "name": "Floor Plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "3",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4i9t8",
+   "type": "sketch",
+   "name": "Pen Holes",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f30h9f"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 21.5,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 10.75,
+       "y": 18.62
+      },
+      {
+       "id": "p3",
+       "x": -10.75,
+       "y": 18.62
+      },
+      {
+       "id": "p4",
+       "x": -21.5,
+       "y": 0
+      },
+      {
+       "id": "p5",
+       "x": -10.75,
+       "y": -18.62
+      },
+      {
+       "id": "p6",
+       "x": 10.75,
+       "y": -18.62
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "O",
+       "r": 8,
+       "construction": false
+      },
+      {
+       "id": "circle2",
+       "type": "circle",
+       "c": "p1",
+       "r": 5,
+       "construction": false
+      },
+      {
+       "id": "circle3",
+       "type": "circle",
+       "c": "p2",
+       "r": 5,
+       "construction": false
+      },
+      {
+       "id": "circle4",
+       "type": "circle",
+       "c": "p3",
+       "r": 5,
+       "construction": false
+      },
+      {
+       "id": "circle5",
+       "type": "circle",
+       "c": "p4",
+       "r": 5,
+       "construction": false
+      },
+      {
+       "id": "circle6",
+       "type": "circle",
+       "c": "p5",
+       "r": 5,
+       "construction": false
+      },
+      {
+       "id": "circle7",
+       "type": "circle",
+       "c": "p6",
+       "r": 5,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        0
+       ],
+       "diameter": 16
+      },
+      {
+       "type": "circle",
+       "center": [
+        21.5,
+        0
+       ],
+       "diameter": 10
+      },
+      {
+       "type": "circle",
+       "center": [
+        10.75,
+        18.62
+       ],
+       "diameter": 10
+      },
+      {
+       "type": "circle",
+       "center": [
+        -10.75,
+        18.62
+       ],
+       "diameter": 10
+      },
+      {
+       "type": "circle",
+       "center": [
+        -21.5,
+        0
+       ],
+       "diameter": 10
+      },
+      {
+       "type": "circle",
+       "center": [
+        -10.75,
+        -18.62
+       ],
+       "diameter": 10
+      },
+      {
+       "type": "circle",
+       "center": [
+        10.75,
+        -18.62
+       ],
+       "diameter": 10
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Floor Plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f30h9f\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5jdof",
+   "type": "extrude",
+   "name": "Pen Holes Cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f4i9t8",
+      "pt": [
+       -0.6866185539664862,
+       0.36036521649736003
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f4i9t8",
+      "pt": [
+       22.19990827041686,
+       -0.33705805852623677
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f4i9t8",
+      "pt": [
+       11.449908270416861,
+       18.282941941473762
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f4i9t8",
+      "pt": [
+       -10.050091729583139,
+       18.282941941473762
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f4i9t8",
+      "pt": [
+       -20.80009172958314,
+       -0.33705805852623677
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f4i9t8",
+      "pt": [
+       -10.050091729583139,
+       -18.95705805852624
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f4i9t8",
+      "pt": [
+       11.449908270416861,
+       -18.95705805852624
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "85",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pen Holes",
+      "region": "all"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f4i9t8\",\"pt\":[-0.6866185539664862,0.36036521649736003]},{\"kind\":\"region\",\"sketch\":\"f4i9t8\",\"pt\":[22.19990827041686,-0.33705805852623677]},{\"kind\":\"region\",\"sketch\":\"f4i9t8\",\"pt\":[11.449908270416861,18.282941941473762]},{\"kind\":\"region\",\"sketch\":\"f4i9t8\",\"pt\":[-10.050091729583139,18.282941941473762]},{\"kind\":\"region\",\"sketch\":\"f4i9t8\",\"pt\":[-20.80009172958314,-0.33705805852623677]},{\"kind\":\"region\",\"sketch\":\"f4i9t8\",\"pt\":[-10.050091729583139,-18.95705805852624]},{\"kind\":\"region\",\"sketch\":\"f4i9t8\",\"pt\":[11.449908270416861,-18.95705805852624]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f25q0i": {
+   "name": "Mushroom Pen Cup",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 2,
+  "revolve": 1,
+  "plane": 1,
+  "extrude": 1
+ }
+}
