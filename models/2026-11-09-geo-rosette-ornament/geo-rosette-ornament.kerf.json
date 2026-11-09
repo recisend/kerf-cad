@@ -1,0 +1,565 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "geo-rosette-ornament",
+ "features": [
+  {
+   "id": "f1ummh",
+   "type": "sketch",
+   "name": "Base",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 0.00015171636167150506
+      },
+      {
+       "id": "p2",
+       "x": -5.5099,
+       "y": 39.619
+      },
+      {
+       "id": "p3",
+       "x": 5.5099,
+       "y": 39.619
+      },
+      {
+       "id": "p4",
+       "x": 0,
+       "y": 41.99832006860759
+      }
+     ],
+     "ents": [
+      {
+       "id": "arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "arc2",
+       "type": "arc",
+       "c": "p4",
+       "p1": "p3",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "arc",
+       "start": [
+        5.5099,
+        39.619
+       ],
+       "end": [
+        -5.5099,
+        39.619
+       ],
+       "mid": [
+        0,
+        -40
+       ]
+      },
+      {
+       "type": "arc",
+       "start": [
+        -5.5099,
+        39.619
+       ],
+       "end": [
+        5.5099,
+        39.619
+       ],
+       "mid": [
+        0,
+        48
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f24xf3",
+   "type": "extrude",
+   "name": "Disc",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1ummh",
+      "pt": [
+       16.682314051403296,
+       -8.166524120822006
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "3",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Base"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1ummh\",\"pt\":[16.682314051403296,-8.166524120822006]}]"
+    }
+   }
+  },
+  {
+   "id": "f3i00l",
+   "type": "sketch",
+   "name": "SlotCut",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 16
+      },
+      {
+       "id": "p2",
+       "x": 0,
+       "y": 29
+      },
+      {
+       "id": "p3",
+       "x": -2.5,
+       "y": 16
+      },
+      {
+       "id": "p4",
+       "x": -2.5,
+       "y": 29
+      },
+      {
+       "id": "p5",
+       "x": 2.5,
+       "y": 29
+      },
+      {
+       "id": "p6",
+       "x": 2.5,
+       "y": 16
+      }
+     ],
+     "ents": [
+      {
+       "id": "slot1.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c07lq",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c1esv",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c2q29",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c31d2",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4pcm",
+       "type": "equal",
+       "e1": "slot1.arc1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c400m",
+       "type": "parallel",
+       "e1": "slot1.line1",
+       "e2": "slot1.axis"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "width": 5,
+       "center1": [
+        0,
+        16
+       ],
+       "center2": [
+        0,
+        29
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4t3q4",
+   "type": "sketch",
+   "name": "HoleCut",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 9.3175,
+       "y": 34.7733
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 2,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        9.3175,
+        34.7733
+       ],
+       "radius": 2
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6v0zu",
+   "type": "extrude",
+   "name": "Slot cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3i00l",
+      "pt": [
+       0.17858753467741492,
+       19.353436997983867
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "SlotCut"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3i00l\",\"pt\":[0.17858753467741492,19.353436997983867]}]"
+    }
+   }
+  },
+  {
+   "id": "f7dwvo",
+   "type": "extrude",
+   "name": "Dot cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f4t3q4",
+      "pt": [
+       9.172393593626383,
+       34.90185305839943
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "HoleCut"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f4t3q4\",\"pt\":[9.172393593626383,34.90185305839943]}]"
+    }
+   }
+  },
+  {
+   "id": "f8y7u2",
+   "type": "cpattern",
+   "name": "Slot pattern",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f6v0zu"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "12",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Slot cut"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f6v0zu\"}]"
+    }
+   }
+  },
+  {
+   "id": "f94gnq",
+   "type": "cpattern",
+   "name": "Dot pattern",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f7dwvo"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "12",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Dot cut"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f7dwvo\"}]"
+    }
+   }
+  },
+  {
+   "id": "fayhqn",
+   "type": "sketch",
+   "name": "LoopHole",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 43
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 2,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        43
+       ],
+       "radius": 2
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fbbuh5",
+   "type": "extrude",
+   "name": "Loop hole cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fayhqn",
+      "pt": [
+       -0.14510640637361813,
+       43.12855305839943
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "LoopHole"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fayhqn\",\"pt\":[-0.14510640637361813,43.12855305839943]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f24xf3": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f24xf3.1": {
+   "name": "Part 2",
+   "color": "#c7a76a",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "fdmfez": {
+   "name": "Part 3",
+   "color": "#7f9fb8",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 5,
+  "extrude": 5,
+  "boolean": 1,
+  "cpattern": 2
+ }
+}
