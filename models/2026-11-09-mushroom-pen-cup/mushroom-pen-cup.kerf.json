@@ -1,0 +1,522 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "mushroom-pen-cup",
+ "features": [
+  {
+   "id": "f1eluv",
+   "type": "sketch",
+   "name": "Sketch 1",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 30,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 30,
+       "y": 40
+      },
+      {
+       "id": "p3",
+       "x": 55,
+       "y": 65
+      },
+      {
+       "id": "p4",
+       "x": 55,
+       "y": 68
+      },
+      {
+       "id": "p5",
+       "x": 53,
+       "y": 73
+      },
+      {
+       "id": "p6",
+       "x": 48,
+       "y": 79
+      },
+      {
+       "id": "p7",
+       "x": 40,
+       "y": 84
+      },
+      {
+       "id": "p8",
+       "x": 30,
+       "y": 87
+      },
+      {
+       "id": "p9",
+       "x": 26.8,
+       "y": 88
+      },
+      {
+       "id": "p10",
+       "x": 26.8,
+       "y": 3
+      },
+      {
+       "id": "p11",
+       "x": 0,
+       "y": 3
+      }
+     ],
+     "ents": [
+      {
+       "id": "prof.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "prof.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "prof.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "prof.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "prof.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "prof.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "prof.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "prof.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "prof.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "prof.9",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "prof.10",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "prof.11",
+       "type": "line",
+       "p1": "p11",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0wpk",
+       "type": "horizontal",
+       "e1": "prof.0"
+      },
+      {
+       "id": "c1wsz",
+       "type": "vertical",
+       "e1": "prof.1"
+      },
+      {
+       "id": "c2yz6",
+       "type": "vertical",
+       "e1": "prof.3"
+      },
+      {
+       "id": "c3bnu",
+       "type": "vertical",
+       "e1": "prof.9"
+      },
+      {
+       "id": "c4gow",
+       "type": "horizontal",
+       "e1": "prof.10"
+      },
+      {
+       "id": "c5jx6",
+       "type": "vertical",
+       "e1": "prof.11"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "id": "prof",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         30,
+         0
+        ],
+        [
+         30,
+         40
+        ],
+        [
+         55,
+         65
+        ],
+        [
+         55,
+         68
+        ],
+        [
+         53,
+         73
+        ],
+        [
+         48,
+         79
+        ],
+        [
+         40,
+         84
+        ],
+        [
+         30,
+         87
+        ],
+        [
+         26.8,
+         88
+        ],
+        [
+         26.8,
+         3
+        ],
+        [
+         0,
+         3
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2vbsn",
+   "type": "revolve",
+   "name": "Revolve 1",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1eluv",
+      "pt": [
+       36,
+       68.66666666666667
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": "Sketch 1"
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1eluv\",\"pt\":[36,68.66666666666667]}]"
+    }
+   }
+  },
+  {
+   "id": "f3u3fq",
+   "type": "primitive",
+   "name": "Primitive 1",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "24",
+    "r": "6.5",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "43",
+    "y": "0",
+    "z": "73.5",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "f4uz88",
+   "type": "cpattern",
+   "name": "Circular pattern 1",
+   "params": {
+    "mode": "part",
+    "parts": [
+     {
+      "kind": "part",
+      "id": "f3u3fq"
+     }
+    ],
+    "features": [],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "6",
+    "equal": true,
+    "flip": false,
+    "merge": true,
+    "__sel": {
+     "parts": [
+      "Part 2"
+     ]
+    },
+    "__selres": {
+     "parts": "[{\"kind\":\"part\",\"id\":\"f3u3fq\"}]"
+    }
+   }
+  },
+  {
+   "id": "f50lia",
+   "type": "transform",
+   "name": "Transform 1",
+   "params": {
+    "parts": [
+     {
+      "kind": "part",
+      "id": "f2vbsn"
+     }
+    ],
+    "kind": "translate",
+    "dx": "0",
+    "dy": "0",
+    "dz": "0",
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "90",
+    "copy": true,
+    "__sel": {
+     "parts": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "parts": "[{\"kind\":\"part\",\"id\":\"f2vbsn\"}]"
+    }
+   }
+  },
+  {
+   "id": "f67at8",
+   "type": "boolean",
+   "name": "Boolean 1",
+   "params": {
+    "bop": "subtract",
+    "tools": [
+     {
+      "kind": "part",
+      "id": "f3u3fq"
+     }
+    ],
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f2vbsn"
+     }
+    ],
+    "keep": true,
+    "__sel": {
+     "tools": [
+      "Part 2"
+     ],
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "tools": "[{\"kind\":\"part\",\"id\":\"f3u3fq\"}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f2vbsn\"}]"
+    }
+   }
+  },
+  {
+   "id": "f79y10",
+   "type": "boolean",
+   "name": "Boolean 2",
+   "params": {
+    "bop": "intersect",
+    "tools": [
+     {
+      "kind": "part",
+      "id": "f2vbsn+lia"
+     },
+     {
+      "kind": "part",
+      "id": "f3u3fq"
+     }
+    ],
+    "targets": [],
+    "keep": false,
+    "__sel": {
+     "tools": [
+      "Part 3",
+      "Part 2"
+     ]
+    },
+    "__selres": {
+     "tools": "[{\"kind\":\"part\",\"id\":\"f2vbsn+lia\"},{\"kind\":\"part\",\"id\":\"f3u3fq\"}]"
+    }
+   }
+  },
+  {
+   "id": "f856yy",
+   "type": "plane",
+   "name": "Plane 1",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "40",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9ucj9",
+   "type": "split",
+   "name": "Split 1",
+   "params": {
+    "parts": [
+     {
+      "kind": "part",
+      "id": "f2vbsn"
+     }
+    ],
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f856yy"
+     }
+    ],
+    "__sel": {
+     "parts": [
+      "Part 1"
+     ],
+     "plane": "Plane 1"
+    },
+    "__selres": {
+     "parts": "[{\"kind\":\"part\",\"id\":\"f2vbsn\"}]",
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f856yy\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2vbsn": {
+   "name": "Cap",
+   "color": "#c0392b",
+   "material": "pla",
+   "hidden": false
+  },
+  "f3u3fq": {
+   "name": "Part 2",
+   "color": "#c7a76a",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f2vbsn+lia": {
+   "name": "Spots",
+   "color": "#fbfbf5",
+   "material": "pla",
+   "hidden": false
+  },
+  "f2vbsn/cj9": {
+   "name": "Stem",
+   "color": "#efe2c4",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 1,
+  "revolve": 1,
+  "primitive": 1,
+  "cpattern": 1,
+  "transform": 1,
+  "boolean": 2,
+  "plane": 1,
+  "split": 1
+ }
+}
