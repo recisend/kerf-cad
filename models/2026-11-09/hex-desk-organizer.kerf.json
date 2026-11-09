@@ -1,0 +1,1106 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "hex-desk-organizer",
+ "features": [
+  {
+   "id": "f1ulb5",
+   "type": "sketch",
+   "name": "Outer",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -34,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": -34,
+       "y": 32
+      },
+      {
+       "id": "p3",
+       "x": -61.71281292110203,
+       "y": 16.00000000000001
+      },
+      {
+       "id": "p4",
+       "x": -61.71281292110204,
+       "y": -15.999999999999991
+      },
+      {
+       "id": "p5",
+       "x": -34.00000000000001,
+       "y": -32
+      },
+      {
+       "id": "p6",
+       "x": -6.287187078897972,
+       "y": -16.000000000000014
+      },
+      {
+       "id": "p7",
+       "x": -6.287187078897965,
+       "y": 16
+      }
+     ],
+     "ents": [
+      {
+       "id": "hex.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 32,
+       "construction": true
+      },
+      {
+       "id": "hex.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "hex.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "hex.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "hex.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "hex.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "hex.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0l5j",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c1k34",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c2wnd",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c30h1",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c4jt7",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c5r7f",
+       "type": "onEntity",
+       "a": "p7",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c64uy",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.1"
+      },
+      {
+       "id": "c71ul",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.2"
+      },
+      {
+       "id": "c884t",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.3"
+      },
+      {
+       "id": "c9kct",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.4"
+      },
+      {
+       "id": "c10g9q",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "hex",
+       "center": [
+        -34,
+        0
+       ],
+       "radius": 32,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2qj77",
+   "type": "extrude",
+   "name": "Hex cup body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1ulb5",
+      "pt": [
+       -34.00000000000001,
+       -1.7763568394002505e-15
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "100",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Outer"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1ulb5\",\"pt\":[-34.00000000000001,-1.7763568394002505e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f32kfe",
+   "type": "sketch",
+   "name": "Tray outline",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -10,
+       "y": -32
+      },
+      {
+       "id": "p2",
+       "x": 90,
+       "y": -32
+      },
+      {
+       "id": "p3",
+       "x": 90,
+       "y": 32
+      },
+      {
+       "id": "p4",
+       "x": -10,
+       "y": 32
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c07d2",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c00ys",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0bmp",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0bqd",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        -10,
+        -32
+       ],
+       "corner2": [
+        90,
+        32
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4wnyp",
+   "type": "extrude",
+   "name": "Tray body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f32kfe",
+      "pt": [
+       23.333333333333332,
+       10.666666666666666
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "30",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Tray outline"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f32kfe\",\"pt\":[23.333333333333332,10.666666666666666]}]"
+    }
+   }
+  },
+  {
+   "id": "f5yxdj",
+   "type": "sketch",
+   "name": "Tower outline",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 50,
+       "y": -32
+      },
+      {
+       "id": "p2",
+       "x": 90,
+       "y": -32
+      },
+      {
+       "id": "p3",
+       "x": 90,
+       "y": 32
+      },
+      {
+       "id": "p4",
+       "x": 50,
+       "y": 32
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c06q2",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0soe",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0r75",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0wdm",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        50,
+        -32
+       ],
+       "corner2": [
+        90,
+        32
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f69kc5",
+   "type": "extrude",
+   "name": "Tower body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f5yxdj",
+      "pt": [
+       63.333333333333336,
+       10.666666666666666
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "75",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Tower outline"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f5yxdj\",\"pt\":[63.333333333333336,10.666666666666666]}]"
+    }
+   }
+  },
+  {
+   "id": "f7naxu",
+   "type": "plane",
+   "name": "Plane Z100",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "100",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f891lr",
+   "type": "plane",
+   "name": "Plane Z30",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "30",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9n48c",
+   "type": "plane",
+   "name": "Plane Z75",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "75",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fawjcb",
+   "type": "sketch",
+   "name": "Cup pocket",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f7naxu"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -34,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": -34,
+       "y": 29
+      },
+      {
+       "id": "p3",
+       "x": -59.11473670974871,
+       "y": 14.500000000000009
+      },
+      {
+       "id": "p4",
+       "x": -59.114736709748726,
+       "y": -14.499999999999991
+      },
+      {
+       "id": "p5",
+       "x": -34.00000000000001,
+       "y": -29
+      },
+      {
+       "id": "p6",
+       "x": -8.885263290251288,
+       "y": -14.500000000000012
+      },
+      {
+       "id": "p7",
+       "x": -8.885263290251281,
+       "y": 14.5
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 29,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0wbi",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c12hw",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c2jwt",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c35c4",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c4kqa",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c5nzp",
+       "type": "onEntity",
+       "a": "p7",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c6l67",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.1"
+      },
+      {
+       "id": "c71tq",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.2"
+      },
+      {
+       "id": "c8bpt",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.3"
+      },
+      {
+       "id": "c98g6",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.4"
+      },
+      {
+       "id": "c104os",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        -34,
+        0
+       ],
+       "radius": 29,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Plane Z100"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f7naxu\"}]"
+    }
+   }
+  },
+  {
+   "id": "fbl1s4",
+   "type": "sketch",
+   "name": "Tray pocket",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f891lr"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 3,
+       "y": -28
+      },
+      {
+       "id": "p2",
+       "x": 46,
+       "y": -28
+      },
+      {
+       "id": "p3",
+       "x": 46,
+       "y": 28
+      },
+      {
+       "id": "p4",
+       "x": 3,
+       "y": 28
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0vm5",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c075o",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0g6n",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0ilu",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        3,
+        -28
+       ],
+       "corner2": [
+        46,
+        28
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Plane Z30"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f891lr\"}]"
+    }
+   }
+  },
+  {
+   "id": "fc5172",
+   "type": "sketch",
+   "name": "Slot pocket",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f9n48c"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 55,
+       "y": -12
+      },
+      {
+       "id": "p2",
+       "x": 85,
+       "y": -12
+      },
+      {
+       "id": "p3",
+       "x": 85,
+       "y": 12
+      },
+      {
+       "id": "p4",
+       "x": 55,
+       "y": 12
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0gxt",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0s4k",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0sfq",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c06rm",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        55,
+        -12
+       ],
+       "corner2": [
+        85,
+        12
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Plane Z75"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f9n48c\"}]"
+    }
+   }
+  },
+  {
+   "id": "fdrs6b",
+   "type": "extrude",
+   "name": "Cut cup",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fawjcb",
+      "pt": [
+       -34.00000000000001,
+       -1.1842378929335002e-15
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "97.6",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cup pocket"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fawjcb\",\"pt\":[-34.00000000000001,-1.1842378929335002e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "feazpq",
+   "type": "extrude",
+   "name": "Cut tray",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fbl1s4",
+      "pt": [
+       17.333333333333332,
+       9.333333333333334
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "27.6",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Tray pocket"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fbl1s4\",\"pt\":[17.333333333333332,9.333333333333334]}]"
+    }
+   }
+  },
+  {
+   "id": "ffb3m4",
+   "type": "extrude",
+   "name": "Cut slot",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fc5172",
+      "pt": [
+       65,
+       4
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "71.8",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Slot pocket"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fc5172\",\"pt\":[65,4]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2qj77": {
+   "name": "HexDeskOrganizer",
+   "color": "#3f6f6a",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 6,
+  "extrude": 6,
+  "plane": 3
+ }
+}
