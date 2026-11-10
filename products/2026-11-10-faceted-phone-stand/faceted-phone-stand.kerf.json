@@ -1,0 +1,749 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Faceted Phone Stand",
+ "features": [
+  {
+   "id": "f1iznb",
+   "type": "sketch",
+   "name": "Side Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 100,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 100,
+       "y": 14
+      },
+      {
+       "id": "p3",
+       "x": 77,
+       "y": 72
+      },
+      {
+       "id": "p4",
+       "x": 55,
+       "y": 72
+      },
+      {
+       "id": "p5",
+       "x": 27.8,
+       "y": 26
+      },
+      {
+       "id": "p6",
+       "x": 14,
+       "y": 26
+      },
+      {
+       "id": "p7",
+       "x": 14,
+       "y": 38
+      },
+      {
+       "id": "p8",
+       "x": 0,
+       "y": 38
+      }
+     ],
+     "ents": [
+      {
+       "id": "prof.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "prof.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "prof.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "prof.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "prof.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "prof.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "prof.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "prof.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "prof.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c01tq",
+       "type": "horizontal",
+       "e1": "prof.0"
+      },
+      {
+       "id": "c1fb4",
+       "type": "vertical",
+       "e1": "prof.1"
+      },
+      {
+       "id": "c268a",
+       "type": "horizontal",
+       "e1": "prof.3"
+      },
+      {
+       "id": "c3t1c",
+       "type": "horizontal",
+       "e1": "prof.5"
+      },
+      {
+       "id": "c45a9",
+       "type": "vertical",
+       "e1": "prof.6"
+      },
+      {
+       "id": "c55wn",
+       "type": "horizontal",
+       "e1": "prof.7"
+      },
+      {
+       "id": "c6slq",
+       "type": "vertical",
+       "e1": "prof.8"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "id": "prof",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         100,
+         0
+        ],
+        [
+         100,
+         14
+        ],
+        [
+         77,
+         72
+        ],
+        [
+         55,
+         72
+        ],
+        [
+         27.8,
+         26
+        ],
+        [
+         14,
+         26
+        ],
+        [
+         14,
+         38
+        ],
+        [
+         0,
+         38
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2j0gq",
+   "type": "extrude",
+   "name": "Stand Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1iznb",
+      "pt": [
+       60.93333333333334,
+       37.333333333333336
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "symmetric",
+    "depth": "75",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": "Side Profile"
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1iznb\",\"pt\":[60.93333333333334,37.333333333333336]}]"
+    }
+   }
+  },
+  {
+   "id": "f3ueer",
+   "type": "sketch",
+   "name": "Window",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 50,
+       "y": 8
+      },
+      {
+       "id": "p2",
+       "x": 88,
+       "y": 8
+      },
+      {
+       "id": "p3",
+       "x": 69,
+       "y": 46
+      }
+     ],
+     "ents": [
+      {
+       "id": "tri.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "tri.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "tri.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c01k4",
+       "type": "horizontal",
+       "e1": "tri.0"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "id": "tri",
+       "points": [
+        [
+         50,
+         8
+        ],
+        [
+         88,
+         8
+        ],
+        [
+         69,
+         46
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4i899",
+   "type": "extrude",
+   "name": "Triangle Window",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3ueer",
+      "pt": [
+       69,
+       20.666666666666668
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "120",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": "Window"
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3ueer\",\"pt\":[69,20.666666666666668]}]"
+    }
+   }
+  },
+  {
+   "id": "f5m1hw",
+   "type": "plane",
+   "name": "Slot Floor Plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "26",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f667tx",
+   "type": "sketch",
+   "name": "Cable Notch",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f5m1hw"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -2,
+       "y": -9
+      },
+      {
+       "id": "p2",
+       "x": 14,
+       "y": -9
+      },
+      {
+       "id": "p3",
+       "x": 14,
+       "y": 9
+      },
+      {
+       "id": "p4",
+       "x": -2,
+       "y": 9
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0wg1",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c00rp",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c04oj",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0cup",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        -2,
+        -9
+       ],
+       "corner2": [
+        14,
+        9
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Slot Floor Plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f5m1hw\"}]"
+    }
+   }
+  },
+  {
+   "id": "f7fw5o",
+   "type": "extrude",
+   "name": "Cable Notch Cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f667tx",
+      "pt": [
+       3.3333333333333335,
+       3
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "14",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": "Cable Notch"
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f667tx\",\"pt\":[3.3333333333333335,3]}]"
+    }
+   }
+  },
+  {
+   "id": "f8qkks",
+   "type": "fillet",
+   "name": "Top Fillets",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "a": [
+       77,
+       -37.5,
+       72
+      ],
+      "b": [
+       77,
+       37.5,
+       72
+      ]
+     },
+     {
+      "kind": "edge",
+      "a": [
+       55,
+       -37.5,
+       72
+      ],
+      "b": [
+       55,
+       37.5,
+       72
+      ]
+     },
+     {
+      "kind": "edge",
+      "a": [
+       100,
+       -37.5,
+       14
+      ],
+      "b": [
+       100,
+       37.5,
+       14
+      ]
+     }
+    ],
+    "radius": "3",
+    "__sel": {
+     "edges": [
+      {
+       "from": [
+        77,
+        -37.5,
+        72
+       ],
+       "to": [
+        77,
+        37.5,
+        72
+       ]
+      },
+      {
+       "from": [
+        55,
+        -37.5,
+        72
+       ],
+       "to": [
+        55,
+        37.5,
+        72
+       ]
+      },
+      {
+       "from": [
+        100,
+        -37.5,
+        14
+       ],
+       "to": [
+        100,
+        37.5,
+        14
+       ]
+      }
+     ]
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"a\":[77,-37.5,72],\"b\":[77,37.5,72]},{\"kind\":\"edge\",\"a\":[55,-37.5,72],\"b\":[55,37.5,72]},{\"kind\":\"edge\",\"a\":[100,-37.5,14],\"b\":[100,37.5,14]}]"
+    }
+   }
+  },
+  {
+   "id": "f9aecx",
+   "type": "chamfer",
+   "name": "First Layer Chamfer",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f2j0gq",
+      "a": [
+       0,
+       37.5,
+       0
+      ],
+      "b": [
+       100,
+       37.5,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f2j0gq",
+      "a": [
+       100,
+       37.5,
+       0
+      ],
+      "b": [
+       100,
+       -37.5,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f2j0gq",
+      "a": [
+       100,
+       -37.5,
+       0
+      ],
+      "b": [
+       0,
+       -37.5,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f2j0gq",
+      "a": [
+       0,
+       37.5,
+       0
+      ],
+      "b": [
+       0,
+       -37.5,
+       0
+      ]
+     }
+    ],
+    "distance": "0.6",
+    "asym": false,
+    "distance2": "4",
+    "__sel": {
+     "edges": {
+      "edges_of": "bottom"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f2j0gq\",\"a\":[0,37.5,0],\"b\":[100,37.5,0]},{\"kind\":\"edge\",\"part\":\"f2j0gq\",\"a\":[100,37.5,0],\"b\":[100,-37.5,0]},{\"kind\":\"edge\",\"part\":\"f2j0gq\",\"a\":[100,-37.5,0],\"b\":[0,-37.5,0]},{\"kind\":\"edge\",\"part\":\"f2j0gq\",\"a\":[0,37.5,0],\"b\":[0,-37.5,0]}]"
+    }
+   }
+  },
+  {
+   "id": "faikno",
+   "type": "transform",
+   "name": "Centre On U1 Bed",
+   "params": {
+    "parts": [
+     {
+      "kind": "part",
+      "id": "f2j0gq"
+     }
+    ],
+    "kind": "translate",
+    "dx": "85",
+    "dy": "135",
+    "dz": "0",
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "90",
+    "copy": false,
+    "__sel": {
+     "parts": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "parts": "[{\"kind\":\"part\",\"id\":\"f2j0gq\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2j0gq": {
+   "name": "Faceted Phone Stand",
+   "color": "#2f6f73",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 3,
+  "extrude": 3,
+  "plane": 1,
+  "fillet": 1,
+  "chamfer": 1,
+  "transform": 1
+ }
+}
