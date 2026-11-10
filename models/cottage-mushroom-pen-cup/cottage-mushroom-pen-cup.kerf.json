@@ -1,0 +1,391 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Cottage Mushroom Pen Cup",
+ "features": [
+  {
+   "id": "f1airp",
+   "type": "sketch",
+   "name": "Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 34,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 34,
+       "y": 40
+      },
+      {
+       "id": "p3",
+       "x": 50,
+       "y": 56
+      },
+      {
+       "id": "p4",
+       "x": 17.81578947368421,
+       "y": 62.81578947368421
+      },
+      {
+       "id": "p5",
+       "x": 33,
+       "y": 92
+      },
+      {
+       "id": "p6",
+       "x": 0,
+       "y": 92
+      }
+     ],
+     "ents": [
+      {
+       "id": "line1",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "line2",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "line3",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "arc4",
+       "type": "arc",
+       "c": "p4",
+       "p1": "p3",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "line5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "line6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0t7i",
+       "type": "horizontal",
+       "e1": "line1"
+      },
+      {
+       "id": "c1kdj",
+       "type": "vertical",
+       "e1": "line2"
+      },
+      {
+       "id": "c2fob",
+       "type": "horizontal",
+       "e1": "line5"
+      },
+      {
+       "id": "c323m",
+       "type": "vertical",
+       "e1": "line6"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "line",
+       "from": [
+        0,
+        0
+       ],
+       "to": [
+        34,
+        0
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        34,
+        0
+       ],
+       "to": [
+        34,
+        40
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        34,
+        40
+       ],
+       "to": [
+        50,
+        56
+       ]
+      },
+      {
+       "type": "arc",
+       "start": [
+        50,
+        56
+       ],
+       "end": [
+        33,
+        92
+       ],
+       "mid": [
+        47,
+        78
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        33,
+        92
+       ],
+       "to": [
+        0,
+        92
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        0,
+        92
+       ],
+       "to": [
+        0,
+        0
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f27m7w",
+   "type": "revolve",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1airp",
+      "pt": [
+       11,
+       61.333333333333336
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1airp\",\"pt\":[11,61.333333333333336]}]"
+    }
+   }
+  },
+  {
+   "id": "f3xmo9",
+   "type": "sketch",
+   "name": "Cavity",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 14
+      },
+      {
+       "id": "p2",
+       "x": 28,
+       "y": 14
+      },
+      {
+       "id": "p3",
+       "x": 28,
+       "y": 100
+      },
+      {
+       "id": "p4",
+       "x": 0,
+       "y": 100
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c014h",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0ln6",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0ffe",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c04hv",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        0,
+        14
+       ],
+       "corner2": [
+        28,
+        100
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4z6qy",
+   "type": "revolve",
+   "name": "Pen Cavity",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3xmo9",
+      "pt": [
+       9.333333333333334,
+       71.33333333333333
+      ]
+     }
+    ],
+    "op": "remove",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cavity"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3xmo9\",\"pt\":[9.333333333333334,71.33333333333333]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f27m7w": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 2,
+  "revolve": 2
+ }
+}
