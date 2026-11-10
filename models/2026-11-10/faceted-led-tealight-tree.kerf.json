@@ -1,0 +1,838 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Faceted LED Tealight Tree",
+ "features": [
+  {
+   "id": "f1x8gw",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "wall",
+    "value": "1.6"
+   }
+  },
+  {
+   "id": "f2c1yq",
+   "type": "sketch",
+   "name": "Base hex",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 2.0818995585505003e-15,
+       "y": 34
+      },
+      {
+       "id": "p2",
+       "x": -29.44486372867091,
+       "y": 17.00000000000001
+      },
+      {
+       "id": "p3",
+       "x": -29.44486372867092,
+       "y": -16.99999999999999
+      },
+      {
+       "id": "p4",
+       "x": -6.245698675651501e-15,
+       "y": -34
+      },
+      {
+       "id": "p5",
+       "x": 29.444863728670903,
+       "y": -17.000000000000014
+      },
+      {
+       "id": "p6",
+       "x": 29.444863728670914,
+       "y": 17
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 34,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0hfv",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c1lis",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c25xu",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c3a1w",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c4iih",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c5ipz",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c6idf",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.1"
+      },
+      {
+       "id": "c7pyv",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.2"
+      },
+      {
+       "id": "c8xpb",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.3"
+      },
+      {
+       "id": "c9d8h",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.4"
+      },
+      {
+       "id": "c10owt",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 34,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f3d4pp",
+   "type": "plane",
+   "name": "Apex plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "110",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4gbou",
+   "type": "sketch",
+   "name": "Apex hex",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f3d4pp"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 4.286263797015736e-16,
+       "y": 7
+      },
+      {
+       "id": "p2",
+       "x": -6.0621778264910695,
+       "y": 3.500000000000002
+      },
+      {
+       "id": "p3",
+       "x": -6.062177826491071,
+       "y": -3.4999999999999982
+      },
+      {
+       "id": "p4",
+       "x": -1.2858791391047208e-15,
+       "y": -7
+      },
+      {
+       "id": "p5",
+       "x": 6.062177826491069,
+       "y": -3.500000000000003
+      },
+      {
+       "id": "p6",
+       "x": 6.06217782649107,
+       "y": 3.5
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 7,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0clr",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c11m4",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c25on",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c3fok",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c4akw",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c5k1n",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c68fx",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.1"
+      },
+      {
+       "id": "c77ku",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.2"
+      },
+      {
+       "id": "c8rpb",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.3"
+      },
+      {
+       "id": "c97uy",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.4"
+      },
+      {
+       "id": "c10qqc",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 7,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Apex plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f3d4pp\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5x9m1",
+   "type": "loft",
+   "name": "Tree body",
+   "params": {
+    "profiles": [
+     {
+      "kind": "region",
+      "sketch": "f2c1yq",
+      "pt": [
+       -4.736951571734001e-15,
+       -1.1842378929335002e-15
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f4gbou",
+      "pt": [
+       -8.881784197001252e-16,
+       -4.440892098500626e-16
+      ]
+     }
+    ],
+    "op": "new",
+    "targets": [],
+    "__sel": {
+     "profiles": [
+      {
+       "sketch": "Base hex"
+      },
+      {
+       "sketch": "Apex hex"
+      }
+     ]
+    },
+    "__selres": {
+     "profiles": "[{\"kind\":\"region\",\"sketch\":\"f2c1yq\",\"pt\":[-4.736951571734001e-15,-1.1842378929335002e-15]},{\"kind\":\"region\",\"sketch\":\"f4gbou\",\"pt\":[-8.881784197001252e-16,-4.440892098500626e-16]}]"
+    }
+   }
+  },
+  {
+   "id": "f6ofpj",
+   "type": "shell",
+   "name": "Hollow",
+   "params": {
+    "faces": [
+     {
+      "kind": "face",
+      "part": "f5x9m1",
+      "n": [
+       0,
+       0,
+       -1
+      ],
+      "p": [
+       -5.520912170410156,
+       6.729166666666666,
+       0
+      ]
+     }
+    ],
+    "part": [],
+    "thickness": "#wall",
+    "__sel": {
+     "faces": {
+      "face": "bottom"
+     }
+    },
+    "__selres": {
+     "faces": "[{\"kind\":\"face\",\"part\":\"f5x9m1\",\"n\":[0,0,-1],\"p\":[-5.520912170410156,6.729166666666666,0]}]"
+    }
+   }
+  },
+  {
+   "id": "f7rm5h",
+   "type": "sketch",
+   "name": "Light holes",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -12,
+       "y": 12
+      },
+      {
+       "id": "p2",
+       "x": 0,
+       "y": 12
+      },
+      {
+       "id": "p3",
+       "x": 12,
+       "y": 12
+      },
+      {
+       "id": "p4",
+       "x": -6,
+       "y": 28
+      },
+      {
+       "id": "p5",
+       "x": 6,
+       "y": 28
+      },
+      {
+       "id": "p6",
+       "x": 0,
+       "y": 44
+      },
+      {
+       "id": "p7",
+       "x": -4,
+       "y": 60
+      },
+      {
+       "id": "p8",
+       "x": 4,
+       "y": 60
+      },
+      {
+       "id": "p9",
+       "x": 0,
+       "y": 78
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 2.5,
+       "construction": false
+      },
+      {
+       "id": "circle2",
+       "type": "circle",
+       "c": "p2",
+       "r": 2.5,
+       "construction": false
+      },
+      {
+       "id": "circle3",
+       "type": "circle",
+       "c": "p3",
+       "r": 2.5,
+       "construction": false
+      },
+      {
+       "id": "circle4",
+       "type": "circle",
+       "c": "p4",
+       "r": 2.5,
+       "construction": false
+      },
+      {
+       "id": "circle5",
+       "type": "circle",
+       "c": "p5",
+       "r": 2.5,
+       "construction": false
+      },
+      {
+       "id": "circle6",
+       "type": "circle",
+       "c": "p6",
+       "r": 2.5,
+       "construction": false
+      },
+      {
+       "id": "circle7",
+       "type": "circle",
+       "c": "p7",
+       "r": 2.5,
+       "construction": false
+      },
+      {
+       "id": "circle8",
+       "type": "circle",
+       "c": "p8",
+       "r": 2.5,
+       "construction": false
+      },
+      {
+       "id": "circle9",
+       "type": "circle",
+       "c": "p9",
+       "r": 2.5,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        -12,
+        12
+       ],
+       "diameter": 5
+      },
+      {
+       "type": "circle",
+       "center": [
+        0,
+        12
+       ],
+       "diameter": 5
+      },
+      {
+       "type": "circle",
+       "center": [
+        12,
+        12
+       ],
+       "diameter": 5
+      },
+      {
+       "type": "circle",
+       "center": [
+        -6,
+        28
+       ],
+       "diameter": 5
+      },
+      {
+       "type": "circle",
+       "center": [
+        6,
+        28
+       ],
+       "diameter": 5
+      },
+      {
+       "type": "circle",
+       "center": [
+        0,
+        44
+       ],
+       "diameter": 5
+      },
+      {
+       "type": "circle",
+       "center": [
+        -4,
+        60
+       ],
+       "diameter": 5
+      },
+      {
+       "type": "circle",
+       "center": [
+        4,
+        60
+       ],
+       "diameter": 5
+      },
+      {
+       "type": "circle",
+       "center": [
+        0,
+        78
+       ],
+       "diameter": 5
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8142s",
+   "type": "extrude",
+   "name": "Light holes cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f7rm5h",
+      "pt": [
+       -12.533238656680075,
+       11.612579438345477
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f7rm5h",
+      "pt": [
+       -0.5332386566800741,
+       11.612579438345477
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f7rm5h",
+      "pt": [
+       11.466761343319925,
+       11.612579438345477
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f7rm5h",
+      "pt": [
+       -6.533238656680074,
+       27.612579438345477
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f7rm5h",
+      "pt": [
+       5.466761343319926,
+       27.612579438345477
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f7rm5h",
+      "pt": [
+       -0.5332386566800741,
+       43.61257943834548
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f7rm5h",
+      "pt": [
+       -4.533238656680074,
+       59.61257943834548
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f7rm5h",
+      "pt": [
+       3.466761343319926,
+       59.61257943834548
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f7rm5h",
+      "pt": [
+       -0.5332386566800741,
+       77.61257943834548
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "120",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Light holes"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f7rm5h\",\"pt\":[-12.533238656680075,11.612579438345477]},{\"kind\":\"region\",\"sketch\":\"f7rm5h\",\"pt\":[-0.5332386566800741,11.612579438345477]},{\"kind\":\"region\",\"sketch\":\"f7rm5h\",\"pt\":[11.466761343319925,11.612579438345477]},{\"kind\":\"region\",\"sketch\":\"f7rm5h\",\"pt\":[-6.533238656680074,27.612579438345477]},{\"kind\":\"region\",\"sketch\":\"f7rm5h\",\"pt\":[5.466761343319926,27.612579438345477]},{\"kind\":\"region\",\"sketch\":\"f7rm5h\",\"pt\":[-0.5332386566800741,43.61257943834548]},{\"kind\":\"region\",\"sketch\":\"f7rm5h\",\"pt\":[-4.533238656680074,59.61257943834548]},{\"kind\":\"region\",\"sketch\":\"f7rm5h\",\"pt\":[3.466761343319926,59.61257943834548]},{\"kind\":\"region\",\"sketch\":\"f7rm5h\",\"pt\":[-0.5332386566800741,77.61257943834548]}]"
+    }
+   }
+  },
+  {
+   "id": "f9lqc5",
+   "type": "cpattern",
+   "name": "Hole pattern",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f8142s"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "3",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Light holes cut"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f8142s\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f5x9m1": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 3,
+  "plane": 1,
+  "loft": 1,
+  "shell": 1,
+  "extrude": 1,
+  "cpattern": 1
+ }
+}
