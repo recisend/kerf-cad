@@ -1,0 +1,239 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Untitled part studio",
+ "features": [
+  {
+   "id": "f1e3fg",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "R",
+    "value": "40 mm"
+   }
+  },
+  {
+   "id": "f2urch",
+   "type": "primitive",
+   "name": "Planter body",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "85 mm",
+    "r": "#R",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "0",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "f3qpp1",
+   "type": "primitive",
+   "name": "Soil cavity",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "85 mm",
+    "r": "#R - 2.4 mm",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "3 mm",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f2urch"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f2urch\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4so4k",
+   "type": "primitive",
+   "name": "Rib",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "85 mm",
+    "r": "3 mm",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "#R + 1 mm",
+    "y": "0",
+    "z": "0",
+    "op": "add",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f2urch"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f2urch\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5psuc",
+   "type": "cpattern",
+   "name": "Rib ring",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f4so4k"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "16",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": [
+      "Rib"
+     ]
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f4so4k\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6lcit",
+   "type": "primitive",
+   "name": "Drain hole",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "10 mm",
+    "r": "4 mm",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "-2 mm",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f2urch"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f2urch\"}]"
+    }
+   }
+  },
+  {
+   "id": "f7219j",
+   "type": "primitive",
+   "name": "Saucer body",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "12 mm",
+    "r": "49.5 mm",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "110",
+    "y": "0",
+    "z": "0",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "f8li9c",
+   "type": "primitive",
+   "name": "Saucer well",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "12 mm",
+    "r": "46.5 mm",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "110",
+    "y": "0",
+    "z": "2 mm",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f7219j"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 2"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f7219j\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2urch": {
+   "name": "Reeded Planter",
+   "color": "#e8e2d4",
+   "material": "pla",
+   "hidden": false
+  },
+  "f7219j": {
+   "name": "Saucer",
+   "color": "#4a5d4f",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "primitive": 6,
+  "cpattern": 1
+ }
+}
