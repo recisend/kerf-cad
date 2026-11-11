@@ -1,0 +1,2016 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Honeycomb Desk Organizer",
+ "features": [
+  {
+   "id": "f1r46z",
+   "type": "sketch",
+   "name": "Cell A outer",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 1.3471114790620886e-15,
+       "y": 22
+      },
+      {
+       "id": "p2",
+       "x": -19.052558883257646,
+       "y": 11.000000000000007
+      },
+      {
+       "id": "p3",
+       "x": -19.052558883257653,
+       "y": -10.999999999999995
+      },
+      {
+       "id": "p4",
+       "x": -4.0413344371862654e-15,
+       "y": -22
+      },
+      {
+       "id": "p5",
+       "x": 19.052558883257646,
+       "y": -11.00000000000001
+      },
+      {
+       "id": "p6",
+       "x": 19.05255888325765,
+       "y": 11
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 22,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0qgx",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c159r",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c2tq5",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c303r",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c4akw",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c5yve",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c63b1",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.1"
+      },
+      {
+       "id": "c7b2r",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.2"
+      },
+      {
+       "id": "c8j06",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.3"
+      },
+      {
+       "id": "c9jyh",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.4"
+      },
+      {
+       "id": "c10tnp",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 22,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2p3sw",
+   "type": "extrude",
+   "name": "Cell A body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1r46z",
+      "pt": [
+       -2.3684757858670005e-15,
+       -1.7763568394002505e-15
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "70",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cell A outer"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1r46z\",\"pt\":[-2.3684757858670005e-15,-1.7763568394002505e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f3esi0",
+   "type": "sketch",
+   "name": "Cell B outer",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 36.105,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 36.105,
+       "y": 22
+      },
+      {
+       "id": "p3",
+       "x": 17.05244111674235,
+       "y": 11.000000000000007
+      },
+      {
+       "id": "p4",
+       "x": 17.052441116742344,
+       "y": -10.999999999999995
+      },
+      {
+       "id": "p5",
+       "x": 36.10499999999999,
+       "y": -22
+      },
+      {
+       "id": "p6",
+       "x": 55.15755888325764,
+       "y": -11.00000000000001
+      },
+      {
+       "id": "p7",
+       "x": 55.15755888325765,
+       "y": 11
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 22,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        36.105,
+        0
+       ],
+       "radius": 22,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4o7wq",
+   "type": "extrude",
+   "name": "Cell B body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3esi0",
+      "pt": [
+       36.105,
+       -1.7763568394002505e-15
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "40",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cell B outer"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3esi0\",\"pt\":[36.105,-1.7763568394002505e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f5tzzq",
+   "type": "sketch",
+   "name": "Cell C outer",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 18.0525,
+       "y": 31.268
+      },
+      {
+       "id": "p2",
+       "x": 18.0525,
+       "y": 53.268
+      },
+      {
+       "id": "p3",
+       "x": -1.0000588832576476,
+       "y": 42.26800000000001
+      },
+      {
+       "id": "p4",
+       "x": -1.0000588832576547,
+       "y": 20.268000000000008
+      },
+      {
+       "id": "p5",
+       "x": 18.052499999999995,
+       "y": 9.268
+      },
+      {
+       "id": "p6",
+       "x": 37.10505888325764,
+       "y": 20.26799999999999
+      },
+      {
+       "id": "p7",
+       "x": 37.10505888325765,
+       "y": 42.268
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 22,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        18.0525,
+        31.268
+       ],
+       "radius": 22,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6iyhw",
+   "type": "extrude",
+   "name": "Cell C body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f5tzzq",
+      "pt": [
+       18.052499999999995,
+       31.268
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "85",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cell C outer"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f5tzzq\",\"pt\":[18.052499999999995,31.268]}]"
+    }
+   }
+  },
+  {
+   "id": "f7u8w1",
+   "type": "sketch",
+   "name": "Cell D outer",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -18.0525,
+       "y": 31.268
+      },
+      {
+       "id": "p2",
+       "x": -18.0525,
+       "y": 53.268
+      },
+      {
+       "id": "p3",
+       "x": -37.10505888325764,
+       "y": 42.26800000000001
+      },
+      {
+       "id": "p4",
+       "x": -37.105058883257655,
+       "y": 20.268000000000008
+      },
+      {
+       "id": "p5",
+       "x": -18.052500000000002,
+       "y": 9.268
+      },
+      {
+       "id": "p6",
+       "x": 1.0000588832576476,
+       "y": 20.26799999999999
+      },
+      {
+       "id": "p7",
+       "x": 1.0000588832576511,
+       "y": 42.268
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 22,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        -18.0525,
+        31.268
+       ],
+       "radius": 22,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8xztw",
+   "type": "extrude",
+   "name": "Cell D body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f7u8w1",
+      "pt": [
+       -18.052500000000002,
+       31.268
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "100",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cell D outer"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f7u8w1\",\"pt\":[-18.052500000000002,31.268]}]"
+    }
+   }
+  },
+  {
+   "id": "f9sz54",
+   "type": "sketch",
+   "name": "Cell E outer",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -36.105,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": -36.105,
+       "y": 22
+      },
+      {
+       "id": "p3",
+       "x": -55.15755888325764,
+       "y": 11.000000000000007
+      },
+      {
+       "id": "p4",
+       "x": -55.15755888325765,
+       "y": -10.999999999999995
+      },
+      {
+       "id": "p5",
+       "x": -36.105000000000004,
+       "y": -22
+      },
+      {
+       "id": "p6",
+       "x": -17.05244111674235,
+       "y": -11.00000000000001
+      },
+      {
+       "id": "p7",
+       "x": -17.052441116742347,
+       "y": 11
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 22,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        -36.105,
+        0
+       ],
+       "radius": 22,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fanr53",
+   "type": "extrude",
+   "name": "Cell E body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f9sz54",
+      "pt": [
+       -36.105,
+       -1.7763568394002505e-15
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "55",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cell E outer"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f9sz54\",\"pt\":[-36.105,-1.7763568394002505e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "fbri00",
+   "type": "sketch",
+   "name": "Cell F outer",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 18.0525,
+       "y": -31.268
+      },
+      {
+       "id": "p2",
+       "x": 18.0525,
+       "y": -9.268
+      },
+      {
+       "id": "p3",
+       "x": -1.0000588832576476,
+       "y": -20.267999999999994
+      },
+      {
+       "id": "p4",
+       "x": -1.0000588832576547,
+       "y": -42.267999999999994
+      },
+      {
+       "id": "p5",
+       "x": 18.052499999999995,
+       "y": -53.268
+      },
+      {
+       "id": "p6",
+       "x": 37.10505888325764,
+       "y": -42.268000000000015
+      },
+      {
+       "id": "p7",
+       "x": 37.10505888325765,
+       "y": -20.268
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 22,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        18.0525,
+        -31.268
+       ],
+       "radius": 22,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fckcau",
+   "type": "extrude",
+   "name": "Cell F body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fbri00",
+      "pt": [
+       18.052499999999995,
+       -31.268
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "30",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cell F outer"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fbri00\",\"pt\":[18.052499999999995,-31.268]}]"
+    }
+   }
+  },
+  {
+   "id": "fdre7v",
+   "type": "plane",
+   "name": "Floor plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "2",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fe9oa9",
+   "type": "sketch",
+   "name": "Pocket A",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "fdre7v"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 1.2057260061005265e-15,
+       "y": 19.691
+      },
+      {
+       "id": "p2",
+       "x": -17.052906225919376,
+       "y": 9.845500000000007
+      },
+      {
+       "id": "p3",
+       "x": -17.052906225919383,
+       "y": -9.845499999999994
+      },
+      {
+       "id": "p4",
+       "x": -3.617178018301579e-15,
+       "y": -19.691
+      },
+      {
+       "id": "p5",
+       "x": 17.052906225919376,
+       "y": -9.845500000000008
+      },
+      {
+       "id": "p6",
+       "x": 17.05290622591938,
+       "y": 9.8455
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 19.691,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 19.691,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "Floor plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"fdre7v\"}]"
+    }
+   }
+  },
+  {
+   "id": "ff65uo",
+   "type": "extrude",
+   "name": "Pocket A cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fe9oa9",
+      "pt": [
+       -2.3684757858670005e-15,
+       -1.1842378929335002e-15
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "68",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pocket A"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fe9oa9\",\"pt\":[-2.3684757858670005e-15,-1.1842378929335002e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "fghl7k",
+   "type": "sketch",
+   "name": "Pocket B",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "fdre7v"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 36.105,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 36.105,
+       "y": 19.691
+      },
+      {
+       "id": "p3",
+       "x": 19.05209377408062,
+       "y": 9.845500000000007
+      },
+      {
+       "id": "p4",
+       "x": 19.052093774080614,
+       "y": -9.845499999999994
+      },
+      {
+       "id": "p5",
+       "x": 36.10499999999999,
+       "y": -19.691
+      },
+      {
+       "id": "p6",
+       "x": 53.157906225919376,
+       "y": -9.845500000000008
+      },
+      {
+       "id": "p7",
+       "x": 53.157906225919376,
+       "y": 9.8455
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 19.691,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        36.105,
+        0
+       ],
+       "radius": 19.691,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "Floor plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"fdre7v\"}]"
+    }
+   }
+  },
+  {
+   "id": "fhqq0p",
+   "type": "extrude",
+   "name": "Pocket B cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fghl7k",
+      "pt": [
+       36.105,
+       -1.1842378929335002e-15
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "38",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pocket B"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fghl7k\",\"pt\":[36.105,-1.1842378929335002e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "fivupp",
+   "type": "sketch",
+   "name": "Pocket C",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "fdre7v"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 18.0525,
+       "y": 31.268
+      },
+      {
+       "id": "p2",
+       "x": 18.0525,
+       "y": 50.959
+      },
+      {
+       "id": "p3",
+       "x": 0.9995937740806227,
+       "y": 41.11350000000001
+      },
+      {
+       "id": "p4",
+       "x": 0.9995937740806156,
+       "y": 21.422500000000007
+      },
+      {
+       "id": "p5",
+       "x": 18.052499999999995,
+       "y": 11.577000000000002
+      },
+      {
+       "id": "p6",
+       "x": 35.105406225919374,
+       "y": 21.422499999999992
+      },
+      {
+       "id": "p7",
+       "x": 35.10540622591938,
+       "y": 41.1135
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 19.691,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        18.0525,
+        31.268
+       ],
+       "radius": 19.691,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "Floor plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"fdre7v\"}]"
+    }
+   }
+  },
+  {
+   "id": "fj97d4",
+   "type": "extrude",
+   "name": "Pocket C cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fivupp",
+      "pt": [
+       18.0525,
+       31.268
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "83",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pocket C"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fivupp\",\"pt\":[18.0525,31.268]}]"
+    }
+   }
+  },
+  {
+   "id": "fkvprf",
+   "type": "sketch",
+   "name": "Pocket D",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "fdre7v"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -18.0525,
+       "y": 31.268
+      },
+      {
+       "id": "p2",
+       "x": -18.0525,
+       "y": 50.959
+      },
+      {
+       "id": "p3",
+       "x": -35.105406225919374,
+       "y": 41.11350000000001
+      },
+      {
+       "id": "p4",
+       "x": -35.10540622591938,
+       "y": 21.422500000000007
+      },
+      {
+       "id": "p5",
+       "x": -18.052500000000002,
+       "y": 11.577000000000002
+      },
+      {
+       "id": "p6",
+       "x": -0.9995937740806227,
+       "y": 21.422499999999992
+      },
+      {
+       "id": "p7",
+       "x": -0.9995937740806191,
+       "y": 41.1135
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 19.691,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        -18.0525,
+        31.268
+       ],
+       "radius": 19.691,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "Floor plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"fdre7v\"}]"
+    }
+   }
+  },
+  {
+   "id": "fl9447",
+   "type": "extrude",
+   "name": "Pocket D cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fkvprf",
+      "pt": [
+       -18.0525,
+       31.268
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "98",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pocket D"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fkvprf\",\"pt\":[-18.0525,31.268]}]"
+    }
+   }
+  },
+  {
+   "id": "fmjv3r",
+   "type": "sketch",
+   "name": "Pocket E",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "fdre7v"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -36.105,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": -36.105,
+       "y": 19.691
+      },
+      {
+       "id": "p3",
+       "x": -53.157906225919376,
+       "y": 9.845500000000007
+      },
+      {
+       "id": "p4",
+       "x": -53.157906225919376,
+       "y": -9.845499999999994
+      },
+      {
+       "id": "p5",
+       "x": -36.105000000000004,
+       "y": -19.691
+      },
+      {
+       "id": "p6",
+       "x": -19.05209377408062,
+       "y": -9.845500000000008
+      },
+      {
+       "id": "p7",
+       "x": -19.052093774080618,
+       "y": 9.8455
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 19.691,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        -36.105,
+        0
+       ],
+       "radius": 19.691,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "Floor plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"fdre7v\"}]"
+    }
+   }
+  },
+  {
+   "id": "fnkc9g",
+   "type": "extrude",
+   "name": "Pocket E cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fmjv3r",
+      "pt": [
+       -36.105,
+       -1.1842378929335002e-15
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "53",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pocket E"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fmjv3r\",\"pt\":[-36.105,-1.1842378929335002e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "foaoj3",
+   "type": "sketch",
+   "name": "Pocket F",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "fdre7v"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 18.0525,
+       "y": -31.268
+      },
+      {
+       "id": "p2",
+       "x": 18.0525,
+       "y": -11.577000000000002
+      },
+      {
+       "id": "p3",
+       "x": 0.9995937740806227,
+       "y": -21.422499999999992
+      },
+      {
+       "id": "p4",
+       "x": 0.9995937740806156,
+       "y": -41.113499999999995
+      },
+      {
+       "id": "p5",
+       "x": 18.052499999999995,
+       "y": -50.959
+      },
+      {
+       "id": "p6",
+       "x": 35.105406225919374,
+       "y": -41.11350000000001
+      },
+      {
+       "id": "p7",
+       "x": 35.10540622591938,
+       "y": -21.4225
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 19.691,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        18.0525,
+        -31.268
+       ],
+       "radius": 19.691,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "Floor plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"fdre7v\"}]"
+    }
+   }
+  },
+  {
+   "id": "fp8lsw",
+   "type": "extrude",
+   "name": "Pocket F cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "foaoj3",
+      "pt": [
+       18.0525,
+       -31.268
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "28",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pocket F"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"foaoj3\",\"pt\":[18.0525,-31.268]}]"
+    }
+   }
+  },
+  {
+   "id": "fqs3x6",
+   "type": "primitive",
+   "name": "Cable notch",
+   "params": {
+    "shape": "box",
+    "w": "8",
+    "d": "12",
+    "h": "14",
+    "r": "15",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "53",
+    "y": "-6",
+    "z": "26.2",
+    "op": "remove",
+    "targets": []
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2p3sw": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 12,
+  "extrude": 12,
+  "plane": 1,
+  "primitive": 1
+ }
+}
