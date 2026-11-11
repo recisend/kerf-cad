@@ -1,0 +1,841 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Hex Nest Desk Stand",
+ "features": [
+  {
+   "id": "f1rpqx",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "wall",
+    "value": "2.4 mm"
+   }
+  },
+  {
+   "id": "f20gqg",
+   "type": "sketch",
+   "name": "Body",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -50,
+       "y": -45
+      },
+      {
+       "id": "p2",
+       "x": 50,
+       "y": -45
+      },
+      {
+       "id": "p3",
+       "x": 50,
+       "y": 45
+      },
+      {
+       "id": "p4",
+       "x": -50,
+       "y": 45
+      }
+     ],
+     "ents": [
+      {
+       "id": "r.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "r.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "r.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "r.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0r7n",
+       "type": "horizontal",
+       "e1": "r.bottom"
+      },
+      {
+       "id": "c0jx7",
+       "type": "vertical",
+       "e1": "r.right"
+      },
+      {
+       "id": "c0ijd",
+       "type": "horizontal",
+       "e1": "r.top"
+      },
+      {
+       "id": "c0fvt",
+       "type": "vertical",
+       "e1": "r.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "id": "r",
+       "corner1": [
+        -50,
+        -45
+       ],
+       "corner2": [
+        50,
+        45
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f3n5xh",
+   "type": "extrude",
+   "name": "Body Extrude",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f20gqg",
+      "pt": [
+       -16.666666666666668,
+       15
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "70",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Body"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f20gqg\",\"pt\":[-16.666666666666668,15]}]"
+    }
+   }
+  },
+  {
+   "id": "f4crzz",
+   "type": "fillet",
+   "name": "Corner Fillet",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f3n5xh",
+      "a": [
+       50,
+       -45,
+       0
+      ],
+      "b": [
+       50,
+       -45,
+       70
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f3n5xh",
+      "a": [
+       -50,
+       -45,
+       0
+      ],
+      "b": [
+       -50,
+       -45,
+       70
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f3n5xh",
+      "a": [
+       50,
+       45,
+       0
+      ],
+      "b": [
+       50,
+       45,
+       70
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f3n5xh",
+      "a": [
+       -50,
+       45,
+       0
+      ],
+      "b": [
+       -50,
+       45,
+       70
+      ]
+     }
+    ],
+    "radius": "6",
+    "__sel": {
+     "edges": {
+      "parallel_to": "z"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f3n5xh\",\"a\":[50,-45,0],\"b\":[50,-45,70]},{\"kind\":\"edge\",\"part\":\"f3n5xh\",\"a\":[-50,-45,0],\"b\":[-50,-45,70]},{\"kind\":\"edge\",\"part\":\"f3n5xh\",\"a\":[50,45,0],\"b\":[50,45,70]},{\"kind\":\"edge\",\"part\":\"f3n5xh\",\"a\":[-50,45,0],\"b\":[-50,45,70]}]"
+    }
+   }
+  },
+  {
+   "id": "f50bau",
+   "type": "sketch",
+   "name": "Phone Slot",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -32,
+       "y": 8
+      },
+      {
+       "id": "p2",
+       "x": -18,
+       "y": 8
+      },
+      {
+       "id": "p3",
+       "x": -1.4,
+       "y": 71
+      },
+      {
+       "id": "p4",
+       "x": -15.4,
+       "y": 71
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0938",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c1f3w",
+       "type": "horizontal",
+       "e1": "polyline1.2"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         -32,
+         8
+        ],
+        [
+         -18,
+         8
+        ],
+        [
+         -1.4,
+         71
+        ],
+        [
+         -15.4,
+         71
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6ze82",
+   "type": "sketch",
+   "name": "Pen Cup",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f3n5xh",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       16.572878519694008,
+       -16.406828562418617,
+       70
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 21.5
+      },
+      {
+       "id": "p2",
+       "x": 1.2246467991473533e-15,
+       "y": 41.5
+      },
+      {
+       "id": "p3",
+       "x": -17.32050807568877,
+       "y": 31.500000000000007
+      },
+      {
+       "id": "p4",
+       "x": -17.320508075688778,
+       "y": 11.500000000000005
+      },
+      {
+       "id": "p5",
+       "x": -3.673940397442059e-15,
+       "y": 1.5
+      },
+      {
+       "id": "p6",
+       "x": 17.320508075688767,
+       "y": 11.499999999999991
+      },
+      {
+       "id": "p7",
+       "x": 17.32050807568877,
+       "y": 31.5
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 20,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0ubx",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c1fdn",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c2118",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c3x78",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c42fq",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c59ok",
+       "type": "onEntity",
+       "a": "p7",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c6by2",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.1"
+      },
+      {
+       "id": "c7c0d",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.2"
+      },
+      {
+       "id": "c8s3l",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.3"
+      },
+      {
+       "id": "c9h4j",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.4"
+      },
+      {
+       "id": "c105s7",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        21.5
+       ],
+       "radius": 20,
+       "sides": 6,
+       "angle": 90
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f3n5xh\",\"n\":[0,0,1],\"p\":[16.572878519694008,-16.406828562418617,70]}]"
+    }
+   }
+  },
+  {
+   "id": "f7jl3k",
+   "type": "extrude",
+   "name": "Cut Phone Slot",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f50bau",
+      "pt": [
+       -16.266666666666666,
+       50
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Phone Slot"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f50bau\",\"pt\":[-16.266666666666666,50]}]"
+    }
+   }
+  },
+  {
+   "id": "f8jq16",
+   "type": "extrude",
+   "name": "Cut Pen Cup",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f6ze82",
+      "pt": [
+       -3.552713678800501e-15,
+       21.5
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "67.6",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pen Cup"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f6ze82\",\"pt\":[-3.552713678800501e-15,21.5]}]"
+    }
+   }
+  },
+  {
+   "id": "f9wu9u",
+   "type": "extrude",
+   "name": "Cut Phone Slot Other Side",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f50bau",
+      "pt": [
+       -16.266666666666666,
+       50
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Phone Slot"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f50bau\",\"pt\":[-16.266666666666666,50]}]"
+    }
+   }
+  },
+  {
+   "id": "fatneq",
+   "type": "sketch",
+   "name": "Cable Hole",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -8,
+       "y": -25
+      },
+      {
+       "id": "p2",
+       "x": 8,
+       "y": -25
+      },
+      {
+       "id": "p3",
+       "x": -8,
+       "y": -20.5
+      },
+      {
+       "id": "p4",
+       "x": 8,
+       "y": -20.5
+      },
+      {
+       "id": "p5",
+       "x": 8,
+       "y": -29.5
+      },
+      {
+       "id": "p6",
+       "x": -8,
+       "y": -29.5
+      }
+     ],
+     "ents": [
+      {
+       "id": "slot1.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c05kk",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c1e5v",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c277i",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c3j6u",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4j2k",
+       "type": "equal",
+       "e1": "slot1.arc1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4kxf",
+       "type": "parallel",
+       "e1": "slot1.line1",
+       "e2": "slot1.axis"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "radius": 4.5,
+       "center1": [
+        -8,
+        -25
+       ],
+       "center2": [
+        8,
+        -25
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fbpzai",
+   "type": "extrude",
+   "name": "Cut Cable Slot",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fatneq",
+      "pt": [
+       -2.1557193393936025,
+       -24.391451783827424
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "9",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cable Hole"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fatneq\",\"pt\":[-2.1557193393936025,-24.391451783827424]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f3n5xh": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 4,
+  "extrude": 5,
+  "fillet": 1
+ }
+}
