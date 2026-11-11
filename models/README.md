@@ -6,7 +6,7 @@ Original geometric design (no real-world product or brand). Hexagonal planter wi
 **Printer profile: Snapmaker U1, 0.4 mm nozzle** (build volume 270 x 270 x 270 mm; plate footprint ~92 x 123 mm, 70 mm tall).
 - Layer height 0.20 mm, wall thickness 2.0 mm (5 perimeters at 0.4 mm), floors 2.0 mm (10 layers)
 - No supports: walls lean outward ~11 degrees (well under the 45 degree overhang limit), flat bottoms
-- Suggested: PLA, 2 top/bottom layers beyond floor not needed, 15% gyroid infill is irrelevant (walls are solid), brim not required
+- Suggested: PLA, brim not required; walls are solid so infill barely matters
 - Print as exported (both parts flat on the plate)
 - Approx. filament: ~46 g planter + ~15 g saucer (PLA, 1.24 g/cm3)
 
