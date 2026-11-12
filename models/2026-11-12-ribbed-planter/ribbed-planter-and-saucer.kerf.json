@@ -1,0 +1,229 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Ribbed Planter and Saucer",
+ "features": [
+  {
+   "id": "f6v058",
+   "type": "primitive",
+   "name": "Planter Body",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "85",
+    "r": "42",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "0",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "f7mcdv",
+   "type": "primitive",
+   "name": "Cavity",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "90",
+    "r": "40.4",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "1.6",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f6v058"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f6v058\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8l936",
+   "type": "primitive",
+   "name": "Drain Hole",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "5",
+    "r": "4",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "-1",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f6v058"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f6v058\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9m3dr",
+   "type": "primitive",
+   "name": "Rib",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "85",
+    "r": "2.6",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "43.2",
+    "y": "0",
+    "z": "0",
+    "op": "add",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f6v058"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f6v058\"}]"
+    }
+   }
+  },
+  {
+   "id": "fahldk",
+   "type": "cpattern",
+   "name": "Rib Pattern",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f9m3dr"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "24",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": [
+      "Rib"
+     ]
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f9m3dr\"}]"
+    }
+   }
+  },
+  {
+   "id": "fbfvnp",
+   "type": "primitive",
+   "name": "Saucer Body",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "12",
+    "r": "50",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "110",
+    "y": "0",
+    "z": "0",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "fcdcxt",
+   "type": "primitive",
+   "name": "Saucer Well",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "20",
+    "r": "48.4",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "110",
+    "y": "0",
+    "z": "1.6",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "fbfvnp"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 2"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"fbfvnp\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f6v058": {
+   "name": "Ribbed Planter",
+   "color": "#5f8f7a",
+   "material": "pla",
+   "hidden": false
+  },
+  "fbfvnp": {
+   "name": "Drip Saucer",
+   "color": "#e8e2d6",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "primitive": 6,
+  "cpattern": 1
+ }
+}
