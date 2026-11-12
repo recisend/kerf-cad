@@ -1,0 +1,628 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Mandala Ornament",
+ "features": [
+  {
+   "id": "f101y2",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "base_t",
+    "value": "3 mm"
+   }
+  },
+  {
+   "id": "f2xhi6",
+   "type": "sketch",
+   "name": "Disc",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "O",
+       "r": 45,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 45
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4n7ku",
+   "type": "extrude",
+   "name": "Base disc",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f2xhi6",
+      "pt": [
+       5.130302149885028,
+       -8.885943981780715
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "#base_t",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Disc"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f2xhi6\",\"pt\":[5.130302149885028,-8.885943981780715]}]"
+    }
+   }
+  },
+  {
+   "id": "f5qwmm",
+   "type": "sketch",
+   "name": "Lug",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 47
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 6,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        47
+       ],
+       "radius": 6
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6cgx1",
+   "type": "extrude",
+   "name": "Hanging lug",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f5qwmm",
+      "pt": [
+       0.28132823218733805,
+       47.1221980956013
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "#base_t",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Lug"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f5qwmm\",\"pt\":[0.28132823218733805,47.1221980956013]}]"
+    }
+   }
+  },
+  {
+   "id": "f7ts08",
+   "type": "sketch",
+   "name": "Petal slot",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 14
+      },
+      {
+       "id": "p2",
+       "x": 0,
+       "y": 32
+      },
+      {
+       "id": "p3",
+       "x": -2.6,
+       "y": 14
+      },
+      {
+       "id": "p4",
+       "x": -2.6,
+       "y": 32
+      },
+      {
+       "id": "p5",
+       "x": 2.6,
+       "y": 32
+      },
+      {
+       "id": "p6",
+       "x": 2.6,
+       "y": 14
+      }
+     ],
+     "ents": [
+      {
+       "id": "slot1.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c07dw",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c13bs",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c26t2",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c3y8x",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c49ry",
+       "type": "equal",
+       "e1": "slot1.arc1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4shx",
+       "type": "parallel",
+       "e1": "slot1.line1",
+       "e2": "slot1.axis"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "radius": 2.6,
+       "center1": [
+        0,
+        14
+       ],
+       "center2": [
+        0,
+        32
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8yhvn",
+   "type": "sketch",
+   "name": "Lug hole",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 47
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 2.4,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        47
+       ],
+       "radius": 2.4
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9wq91",
+   "type": "extrude",
+   "name": "Cut petal",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f7ts08",
+      "pt": [
+       0.18573103606451147,
+       18.980907811236555
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Petal slot"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f7ts08\",\"pt\":[0.18573103606451147,18.980907811236555]}]"
+    }
+   }
+  },
+  {
+   "id": "favdqp",
+   "type": "extrude",
+   "name": "Cut lug hole",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f8yhvn",
+      "pt": [
+       -0.5119091104128709,
+       46.62807626081166
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Lug hole"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f8yhvn\",\"pt\":[-0.5119091104128709,46.62807626081166]}]"
+    }
+   }
+  },
+  {
+   "id": "fboums",
+   "type": "cpattern",
+   "name": "Petal ring",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f9wq91"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "12",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Cut petal"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f9wq91\"}]"
+    }
+   }
+  },
+  {
+   "id": "fciam2",
+   "type": "sketch",
+   "name": "Rim rings",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "O",
+       "r": 44,
+       "construction": false
+      },
+      {
+       "id": "circle2",
+       "type": "circle",
+       "c": "O",
+       "r": 41.2,
+       "construction": false
+      },
+      {
+       "id": "circle3",
+       "type": "circle",
+       "c": "O",
+       "r": 9,
+       "construction": false
+      },
+      {
+       "id": "circle4",
+       "type": "circle",
+       "c": "O",
+       "r": 6.4,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 44
+      },
+      {
+       "type": "circle",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 41.2
+      },
+      {
+       "type": "circle",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 9
+      },
+      {
+       "type": "circle",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 6.4
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fds8kz",
+   "type": "extrude",
+   "name": "Raised rims",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fciam2",
+      "pt": [
+       42.230983543053306,
+       -1.0658141036401503e-14
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "fciam2",
+      "pt": [
+       -2.433157957552307,
+       7.013147289038504
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "4.2",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Rim rings",
+      "region": [
+       0,
+       2
+      ]
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fciam2\",\"pt\":[42.230983543053306,-1.0658141036401503e-14]},{\"kind\":\"region\",\"sketch\":\"fciam2\",\"pt\":[-2.433157957552307,7.013147289038504]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f3902a": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f3902a.1": {
+   "name": "Part 2",
+   "color": "#c7a76a",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f4n7ku": {
+   "name": "Part 3",
+   "color": "#7f9fb8",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 5,
+  "extrude": 6,
+  "cpattern": 1
+ }
+}
