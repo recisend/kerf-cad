@@ -1,0 +1,794 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Honeycomb Pen Cup",
+ "features": [
+  {
+   "id": "f3gblm",
+   "type": "variable",
+   "name": "Variable 3",
+   "params": {
+    "vname": "height",
+    "value": "90 mm"
+   }
+  },
+  {
+   "id": "f2amzj",
+   "type": "variable",
+   "name": "Variable 2",
+   "params": {
+    "vname": "floor",
+    "value": "2.0 mm"
+   }
+  },
+  {
+   "id": "f1une1",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "wall",
+    "value": "2.4 mm"
+   }
+  },
+  {
+   "id": "f4io62",
+   "type": "sketch",
+   "name": "Outer hex",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 2.4492935982947065e-15,
+       "y": 40
+      },
+      {
+       "id": "p2",
+       "x": -34.64101615137754,
+       "y": 20.000000000000014
+      },
+      {
+       "id": "p3",
+       "x": -34.641016151377556,
+       "y": -19.99999999999999
+      },
+      {
+       "id": "p4",
+       "x": -7.347880794884118e-15,
+       "y": -40
+      },
+      {
+       "id": "p5",
+       "x": 34.641016151377535,
+       "y": -20.000000000000018
+      },
+      {
+       "id": "p6",
+       "x": 34.64101615137754,
+       "y": 20
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 40,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0922",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c1cw4",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c2cve",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c3pn5",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c491w",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c5c8f",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c6450",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.1"
+      },
+      {
+       "id": "c72yn",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.2"
+      },
+      {
+       "id": "c8we7",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.3"
+      },
+      {
+       "id": "c9wjx",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.4"
+      },
+      {
+       "id": "c10hxs",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 40,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5jt3m",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f4io62",
+      "pt": [
+       -7.105427357601002e-15,
+       -2.3684757858670005e-15
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "#height",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Outer hex"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f4io62\",\"pt\":[-7.105427357601002e-15,-2.3684757858670005e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f6va8a",
+   "type": "sketch",
+   "name": "Inner hex",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f5jt3m",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       0,
+       0,
+       90
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 2.2796800166127977e-15,
+       "y": 37.23
+      },
+      {
+       "id": "p2",
+       "x": -32.24212578289464,
+       "y": 18.61500000000001
+      },
+      {
+       "id": "p3",
+       "x": -32.242125782894654,
+       "y": -18.614999999999988
+      },
+      {
+       "id": "p4",
+       "x": -6.839040049838393e-15,
+       "y": -37.23
+      },
+      {
+       "id": "p5",
+       "x": 32.24212578289464,
+       "y": -18.615000000000016
+      },
+      {
+       "id": "p6",
+       "x": 32.24212578289465,
+       "y": 18.615
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 37.23,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0w36",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c1y7n",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c2h7m",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c3k8z",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c4lok",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c53sr",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c69vu",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.1"
+      },
+      {
+       "id": "c7kag",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.2"
+      },
+      {
+       "id": "c8tp6",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.3"
+      },
+      {
+       "id": "c91mn",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.4"
+      },
+      {
+       "id": "c10td2",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 37.23,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f5jt3m\",\"n\":[0,0,1],\"p\":[0,0,90]}]"
+    }
+   }
+  },
+  {
+   "id": "f7md3r",
+   "type": "extrude",
+   "name": "Cavity",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f6va8a",
+      "pt": [
+       -4.736951571734001e-15,
+       -2.3684757858670005e-15
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "#height - #floor",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Inner hex"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f6va8a\",\"pt\":[-4.736951571734001e-15,-2.3684757858670005e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f9e9j0",
+   "type": "sketch",
+   "name": "Groove",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f5jt3m",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       12.346636295318604,
+       31.948332468668617,
+       90
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 33.5,
+       "y": -1.2
+      },
+      {
+       "id": "p2",
+       "x": 36,
+       "y": -1.2
+      },
+      {
+       "id": "p3",
+       "x": 36,
+       "y": 1.2
+      },
+      {
+       "id": "p4",
+       "x": 33.5,
+       "y": 1.2
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0krz",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0q6f",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0wco",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0l29",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        33.5,
+        -1.2
+       ],
+       "corner2": [
+        36,
+        1.2
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f5jt3m\",\"n\":[0,0,1],\"p\":[12.346636295318604,31.948332468668617,90]}]"
+    }
+   }
+  },
+  {
+   "id": "fadxqx",
+   "type": "extrude",
+   "name": "Groove cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f9e9j0",
+      "pt": [
+       34.333333333333336,
+       0.39999999999999997
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "82",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Groove"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f9e9j0\",\"pt\":[34.333333333333336,0.39999999999999997]}]"
+    }
+   }
+  },
+  {
+   "id": "fc0ngj",
+   "type": "cpattern",
+   "name": "Groove pattern",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "fadxqx"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "6",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Groove cut"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"fadxqx\"}]"
+    }
+   }
+  },
+  {
+   "id": "fdc4br",
+   "type": "chamfer",
+   "name": "Bottom chamfer",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f5jt3m",
+      "a": [
+       2.4492935992912173e-15,
+       40,
+       0
+      ],
+      "b": [
+       34.64101791381836,
+       20,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f5jt3m",
+      "a": [
+       34.64101791381836,
+       -20,
+       0
+      ],
+      "b": [
+       34.64101791381836,
+       20,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f5jt3m",
+      "a": [
+       -7.347880374357178e-15,
+       -40,
+       0
+      ],
+      "b": [
+       -34.64101791381836,
+       -20,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f5jt3m",
+      "a": [
+       -34.64101791381836,
+       -20,
+       0
+      ],
+      "b": [
+       -34.64101791381836,
+       20,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f5jt3m",
+      "a": [
+       2.4492935992912173e-15,
+       40,
+       0
+      ],
+      "b": [
+       -34.64101791381836,
+       20,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f5jt3m",
+      "a": [
+       34.64101791381836,
+       -20,
+       0
+      ],
+      "b": [
+       -7.347880374357178e-15,
+       -40,
+       0
+      ]
+     }
+    ],
+    "distance": "0.6",
+    "asym": false,
+    "distance2": "4",
+    "__sel": {
+     "edges": {
+      "edges_of": {
+       "normal": [
+        0,
+        0,
+        -1
+       ]
+      }
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f5jt3m\",\"a\":[2.4492935992912173e-15,40,0],\"b\":[34.64101791381836,20,0]},{\"kind\":\"edge\",\"part\":\"f5jt3m\",\"a\":[34.64101791381836,-20,0],\"b\":[34.64101791381836,20,0]},{\"kind\":\"edge\",\"part\":\"f5jt3m\",\"a\":[-7.347880374357178e-15,-40,0],\"b\":[-34.64101791381836,-20,0]},{\"kind\":\"edge\",\"part\":\"f5jt3m\",\"a\":[-34.64101791381836,-20,0],\"b\":[-34.64101791381836,20,0]},{\"kind\":\"edge\",\"part\":\"f5jt3m\",\"a\":[2.4492935992912173e-15,40,0],\"b\":[-34.64101791381836,20,0]},{\"kind\":\"edge\",\"part\":\"f5jt3m\",\"a\":[34.64101791381836,-20,0],\"b\":[-7.347880374357178e-15,-40,0]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f5jt3m": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 3,
+  "sketch": 3,
+  "extrude": 3,
+  "cpattern": 1,
+  "chamfer": 1
+ }
+}
