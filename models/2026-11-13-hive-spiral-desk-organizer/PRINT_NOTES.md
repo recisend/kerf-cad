@@ -9,7 +9,7 @@ pen / tool / brush organizer with stepped heights (56 → 104 mm) that spiral ar
 - Every height is a multiple of 0.2 mm → clean layer stack at 0.2 mm layers.
 - Flat bottom, vertical walls, no overhangs: **no supports needed**.
 - Suggested: 0.2 mm layer, 4 walls, 15% gyroid or 2 top / 10 bottom layers, PLA/PETG. ~98 cm³ solid-model volume.
-- Print one copy per plate in a corner-to-corner-free layout; or 4 on one plate for batch runs (4 × ~111 mm won't fit; use 2).
+- Plate layout: 2 copies side by side fit on the 270 mm bed (2 × 111 mm); a third needs a second plate.
 
 ## Etsy trend rationale (directional, from vendor/seller blogs — not verified Etsy sales data)
 Desk organisation / workspace accessories and geometric/honeycomb decor are repeatedly cited as steady sellers;
