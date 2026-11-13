@@ -1,0 +1,257 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "fluted-planter",
+ "features": [
+  {
+   "id": "f3cf7y",
+   "type": "variable",
+   "name": "Variable 3",
+   "params": {
+    "vname": "wall",
+    "value": "1.6 mm"
+   }
+  },
+  {
+   "id": "f2a87e",
+   "type": "variable",
+   "name": "Variable 2",
+   "params": {
+    "vname": "H",
+    "value": "95 mm"
+   }
+  },
+  {
+   "id": "f11lkn",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "R",
+    "value": "45 mm"
+   }
+  },
+  {
+   "id": "f4qxpy",
+   "type": "primitive",
+   "name": "body",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "#H",
+    "r": "#R",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "0",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "f6qoii",
+   "type": "primitive",
+   "name": "rib",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "#H",
+    "r": "3.6 mm",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "#R",
+    "y": "0",
+    "z": "0",
+    "op": "add",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f4qxpy"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "f4qxpy"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f4qxpy\"}]"
+    }
+   }
+  },
+  {
+   "id": "f7f3nl",
+   "type": "cpattern",
+   "name": "ribs",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f6qoii"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "20",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": [
+      "rib"
+     ]
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f6qoii\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8h85p",
+   "type": "primitive",
+   "name": "cavity",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "#H",
+    "r": "#R - #wall",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "2.4 mm",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f4qxpy"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "f4qxpy"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f4qxpy\"}]"
+    }
+   }
+  },
+  {
+   "id": "f97euh",
+   "type": "primitive",
+   "name": "drain",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "10 mm",
+    "r": "4 mm",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "-1 mm",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f4qxpy"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "f4qxpy"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f4qxpy\"}]"
+    }
+   }
+  },
+  {
+   "id": "fahfaj",
+   "type": "primitive",
+   "name": "saucer",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "12 mm",
+    "r": "54 mm",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "115 mm",
+    "y": "0",
+    "z": "0",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "fb61go",
+   "type": "primitive",
+   "name": "saucer cavity",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "12 mm",
+    "r": "52.4 mm",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "115 mm",
+    "y": "0",
+    "z": "2.4 mm",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "fahfaj"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "fahfaj"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"fahfaj\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f4qxpy": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "fahfaj": {
+   "name": "Part 2",
+   "color": "#c7a76a",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 3,
+  "primitive": 6,
+  "cpattern": 1
+ }
+}
