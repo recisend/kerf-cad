@@ -1,0 +1,713 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "facet-planter",
+ "features": [
+  {
+   "id": "f1wcaa",
+   "type": "sketch",
+   "name": "PotProfile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 4,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 28,
+       "y": 0
+      },
+      {
+       "id": "p3",
+       "x": 38,
+       "y": 72
+      },
+      {
+       "id": "p4",
+       "x": 35.6,
+       "y": 72
+      },
+      {
+       "id": "p5",
+       "x": 26,
+       "y": 3
+      },
+      {
+       "id": "p6",
+       "x": 4,
+       "y": 3
+      }
+     ],
+     "ents": [
+      {
+       "id": "line1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "line2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "line3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "line4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "line5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "line6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0chn",
+       "type": "horizontal",
+       "e1": "line1"
+      },
+      {
+       "id": "c1ocp",
+       "type": "horizontal",
+       "e1": "line3"
+      },
+      {
+       "id": "c23pn",
+       "type": "horizontal",
+       "e1": "line5"
+      },
+      {
+       "id": "c32g4",
+       "type": "vertical",
+       "e1": "line6"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "line",
+       "from": [
+        4,
+        0
+       ],
+       "to": [
+        28,
+        0
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        28,
+        0
+       ],
+       "to": [
+        38,
+        72
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        38,
+        72
+       ],
+       "to": [
+        35.6,
+        72
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        35.6,
+        72
+       ],
+       "to": [
+        26,
+        3
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        26,
+        3
+       ],
+       "to": [
+        4,
+        3
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        4,
+        3
+       ],
+       "to": [
+        4,
+        0
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2obwm",
+   "type": "revolve",
+   "name": "Pot",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1wcaa",
+      "pt": [
+       33.86666666666667,
+       48
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "PotProfile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1wcaa\",\"pt\":[33.86666666666667,48]}]"
+    }
+   }
+  },
+  {
+   "id": "f3xsoq",
+   "type": "sketch",
+   "name": "RibProfile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 27.2,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 29.6,
+       "y": 0
+      },
+      {
+       "id": "p3",
+       "x": 39.6,
+       "y": 72
+      },
+      {
+       "id": "p4",
+       "x": 37.2,
+       "y": 72
+      }
+     ],
+     "ents": [
+      {
+       "id": "line1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "line2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "line3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "line4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0pb3",
+       "type": "horizontal",
+       "e1": "line1"
+      },
+      {
+       "id": "c16ok",
+       "type": "horizontal",
+       "e1": "line3"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "line",
+       "from": [
+        27.2,
+        0
+       ],
+       "to": [
+        29.6,
+        0
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        29.6,
+        0
+       ],
+       "to": [
+        39.6,
+        72
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        39.6,
+        72
+       ],
+       "to": [
+        37.2,
+        72
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        37.2,
+        72
+       ],
+       "to": [
+        27.2,
+        0
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4j8j0",
+   "type": "extrude",
+   "name": "Rib",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3xsoq",
+      "pt": [
+       32.13333333333333,
+       24
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "symmetric",
+    "depth": "4.8",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f2obwm"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "RibProfile"
+     },
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3xsoq\",\"pt\":[32.13333333333333,24]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f2obwm\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5v67t",
+   "type": "cpattern",
+   "name": "RibPattern",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f4j8j0"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "16",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": [
+      "Rib"
+     ]
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f4j8j0\"}]"
+    }
+   }
+  },
+  {
+   "id": "f62ohv",
+   "type": "sketch",
+   "name": "SaucerProfile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 36.4,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 36.4,
+       "y": 12
+      },
+      {
+       "id": "p3",
+       "x": 34,
+       "y": 12
+      },
+      {
+       "id": "p4",
+       "x": 34,
+       "y": 2.4
+      },
+      {
+       "id": "p5",
+       "x": 0,
+       "y": 2.4
+      }
+     ],
+     "ents": [
+      {
+       "id": "line1",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "line2",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "line3",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "line4",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "line5",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "line6",
+       "type": "line",
+       "p1": "p5",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0qoz",
+       "type": "horizontal",
+       "e1": "line1"
+      },
+      {
+       "id": "c1hdp",
+       "type": "vertical",
+       "e1": "line2"
+      },
+      {
+       "id": "c2bep",
+       "type": "horizontal",
+       "e1": "line3"
+      },
+      {
+       "id": "c3xlr",
+       "type": "vertical",
+       "e1": "line4"
+      },
+      {
+       "id": "c4niw",
+       "type": "horizontal",
+       "e1": "line5"
+      },
+      {
+       "id": "c58th",
+       "type": "vertical",
+       "e1": "line6"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "line",
+       "from": [
+        0,
+        0
+       ],
+       "to": [
+        36.4,
+        0
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        36.4,
+        0
+       ],
+       "to": [
+        36.4,
+        12
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        36.4,
+        12
+       ],
+       "to": [
+        34,
+        12
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        34,
+        12
+       ],
+       "to": [
+        34,
+        2.4
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        34,
+        2.4
+       ],
+       "to": [
+        0,
+        2.4
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        0,
+        2.4
+       ],
+       "to": [
+        0,
+        0
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f7b4lx",
+   "type": "revolve",
+   "name": "Saucer",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f62ohv",
+      "pt": [
+       23.46666666666667,
+       0.7999999999999999
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "SaucerProfile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f62ohv\",\"pt\":[23.46666666666667,0.7999999999999999]}]"
+    }
+   }
+  },
+  {
+   "id": "f8iti6",
+   "type": "transform",
+   "name": "PlateLayout",
+   "params": {
+    "parts": [
+     {
+      "kind": "part",
+      "id": "f7b4lx"
+     }
+    ],
+    "kind": "translate",
+    "dx": "85",
+    "dy": "0",
+    "dz": "0",
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "90",
+    "copy": false,
+    "__sel": {
+     "parts": [
+      "Part 2"
+     ]
+    },
+    "__selres": {
+     "parts": "[{\"kind\":\"part\",\"id\":\"f7b4lx\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2obwm": {
+   "name": "Planter",
+   "color": "#4f8f7a",
+   "material": "pla",
+   "hidden": false
+  },
+  "f7b4lx": {
+   "name": "Saucer",
+   "color": "#e8e2d4",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 3,
+  "revolve": 2,
+  "extrude": 1,
+  "cpattern": 1,
+  "transform": 1
+ }
+}
