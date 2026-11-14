@@ -1,0 +1,288 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Scandi Tiered Christmas Tree",
+ "features": [
+  {
+   "id": "f141w3",
+   "type": "sketch",
+   "name": "Tree Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 26,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 26,
+       "y": 3
+      },
+      {
+       "id": "p3",
+       "x": 6,
+       "y": 3
+      },
+      {
+       "id": "p4",
+       "x": 6,
+       "y": 14
+      },
+      {
+       "id": "p5",
+       "x": 30,
+       "y": 38
+      },
+      {
+       "id": "p6",
+       "x": 14,
+       "y": 58
+      },
+      {
+       "id": "p7",
+       "x": 26,
+       "y": 70
+      },
+      {
+       "id": "p8",
+       "x": 12,
+       "y": 86
+      },
+      {
+       "id": "p9",
+       "x": 21,
+       "y": 95
+      },
+      {
+       "id": "p10",
+       "x": 0,
+       "y": 116
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "polyline1.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polyline1.9",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "polyline1.10",
+       "type": "line",
+       "p1": "p10",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0mn3",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c14y9",
+       "type": "vertical",
+       "e1": "polyline1.1"
+      },
+      {
+       "id": "c2vhk",
+       "type": "horizontal",
+       "e1": "polyline1.2"
+      },
+      {
+       "id": "c3llo",
+       "type": "vertical",
+       "e1": "polyline1.3"
+      },
+      {
+       "id": "c4qm7",
+       "type": "vertical",
+       "e1": "polyline1.10"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         26,
+         0
+        ],
+        [
+         26,
+         3
+        ],
+        [
+         6,
+         3
+        ],
+        [
+         6,
+         14
+        ],
+        [
+         30,
+         38
+        ],
+        [
+         14,
+         58
+        ],
+        [
+         26,
+         70
+        ],
+        [
+         12,
+         86
+        ],
+        [
+         21,
+         95
+        ],
+        [
+         0,
+         116
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2bua0",
+   "type": "revolve",
+   "name": "Tree Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f141w3",
+      "pt": [
+       4,
+       67.33333333333333
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Tree Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f141w3\",\"pt\":[4,67.33333333333333]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2bua0": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 1,
+  "revolve": 1,
+  "shell": 1
+ }
+}
