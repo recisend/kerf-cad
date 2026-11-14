@@ -1,0 +1,786 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Geometric Phone Stand",
+ "features": [
+  {
+   "id": "f150bl",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "width",
+    "value": "76"
+   }
+  },
+  {
+   "id": "f2ypwg",
+   "type": "sketch",
+   "name": "Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 90,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 64,
+       "y": 92
+      },
+      {
+       "id": "p3",
+       "x": 58,
+       "y": 92
+      },
+      {
+       "id": "p4",
+       "x": 30,
+       "y": 12
+      },
+      {
+       "id": "p5",
+       "x": 14,
+       "y": 12
+      },
+      {
+       "id": "p6",
+       "x": 14,
+       "y": 26
+      },
+      {
+       "id": "p7",
+       "x": 6,
+       "y": 26
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0xub",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c14lu",
+       "type": "horizontal",
+       "e1": "polyline1.2"
+      },
+      {
+       "id": "c2wjf",
+       "type": "horizontal",
+       "e1": "polyline1.4"
+      },
+      {
+       "id": "c366l",
+       "type": "vertical",
+       "e1": "polyline1.5"
+      },
+      {
+       "id": "c4yrh",
+       "type": "horizontal",
+       "e1": "polyline1.6"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         90,
+         0
+        ],
+        [
+         64,
+         92
+        ],
+        [
+         58,
+         92
+        ],
+        [
+         30,
+         12
+        ],
+        [
+         14,
+         12
+        ],
+        [
+         14,
+         26
+        ],
+        [
+         6,
+         26
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f383o2",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f2ypwg",
+      "pt": [
+       59.333333333333336,
+       34.666666666666664
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "symmetric",
+    "depth": "#width",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f2ypwg\",\"pt\":[59.333333333333336,34.666666666666664]}]"
+    }
+   }
+  },
+  {
+   "id": "f4m5mt",
+   "type": "sketch",
+   "name": "Lightening Window",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 35.3,
+       "y": 10
+      },
+      {
+       "id": "p2",
+       "x": 79.2,
+       "y": 10
+      },
+      {
+       "id": "p3",
+       "x": 54.1,
+       "y": 79.4
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c08hq",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         35.3,
+         10
+        ],
+        [
+         79.2,
+         10
+        ],
+        [
+         54.1,
+         79.4
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5e70s",
+   "type": "sketch",
+   "name": "Cable Gap",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -9,
+       "y": -1
+      },
+      {
+       "id": "p2",
+       "x": 9,
+       "y": -1
+      },
+      {
+       "id": "p3",
+       "x": 9,
+       "y": 30
+      },
+      {
+       "id": "p4",
+       "x": -9,
+       "y": 30
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0y49",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c07qw",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0j3e",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c04t7",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        -9,
+        -1
+       ],
+       "corner2": [
+        9,
+        30
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6es13",
+   "type": "extrude",
+   "name": "Window Cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f4m5mt",
+      "pt": [
+       56.20000000000001,
+       33.13333333333333
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "#width + 4",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Lightening Window"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f4m5mt\",\"pt\":[56.20000000000001,33.13333333333333]}]"
+    }
+   }
+  },
+  {
+   "id": "f7r61w",
+   "type": "extrude",
+   "name": "Cable Gap Cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f5e70s",
+      "pt": [
+       -3,
+       19.666666666666668
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cable Gap"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f5e70s\",\"pt\":[-3,19.666666666666668]}]"
+    }
+   }
+  },
+  {
+   "id": "f8r09g",
+   "type": "fillet",
+   "name": "Soften Edges",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       -38,
+       90,
+       0
+      ],
+      "b": [
+       38,
+       90,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       38,
+       54.099998474121094,
+       79.4000015258789
+      ],
+      "b": [
+       -38,
+       54.099998474121094,
+       79.4000015258789
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       38,
+       58,
+       92
+      ],
+      "b": [
+       -38,
+       58,
+       92
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       38,
+       79.19999694824219,
+       10
+      ],
+      "b": [
+       -38,
+       79.19999694824219,
+       10
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       -38,
+       35.29999923706055,
+       10
+      ],
+      "b": [
+       38,
+       35.29999923706055,
+       10
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       38,
+       64,
+       92
+      ],
+      "b": [
+       -38,
+       64,
+       92
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       -38,
+       0,
+       0
+      ],
+      "b": [
+       -9,
+       0,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       38,
+       0,
+       0
+      ],
+      "b": [
+       9,
+       0,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       -9,
+       30,
+       0
+      ],
+      "b": [
+       9,
+       30,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       -38,
+       6,
+       26
+      ],
+      "b": [
+       -9,
+       6,
+       26
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       38,
+       6,
+       26
+      ],
+      "b": [
+       9,
+       6,
+       26
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       -38,
+       14,
+       26
+      ],
+      "b": [
+       -9,
+       14,
+       26
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       38,
+       14,
+       26
+      ],
+      "b": [
+       9,
+       14,
+       26
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       -38,
+       14,
+       12
+      ],
+      "b": [
+       -9,
+       14,
+       12
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       38,
+       14,
+       12
+      ],
+      "b": [
+       9,
+       14,
+       12
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       -38,
+       30,
+       12
+      ],
+      "b": [
+       -9,
+       30,
+       12
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       38,
+       30,
+       12
+      ],
+      "b": [
+       9,
+       30,
+       12
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f383o2",
+      "a": [
+       -9,
+       30,
+       12
+      ],
+      "b": [
+       9,
+       30,
+       12
+      ]
+     }
+    ],
+    "radius": "1.2",
+    "__sel": {
+     "edges": {
+      "parallel_to": "x"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[-38,90,0],\"b\":[38,90,0]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[38,54.099998474121094,79.4000015258789],\"b\":[-38,54.099998474121094,79.4000015258789]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[38,58,92],\"b\":[-38,58,92]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[38,79.19999694824219,10],\"b\":[-38,79.19999694824219,10]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[-38,35.29999923706055,10],\"b\":[38,35.29999923706055,10]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[38,64,92],\"b\":[-38,64,92]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[-38,0,0],\"b\":[-9,0,0]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[38,0,0],\"b\":[9,0,0]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[-9,30,0],\"b\":[9,30,0]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[-38,6,26],\"b\":[-9,6,26]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[38,6,26],\"b\":[9,6,26]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[-38,14,26],\"b\":[-9,14,26]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[38,14,26],\"b\":[9,14,26]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[-38,14,12],\"b\":[-9,14,12]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[38,14,12],\"b\":[9,14,12]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[-38,30,12],\"b\":[-9,30,12]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[38,30,12],\"b\":[9,30,12]},{\"kind\":\"edge\",\"part\":\"f383o2\",\"a\":[-9,30,12],\"b\":[9,30,12]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f383o2": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 3,
+  "extrude": 3,
+  "fillet": 1
+ }
+}
