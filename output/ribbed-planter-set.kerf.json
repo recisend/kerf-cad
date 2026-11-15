@@ -1,0 +1,577 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Ribbed Planter Set",
+ "features": [
+  {
+   "id": "fgo1c8",
+   "type": "sketch",
+   "name": "Planter Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 30,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": -134.08333333333334,
+       "y": 52.38148148148148
+      },
+      {
+       "id": "p3",
+       "x": 34,
+       "y": 90
+      },
+      {
+       "id": "p4",
+       "x": 31.6,
+       "y": 90
+      },
+      {
+       "id": "p5",
+       "x": -124.77292263610305,
+       "y": 53.42240687679082
+      },
+      {
+       "id": "p6",
+       "x": 27.7,
+       "y": 3
+      },
+      {
+       "id": "p7",
+       "x": 0,
+       "y": 3
+      }
+     ],
+     "ents": [
+      {
+       "id": "line1",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p1",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "line3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "arc4",
+       "type": "arc",
+       "c": "p5",
+       "p1": "p6",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "line5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "line6",
+       "type": "line",
+       "p1": "p7",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "line",
+       "from": [
+        0,
+        0
+       ],
+       "to": [
+        30,
+        0
+       ]
+      },
+      {
+       "type": "arc",
+       "start": [
+        30,
+        0
+       ],
+       "end": [
+        34,
+        90
+       ],
+       "mid": [
+        38,
+        45
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        34,
+        90
+       ],
+       "to": [
+        31.6,
+        90
+       ]
+      },
+      {
+       "type": "arc",
+       "start": [
+        31.6,
+        90
+       ],
+       "end": [
+        27.7,
+        3
+       ],
+       "mid": [
+        35.6,
+        45
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        27.7,
+        3
+       ],
+       "to": [
+        0,
+        3
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        0,
+        3
+       ],
+       "to": [
+        0,
+        0
+       ]
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "fhdt1j",
+   "type": "revolve",
+   "name": "Planter Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fgo1c8",
+      "pt": [
+       19.233333333333334,
+       1
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Planter Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fgo1c8\",\"pt\":[19.233333333333334,1]}]"
+    }
+   }
+  },
+  {
+   "id": "fjnl9n",
+   "type": "primitive",
+   "name": "Flute Cut",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "90",
+    "r": "4",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "40.5",
+    "y": "0",
+    "z": "0",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "fhdt1j"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"fhdt1j\"}]"
+    }
+   }
+  },
+  {
+   "id": "fkqn6c",
+   "type": "cpattern",
+   "name": "Flute Pattern",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "fjnl9n"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "24",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Flute Cut"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"fjnl9n\"}]"
+    }
+   }
+  },
+  {
+   "id": "fl61dy",
+   "type": "sketch",
+   "name": "Drain",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "O",
+       "r": 4,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        0
+       ],
+       "diameter": 8
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fma7dv",
+   "type": "extrude",
+   "name": "Drain Hole",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fl61dy",
+      "pt": [
+       0.40648765236145495,
+       -0.711202061784074
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Drain"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fl61dy\",\"pt\":[0.40648765236145495,-0.711202061784074]}]"
+    }
+   }
+  },
+  {
+   "id": "fnf7y8",
+   "type": "sketch",
+   "name": "Saucer Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 36,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 40,
+       "y": 10
+      },
+      {
+       "id": "p3",
+       "x": 37.6,
+       "y": 10
+      },
+      {
+       "id": "p4",
+       "x": 34.2,
+       "y": 2.4
+      },
+      {
+       "id": "p5",
+       "x": 0,
+       "y": 2.4
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         36,
+         0
+        ],
+        [
+         40,
+         10
+        ],
+        [
+         37.6,
+         10
+        ],
+        [
+         34.2,
+         2.4
+        ],
+        [
+         0,
+         2.4
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "fozfrn",
+   "type": "revolve",
+   "name": "Saucer Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fnf7y8",
+      "pt": [
+       23.400000000000002,
+       0.7999999999999999
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Saucer Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fnf7y8\",\"pt\":[23.400000000000002,0.7999999999999999]}]"
+    }
+   }
+  },
+  {
+   "id": "fpxrze",
+   "type": "transform",
+   "name": "Place Saucer",
+   "params": {
+    "parts": [
+     {
+      "kind": "part",
+      "id": "fozfrn"
+     }
+    ],
+    "kind": "translate",
+    "dx": "95",
+    "dy": "0",
+    "dz": "0",
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "90",
+    "copy": false,
+    "__sel": {
+     "parts": [
+      "Part 2"
+     ]
+    },
+    "__selres": {
+     "parts": "[{\"kind\":\"part\",\"id\":\"fozfrn\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "fhdt1j": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "fozfrn": {
+   "name": "Part 2",
+   "color": "#c7a76a",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 3,
+  "revolve": 2,
+  "primitive": 1,
+  "cpattern": 1,
+  "extrude": 1,
+  "transform": 1
+ }
+}
