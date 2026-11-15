@@ -1,0 +1,4627 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Tilt Desk Stand",
+ "features": [
+  {
+   "id": "f1wru6",
+   "type": "sketch",
+   "name": "Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 75,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 75,
+       "y": 10
+      },
+      {
+       "id": "p3",
+       "x": 28.4,
+       "y": 10
+      },
+      {
+       "id": "p4",
+       "x": 51.2,
+       "y": 80
+      },
+      {
+       "id": "p5",
+       "x": 43.8,
+       "y": 80
+      },
+      {
+       "id": "p6",
+       "x": 21,
+       "y": 10
+      },
+      {
+       "id": "p7",
+       "x": 7,
+       "y": 10
+      },
+      {
+       "id": "p8",
+       "x": 7,
+       "y": 18
+      },
+      {
+       "id": "p9",
+       "x": 0,
+       "y": 18
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "polyline1.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polyline1.9",
+       "type": "line",
+       "p1": "p9",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0jza",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c1wle",
+       "type": "vertical",
+       "e1": "polyline1.1"
+      },
+      {
+       "id": "c2oqq",
+       "type": "horizontal",
+       "e1": "polyline1.2"
+      },
+      {
+       "id": "c3rtt",
+       "type": "horizontal",
+       "e1": "polyline1.4"
+      },
+      {
+       "id": "c4pua",
+       "type": "horizontal",
+       "e1": "polyline1.6"
+      },
+      {
+       "id": "c5g2q",
+       "type": "vertical",
+       "e1": "polyline1.7"
+      },
+      {
+       "id": "c6lyo",
+       "type": "horizontal",
+       "e1": "polyline1.8"
+      },
+      {
+       "id": "c7p5m",
+       "type": "vertical",
+       "e1": "polyline1.9"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         75,
+         0
+        ],
+        [
+         75,
+         10
+        ],
+        [
+         28.4,
+         10
+        ],
+        [
+         51.2,
+         80
+        ],
+        [
+         43.8,
+         80
+        ],
+        [
+         21,
+         10
+        ],
+        [
+         7,
+         10
+        ],
+        [
+         7,
+         18
+        ],
+        [
+         0,
+         18
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f29gqj",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1wru6",
+      "pt": [
+       50,
+       3.3333333333333335
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "symmetric",
+    "depth": "80",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1wru6\",\"pt\":[50,3.3333333333333335]}]"
+    }
+   }
+  },
+  {
+   "id": "f3p9rp",
+   "type": "sketch",
+   "name": "Cable slot",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 14,
+       "y": -6
+      },
+      {
+       "id": "p2",
+       "x": 14,
+       "y": 6
+      },
+      {
+       "id": "p3",
+       "x": 10,
+       "y": -6
+      },
+      {
+       "id": "p4",
+       "x": 10,
+       "y": 6
+      },
+      {
+       "id": "p5",
+       "x": 18,
+       "y": 6
+      },
+      {
+       "id": "p6",
+       "x": 18,
+       "y": -6
+      }
+     ],
+     "ents": [
+      {
+       "id": "slot1.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c02sy",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c19nz",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c2rgx",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c32bf",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4646",
+       "type": "equal",
+       "e1": "slot1.arc1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4fwl",
+       "type": "parallel",
+       "e1": "slot1.line1",
+       "e2": "slot1.axis"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "radius": 4,
+       "center1": [
+        14,
+        -6
+       ],
+       "center2": [
+        14,
+        6
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fdrg36",
+   "type": "fillet",
+   "name": "Round front corners",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f29gqj",
+      "a": [
+       0,
+       40,
+       0
+      ],
+      "b": [
+       0,
+       40,
+       18
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f29gqj",
+      "a": [
+       0,
+       -40,
+       18
+      ],
+      "b": [
+       0,
+       -40,
+       0
+      ]
+     }
+    ],
+    "radius": "4",
+    "__sel": {
+     "edges": {
+      "parallel_to": "z",
+      "on_face": "-x"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f29gqj\",\"a\":[0,40,0],\"b\":[0,40,18]},{\"kind\":\"edge\",\"part\":\"f29gqj\",\"a\":[0,-40,18],\"b\":[0,-40,0]}]"
+    }
+   }
+  },
+  {
+   "id": "fe4ec6",
+   "type": "fillet",
+   "name": "Round rear corners",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f29gqj",
+      "a": [
+       75,
+       40,
+       10
+      ],
+      "b": [
+       75,
+       40,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f29gqj",
+      "a": [
+       75,
+       -40,
+       10
+      ],
+      "b": [
+       75,
+       -40,
+       0
+      ]
+     }
+    ],
+    "radius": "4",
+    "__sel": {
+     "edges": {
+      "parallel_to": "z",
+      "on_face": "+x"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f29gqj\",\"a\":[75,40,10],\"b\":[75,40,0]},{\"kind\":\"edge\",\"part\":\"f29gqj\",\"a\":[75,-40,10],\"b\":[75,-40,0]}]"
+    }
+   }
+  },
+  {
+   "id": "f55g15",
+   "type": "extrude",
+   "name": "Cut cable slot",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3p9rp",
+      "pt": [
+       13.459068252291045,
+       -1.5458245979794987
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cable slot"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3p9rp\",\"pt\":[13.459068252291045,-1.5458245979794987]}]"
+    }
+   }
+  },
+  {
+   "id": "f66f86",
+   "type": "plane",
+   "name": "Tunnel plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "offset": "14",
+    "flip": false,
+    "__sel": {
+     "ref": "right"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8i17p",
+   "type": "sketch",
+   "name": "Cable tunnel",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f66f86"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -3,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 3,
+       "y": 0
+      },
+      {
+       "id": "p3",
+       "x": 3,
+       "y": 5
+      },
+      {
+       "id": "p4",
+       "x": -3,
+       "y": 5
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c08on",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c07kz",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0cap",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0pzy",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        -3,
+        0
+       ],
+       "corner2": [
+        3,
+        5
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Tunnel plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f66f86\"}]"
+    }
+   }
+  },
+  {
+   "id": "f94dtw",
+   "type": "extrude",
+   "name": "Cut cable tunnel",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f8i17p",
+      "pt": [
+       -1,
+       3.3333333333333335
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "70",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cable tunnel"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f8i17p\",\"pt\":[-1,3.3333333333333335]}]"
+    }
+   }
+  },
+  {
+   "id": "ffj0th",
+   "type": "sketch",
+   "name": "Hex pattern",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f29gqj",
+      "n": [
+       -0.9508342301302052,
+       0,
+       0.309700285457892
+      ],
+      "p": [
+       28.599999745686848,
+       13.333333333333332,
+       33.33333333333333
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 34
+      },
+      {
+       "id": "p2",
+       "x": 3.6739403974420594e-16,
+       "y": 40
+      },
+      {
+       "id": "p3",
+       "x": -5.196152422706631,
+       "y": 37
+      },
+      {
+       "id": "p4",
+       "x": -5.196152422706633,
+       "y": 31
+      },
+      {
+       "id": "p5",
+       "x": -1.102182119232618e-15,
+       "y": 28
+      },
+      {
+       "id": "p6",
+       "x": 5.19615242270663,
+       "y": 30.999999999999996
+      },
+      {
+       "id": "p7",
+       "x": 5.196152422706632,
+       "y": 37
+      },
+      {
+       "id": "p8",
+       "x": -12.792,
+       "y": 34
+      },
+      {
+       "id": "p9",
+       "x": -12.792,
+       "y": 40
+      },
+      {
+       "id": "p10",
+       "x": -17.98815242270663,
+       "y": 37
+      },
+      {
+       "id": "p11",
+       "x": -17.988152422706634,
+       "y": 31
+      },
+      {
+       "id": "p12",
+       "x": -12.792000000000002,
+       "y": 28
+      },
+      {
+       "id": "p13",
+       "x": -7.59584757729337,
+       "y": 30.999999999999996
+      },
+      {
+       "id": "p14",
+       "x": -7.595847577293368,
+       "y": 37
+      },
+      {
+       "id": "p15",
+       "x": 12.792,
+       "y": 34
+      },
+      {
+       "id": "p16",
+       "x": 12.792,
+       "y": 40
+      },
+      {
+       "id": "p17",
+       "x": 7.595847577293369,
+       "y": 37
+      },
+      {
+       "id": "p18",
+       "x": 7.595847577293367,
+       "y": 31
+      },
+      {
+       "id": "p19",
+       "x": 12.791999999999998,
+       "y": 28
+      },
+      {
+       "id": "p20",
+       "x": 17.98815242270663,
+       "y": 30.999999999999996
+      },
+      {
+       "id": "p21",
+       "x": 17.988152422706634,
+       "y": 37
+      },
+      {
+       "id": "p22",
+       "x": -25.584,
+       "y": 34
+      },
+      {
+       "id": "p23",
+       "x": -25.584,
+       "y": 40
+      },
+      {
+       "id": "p24",
+       "x": -30.78015242270663,
+       "y": 37
+      },
+      {
+       "id": "p25",
+       "x": -30.78015242270663,
+       "y": 31
+      },
+      {
+       "id": "p26",
+       "x": -25.584,
+       "y": 28
+      },
+      {
+       "id": "p27",
+       "x": -20.38784757729337,
+       "y": 30.999999999999996
+      },
+      {
+       "id": "p28",
+       "x": -20.387847577293368,
+       "y": 37
+      },
+      {
+       "id": "p29",
+       "x": 25.584,
+       "y": 34
+      },
+      {
+       "id": "p30",
+       "x": 25.584,
+       "y": 40
+      },
+      {
+       "id": "p31",
+       "x": 20.387847577293368,
+       "y": 37
+      },
+      {
+       "id": "p32",
+       "x": 20.387847577293368,
+       "y": 31
+      },
+      {
+       "id": "p33",
+       "x": 25.584,
+       "y": 28
+      },
+      {
+       "id": "p34",
+       "x": 30.780152422706628,
+       "y": 30.999999999999996
+      },
+      {
+       "id": "p35",
+       "x": 30.78015242270663,
+       "y": 37
+      },
+      {
+       "id": "p36",
+       "x": -6.396,
+       "y": 45.078
+      },
+      {
+       "id": "p37",
+       "x": -6.396,
+       "y": 51.078
+      },
+      {
+       "id": "p38",
+       "x": -11.592152422706631,
+       "y": 48.078
+      },
+      {
+       "id": "p39",
+       "x": -11.592152422706633,
+       "y": 42.078
+      },
+      {
+       "id": "p40",
+       "x": -6.396000000000001,
+       "y": 39.078
+      },
+      {
+       "id": "p41",
+       "x": -1.1998475772933697,
+       "y": 42.078
+      },
+      {
+       "id": "p42",
+       "x": -1.1998475772933679,
+       "y": 48.078
+      },
+      {
+       "id": "p43",
+       "x": 6.396,
+       "y": 45.078
+      },
+      {
+       "id": "p44",
+       "x": 6.396,
+       "y": 51.078
+      },
+      {
+       "id": "p45",
+       "x": 1.1998475772933688,
+       "y": 48.078
+      },
+      {
+       "id": "p46",
+       "x": 1.199847577293367,
+       "y": 42.078
+      },
+      {
+       "id": "p47",
+       "x": 6.395999999999999,
+       "y": 39.078
+      },
+      {
+       "id": "p48",
+       "x": 11.59215242270663,
+       "y": 42.078
+      },
+      {
+       "id": "p49",
+       "x": 11.592152422706633,
+       "y": 48.078
+      },
+      {
+       "id": "p50",
+       "x": -19.188,
+       "y": 45.078
+      },
+      {
+       "id": "p51",
+       "x": -19.188,
+       "y": 51.078
+      },
+      {
+       "id": "p52",
+       "x": -24.38415242270663,
+       "y": 48.078
+      },
+      {
+       "id": "p53",
+       "x": -24.38415242270663,
+       "y": 42.078
+      },
+      {
+       "id": "p54",
+       "x": -19.188,
+       "y": 39.078
+      },
+      {
+       "id": "p55",
+       "x": -13.991847577293369,
+       "y": 42.078
+      },
+      {
+       "id": "p56",
+       "x": -13.991847577293367,
+       "y": 48.078
+      },
+      {
+       "id": "p57",
+       "x": 19.188,
+       "y": 45.078
+      },
+      {
+       "id": "p58",
+       "x": 19.188,
+       "y": 51.078
+      },
+      {
+       "id": "p59",
+       "x": 13.991847577293367,
+       "y": 48.078
+      },
+      {
+       "id": "p60",
+       "x": 13.991847577293367,
+       "y": 42.078
+      },
+      {
+       "id": "p61",
+       "x": 19.188,
+       "y": 39.078
+      },
+      {
+       "id": "p62",
+       "x": 24.384152422706627,
+       "y": 42.078
+      },
+      {
+       "id": "p63",
+       "x": 24.38415242270663,
+       "y": 48.078
+      },
+      {
+       "id": "p64",
+       "x": 0,
+       "y": 56.156
+      },
+      {
+       "id": "p65",
+       "x": 3.6739403974420594e-16,
+       "y": 62.156
+      },
+      {
+       "id": "p66",
+       "x": -5.196152422706631,
+       "y": 59.156
+      },
+      {
+       "id": "p67",
+       "x": -5.196152422706633,
+       "y": 53.156
+      },
+      {
+       "id": "p68",
+       "x": -1.102182119232618e-15,
+       "y": 50.156
+      },
+      {
+       "id": "p69",
+       "x": 5.19615242270663,
+       "y": 53.156
+      },
+      {
+       "id": "p70",
+       "x": 5.196152422706632,
+       "y": 59.156
+      },
+      {
+       "id": "p71",
+       "x": -12.792,
+       "y": 56.156
+      },
+      {
+       "id": "p72",
+       "x": -12.792,
+       "y": 62.156
+      },
+      {
+       "id": "p73",
+       "x": -17.98815242270663,
+       "y": 59.156
+      },
+      {
+       "id": "p74",
+       "x": -17.988152422706634,
+       "y": 53.156
+      },
+      {
+       "id": "p75",
+       "x": -12.792000000000002,
+       "y": 50.156
+      },
+      {
+       "id": "p76",
+       "x": -7.59584757729337,
+       "y": 53.156
+      },
+      {
+       "id": "p77",
+       "x": -7.595847577293368,
+       "y": 59.156
+      },
+      {
+       "id": "p78",
+       "x": 12.792,
+       "y": 56.156
+      },
+      {
+       "id": "p79",
+       "x": 12.792,
+       "y": 62.156
+      },
+      {
+       "id": "p80",
+       "x": 7.595847577293369,
+       "y": 59.156
+      },
+      {
+       "id": "p81",
+       "x": 7.595847577293367,
+       "y": 53.156
+      },
+      {
+       "id": "p82",
+       "x": 12.791999999999998,
+       "y": 50.156
+      },
+      {
+       "id": "p83",
+       "x": 17.98815242270663,
+       "y": 53.156
+      },
+      {
+       "id": "p84",
+       "x": 17.988152422706634,
+       "y": 59.156
+      },
+      {
+       "id": "p85",
+       "x": -25.584,
+       "y": 56.156
+      },
+      {
+       "id": "p86",
+       "x": -25.584,
+       "y": 62.156
+      },
+      {
+       "id": "p87",
+       "x": -30.78015242270663,
+       "y": 59.156
+      },
+      {
+       "id": "p88",
+       "x": -30.78015242270663,
+       "y": 53.156
+      },
+      {
+       "id": "p89",
+       "x": -25.584,
+       "y": 50.156
+      },
+      {
+       "id": "p90",
+       "x": -20.38784757729337,
+       "y": 53.156
+      },
+      {
+       "id": "p91",
+       "x": -20.387847577293368,
+       "y": 59.156
+      },
+      {
+       "id": "p92",
+       "x": 25.584,
+       "y": 56.156
+      },
+      {
+       "id": "p93",
+       "x": 25.584,
+       "y": 62.156
+      },
+      {
+       "id": "p94",
+       "x": 20.387847577293368,
+       "y": 59.156
+      },
+      {
+       "id": "p95",
+       "x": 20.387847577293368,
+       "y": 53.156
+      },
+      {
+       "id": "p96",
+       "x": 25.584,
+       "y": 50.156
+      },
+      {
+       "id": "p97",
+       "x": 30.780152422706628,
+       "y": 53.156
+      },
+      {
+       "id": "p98",
+       "x": 30.78015242270663,
+       "y": 59.156
+      },
+      {
+       "id": "p99",
+       "x": -6.396,
+       "y": 67.235
+      },
+      {
+       "id": "p100",
+       "x": -6.396,
+       "y": 73.235
+      },
+      {
+       "id": "p101",
+       "x": -11.592152422706631,
+       "y": 70.235
+      },
+      {
+       "id": "p102",
+       "x": -11.592152422706633,
+       "y": 64.235
+      },
+      {
+       "id": "p103",
+       "x": -6.396000000000001,
+       "y": 61.235
+      },
+      {
+       "id": "p104",
+       "x": -1.1998475772933697,
+       "y": 64.235
+      },
+      {
+       "id": "p105",
+       "x": -1.1998475772933679,
+       "y": 70.235
+      },
+      {
+       "id": "p106",
+       "x": 6.396,
+       "y": 67.235
+      },
+      {
+       "id": "p107",
+       "x": 6.396,
+       "y": 73.235
+      },
+      {
+       "id": "p108",
+       "x": 1.1998475772933688,
+       "y": 70.235
+      },
+      {
+       "id": "p109",
+       "x": 1.199847577293367,
+       "y": 64.235
+      },
+      {
+       "id": "p110",
+       "x": 6.395999999999999,
+       "y": 61.235
+      },
+      {
+       "id": "p111",
+       "x": 11.59215242270663,
+       "y": 64.235
+      },
+      {
+       "id": "p112",
+       "x": 11.592152422706633,
+       "y": 70.235
+      },
+      {
+       "id": "p113",
+       "x": -19.188,
+       "y": 67.235
+      },
+      {
+       "id": "p114",
+       "x": -19.188,
+       "y": 73.235
+      },
+      {
+       "id": "p115",
+       "x": -24.38415242270663,
+       "y": 70.235
+      },
+      {
+       "id": "p116",
+       "x": -24.38415242270663,
+       "y": 64.235
+      },
+      {
+       "id": "p117",
+       "x": -19.188,
+       "y": 61.235
+      },
+      {
+       "id": "p118",
+       "x": -13.991847577293369,
+       "y": 64.235
+      },
+      {
+       "id": "p119",
+       "x": -13.991847577293367,
+       "y": 70.235
+      },
+      {
+       "id": "p120",
+       "x": 19.188,
+       "y": 67.235
+      },
+      {
+       "id": "p121",
+       "x": 19.188,
+       "y": 73.235
+      },
+      {
+       "id": "p122",
+       "x": 13.991847577293367,
+       "y": 70.235
+      },
+      {
+       "id": "p123",
+       "x": 13.991847577293367,
+       "y": 64.235
+      },
+      {
+       "id": "p124",
+       "x": 19.188,
+       "y": 61.235
+      },
+      {
+       "id": "p125",
+       "x": 24.384152422706627,
+       "y": 64.235
+      },
+      {
+       "id": "p126",
+       "x": 24.38415242270663,
+       "y": 70.235
+      },
+      {
+       "id": "p127",
+       "x": 0,
+       "y": 78.313
+      },
+      {
+       "id": "p128",
+       "x": 3.6739403974420594e-16,
+       "y": 84.313
+      },
+      {
+       "id": "p129",
+       "x": -5.196152422706631,
+       "y": 81.313
+      },
+      {
+       "id": "p130",
+       "x": -5.196152422706633,
+       "y": 75.313
+      },
+      {
+       "id": "p131",
+       "x": -1.102182119232618e-15,
+       "y": 72.313
+      },
+      {
+       "id": "p132",
+       "x": 5.19615242270663,
+       "y": 75.313
+      },
+      {
+       "id": "p133",
+       "x": 5.196152422706632,
+       "y": 81.313
+      },
+      {
+       "id": "p134",
+       "x": -12.792,
+       "y": 78.313
+      },
+      {
+       "id": "p135",
+       "x": -12.792,
+       "y": 84.313
+      },
+      {
+       "id": "p136",
+       "x": -17.98815242270663,
+       "y": 81.313
+      },
+      {
+       "id": "p137",
+       "x": -17.988152422706634,
+       "y": 75.313
+      },
+      {
+       "id": "p138",
+       "x": -12.792000000000002,
+       "y": 72.313
+      },
+      {
+       "id": "p139",
+       "x": -7.59584757729337,
+       "y": 75.313
+      },
+      {
+       "id": "p140",
+       "x": -7.595847577293368,
+       "y": 81.313
+      },
+      {
+       "id": "p141",
+       "x": 12.792,
+       "y": 78.313
+      },
+      {
+       "id": "p142",
+       "x": 12.792,
+       "y": 84.313
+      },
+      {
+       "id": "p143",
+       "x": 7.595847577293369,
+       "y": 81.313
+      },
+      {
+       "id": "p144",
+       "x": 7.595847577293367,
+       "y": 75.313
+      },
+      {
+       "id": "p145",
+       "x": 12.791999999999998,
+       "y": 72.313
+      },
+      {
+       "id": "p146",
+       "x": 17.98815242270663,
+       "y": 75.313
+      },
+      {
+       "id": "p147",
+       "x": 17.988152422706634,
+       "y": 81.313
+      },
+      {
+       "id": "p148",
+       "x": -25.584,
+       "y": 78.313
+      },
+      {
+       "id": "p149",
+       "x": -25.584,
+       "y": 84.313
+      },
+      {
+       "id": "p150",
+       "x": -30.78015242270663,
+       "y": 81.313
+      },
+      {
+       "id": "p151",
+       "x": -30.78015242270663,
+       "y": 75.313
+      },
+      {
+       "id": "p152",
+       "x": -25.584,
+       "y": 72.313
+      },
+      {
+       "id": "p153",
+       "x": -20.38784757729337,
+       "y": 75.313
+      },
+      {
+       "id": "p154",
+       "x": -20.387847577293368,
+       "y": 81.313
+      },
+      {
+       "id": "p155",
+       "x": 25.584,
+       "y": 78.313
+      },
+      {
+       "id": "p156",
+       "x": 25.584,
+       "y": 84.313
+      },
+      {
+       "id": "p157",
+       "x": 20.387847577293368,
+       "y": 81.313
+      },
+      {
+       "id": "p158",
+       "x": 20.387847577293368,
+       "y": 75.313
+      },
+      {
+       "id": "p159",
+       "x": 25.584,
+       "y": 72.313
+      },
+      {
+       "id": "p160",
+       "x": 30.780152422706628,
+       "y": 75.313
+      },
+      {
+       "id": "p161",
+       "x": 30.78015242270663,
+       "y": 81.313
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polygon2.circle",
+       "type": "circle",
+       "c": "p8",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon2.0",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "polygon2.1",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "polygon2.2",
+       "type": "line",
+       "p1": "p11",
+       "p2": "p12",
+       "construction": false
+      },
+      {
+       "id": "polygon2.3",
+       "type": "line",
+       "p1": "p12",
+       "p2": "p13",
+       "construction": false
+      },
+      {
+       "id": "polygon2.4",
+       "type": "line",
+       "p1": "p13",
+       "p2": "p14",
+       "construction": false
+      },
+      {
+       "id": "polygon2.5",
+       "type": "line",
+       "p1": "p14",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polygon3.circle",
+       "type": "circle",
+       "c": "p15",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon3.0",
+       "type": "line",
+       "p1": "p16",
+       "p2": "p17",
+       "construction": false
+      },
+      {
+       "id": "polygon3.1",
+       "type": "line",
+       "p1": "p17",
+       "p2": "p18",
+       "construction": false
+      },
+      {
+       "id": "polygon3.2",
+       "type": "line",
+       "p1": "p18",
+       "p2": "p19",
+       "construction": false
+      },
+      {
+       "id": "polygon3.3",
+       "type": "line",
+       "p1": "p19",
+       "p2": "p20",
+       "construction": false
+      },
+      {
+       "id": "polygon3.4",
+       "type": "line",
+       "p1": "p20",
+       "p2": "p21",
+       "construction": false
+      },
+      {
+       "id": "polygon3.5",
+       "type": "line",
+       "p1": "p21",
+       "p2": "p16",
+       "construction": false
+      },
+      {
+       "id": "polygon4.circle",
+       "type": "circle",
+       "c": "p22",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon4.0",
+       "type": "line",
+       "p1": "p23",
+       "p2": "p24",
+       "construction": false
+      },
+      {
+       "id": "polygon4.1",
+       "type": "line",
+       "p1": "p24",
+       "p2": "p25",
+       "construction": false
+      },
+      {
+       "id": "polygon4.2",
+       "type": "line",
+       "p1": "p25",
+       "p2": "p26",
+       "construction": false
+      },
+      {
+       "id": "polygon4.3",
+       "type": "line",
+       "p1": "p26",
+       "p2": "p27",
+       "construction": false
+      },
+      {
+       "id": "polygon4.4",
+       "type": "line",
+       "p1": "p27",
+       "p2": "p28",
+       "construction": false
+      },
+      {
+       "id": "polygon4.5",
+       "type": "line",
+       "p1": "p28",
+       "p2": "p23",
+       "construction": false
+      },
+      {
+       "id": "polygon5.circle",
+       "type": "circle",
+       "c": "p29",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon5.0",
+       "type": "line",
+       "p1": "p30",
+       "p2": "p31",
+       "construction": false
+      },
+      {
+       "id": "polygon5.1",
+       "type": "line",
+       "p1": "p31",
+       "p2": "p32",
+       "construction": false
+      },
+      {
+       "id": "polygon5.2",
+       "type": "line",
+       "p1": "p32",
+       "p2": "p33",
+       "construction": false
+      },
+      {
+       "id": "polygon5.3",
+       "type": "line",
+       "p1": "p33",
+       "p2": "p34",
+       "construction": false
+      },
+      {
+       "id": "polygon5.4",
+       "type": "line",
+       "p1": "p34",
+       "p2": "p35",
+       "construction": false
+      },
+      {
+       "id": "polygon5.5",
+       "type": "line",
+       "p1": "p35",
+       "p2": "p30",
+       "construction": false
+      },
+      {
+       "id": "polygon6.circle",
+       "type": "circle",
+       "c": "p36",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon6.0",
+       "type": "line",
+       "p1": "p37",
+       "p2": "p38",
+       "construction": false
+      },
+      {
+       "id": "polygon6.1",
+       "type": "line",
+       "p1": "p38",
+       "p2": "p39",
+       "construction": false
+      },
+      {
+       "id": "polygon6.2",
+       "type": "line",
+       "p1": "p39",
+       "p2": "p40",
+       "construction": false
+      },
+      {
+       "id": "polygon6.3",
+       "type": "line",
+       "p1": "p40",
+       "p2": "p41",
+       "construction": false
+      },
+      {
+       "id": "polygon6.4",
+       "type": "line",
+       "p1": "p41",
+       "p2": "p42",
+       "construction": false
+      },
+      {
+       "id": "polygon6.5",
+       "type": "line",
+       "p1": "p42",
+       "p2": "p37",
+       "construction": false
+      },
+      {
+       "id": "polygon7.circle",
+       "type": "circle",
+       "c": "p43",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon7.0",
+       "type": "line",
+       "p1": "p44",
+       "p2": "p45",
+       "construction": false
+      },
+      {
+       "id": "polygon7.1",
+       "type": "line",
+       "p1": "p45",
+       "p2": "p46",
+       "construction": false
+      },
+      {
+       "id": "polygon7.2",
+       "type": "line",
+       "p1": "p46",
+       "p2": "p47",
+       "construction": false
+      },
+      {
+       "id": "polygon7.3",
+       "type": "line",
+       "p1": "p47",
+       "p2": "p48",
+       "construction": false
+      },
+      {
+       "id": "polygon7.4",
+       "type": "line",
+       "p1": "p48",
+       "p2": "p49",
+       "construction": false
+      },
+      {
+       "id": "polygon7.5",
+       "type": "line",
+       "p1": "p49",
+       "p2": "p44",
+       "construction": false
+      },
+      {
+       "id": "polygon8.circle",
+       "type": "circle",
+       "c": "p50",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon8.0",
+       "type": "line",
+       "p1": "p51",
+       "p2": "p52",
+       "construction": false
+      },
+      {
+       "id": "polygon8.1",
+       "type": "line",
+       "p1": "p52",
+       "p2": "p53",
+       "construction": false
+      },
+      {
+       "id": "polygon8.2",
+       "type": "line",
+       "p1": "p53",
+       "p2": "p54",
+       "construction": false
+      },
+      {
+       "id": "polygon8.3",
+       "type": "line",
+       "p1": "p54",
+       "p2": "p55",
+       "construction": false
+      },
+      {
+       "id": "polygon8.4",
+       "type": "line",
+       "p1": "p55",
+       "p2": "p56",
+       "construction": false
+      },
+      {
+       "id": "polygon8.5",
+       "type": "line",
+       "p1": "p56",
+       "p2": "p51",
+       "construction": false
+      },
+      {
+       "id": "polygon9.circle",
+       "type": "circle",
+       "c": "p57",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon9.0",
+       "type": "line",
+       "p1": "p58",
+       "p2": "p59",
+       "construction": false
+      },
+      {
+       "id": "polygon9.1",
+       "type": "line",
+       "p1": "p59",
+       "p2": "p60",
+       "construction": false
+      },
+      {
+       "id": "polygon9.2",
+       "type": "line",
+       "p1": "p60",
+       "p2": "p61",
+       "construction": false
+      },
+      {
+       "id": "polygon9.3",
+       "type": "line",
+       "p1": "p61",
+       "p2": "p62",
+       "construction": false
+      },
+      {
+       "id": "polygon9.4",
+       "type": "line",
+       "p1": "p62",
+       "p2": "p63",
+       "construction": false
+      },
+      {
+       "id": "polygon9.5",
+       "type": "line",
+       "p1": "p63",
+       "p2": "p58",
+       "construction": false
+      },
+      {
+       "id": "polygon10.circle",
+       "type": "circle",
+       "c": "p64",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon10.0",
+       "type": "line",
+       "p1": "p65",
+       "p2": "p66",
+       "construction": false
+      },
+      {
+       "id": "polygon10.1",
+       "type": "line",
+       "p1": "p66",
+       "p2": "p67",
+       "construction": false
+      },
+      {
+       "id": "polygon10.2",
+       "type": "line",
+       "p1": "p67",
+       "p2": "p68",
+       "construction": false
+      },
+      {
+       "id": "polygon10.3",
+       "type": "line",
+       "p1": "p68",
+       "p2": "p69",
+       "construction": false
+      },
+      {
+       "id": "polygon10.4",
+       "type": "line",
+       "p1": "p69",
+       "p2": "p70",
+       "construction": false
+      },
+      {
+       "id": "polygon10.5",
+       "type": "line",
+       "p1": "p70",
+       "p2": "p65",
+       "construction": false
+      },
+      {
+       "id": "polygon11.circle",
+       "type": "circle",
+       "c": "p71",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon11.0",
+       "type": "line",
+       "p1": "p72",
+       "p2": "p73",
+       "construction": false
+      },
+      {
+       "id": "polygon11.1",
+       "type": "line",
+       "p1": "p73",
+       "p2": "p74",
+       "construction": false
+      },
+      {
+       "id": "polygon11.2",
+       "type": "line",
+       "p1": "p74",
+       "p2": "p75",
+       "construction": false
+      },
+      {
+       "id": "polygon11.3",
+       "type": "line",
+       "p1": "p75",
+       "p2": "p76",
+       "construction": false
+      },
+      {
+       "id": "polygon11.4",
+       "type": "line",
+       "p1": "p76",
+       "p2": "p77",
+       "construction": false
+      },
+      {
+       "id": "polygon11.5",
+       "type": "line",
+       "p1": "p77",
+       "p2": "p72",
+       "construction": false
+      },
+      {
+       "id": "polygon12.circle",
+       "type": "circle",
+       "c": "p78",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon12.0",
+       "type": "line",
+       "p1": "p79",
+       "p2": "p80",
+       "construction": false
+      },
+      {
+       "id": "polygon12.1",
+       "type": "line",
+       "p1": "p80",
+       "p2": "p81",
+       "construction": false
+      },
+      {
+       "id": "polygon12.2",
+       "type": "line",
+       "p1": "p81",
+       "p2": "p82",
+       "construction": false
+      },
+      {
+       "id": "polygon12.3",
+       "type": "line",
+       "p1": "p82",
+       "p2": "p83",
+       "construction": false
+      },
+      {
+       "id": "polygon12.4",
+       "type": "line",
+       "p1": "p83",
+       "p2": "p84",
+       "construction": false
+      },
+      {
+       "id": "polygon12.5",
+       "type": "line",
+       "p1": "p84",
+       "p2": "p79",
+       "construction": false
+      },
+      {
+       "id": "polygon13.circle",
+       "type": "circle",
+       "c": "p85",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon13.0",
+       "type": "line",
+       "p1": "p86",
+       "p2": "p87",
+       "construction": false
+      },
+      {
+       "id": "polygon13.1",
+       "type": "line",
+       "p1": "p87",
+       "p2": "p88",
+       "construction": false
+      },
+      {
+       "id": "polygon13.2",
+       "type": "line",
+       "p1": "p88",
+       "p2": "p89",
+       "construction": false
+      },
+      {
+       "id": "polygon13.3",
+       "type": "line",
+       "p1": "p89",
+       "p2": "p90",
+       "construction": false
+      },
+      {
+       "id": "polygon13.4",
+       "type": "line",
+       "p1": "p90",
+       "p2": "p91",
+       "construction": false
+      },
+      {
+       "id": "polygon13.5",
+       "type": "line",
+       "p1": "p91",
+       "p2": "p86",
+       "construction": false
+      },
+      {
+       "id": "polygon14.circle",
+       "type": "circle",
+       "c": "p92",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon14.0",
+       "type": "line",
+       "p1": "p93",
+       "p2": "p94",
+       "construction": false
+      },
+      {
+       "id": "polygon14.1",
+       "type": "line",
+       "p1": "p94",
+       "p2": "p95",
+       "construction": false
+      },
+      {
+       "id": "polygon14.2",
+       "type": "line",
+       "p1": "p95",
+       "p2": "p96",
+       "construction": false
+      },
+      {
+       "id": "polygon14.3",
+       "type": "line",
+       "p1": "p96",
+       "p2": "p97",
+       "construction": false
+      },
+      {
+       "id": "polygon14.4",
+       "type": "line",
+       "p1": "p97",
+       "p2": "p98",
+       "construction": false
+      },
+      {
+       "id": "polygon14.5",
+       "type": "line",
+       "p1": "p98",
+       "p2": "p93",
+       "construction": false
+      },
+      {
+       "id": "polygon15.circle",
+       "type": "circle",
+       "c": "p99",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon15.0",
+       "type": "line",
+       "p1": "p100",
+       "p2": "p101",
+       "construction": false
+      },
+      {
+       "id": "polygon15.1",
+       "type": "line",
+       "p1": "p101",
+       "p2": "p102",
+       "construction": false
+      },
+      {
+       "id": "polygon15.2",
+       "type": "line",
+       "p1": "p102",
+       "p2": "p103",
+       "construction": false
+      },
+      {
+       "id": "polygon15.3",
+       "type": "line",
+       "p1": "p103",
+       "p2": "p104",
+       "construction": false
+      },
+      {
+       "id": "polygon15.4",
+       "type": "line",
+       "p1": "p104",
+       "p2": "p105",
+       "construction": false
+      },
+      {
+       "id": "polygon15.5",
+       "type": "line",
+       "p1": "p105",
+       "p2": "p100",
+       "construction": false
+      },
+      {
+       "id": "polygon16.circle",
+       "type": "circle",
+       "c": "p106",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon16.0",
+       "type": "line",
+       "p1": "p107",
+       "p2": "p108",
+       "construction": false
+      },
+      {
+       "id": "polygon16.1",
+       "type": "line",
+       "p1": "p108",
+       "p2": "p109",
+       "construction": false
+      },
+      {
+       "id": "polygon16.2",
+       "type": "line",
+       "p1": "p109",
+       "p2": "p110",
+       "construction": false
+      },
+      {
+       "id": "polygon16.3",
+       "type": "line",
+       "p1": "p110",
+       "p2": "p111",
+       "construction": false
+      },
+      {
+       "id": "polygon16.4",
+       "type": "line",
+       "p1": "p111",
+       "p2": "p112",
+       "construction": false
+      },
+      {
+       "id": "polygon16.5",
+       "type": "line",
+       "p1": "p112",
+       "p2": "p107",
+       "construction": false
+      },
+      {
+       "id": "polygon17.circle",
+       "type": "circle",
+       "c": "p113",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon17.0",
+       "type": "line",
+       "p1": "p114",
+       "p2": "p115",
+       "construction": false
+      },
+      {
+       "id": "polygon17.1",
+       "type": "line",
+       "p1": "p115",
+       "p2": "p116",
+       "construction": false
+      },
+      {
+       "id": "polygon17.2",
+       "type": "line",
+       "p1": "p116",
+       "p2": "p117",
+       "construction": false
+      },
+      {
+       "id": "polygon17.3",
+       "type": "line",
+       "p1": "p117",
+       "p2": "p118",
+       "construction": false
+      },
+      {
+       "id": "polygon17.4",
+       "type": "line",
+       "p1": "p118",
+       "p2": "p119",
+       "construction": false
+      },
+      {
+       "id": "polygon17.5",
+       "type": "line",
+       "p1": "p119",
+       "p2": "p114",
+       "construction": false
+      },
+      {
+       "id": "polygon18.circle",
+       "type": "circle",
+       "c": "p120",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon18.0",
+       "type": "line",
+       "p1": "p121",
+       "p2": "p122",
+       "construction": false
+      },
+      {
+       "id": "polygon18.1",
+       "type": "line",
+       "p1": "p122",
+       "p2": "p123",
+       "construction": false
+      },
+      {
+       "id": "polygon18.2",
+       "type": "line",
+       "p1": "p123",
+       "p2": "p124",
+       "construction": false
+      },
+      {
+       "id": "polygon18.3",
+       "type": "line",
+       "p1": "p124",
+       "p2": "p125",
+       "construction": false
+      },
+      {
+       "id": "polygon18.4",
+       "type": "line",
+       "p1": "p125",
+       "p2": "p126",
+       "construction": false
+      },
+      {
+       "id": "polygon18.5",
+       "type": "line",
+       "p1": "p126",
+       "p2": "p121",
+       "construction": false
+      },
+      {
+       "id": "polygon19.circle",
+       "type": "circle",
+       "c": "p127",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon19.0",
+       "type": "line",
+       "p1": "p128",
+       "p2": "p129",
+       "construction": false
+      },
+      {
+       "id": "polygon19.1",
+       "type": "line",
+       "p1": "p129",
+       "p2": "p130",
+       "construction": false
+      },
+      {
+       "id": "polygon19.2",
+       "type": "line",
+       "p1": "p130",
+       "p2": "p131",
+       "construction": false
+      },
+      {
+       "id": "polygon19.3",
+       "type": "line",
+       "p1": "p131",
+       "p2": "p132",
+       "construction": false
+      },
+      {
+       "id": "polygon19.4",
+       "type": "line",
+       "p1": "p132",
+       "p2": "p133",
+       "construction": false
+      },
+      {
+       "id": "polygon19.5",
+       "type": "line",
+       "p1": "p133",
+       "p2": "p128",
+       "construction": false
+      },
+      {
+       "id": "polygon20.circle",
+       "type": "circle",
+       "c": "p134",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon20.0",
+       "type": "line",
+       "p1": "p135",
+       "p2": "p136",
+       "construction": false
+      },
+      {
+       "id": "polygon20.1",
+       "type": "line",
+       "p1": "p136",
+       "p2": "p137",
+       "construction": false
+      },
+      {
+       "id": "polygon20.2",
+       "type": "line",
+       "p1": "p137",
+       "p2": "p138",
+       "construction": false
+      },
+      {
+       "id": "polygon20.3",
+       "type": "line",
+       "p1": "p138",
+       "p2": "p139",
+       "construction": false
+      },
+      {
+       "id": "polygon20.4",
+       "type": "line",
+       "p1": "p139",
+       "p2": "p140",
+       "construction": false
+      },
+      {
+       "id": "polygon20.5",
+       "type": "line",
+       "p1": "p140",
+       "p2": "p135",
+       "construction": false
+      },
+      {
+       "id": "polygon21.circle",
+       "type": "circle",
+       "c": "p141",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon21.0",
+       "type": "line",
+       "p1": "p142",
+       "p2": "p143",
+       "construction": false
+      },
+      {
+       "id": "polygon21.1",
+       "type": "line",
+       "p1": "p143",
+       "p2": "p144",
+       "construction": false
+      },
+      {
+       "id": "polygon21.2",
+       "type": "line",
+       "p1": "p144",
+       "p2": "p145",
+       "construction": false
+      },
+      {
+       "id": "polygon21.3",
+       "type": "line",
+       "p1": "p145",
+       "p2": "p146",
+       "construction": false
+      },
+      {
+       "id": "polygon21.4",
+       "type": "line",
+       "p1": "p146",
+       "p2": "p147",
+       "construction": false
+      },
+      {
+       "id": "polygon21.5",
+       "type": "line",
+       "p1": "p147",
+       "p2": "p142",
+       "construction": false
+      },
+      {
+       "id": "polygon22.circle",
+       "type": "circle",
+       "c": "p148",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon22.0",
+       "type": "line",
+       "p1": "p149",
+       "p2": "p150",
+       "construction": false
+      },
+      {
+       "id": "polygon22.1",
+       "type": "line",
+       "p1": "p150",
+       "p2": "p151",
+       "construction": false
+      },
+      {
+       "id": "polygon22.2",
+       "type": "line",
+       "p1": "p151",
+       "p2": "p152",
+       "construction": false
+      },
+      {
+       "id": "polygon22.3",
+       "type": "line",
+       "p1": "p152",
+       "p2": "p153",
+       "construction": false
+      },
+      {
+       "id": "polygon22.4",
+       "type": "line",
+       "p1": "p153",
+       "p2": "p154",
+       "construction": false
+      },
+      {
+       "id": "polygon22.5",
+       "type": "line",
+       "p1": "p154",
+       "p2": "p149",
+       "construction": false
+      },
+      {
+       "id": "polygon23.circle",
+       "type": "circle",
+       "c": "p155",
+       "r": 6,
+       "construction": true
+      },
+      {
+       "id": "polygon23.0",
+       "type": "line",
+       "p1": "p156",
+       "p2": "p157",
+       "construction": false
+      },
+      {
+       "id": "polygon23.1",
+       "type": "line",
+       "p1": "p157",
+       "p2": "p158",
+       "construction": false
+      },
+      {
+       "id": "polygon23.2",
+       "type": "line",
+       "p1": "p158",
+       "p2": "p159",
+       "construction": false
+      },
+      {
+       "id": "polygon23.3",
+       "type": "line",
+       "p1": "p159",
+       "p2": "p160",
+       "construction": false
+      },
+      {
+       "id": "polygon23.4",
+       "type": "line",
+       "p1": "p160",
+       "p2": "p161",
+       "construction": false
+      },
+      {
+       "id": "polygon23.5",
+       "type": "line",
+       "p1": "p161",
+       "p2": "p156",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0zjg",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c1j51",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c2uek",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c338s",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c4gl5",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c58ca",
+       "type": "onEntity",
+       "a": "p7",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c6jkg",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.1"
+      },
+      {
+       "id": "c7haa",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.2"
+      },
+      {
+       "id": "c8t8r",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.3"
+      },
+      {
+       "id": "c96gp",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.4"
+      },
+      {
+       "id": "c10fai",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.5"
+      },
+      {
+       "id": "c11xv5",
+       "type": "onEntity",
+       "a": "p9",
+       "e1": "polygon2.circle"
+      },
+      {
+       "id": "c12oez",
+       "type": "onEntity",
+       "a": "p10",
+       "e1": "polygon2.circle"
+      },
+      {
+       "id": "c13qne",
+       "type": "onEntity",
+       "a": "p11",
+       "e1": "polygon2.circle"
+      },
+      {
+       "id": "c14va5",
+       "type": "onEntity",
+       "a": "p12",
+       "e1": "polygon2.circle"
+      },
+      {
+       "id": "c159db",
+       "type": "onEntity",
+       "a": "p13",
+       "e1": "polygon2.circle"
+      },
+      {
+       "id": "c1616e",
+       "type": "onEntity",
+       "a": "p14",
+       "e1": "polygon2.circle"
+      },
+      {
+       "id": "c17nlw",
+       "type": "equal",
+       "e1": "polygon2.0",
+       "e2": "polygon2.1"
+      },
+      {
+       "id": "c181ye",
+       "type": "equal",
+       "e1": "polygon2.0",
+       "e2": "polygon2.2"
+      },
+      {
+       "id": "c19u46",
+       "type": "equal",
+       "e1": "polygon2.0",
+       "e2": "polygon2.3"
+      },
+      {
+       "id": "c202bk",
+       "type": "equal",
+       "e1": "polygon2.0",
+       "e2": "polygon2.4"
+      },
+      {
+       "id": "c21dlt",
+       "type": "equal",
+       "e1": "polygon2.0",
+       "e2": "polygon2.5"
+      },
+      {
+       "id": "c22fu3",
+       "type": "onEntity",
+       "a": "p16",
+       "e1": "polygon3.circle"
+      },
+      {
+       "id": "c23tff",
+       "type": "onEntity",
+       "a": "p17",
+       "e1": "polygon3.circle"
+      },
+      {
+       "id": "c24ovn",
+       "type": "onEntity",
+       "a": "p18",
+       "e1": "polygon3.circle"
+      },
+      {
+       "id": "c25vrc",
+       "type": "onEntity",
+       "a": "p19",
+       "e1": "polygon3.circle"
+      },
+      {
+       "id": "c26thi",
+       "type": "onEntity",
+       "a": "p20",
+       "e1": "polygon3.circle"
+      },
+      {
+       "id": "c27meh",
+       "type": "onEntity",
+       "a": "p21",
+       "e1": "polygon3.circle"
+      },
+      {
+       "id": "c28erl",
+       "type": "equal",
+       "e1": "polygon3.0",
+       "e2": "polygon3.1"
+      },
+      {
+       "id": "c29e1x",
+       "type": "equal",
+       "e1": "polygon3.0",
+       "e2": "polygon3.2"
+      },
+      {
+       "id": "c30szt",
+       "type": "equal",
+       "e1": "polygon3.0",
+       "e2": "polygon3.3"
+      },
+      {
+       "id": "c31h7b",
+       "type": "equal",
+       "e1": "polygon3.0",
+       "e2": "polygon3.4"
+      },
+      {
+       "id": "c32opn",
+       "type": "equal",
+       "e1": "polygon3.0",
+       "e2": "polygon3.5"
+      },
+      {
+       "id": "c33rer",
+       "type": "onEntity",
+       "a": "p23",
+       "e1": "polygon4.circle"
+      },
+      {
+       "id": "c34ux0",
+       "type": "onEntity",
+       "a": "p24",
+       "e1": "polygon4.circle"
+      },
+      {
+       "id": "c35iw0",
+       "type": "onEntity",
+       "a": "p25",
+       "e1": "polygon4.circle"
+      },
+      {
+       "id": "c36ecp",
+       "type": "onEntity",
+       "a": "p26",
+       "e1": "polygon4.circle"
+      },
+      {
+       "id": "c372ip",
+       "type": "onEntity",
+       "a": "p27",
+       "e1": "polygon4.circle"
+      },
+      {
+       "id": "c382rs",
+       "type": "onEntity",
+       "a": "p28",
+       "e1": "polygon4.circle"
+      },
+      {
+       "id": "c39zll",
+       "type": "equal",
+       "e1": "polygon4.0",
+       "e2": "polygon4.1"
+      },
+      {
+       "id": "c409dz",
+       "type": "equal",
+       "e1": "polygon4.0",
+       "e2": "polygon4.2"
+      },
+      {
+       "id": "c41ey7",
+       "type": "equal",
+       "e1": "polygon4.0",
+       "e2": "polygon4.3"
+      },
+      {
+       "id": "c42ug3",
+       "type": "equal",
+       "e1": "polygon4.0",
+       "e2": "polygon4.4"
+      },
+      {
+       "id": "c438si",
+       "type": "equal",
+       "e1": "polygon4.0",
+       "e2": "polygon4.5"
+      },
+      {
+       "id": "c44kqb",
+       "type": "onEntity",
+       "a": "p30",
+       "e1": "polygon5.circle"
+      },
+      {
+       "id": "c45mft",
+       "type": "onEntity",
+       "a": "p31",
+       "e1": "polygon5.circle"
+      },
+      {
+       "id": "c46849",
+       "type": "onEntity",
+       "a": "p32",
+       "e1": "polygon5.circle"
+      },
+      {
+       "id": "c47l2w",
+       "type": "onEntity",
+       "a": "p33",
+       "e1": "polygon5.circle"
+      },
+      {
+       "id": "c4859p",
+       "type": "onEntity",
+       "a": "p34",
+       "e1": "polygon5.circle"
+      },
+      {
+       "id": "c49ccw",
+       "type": "onEntity",
+       "a": "p35",
+       "e1": "polygon5.circle"
+      },
+      {
+       "id": "c50hoq",
+       "type": "equal",
+       "e1": "polygon5.0",
+       "e2": "polygon5.1"
+      },
+      {
+       "id": "c51ww9",
+       "type": "equal",
+       "e1": "polygon5.0",
+       "e2": "polygon5.2"
+      },
+      {
+       "id": "c52t4x",
+       "type": "equal",
+       "e1": "polygon5.0",
+       "e2": "polygon5.3"
+      },
+      {
+       "id": "c53e2t",
+       "type": "equal",
+       "e1": "polygon5.0",
+       "e2": "polygon5.4"
+      },
+      {
+       "id": "c54umf",
+       "type": "equal",
+       "e1": "polygon5.0",
+       "e2": "polygon5.5"
+      },
+      {
+       "id": "c552nh",
+       "type": "onEntity",
+       "a": "p37",
+       "e1": "polygon6.circle"
+      },
+      {
+       "id": "c56v87",
+       "type": "onEntity",
+       "a": "p38",
+       "e1": "polygon6.circle"
+      },
+      {
+       "id": "c57or3",
+       "type": "onEntity",
+       "a": "p39",
+       "e1": "polygon6.circle"
+      },
+      {
+       "id": "c58mu2",
+       "type": "onEntity",
+       "a": "p40",
+       "e1": "polygon6.circle"
+      },
+      {
+       "id": "c593ig",
+       "type": "onEntity",
+       "a": "p41",
+       "e1": "polygon6.circle"
+      },
+      {
+       "id": "c60nqj",
+       "type": "onEntity",
+       "a": "p42",
+       "e1": "polygon6.circle"
+      },
+      {
+       "id": "c615qp",
+       "type": "equal",
+       "e1": "polygon6.0",
+       "e2": "polygon6.1"
+      },
+      {
+       "id": "c62wsj",
+       "type": "equal",
+       "e1": "polygon6.0",
+       "e2": "polygon6.2"
+      },
+      {
+       "id": "c63tj2",
+       "type": "equal",
+       "e1": "polygon6.0",
+       "e2": "polygon6.3"
+      },
+      {
+       "id": "c64lvq",
+       "type": "equal",
+       "e1": "polygon6.0",
+       "e2": "polygon6.4"
+      },
+      {
+       "id": "c65yb9",
+       "type": "equal",
+       "e1": "polygon6.0",
+       "e2": "polygon6.5"
+      },
+      {
+       "id": "c66kf9",
+       "type": "onEntity",
+       "a": "p44",
+       "e1": "polygon7.circle"
+      },
+      {
+       "id": "c676wa",
+       "type": "onEntity",
+       "a": "p45",
+       "e1": "polygon7.circle"
+      },
+      {
+       "id": "c68bjr",
+       "type": "onEntity",
+       "a": "p46",
+       "e1": "polygon7.circle"
+      },
+      {
+       "id": "c69keo",
+       "type": "onEntity",
+       "a": "p47",
+       "e1": "polygon7.circle"
+      },
+      {
+       "id": "c70uub",
+       "type": "onEntity",
+       "a": "p48",
+       "e1": "polygon7.circle"
+      },
+      {
+       "id": "c71u2h",
+       "type": "onEntity",
+       "a": "p49",
+       "e1": "polygon7.circle"
+      },
+      {
+       "id": "c7290s",
+       "type": "equal",
+       "e1": "polygon7.0",
+       "e2": "polygon7.1"
+      },
+      {
+       "id": "c73co9",
+       "type": "equal",
+       "e1": "polygon7.0",
+       "e2": "polygon7.2"
+      },
+      {
+       "id": "c74k6n",
+       "type": "equal",
+       "e1": "polygon7.0",
+       "e2": "polygon7.3"
+      },
+      {
+       "id": "c7500e",
+       "type": "equal",
+       "e1": "polygon7.0",
+       "e2": "polygon7.4"
+      },
+      {
+       "id": "c7645q",
+       "type": "equal",
+       "e1": "polygon7.0",
+       "e2": "polygon7.5"
+      },
+      {
+       "id": "c778ko",
+       "type": "onEntity",
+       "a": "p51",
+       "e1": "polygon8.circle"
+      },
+      {
+       "id": "c78vkq",
+       "type": "onEntity",
+       "a": "p52",
+       "e1": "polygon8.circle"
+      },
+      {
+       "id": "c79qpj",
+       "type": "onEntity",
+       "a": "p53",
+       "e1": "polygon8.circle"
+      },
+      {
+       "id": "c80iqr",
+       "type": "onEntity",
+       "a": "p54",
+       "e1": "polygon8.circle"
+      },
+      {
+       "id": "c815i1",
+       "type": "onEntity",
+       "a": "p55",
+       "e1": "polygon8.circle"
+      },
+      {
+       "id": "c82ys2",
+       "type": "onEntity",
+       "a": "p56",
+       "e1": "polygon8.circle"
+      },
+      {
+       "id": "c8312f",
+       "type": "equal",
+       "e1": "polygon8.0",
+       "e2": "polygon8.1"
+      },
+      {
+       "id": "c84yl3",
+       "type": "equal",
+       "e1": "polygon8.0",
+       "e2": "polygon8.2"
+      },
+      {
+       "id": "c858bd",
+       "type": "equal",
+       "e1": "polygon8.0",
+       "e2": "polygon8.3"
+      },
+      {
+       "id": "c864xb",
+       "type": "equal",
+       "e1": "polygon8.0",
+       "e2": "polygon8.4"
+      },
+      {
+       "id": "c873aj",
+       "type": "equal",
+       "e1": "polygon8.0",
+       "e2": "polygon8.5"
+      },
+      {
+       "id": "c88k42",
+       "type": "onEntity",
+       "a": "p58",
+       "e1": "polygon9.circle"
+      },
+      {
+       "id": "c89hax",
+       "type": "onEntity",
+       "a": "p59",
+       "e1": "polygon9.circle"
+      },
+      {
+       "id": "c901ac",
+       "type": "onEntity",
+       "a": "p60",
+       "e1": "polygon9.circle"
+      },
+      {
+       "id": "c91k22",
+       "type": "onEntity",
+       "a": "p61",
+       "e1": "polygon9.circle"
+      },
+      {
+       "id": "c929dv",
+       "type": "onEntity",
+       "a": "p62",
+       "e1": "polygon9.circle"
+      },
+      {
+       "id": "c93kl2",
+       "type": "onEntity",
+       "a": "p63",
+       "e1": "polygon9.circle"
+      },
+      {
+       "id": "c94k3q",
+       "type": "equal",
+       "e1": "polygon9.0",
+       "e2": "polygon9.1"
+      },
+      {
+       "id": "c95l3j",
+       "type": "equal",
+       "e1": "polygon9.0",
+       "e2": "polygon9.2"
+      },
+      {
+       "id": "c969u6",
+       "type": "equal",
+       "e1": "polygon9.0",
+       "e2": "polygon9.3"
+      },
+      {
+       "id": "c9795e",
+       "type": "equal",
+       "e1": "polygon9.0",
+       "e2": "polygon9.4"
+      },
+      {
+       "id": "c98vpj",
+       "type": "equal",
+       "e1": "polygon9.0",
+       "e2": "polygon9.5"
+      },
+      {
+       "id": "c9919t",
+       "type": "onEntity",
+       "a": "p65",
+       "e1": "polygon10.circle"
+      },
+      {
+       "id": "c100oc8",
+       "type": "onEntity",
+       "a": "p66",
+       "e1": "polygon10.circle"
+      },
+      {
+       "id": "c101ilx",
+       "type": "onEntity",
+       "a": "p67",
+       "e1": "polygon10.circle"
+      },
+      {
+       "id": "c10267t",
+       "type": "onEntity",
+       "a": "p68",
+       "e1": "polygon10.circle"
+      },
+      {
+       "id": "c1036ih",
+       "type": "onEntity",
+       "a": "p69",
+       "e1": "polygon10.circle"
+      },
+      {
+       "id": "c1048f2",
+       "type": "onEntity",
+       "a": "p70",
+       "e1": "polygon10.circle"
+      },
+      {
+       "id": "c1056ds",
+       "type": "equal",
+       "e1": "polygon10.0",
+       "e2": "polygon10.1"
+      },
+      {
+       "id": "c106o3i",
+       "type": "equal",
+       "e1": "polygon10.0",
+       "e2": "polygon10.2"
+      },
+      {
+       "id": "c107wcl",
+       "type": "equal",
+       "e1": "polygon10.0",
+       "e2": "polygon10.3"
+      },
+      {
+       "id": "c108vd5",
+       "type": "equal",
+       "e1": "polygon10.0",
+       "e2": "polygon10.4"
+      },
+      {
+       "id": "c109gob",
+       "type": "equal",
+       "e1": "polygon10.0",
+       "e2": "polygon10.5"
+      },
+      {
+       "id": "c110t9v",
+       "type": "onEntity",
+       "a": "p72",
+       "e1": "polygon11.circle"
+      },
+      {
+       "id": "c1119e0",
+       "type": "onEntity",
+       "a": "p73",
+       "e1": "polygon11.circle"
+      },
+      {
+       "id": "c112jl8",
+       "type": "onEntity",
+       "a": "p74",
+       "e1": "polygon11.circle"
+      },
+      {
+       "id": "c113sk6",
+       "type": "onEntity",
+       "a": "p75",
+       "e1": "polygon11.circle"
+      },
+      {
+       "id": "c114pgl",
+       "type": "onEntity",
+       "a": "p76",
+       "e1": "polygon11.circle"
+      },
+      {
+       "id": "c11564j",
+       "type": "onEntity",
+       "a": "p77",
+       "e1": "polygon11.circle"
+      },
+      {
+       "id": "c1162mm",
+       "type": "equal",
+       "e1": "polygon11.0",
+       "e2": "polygon11.1"
+      },
+      {
+       "id": "c1175t4",
+       "type": "equal",
+       "e1": "polygon11.0",
+       "e2": "polygon11.2"
+      },
+      {
+       "id": "c1185io",
+       "type": "equal",
+       "e1": "polygon11.0",
+       "e2": "polygon11.3"
+      },
+      {
+       "id": "c1194q5",
+       "type": "equal",
+       "e1": "polygon11.0",
+       "e2": "polygon11.4"
+      },
+      {
+       "id": "c12082c",
+       "type": "equal",
+       "e1": "polygon11.0",
+       "e2": "polygon11.5"
+      },
+      {
+       "id": "c121cyn",
+       "type": "onEntity",
+       "a": "p79",
+       "e1": "polygon12.circle"
+      },
+      {
+       "id": "c1226mv",
+       "type": "onEntity",
+       "a": "p80",
+       "e1": "polygon12.circle"
+      },
+      {
+       "id": "c1230c7",
+       "type": "onEntity",
+       "a": "p81",
+       "e1": "polygon12.circle"
+      },
+      {
+       "id": "c1240dc",
+       "type": "onEntity",
+       "a": "p82",
+       "e1": "polygon12.circle"
+      },
+      {
+       "id": "c125x7d",
+       "type": "onEntity",
+       "a": "p83",
+       "e1": "polygon12.circle"
+      },
+      {
+       "id": "c126iqv",
+       "type": "onEntity",
+       "a": "p84",
+       "e1": "polygon12.circle"
+      },
+      {
+       "id": "c127j5f",
+       "type": "equal",
+       "e1": "polygon12.0",
+       "e2": "polygon12.1"
+      },
+      {
+       "id": "c128yzn",
+       "type": "equal",
+       "e1": "polygon12.0",
+       "e2": "polygon12.2"
+      },
+      {
+       "id": "c1299i0",
+       "type": "equal",
+       "e1": "polygon12.0",
+       "e2": "polygon12.3"
+      },
+      {
+       "id": "c130lni",
+       "type": "equal",
+       "e1": "polygon12.0",
+       "e2": "polygon12.4"
+      },
+      {
+       "id": "c131kte",
+       "type": "equal",
+       "e1": "polygon12.0",
+       "e2": "polygon12.5"
+      },
+      {
+       "id": "c132jjt",
+       "type": "onEntity",
+       "a": "p86",
+       "e1": "polygon13.circle"
+      },
+      {
+       "id": "c133kfr",
+       "type": "onEntity",
+       "a": "p87",
+       "e1": "polygon13.circle"
+      },
+      {
+       "id": "c134a6v",
+       "type": "onEntity",
+       "a": "p88",
+       "e1": "polygon13.circle"
+      },
+      {
+       "id": "c13527r",
+       "type": "onEntity",
+       "a": "p89",
+       "e1": "polygon13.circle"
+      },
+      {
+       "id": "c136h9m",
+       "type": "onEntity",
+       "a": "p90",
+       "e1": "polygon13.circle"
+      },
+      {
+       "id": "c137t85",
+       "type": "onEntity",
+       "a": "p91",
+       "e1": "polygon13.circle"
+      },
+      {
+       "id": "c138qbe",
+       "type": "equal",
+       "e1": "polygon13.0",
+       "e2": "polygon13.1"
+      },
+      {
+       "id": "c139pkn",
+       "type": "equal",
+       "e1": "polygon13.0",
+       "e2": "polygon13.2"
+      },
+      {
+       "id": "c1400ws",
+       "type": "equal",
+       "e1": "polygon13.0",
+       "e2": "polygon13.3"
+      },
+      {
+       "id": "c141x27",
+       "type": "equal",
+       "e1": "polygon13.0",
+       "e2": "polygon13.4"
+      },
+      {
+       "id": "c142p4i",
+       "type": "equal",
+       "e1": "polygon13.0",
+       "e2": "polygon13.5"
+      },
+      {
+       "id": "c1439v8",
+       "type": "onEntity",
+       "a": "p93",
+       "e1": "polygon14.circle"
+      },
+      {
+       "id": "c144y3i",
+       "type": "onEntity",
+       "a": "p94",
+       "e1": "polygon14.circle"
+      },
+      {
+       "id": "c145r6r",
+       "type": "onEntity",
+       "a": "p95",
+       "e1": "polygon14.circle"
+      },
+      {
+       "id": "c146hgx",
+       "type": "onEntity",
+       "a": "p96",
+       "e1": "polygon14.circle"
+      },
+      {
+       "id": "c147e5v",
+       "type": "onEntity",
+       "a": "p97",
+       "e1": "polygon14.circle"
+      },
+      {
+       "id": "c148h22",
+       "type": "onEntity",
+       "a": "p98",
+       "e1": "polygon14.circle"
+      },
+      {
+       "id": "c149rwr",
+       "type": "equal",
+       "e1": "polygon14.0",
+       "e2": "polygon14.1"
+      },
+      {
+       "id": "c150vwi",
+       "type": "equal",
+       "e1": "polygon14.0",
+       "e2": "polygon14.2"
+      },
+      {
+       "id": "c151h66",
+       "type": "equal",
+       "e1": "polygon14.0",
+       "e2": "polygon14.3"
+      },
+      {
+       "id": "c152csj",
+       "type": "equal",
+       "e1": "polygon14.0",
+       "e2": "polygon14.4"
+      },
+      {
+       "id": "c153txw",
+       "type": "equal",
+       "e1": "polygon14.0",
+       "e2": "polygon14.5"
+      },
+      {
+       "id": "c154rr4",
+       "type": "onEntity",
+       "a": "p100",
+       "e1": "polygon15.circle"
+      },
+      {
+       "id": "c155m7z",
+       "type": "onEntity",
+       "a": "p101",
+       "e1": "polygon15.circle"
+      },
+      {
+       "id": "c156w1v",
+       "type": "onEntity",
+       "a": "p102",
+       "e1": "polygon15.circle"
+      },
+      {
+       "id": "c157yti",
+       "type": "onEntity",
+       "a": "p103",
+       "e1": "polygon15.circle"
+      },
+      {
+       "id": "c158gac",
+       "type": "onEntity",
+       "a": "p104",
+       "e1": "polygon15.circle"
+      },
+      {
+       "id": "c159u8o",
+       "type": "onEntity",
+       "a": "p105",
+       "e1": "polygon15.circle"
+      },
+      {
+       "id": "c16042r",
+       "type": "equal",
+       "e1": "polygon15.0",
+       "e2": "polygon15.1"
+      },
+      {
+       "id": "c161asx",
+       "type": "equal",
+       "e1": "polygon15.0",
+       "e2": "polygon15.2"
+      },
+      {
+       "id": "c162j7j",
+       "type": "equal",
+       "e1": "polygon15.0",
+       "e2": "polygon15.3"
+      },
+      {
+       "id": "c163gpj",
+       "type": "equal",
+       "e1": "polygon15.0",
+       "e2": "polygon15.4"
+      },
+      {
+       "id": "c164upo",
+       "type": "equal",
+       "e1": "polygon15.0",
+       "e2": "polygon15.5"
+      },
+      {
+       "id": "c1659y6",
+       "type": "onEntity",
+       "a": "p107",
+       "e1": "polygon16.circle"
+      },
+      {
+       "id": "c166zhf",
+       "type": "onEntity",
+       "a": "p108",
+       "e1": "polygon16.circle"
+      },
+      {
+       "id": "c167xeg",
+       "type": "onEntity",
+       "a": "p109",
+       "e1": "polygon16.circle"
+      },
+      {
+       "id": "c1681kk",
+       "type": "onEntity",
+       "a": "p110",
+       "e1": "polygon16.circle"
+      },
+      {
+       "id": "c16929p",
+       "type": "onEntity",
+       "a": "p111",
+       "e1": "polygon16.circle"
+      },
+      {
+       "id": "c1707dj",
+       "type": "onEntity",
+       "a": "p112",
+       "e1": "polygon16.circle"
+      },
+      {
+       "id": "c171xon",
+       "type": "equal",
+       "e1": "polygon16.0",
+       "e2": "polygon16.1"
+      },
+      {
+       "id": "c172d4b",
+       "type": "equal",
+       "e1": "polygon16.0",
+       "e2": "polygon16.2"
+      },
+      {
+       "id": "c173smz",
+       "type": "equal",
+       "e1": "polygon16.0",
+       "e2": "polygon16.3"
+      },
+      {
+       "id": "c174j4j",
+       "type": "equal",
+       "e1": "polygon16.0",
+       "e2": "polygon16.4"
+      },
+      {
+       "id": "c175zl4",
+       "type": "equal",
+       "e1": "polygon16.0",
+       "e2": "polygon16.5"
+      },
+      {
+       "id": "c176rxh",
+       "type": "onEntity",
+       "a": "p114",
+       "e1": "polygon17.circle"
+      },
+      {
+       "id": "c1771cw",
+       "type": "onEntity",
+       "a": "p115",
+       "e1": "polygon17.circle"
+      },
+      {
+       "id": "c1784w9",
+       "type": "onEntity",
+       "a": "p116",
+       "e1": "polygon17.circle"
+      },
+      {
+       "id": "c179c3j",
+       "type": "onEntity",
+       "a": "p117",
+       "e1": "polygon17.circle"
+      },
+      {
+       "id": "c180c7w",
+       "type": "onEntity",
+       "a": "p118",
+       "e1": "polygon17.circle"
+      },
+      {
+       "id": "c18193c",
+       "type": "onEntity",
+       "a": "p119",
+       "e1": "polygon17.circle"
+      },
+      {
+       "id": "c182jlw",
+       "type": "equal",
+       "e1": "polygon17.0",
+       "e2": "polygon17.1"
+      },
+      {
+       "id": "c183vud",
+       "type": "equal",
+       "e1": "polygon17.0",
+       "e2": "polygon17.2"
+      },
+      {
+       "id": "c184572",
+       "type": "equal",
+       "e1": "polygon17.0",
+       "e2": "polygon17.3"
+      },
+      {
+       "id": "c185nga",
+       "type": "equal",
+       "e1": "polygon17.0",
+       "e2": "polygon17.4"
+      },
+      {
+       "id": "c186yqq",
+       "type": "equal",
+       "e1": "polygon17.0",
+       "e2": "polygon17.5"
+      },
+      {
+       "id": "c187926",
+       "type": "onEntity",
+       "a": "p121",
+       "e1": "polygon18.circle"
+      },
+      {
+       "id": "c188tqm",
+       "type": "onEntity",
+       "a": "p122",
+       "e1": "polygon18.circle"
+      },
+      {
+       "id": "c189ho9",
+       "type": "onEntity",
+       "a": "p123",
+       "e1": "polygon18.circle"
+      },
+      {
+       "id": "c190sgb",
+       "type": "onEntity",
+       "a": "p124",
+       "e1": "polygon18.circle"
+      },
+      {
+       "id": "c191998",
+       "type": "onEntity",
+       "a": "p125",
+       "e1": "polygon18.circle"
+      },
+      {
+       "id": "c192la4",
+       "type": "onEntity",
+       "a": "p126",
+       "e1": "polygon18.circle"
+      },
+      {
+       "id": "c193wf3",
+       "type": "equal",
+       "e1": "polygon18.0",
+       "e2": "polygon18.1"
+      },
+      {
+       "id": "c194gh0",
+       "type": "equal",
+       "e1": "polygon18.0",
+       "e2": "polygon18.2"
+      },
+      {
+       "id": "c195tys",
+       "type": "equal",
+       "e1": "polygon18.0",
+       "e2": "polygon18.3"
+      },
+      {
+       "id": "c1961e7",
+       "type": "equal",
+       "e1": "polygon18.0",
+       "e2": "polygon18.4"
+      },
+      {
+       "id": "c197y3f",
+       "type": "equal",
+       "e1": "polygon18.0",
+       "e2": "polygon18.5"
+      },
+      {
+       "id": "c1985gy",
+       "type": "onEntity",
+       "a": "p128",
+       "e1": "polygon19.circle"
+      },
+      {
+       "id": "c199hcs",
+       "type": "onEntity",
+       "a": "p129",
+       "e1": "polygon19.circle"
+      },
+      {
+       "id": "c200w57",
+       "type": "onEntity",
+       "a": "p130",
+       "e1": "polygon19.circle"
+      },
+      {
+       "id": "c201oyu",
+       "type": "onEntity",
+       "a": "p131",
+       "e1": "polygon19.circle"
+      },
+      {
+       "id": "c202vsb",
+       "type": "onEntity",
+       "a": "p132",
+       "e1": "polygon19.circle"
+      },
+      {
+       "id": "c203504",
+       "type": "onEntity",
+       "a": "p133",
+       "e1": "polygon19.circle"
+      },
+      {
+       "id": "c204c7l",
+       "type": "equal",
+       "e1": "polygon19.0",
+       "e2": "polygon19.1"
+      },
+      {
+       "id": "c205gl7",
+       "type": "equal",
+       "e1": "polygon19.0",
+       "e2": "polygon19.2"
+      },
+      {
+       "id": "c2061yi",
+       "type": "equal",
+       "e1": "polygon19.0",
+       "e2": "polygon19.3"
+      },
+      {
+       "id": "c207wf6",
+       "type": "equal",
+       "e1": "polygon19.0",
+       "e2": "polygon19.4"
+      },
+      {
+       "id": "c208pcf",
+       "type": "equal",
+       "e1": "polygon19.0",
+       "e2": "polygon19.5"
+      },
+      {
+       "id": "c209zay",
+       "type": "onEntity",
+       "a": "p135",
+       "e1": "polygon20.circle"
+      },
+      {
+       "id": "c210ibg",
+       "type": "onEntity",
+       "a": "p136",
+       "e1": "polygon20.circle"
+      },
+      {
+       "id": "c2111a6",
+       "type": "onEntity",
+       "a": "p137",
+       "e1": "polygon20.circle"
+      },
+      {
+       "id": "c2127pn",
+       "type": "onEntity",
+       "a": "p138",
+       "e1": "polygon20.circle"
+      },
+      {
+       "id": "c21340j",
+       "type": "onEntity",
+       "a": "p139",
+       "e1": "polygon20.circle"
+      },
+      {
+       "id": "c214iye",
+       "type": "onEntity",
+       "a": "p140",
+       "e1": "polygon20.circle"
+      },
+      {
+       "id": "c215i4l",
+       "type": "equal",
+       "e1": "polygon20.0",
+       "e2": "polygon20.1"
+      },
+      {
+       "id": "c216mra",
+       "type": "equal",
+       "e1": "polygon20.0",
+       "e2": "polygon20.2"
+      },
+      {
+       "id": "c217dd6",
+       "type": "equal",
+       "e1": "polygon20.0",
+       "e2": "polygon20.3"
+      },
+      {
+       "id": "c218nvv",
+       "type": "equal",
+       "e1": "polygon20.0",
+       "e2": "polygon20.4"
+      },
+      {
+       "id": "c219lt0",
+       "type": "equal",
+       "e1": "polygon20.0",
+       "e2": "polygon20.5"
+      },
+      {
+       "id": "c220qmw",
+       "type": "onEntity",
+       "a": "p142",
+       "e1": "polygon21.circle"
+      },
+      {
+       "id": "c221vyw",
+       "type": "onEntity",
+       "a": "p143",
+       "e1": "polygon21.circle"
+      },
+      {
+       "id": "c222l09",
+       "type": "onEntity",
+       "a": "p144",
+       "e1": "polygon21.circle"
+      },
+      {
+       "id": "c223ysq",
+       "type": "onEntity",
+       "a": "p145",
+       "e1": "polygon21.circle"
+      },
+      {
+       "id": "c2241ku",
+       "type": "onEntity",
+       "a": "p146",
+       "e1": "polygon21.circle"
+      },
+      {
+       "id": "c225ujg",
+       "type": "onEntity",
+       "a": "p147",
+       "e1": "polygon21.circle"
+      },
+      {
+       "id": "c2266kv",
+       "type": "equal",
+       "e1": "polygon21.0",
+       "e2": "polygon21.1"
+      },
+      {
+       "id": "c227u4v",
+       "type": "equal",
+       "e1": "polygon21.0",
+       "e2": "polygon21.2"
+      },
+      {
+       "id": "c228q26",
+       "type": "equal",
+       "e1": "polygon21.0",
+       "e2": "polygon21.3"
+      },
+      {
+       "id": "c229785",
+       "type": "equal",
+       "e1": "polygon21.0",
+       "e2": "polygon21.4"
+      },
+      {
+       "id": "c230ffo",
+       "type": "equal",
+       "e1": "polygon21.0",
+       "e2": "polygon21.5"
+      },
+      {
+       "id": "c231wqf",
+       "type": "onEntity",
+       "a": "p149",
+       "e1": "polygon22.circle"
+      },
+      {
+       "id": "c2326tk",
+       "type": "onEntity",
+       "a": "p150",
+       "e1": "polygon22.circle"
+      },
+      {
+       "id": "c2336o1",
+       "type": "onEntity",
+       "a": "p151",
+       "e1": "polygon22.circle"
+      },
+      {
+       "id": "c234smp",
+       "type": "onEntity",
+       "a": "p152",
+       "e1": "polygon22.circle"
+      },
+      {
+       "id": "c235tj5",
+       "type": "onEntity",
+       "a": "p153",
+       "e1": "polygon22.circle"
+      },
+      {
+       "id": "c2368fh",
+       "type": "onEntity",
+       "a": "p154",
+       "e1": "polygon22.circle"
+      },
+      {
+       "id": "c237mhh",
+       "type": "equal",
+       "e1": "polygon22.0",
+       "e2": "polygon22.1"
+      },
+      {
+       "id": "c238mdl",
+       "type": "equal",
+       "e1": "polygon22.0",
+       "e2": "polygon22.2"
+      },
+      {
+       "id": "c239ely",
+       "type": "equal",
+       "e1": "polygon22.0",
+       "e2": "polygon22.3"
+      },
+      {
+       "id": "c240cua",
+       "type": "equal",
+       "e1": "polygon22.0",
+       "e2": "polygon22.4"
+      },
+      {
+       "id": "c2410ib",
+       "type": "equal",
+       "e1": "polygon22.0",
+       "e2": "polygon22.5"
+      },
+      {
+       "id": "c242ja4",
+       "type": "onEntity",
+       "a": "p156",
+       "e1": "polygon23.circle"
+      },
+      {
+       "id": "c243mhj",
+       "type": "onEntity",
+       "a": "p157",
+       "e1": "polygon23.circle"
+      },
+      {
+       "id": "c244nxv",
+       "type": "onEntity",
+       "a": "p158",
+       "e1": "polygon23.circle"
+      },
+      {
+       "id": "c245fey",
+       "type": "onEntity",
+       "a": "p159",
+       "e1": "polygon23.circle"
+      },
+      {
+       "id": "c246iml",
+       "type": "onEntity",
+       "a": "p160",
+       "e1": "polygon23.circle"
+      },
+      {
+       "id": "c2479g0",
+       "type": "onEntity",
+       "a": "p161",
+       "e1": "polygon23.circle"
+      },
+      {
+       "id": "c248y2s",
+       "type": "equal",
+       "e1": "polygon23.0",
+       "e2": "polygon23.1"
+      },
+      {
+       "id": "c249fjx",
+       "type": "equal",
+       "e1": "polygon23.0",
+       "e2": "polygon23.2"
+      },
+      {
+       "id": "c250v2e",
+       "type": "equal",
+       "e1": "polygon23.0",
+       "e2": "polygon23.3"
+      },
+      {
+       "id": "c251xqt",
+       "type": "equal",
+       "e1": "polygon23.0",
+       "e2": "polygon23.4"
+      },
+      {
+       "id": "c2523tt",
+       "type": "equal",
+       "e1": "polygon23.0",
+       "e2": "polygon23.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        34
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        -12.792,
+        34
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        12.792,
+        34
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        -25.584,
+        34
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        25.584,
+        34
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        -6.396,
+        45.078
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        6.396,
+        45.078
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        -19.188,
+        45.078
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        19.188,
+        45.078
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        56.156
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        -12.792,
+        56.156
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        12.792,
+        56.156
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        -25.584,
+        56.156
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        25.584,
+        56.156
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        -6.396,
+        67.235
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        6.396,
+        67.235
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        -19.188,
+        67.235
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        19.188,
+        67.235
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        78.313
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        -12.792,
+        78.313
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        12.792,
+        78.313
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        -25.584,
+        78.313
+       ],
+       "radius": 6,
+       "sides": 6
+      },
+      {
+       "type": "polygon",
+       "center": [
+        25.584,
+        78.313
+       ],
+       "radius": 6,
+       "sides": 6
+      }
+     ],
+     "constraints": []
+    }
+   }
+  },
+  {
+   "id": "fgfeuj",
+   "type": "extrude",
+   "name": "Cut honeycomb",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -8.881784197001252e-16,
+       34
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -12.792000000000002,
+       34
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       12.792,
+       34
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -25.584000000000003,
+       34
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       25.584,
+       34
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -6.396000000000001,
+       45.078
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       6.395999999999998,
+       45.078
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -19.188,
+       45.078
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       19.188,
+       45.078
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -8.881784197001252e-16,
+       56.156
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -12.792000000000002,
+       56.156
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       12.792,
+       56.156
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -25.584000000000003,
+       56.156
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       25.584,
+       56.156
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -6.396000000000001,
+       67.235
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       6.395999999999998,
+       67.235
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -19.188,
+       67.235
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       19.188,
+       67.235
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -8.881784197001252e-16,
+       78.313
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -12.792000000000002,
+       78.313
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       12.792,
+       78.313
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       -25.584000000000003,
+       78.313
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "ffj0th",
+      "pt": [
+       25.584,
+       78.313
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "10",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Hex pattern",
+      "region": "all"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-8.881784197001252e-16,34]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-12.792000000000002,34]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[12.792,34]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-25.584000000000003,34]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[25.584,34]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-6.396000000000001,45.078]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[6.395999999999998,45.078]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-19.188,45.078]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[19.188,45.078]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-8.881784197001252e-16,56.156]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-12.792000000000002,56.156]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[12.792,56.156]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-25.584000000000003,56.156]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[25.584,56.156]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-6.396000000000001,67.235]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[6.395999999999998,67.235]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-19.188,67.235]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[19.188,67.235]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-8.881784197001252e-16,78.313]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-12.792000000000002,78.313]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[12.792,78.313]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[-25.584000000000003,78.313]},{\"kind\":\"region\",\"sketch\":\"ffj0th\",\"pt\":[25.584,78.313]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f29gqj": {
+   "name": "Hex Tilt Stand",
+   "color": "#2f6f73",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 5,
+  "extrude": 4,
+  "plane": 1,
+  "fillet": 3
+ }
+}
