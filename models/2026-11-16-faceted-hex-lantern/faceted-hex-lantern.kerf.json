@@ -1,0 +1,826 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Faceted Hex Lantern",
+ "features": [
+  {
+   "id": "f11ba5",
+   "type": "sketch",
+   "name": "Outer hex",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 2.0818995585505003e-15,
+       "y": 34
+      },
+      {
+       "id": "p2",
+       "x": -29.44486372867091,
+       "y": 17.00000000000001
+      },
+      {
+       "id": "p3",
+       "x": -29.44486372867092,
+       "y": -16.99999999999999
+      },
+      {
+       "id": "p4",
+       "x": -6.245698675651501e-15,
+       "y": -34
+      },
+      {
+       "id": "p5",
+       "x": 29.444863728670903,
+       "y": -17.000000000000014
+      },
+      {
+       "id": "p6",
+       "x": 29.444863728670914,
+       "y": 17
+      }
+     ],
+     "ents": [
+      {
+       "id": "outer.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 34,
+       "construction": true
+      },
+      {
+       "id": "outer.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "outer.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "outer.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "outer.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "outer.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "outer.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c05hn",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "outer.circle"
+      },
+      {
+       "id": "c13ns",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "outer.circle"
+      },
+      {
+       "id": "c2y4z",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "outer.circle"
+      },
+      {
+       "id": "c3jsm",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "outer.circle"
+      },
+      {
+       "id": "c4akx",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "outer.circle"
+      },
+      {
+       "id": "c58jc",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "outer.circle"
+      },
+      {
+       "id": "c6eaa",
+       "type": "equal",
+       "e1": "outer.0",
+       "e2": "outer.1"
+      },
+      {
+       "id": "c7v65",
+       "type": "equal",
+       "e1": "outer.0",
+       "e2": "outer.2"
+      },
+      {
+       "id": "c8km7",
+       "type": "equal",
+       "e1": "outer.0",
+       "e2": "outer.3"
+      },
+      {
+       "id": "c9tyl",
+       "type": "equal",
+       "e1": "outer.0",
+       "e2": "outer.4"
+      },
+      {
+       "id": "c100ds",
+       "type": "equal",
+       "e1": "outer.0",
+       "e2": "outer.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "outer",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 34,
+       "sides": 6
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f24zi4",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f11ba5",
+      "pt": [
+       -4.736951571734001e-15,
+       -1.1842378929335002e-15
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "65",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Outer hex"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f11ba5\",\"pt\":[-4.736951571734001e-15,-1.1842378929335002e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f3haso",
+   "type": "sketch",
+   "name": "Cavity hex",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f24zi4",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       1.1842378929335002e-15,
+       0,
+       65
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 1.9686197296293703e-15,
+       "y": 32.15
+      },
+      {
+       "id": "p2",
+       "x": -27.842716731669697,
+       "y": 16.07500000000001
+      },
+      {
+       "id": "p3",
+       "x": -27.842716731669707,
+       "y": -16.07499999999999
+      },
+      {
+       "id": "p4",
+       "x": -5.90585918888811e-15,
+       "y": -32.15
+      },
+      {
+       "id": "p5",
+       "x": 27.842716731669693,
+       "y": -16.075000000000014
+      },
+      {
+       "id": "p6",
+       "x": 27.8427167316697,
+       "y": 16.075
+      }
+     ],
+     "ents": [
+      {
+       "id": "inner.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 32.15,
+       "construction": true
+      },
+      {
+       "id": "inner.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "inner.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "inner.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "inner.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "inner.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "inner.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0gj6",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "inner.circle"
+      },
+      {
+       "id": "c1m0v",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "inner.circle"
+      },
+      {
+       "id": "c29v7",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "inner.circle"
+      },
+      {
+       "id": "c35pp",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "inner.circle"
+      },
+      {
+       "id": "c493c",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "inner.circle"
+      },
+      {
+       "id": "c54xo",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "inner.circle"
+      },
+      {
+       "id": "c6e5o",
+       "type": "equal",
+       "e1": "inner.0",
+       "e2": "inner.1"
+      },
+      {
+       "id": "c7r2a",
+       "type": "equal",
+       "e1": "inner.0",
+       "e2": "inner.2"
+      },
+      {
+       "id": "c8302",
+       "type": "equal",
+       "e1": "inner.0",
+       "e2": "inner.3"
+      },
+      {
+       "id": "c9nt2",
+       "type": "equal",
+       "e1": "inner.0",
+       "e2": "inner.4"
+      },
+      {
+       "id": "c108v2",
+       "type": "equal",
+       "e1": "inner.0",
+       "e2": "inner.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "inner",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 32.15,
+       "sides": 6
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f24zi4\",\"n\":[0,0,1],\"p\":[1.1842378929335002e-15,0,65]}]"
+    }
+   }
+  },
+  {
+   "id": "f4u6i4",
+   "type": "extrude",
+   "name": "Cavity",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3haso",
+      "pt": [
+       -3.552713678800501e-15,
+       -1.1842378929335002e-15
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "63",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cavity hex"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3haso\",\"pt\":[-3.552713678800501e-15,-1.1842378929335002e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f52za5",
+   "type": "sketch",
+   "name": "Window",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 10
+      },
+      {
+       "id": "p2",
+       "x": 10,
+       "y": 20
+      },
+      {
+       "id": "p3",
+       "x": 10,
+       "y": 48
+      },
+      {
+       "id": "p4",
+       "x": 0,
+       "y": 60
+      },
+      {
+       "id": "p5",
+       "x": -10,
+       "y": 48
+      },
+      {
+       "id": "p6",
+       "x": -10,
+       "y": 20
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c021s",
+       "type": "vertical",
+       "e1": "polyline1.1"
+      },
+      {
+       "id": "c1x30",
+       "type": "vertical",
+       "e1": "polyline1.4"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         10
+        ],
+        [
+         10,
+         20
+        ],
+        [
+         10,
+         48
+        ],
+        [
+         0,
+         60
+        ],
+        [
+         -10,
+         48
+        ],
+        [
+         -10,
+         20
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6yrc3",
+   "type": "extrude",
+   "name": "Window cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f52za5",
+      "pt": [
+       0,
+       35.333333333333336
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Window"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f52za5\",\"pt\":[0,35.333333333333336]}]"
+    }
+   }
+  },
+  {
+   "id": "f7o7nn",
+   "type": "extrude",
+   "name": "Window cut opposite",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f52za5",
+      "pt": [
+       0,
+       35.333333333333336
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Window"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f52za5\",\"pt\":[0,35.333333333333336]}]"
+    }
+   }
+  },
+  {
+   "id": "f8zf9n",
+   "type": "cpattern",
+   "name": "Window pattern",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f6yrc3"
+     },
+     {
+      "kind": "feature",
+      "id": "f7o7nn"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "3",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": [
+      "Window cut",
+      "Window cut opposite"
+     ]
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f6yrc3\"},{\"kind\":\"feature\",\"id\":\"f7o7nn\"}]"
+    }
+   }
+  },
+  {
+   "id": "fbx64r",
+   "type": "chamfer",
+   "name": "Bottom chamfer",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f24zi4",
+      "a": [
+       2.0818996229250058e-15,
+       34,
+       0
+      ],
+      "b": [
+       29.44486427307129,
+       17,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f24zi4",
+      "a": [
+       29.44486427307129,
+       -17,
+       0
+      ],
+      "b": [
+       29.44486427307129,
+       17,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f24zi4",
+      "a": [
+       29.44486427307129,
+       -17,
+       0
+      ],
+      "b": [
+       -6.2456986570167804e-15,
+       -34,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f24zi4",
+      "a": [
+       -6.2456986570167804e-15,
+       -34,
+       0
+      ],
+      "b": [
+       -29.44486427307129,
+       -17,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f24zi4",
+      "a": [
+       -29.44486427307129,
+       -17,
+       0
+      ],
+      "b": [
+       -29.44486427307129,
+       17,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f24zi4",
+      "a": [
+       2.0818996229250058e-15,
+       34,
+       0
+      ],
+      "b": [
+       -29.44486427307129,
+       17,
+       0
+      ]
+     }
+    ],
+    "distance": "0.6",
+    "asym": false,
+    "distance2": "4",
+    "__sel": {
+     "edges": {
+      "edges_of": {
+       "normal": [
+        0,
+        0,
+        -1
+       ]
+      }
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f24zi4\",\"a\":[2.0818996229250058e-15,34,0],\"b\":[29.44486427307129,17,0]},{\"kind\":\"edge\",\"part\":\"f24zi4\",\"a\":[29.44486427307129,-17,0],\"b\":[29.44486427307129,17,0]},{\"kind\":\"edge\",\"part\":\"f24zi4\",\"a\":[29.44486427307129,-17,0],\"b\":[-6.2456986570167804e-15,-34,0]},{\"kind\":\"edge\",\"part\":\"f24zi4\",\"a\":[-6.2456986570167804e-15,-34,0],\"b\":[-29.44486427307129,-17,0]},{\"kind\":\"edge\",\"part\":\"f24zi4\",\"a\":[-29.44486427307129,-17,0],\"b\":[-29.44486427307129,17,0]},{\"kind\":\"edge\",\"part\":\"f24zi4\",\"a\":[2.0818996229250058e-15,34,0],\"b\":[-29.44486427307129,17,0]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f24zi4": {
+   "name": "Faceted Hex Lantern",
+   "color": "#e8e4dc",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 3,
+  "extrude": 4,
+  "cpattern": 1,
+  "chamfer": 1
+ }
+}
