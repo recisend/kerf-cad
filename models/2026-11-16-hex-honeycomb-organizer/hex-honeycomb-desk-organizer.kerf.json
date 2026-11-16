@@ -1,0 +1,1451 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Hex Honeycomb Desk Organizer",
+ "features": [
+  {
+   "id": "f1sx4w",
+   "type": "sketch",
+   "name": "Outer A",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 1.83697019872103e-15,
+       "y": 30
+      },
+      {
+       "id": "p2",
+       "x": -25.980762113533153,
+       "y": 15.00000000000001
+      },
+      {
+       "id": "p3",
+       "x": -25.980762113533164,
+       "y": -14.999999999999991
+      },
+      {
+       "id": "p4",
+       "x": -5.510910596163089e-15,
+       "y": -30
+      },
+      {
+       "id": "p5",
+       "x": 25.980762113533153,
+       "y": -15.000000000000014
+      },
+      {
+       "id": "p6",
+       "x": 25.980762113533157,
+       "y": 15
+      }
+     ],
+     "ents": [
+      {
+       "id": "hexA.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 30,
+       "construction": true
+      },
+      {
+       "id": "hexA.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "hexA.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "hexA.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "hexA.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "hexA.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "hexA.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0o0f",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "hexA.circle"
+      },
+      {
+       "id": "c1ep4",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "hexA.circle"
+      },
+      {
+       "id": "c2y15",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "hexA.circle"
+      },
+      {
+       "id": "c307m",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "hexA.circle"
+      },
+      {
+       "id": "c474m",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "hexA.circle"
+      },
+      {
+       "id": "c52i0",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "hexA.circle"
+      },
+      {
+       "id": "c6yfz",
+       "type": "equal",
+       "e1": "hexA.0",
+       "e2": "hexA.1"
+      },
+      {
+       "id": "c7syg",
+       "type": "equal",
+       "e1": "hexA.0",
+       "e2": "hexA.2"
+      },
+      {
+       "id": "c8vzv",
+       "type": "equal",
+       "e1": "hexA.0",
+       "e2": "hexA.3"
+      },
+      {
+       "id": "c96ai",
+       "type": "equal",
+       "e1": "hexA.0",
+       "e2": "hexA.4"
+      },
+      {
+       "id": "c10mwo",
+       "type": "equal",
+       "e1": "hexA.0",
+       "e2": "hexA.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "hexA",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 30,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2aii0",
+   "type": "extrude",
+   "name": "Cup A",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1sx4w",
+      "pt": [
+       -2.3684757858670005e-15,
+       -1.7763568394002505e-15
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "70",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Outer A"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1sx4w\",\"pt\":[-2.3684757858670005e-15,-1.7763568394002505e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f389fg",
+   "type": "sketch",
+   "name": "Outer B",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 51.962,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 51.962,
+       "y": 30
+      },
+      {
+       "id": "p3",
+       "x": 25.98123788646685,
+       "y": 15.00000000000001
+      },
+      {
+       "id": "p4",
+       "x": 25.98123788646684,
+       "y": -14.999999999999991
+      },
+      {
+       "id": "p5",
+       "x": 51.961999999999996,
+       "y": -30
+      },
+      {
+       "id": "p6",
+       "x": 77.94276211353315,
+       "y": -15.000000000000014
+      },
+      {
+       "id": "p7",
+       "x": 77.94276211353316,
+       "y": 15
+      }
+     ],
+     "ents": [
+      {
+       "id": "hexB.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 30,
+       "construction": true
+      },
+      {
+       "id": "hexB.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "hexB.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "hexB.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "hexB.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "hexB.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "hexB.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0o0z",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "hexB.circle"
+      },
+      {
+       "id": "c15s2",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "hexB.circle"
+      },
+      {
+       "id": "c2xd4",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "hexB.circle"
+      },
+      {
+       "id": "c3860",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "hexB.circle"
+      },
+      {
+       "id": "c46aq",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "hexB.circle"
+      },
+      {
+       "id": "c5xhs",
+       "type": "onEntity",
+       "a": "p7",
+       "e1": "hexB.circle"
+      },
+      {
+       "id": "c6zgg",
+       "type": "equal",
+       "e1": "hexB.0",
+       "e2": "hexB.1"
+      },
+      {
+       "id": "c7fz6",
+       "type": "equal",
+       "e1": "hexB.0",
+       "e2": "hexB.2"
+      },
+      {
+       "id": "c84x9",
+       "type": "equal",
+       "e1": "hexB.0",
+       "e2": "hexB.3"
+      },
+      {
+       "id": "c9ggx",
+       "type": "equal",
+       "e1": "hexB.0",
+       "e2": "hexB.4"
+      },
+      {
+       "id": "c10rqh",
+       "type": "equal",
+       "e1": "hexB.0",
+       "e2": "hexB.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "hexB",
+       "center": [
+        51.962,
+        0
+       ],
+       "radius": 30,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f41f7g",
+   "type": "sketch",
+   "name": "Outer C",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 25.981,
+       "y": 45
+      },
+      {
+       "id": "p2",
+       "x": 25.981000000000005,
+       "y": 75
+      },
+      {
+       "id": "p3",
+       "x": 0.0002378864668486358,
+       "y": 60.000000000000014
+      },
+      {
+       "id": "p4",
+       "x": 0.00023788646683797765,
+       "y": 30.000000000000007
+      },
+      {
+       "id": "p5",
+       "x": 25.980999999999995,
+       "y": 15
+      },
+      {
+       "id": "p6",
+       "x": 51.961762113533155,
+       "y": 29.999999999999986
+      },
+      {
+       "id": "p7",
+       "x": 51.961762113533155,
+       "y": 60
+      }
+     ],
+     "ents": [
+      {
+       "id": "hexC.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 30,
+       "construction": true
+      },
+      {
+       "id": "hexC.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "hexC.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "hexC.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "hexC.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "hexC.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "hexC.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0z2j",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "hexC.circle"
+      },
+      {
+       "id": "c195e",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "hexC.circle"
+      },
+      {
+       "id": "c24ea",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "hexC.circle"
+      },
+      {
+       "id": "c3nms",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "hexC.circle"
+      },
+      {
+       "id": "c4fly",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "hexC.circle"
+      },
+      {
+       "id": "c5mng",
+       "type": "onEntity",
+       "a": "p7",
+       "e1": "hexC.circle"
+      },
+      {
+       "id": "c6rqv",
+       "type": "equal",
+       "e1": "hexC.0",
+       "e2": "hexC.1"
+      },
+      {
+       "id": "c7anp",
+       "type": "equal",
+       "e1": "hexC.0",
+       "e2": "hexC.2"
+      },
+      {
+       "id": "c82yg",
+       "type": "equal",
+       "e1": "hexC.0",
+       "e2": "hexC.3"
+      },
+      {
+       "id": "c93zh",
+       "type": "equal",
+       "e1": "hexC.0",
+       "e2": "hexC.4"
+      },
+      {
+       "id": "c10lx6",
+       "type": "equal",
+       "e1": "hexC.0",
+       "e2": "hexC.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "hexC",
+       "center": [
+        25.981,
+        45
+       ],
+       "radius": 30,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5geaw",
+   "type": "extrude",
+   "name": "Cup B",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f389fg",
+      "pt": [
+       51.96199999999999,
+       -1.7763568394002505e-15
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "90",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Outer B"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f389fg\",\"pt\":[51.96199999999999,-1.7763568394002505e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f6bob4",
+   "type": "extrude",
+   "name": "Cup C",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f41f7g",
+      "pt": [
+       25.980999999999998,
+       45
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "55",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Outer C"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f41f7g\",\"pt\":[25.980999999999998,45]}]"
+    }
+   }
+  },
+  {
+   "id": "f717ws",
+   "type": "plane",
+   "name": "Floor Plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "2",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8x78k",
+   "type": "sketch",
+   "name": "Pockets",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f717ws"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 1.7238740668197718e-15,
+       "y": 28.153
+      },
+      {
+       "id": "p2",
+       "x": -24.381213192743296,
+       "y": 14.076500000000008
+      },
+      {
+       "id": "p3",
+       "x": -24.381213192743306,
+       "y": -14.076499999999992
+      },
+      {
+       "id": "p4",
+       "x": -5.171622200459315e-15,
+       "y": -28.153
+      },
+      {
+       "id": "p5",
+       "x": 24.381213192743292,
+       "y": -14.076500000000012
+      },
+      {
+       "id": "p6",
+       "x": 24.3812131927433,
+       "y": 14.0765
+      },
+      {
+       "id": "p7",
+       "x": 51.962,
+       "y": 0
+      },
+      {
+       "id": "p8",
+       "x": 51.962,
+       "y": 28.153
+      },
+      {
+       "id": "p9",
+       "x": 27.580786807256708,
+       "y": 14.076500000000008
+      },
+      {
+       "id": "p10",
+       "x": 27.580786807256697,
+       "y": -14.076499999999992
+      },
+      {
+       "id": "p11",
+       "x": 51.961999999999996,
+       "y": -28.153
+      },
+      {
+       "id": "p12",
+       "x": 76.34321319274329,
+       "y": -14.076500000000012
+      },
+      {
+       "id": "p13",
+       "x": 76.3432131927433,
+       "y": 14.0765
+      },
+      {
+       "id": "p14",
+       "x": 25.981,
+       "y": 45
+      },
+      {
+       "id": "p15",
+       "x": 25.981,
+       "y": 73.15299999999999
+      },
+      {
+       "id": "p16",
+       "x": 1.5997868072567059,
+       "y": 59.07650000000001
+      },
+      {
+       "id": "p17",
+       "x": 1.5997868072566952,
+       "y": 30.923500000000008
+      },
+      {
+       "id": "p18",
+       "x": 25.980999999999998,
+       "y": 16.847
+      },
+      {
+       "id": "p19",
+       "x": 50.3622131927433,
+       "y": 30.92349999999999
+      },
+      {
+       "id": "p20",
+       "x": 50.3622131927433,
+       "y": 59.076499999999996
+      }
+     ],
+     "ents": [
+      {
+       "id": "pA.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 28.153,
+       "construction": true
+      },
+      {
+       "id": "pA.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "pA.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "pA.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "pA.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "pA.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "pA.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "pB.circle",
+       "type": "circle",
+       "c": "p7",
+       "r": 28.153,
+       "construction": true
+      },
+      {
+       "id": "pB.0",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "pB.1",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "pB.2",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "pB.3",
+       "type": "line",
+       "p1": "p11",
+       "p2": "p12",
+       "construction": false
+      },
+      {
+       "id": "pB.4",
+       "type": "line",
+       "p1": "p12",
+       "p2": "p13",
+       "construction": false
+      },
+      {
+       "id": "pB.5",
+       "type": "line",
+       "p1": "p13",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "pC.circle",
+       "type": "circle",
+       "c": "p14",
+       "r": 28.153,
+       "construction": true
+      },
+      {
+       "id": "pC.0",
+       "type": "line",
+       "p1": "p15",
+       "p2": "p16",
+       "construction": false
+      },
+      {
+       "id": "pC.1",
+       "type": "line",
+       "p1": "p16",
+       "p2": "p17",
+       "construction": false
+      },
+      {
+       "id": "pC.2",
+       "type": "line",
+       "p1": "p17",
+       "p2": "p18",
+       "construction": false
+      },
+      {
+       "id": "pC.3",
+       "type": "line",
+       "p1": "p18",
+       "p2": "p19",
+       "construction": false
+      },
+      {
+       "id": "pC.4",
+       "type": "line",
+       "p1": "p19",
+       "p2": "p20",
+       "construction": false
+      },
+      {
+       "id": "pC.5",
+       "type": "line",
+       "p1": "p20",
+       "p2": "p15",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0urh",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "pA.circle"
+      },
+      {
+       "id": "c1nvm",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "pA.circle"
+      },
+      {
+       "id": "c2e5c",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "pA.circle"
+      },
+      {
+       "id": "c3c6c",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "pA.circle"
+      },
+      {
+       "id": "c4bb5",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "pA.circle"
+      },
+      {
+       "id": "c52qk",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "pA.circle"
+      },
+      {
+       "id": "c6cwf",
+       "type": "equal",
+       "e1": "pA.0",
+       "e2": "pA.1"
+      },
+      {
+       "id": "c7j5v",
+       "type": "equal",
+       "e1": "pA.0",
+       "e2": "pA.2"
+      },
+      {
+       "id": "c8t3b",
+       "type": "equal",
+       "e1": "pA.0",
+       "e2": "pA.3"
+      },
+      {
+       "id": "c9msy",
+       "type": "equal",
+       "e1": "pA.0",
+       "e2": "pA.4"
+      },
+      {
+       "id": "c10aiz",
+       "type": "equal",
+       "e1": "pA.0",
+       "e2": "pA.5"
+      },
+      {
+       "id": "c1171o",
+       "type": "onEntity",
+       "a": "p8",
+       "e1": "pB.circle"
+      },
+      {
+       "id": "c12jmz",
+       "type": "onEntity",
+       "a": "p9",
+       "e1": "pB.circle"
+      },
+      {
+       "id": "c13iwk",
+       "type": "onEntity",
+       "a": "p10",
+       "e1": "pB.circle"
+      },
+      {
+       "id": "c14uud",
+       "type": "onEntity",
+       "a": "p11",
+       "e1": "pB.circle"
+      },
+      {
+       "id": "c15w4f",
+       "type": "onEntity",
+       "a": "p12",
+       "e1": "pB.circle"
+      },
+      {
+       "id": "c161dg",
+       "type": "onEntity",
+       "a": "p13",
+       "e1": "pB.circle"
+      },
+      {
+       "id": "c17ab7",
+       "type": "equal",
+       "e1": "pB.0",
+       "e2": "pB.1"
+      },
+      {
+       "id": "c18fyb",
+       "type": "equal",
+       "e1": "pB.0",
+       "e2": "pB.2"
+      },
+      {
+       "id": "c197jq",
+       "type": "equal",
+       "e1": "pB.0",
+       "e2": "pB.3"
+      },
+      {
+       "id": "c202ye",
+       "type": "equal",
+       "e1": "pB.0",
+       "e2": "pB.4"
+      },
+      {
+       "id": "c21fx4",
+       "type": "equal",
+       "e1": "pB.0",
+       "e2": "pB.5"
+      },
+      {
+       "id": "c2219b",
+       "type": "onEntity",
+       "a": "p15",
+       "e1": "pC.circle"
+      },
+      {
+       "id": "c23p9j",
+       "type": "onEntity",
+       "a": "p16",
+       "e1": "pC.circle"
+      },
+      {
+       "id": "c245r4",
+       "type": "onEntity",
+       "a": "p17",
+       "e1": "pC.circle"
+      },
+      {
+       "id": "c25gth",
+       "type": "onEntity",
+       "a": "p18",
+       "e1": "pC.circle"
+      },
+      {
+       "id": "c2691f",
+       "type": "onEntity",
+       "a": "p19",
+       "e1": "pC.circle"
+      },
+      {
+       "id": "c277uy",
+       "type": "onEntity",
+       "a": "p20",
+       "e1": "pC.circle"
+      },
+      {
+       "id": "c28492",
+       "type": "equal",
+       "e1": "pC.0",
+       "e2": "pC.1"
+      },
+      {
+       "id": "c299jx",
+       "type": "equal",
+       "e1": "pC.0",
+       "e2": "pC.2"
+      },
+      {
+       "id": "c30yux",
+       "type": "equal",
+       "e1": "pC.0",
+       "e2": "pC.3"
+      },
+      {
+       "id": "c314hx",
+       "type": "equal",
+       "e1": "pC.0",
+       "e2": "pC.4"
+      },
+      {
+       "id": "c32fmj",
+       "type": "equal",
+       "e1": "pC.0",
+       "e2": "pC.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "pA",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 28.153,
+       "sides": 6,
+       "angle": 0
+      },
+      {
+       "type": "polygon",
+       "id": "pB",
+       "center": [
+        51.962,
+        0
+       ],
+       "radius": 28.153,
+       "sides": 6,
+       "angle": 0
+      },
+      {
+       "type": "polygon",
+       "id": "pC",
+       "center": [
+        25.981,
+        45
+       ],
+       "radius": 28.153,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Floor Plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f717ws\"}]"
+    }
+   }
+  },
+  {
+   "id": "f95p8p",
+   "type": "extrude",
+   "name": "Cut Pockets",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f8x78k",
+      "pt": [
+       -4.736951571734001e-15,
+       -1.7763568394002505e-15
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f8x78k",
+      "pt": [
+       51.96199999999999,
+       -1.7763568394002505e-15
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f8x78k",
+      "pt": [
+       25.980999999999995,
+       45
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pockets",
+      "region": "all"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f8x78k\",\"pt\":[-4.736951571734001e-15,-1.7763568394002505e-15]},{\"kind\":\"region\",\"sketch\":\"f8x78k\",\"pt\":[51.96199999999999,-1.7763568394002505e-15]},{\"kind\":\"region\",\"sketch\":\"f8x78k\",\"pt\":[25.980999999999995,45]}]"
+    }
+   }
+  },
+  {
+   "id": "faou9i",
+   "type": "sketch",
+   "name": "Cable Notch",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 62
+      },
+      {
+       "id": "p2",
+       "x": 0,
+       "y": 80
+      },
+      {
+       "id": "p3",
+       "x": -6,
+       "y": 62
+      },
+      {
+       "id": "p4",
+       "x": -6,
+       "y": 80
+      },
+      {
+       "id": "p5",
+       "x": 6,
+       "y": 80
+      },
+      {
+       "id": "p6",
+       "x": 6,
+       "y": 62
+      }
+     ],
+     "ents": [
+      {
+       "id": "slot1.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0cva",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c1wma",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c2hui",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c3w30",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4zfv",
+       "type": "equal",
+       "e1": "slot1.arc1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4w53",
+       "type": "parallel",
+       "e1": "slot1.line1",
+       "e2": "slot1.axis"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "radius": 6,
+       "center1": [
+        0,
+        62
+       ],
+       "center2": [
+        0,
+        80
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "fb0cmb",
+   "type": "extrude",
+   "name": "Cut Notch",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "faou9i",
+      "pt": [
+       0.23463313526982046,
+       67.8842917425463
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "27",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cable Notch"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"faou9i\",\"pt\":[0.23463313526982046,67.8842917425463]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2aii0": {
+   "name": "Hex Honeycomb Desk Organizer",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 5,
+  "extrude": 5,
+  "plane": 1
+ }
+}
