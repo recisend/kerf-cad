@@ -1,0 +1,227 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Fluted Planter with Saucer",
+ "features": [
+  {
+   "id": "f19qoh",
+   "type": "primitive",
+   "name": "Planter Body",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "90",
+    "r": "45",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "0",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "f5hxjo",
+   "type": "primitive",
+   "name": "Cavity",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "90",
+    "r": "40",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "3",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f19qoh"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f19qoh\"}]"
+    }
+   }
+  },
+  {
+   "id": "f70i0i",
+   "type": "primitive",
+   "name": "Flute Cut",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "90",
+    "r": "3",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "46.2",
+    "y": "0",
+    "z": "8",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f19qoh"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f19qoh\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8qgzj",
+   "type": "cpattern",
+   "name": "Flute Pattern",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f70i0i"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "24",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Flute Cut"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f70i0i\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9o46e",
+   "type": "primitive",
+   "name": "Drain Hole",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "6",
+    "r": "4",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "-1",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f19qoh"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f19qoh\"}]"
+    }
+   }
+  },
+  {
+   "id": "fa2o03",
+   "type": "primitive",
+   "name": "Saucer Blank",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "12",
+    "r": "50",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "110",
+    "y": "0",
+    "z": "0",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "fbq710",
+   "type": "primitive",
+   "name": "Saucer Cavity",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "12",
+    "r": "48",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "110",
+    "y": "0",
+    "z": "2",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "fa2o03"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 2"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"fa2o03\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f19qoh": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "fa2o03": {
+   "name": "Part 2",
+   "color": "#c7a76a",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "primitive": 6,
+  "cpattern": 1
+ }
+}
