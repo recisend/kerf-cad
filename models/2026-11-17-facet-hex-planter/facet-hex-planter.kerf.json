@@ -1,0 +1,1055 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "facet-hex-planter",
+ "features": [
+  {
+   "id": "f1ct1p",
+   "type": "sketch",
+   "name": "Base Hex",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 2.0818995585505003e-15,
+       "y": 34
+      },
+      {
+       "id": "p2",
+       "x": -29.44486372867091,
+       "y": 17.00000000000001
+      },
+      {
+       "id": "p3",
+       "x": -29.44486372867092,
+       "y": -16.99999999999999
+      },
+      {
+       "id": "p4",
+       "x": -6.245698675651501e-15,
+       "y": -34
+      },
+      {
+       "id": "p5",
+       "x": 29.444863728670903,
+       "y": -17.000000000000014
+      },
+      {
+       "id": "p6",
+       "x": 29.444863728670914,
+       "y": 17
+      }
+     ],
+     "ents": [
+      {
+       "id": "hexb.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 34,
+       "construction": true
+      },
+      {
+       "id": "hexb.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "hexb.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "hexb.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "hexb.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "hexb.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "hexb.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0ksq",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "hexb.circle"
+      },
+      {
+       "id": "c1kbn",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "hexb.circle"
+      },
+      {
+       "id": "c2q0d",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "hexb.circle"
+      },
+      {
+       "id": "c3ayo",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "hexb.circle"
+      },
+      {
+       "id": "c4nz9",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "hexb.circle"
+      },
+      {
+       "id": "c5m2e",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "hexb.circle"
+      },
+      {
+       "id": "c6g7b",
+       "type": "equal",
+       "e1": "hexb.0",
+       "e2": "hexb.1"
+      },
+      {
+       "id": "c7huf",
+       "type": "equal",
+       "e1": "hexb.0",
+       "e2": "hexb.2"
+      },
+      {
+       "id": "c83fl",
+       "type": "equal",
+       "e1": "hexb.0",
+       "e2": "hexb.3"
+      },
+      {
+       "id": "c93d0",
+       "type": "equal",
+       "e1": "hexb.0",
+       "e2": "hexb.4"
+      },
+      {
+       "id": "c10l3j",
+       "type": "equal",
+       "e1": "hexb.0",
+       "e2": "hexb.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "hexb",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 34,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2uz24",
+   "type": "plane",
+   "name": "Rim Plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "70",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f35n3q",
+   "type": "sketch",
+   "name": "Rim Hex",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f2uz24"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 2.6942229581241772e-15,
+       "y": 44
+      },
+      {
+       "id": "p2",
+       "x": -38.10511776651529,
+       "y": 22.000000000000014
+      },
+      {
+       "id": "p3",
+       "x": -38.105117766515306,
+       "y": -21.99999999999999
+      },
+      {
+       "id": "p4",
+       "x": -8.082668874372531e-15,
+       "y": -44
+      },
+      {
+       "id": "p5",
+       "x": 38.10511776651529,
+       "y": -22.00000000000002
+      },
+      {
+       "id": "p6",
+       "x": 38.1051177665153,
+       "y": 22
+      }
+     ],
+     "ents": [
+      {
+       "id": "hext.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 44,
+       "construction": true
+      },
+      {
+       "id": "hext.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "hext.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "hext.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "hext.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "hext.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "hext.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0615",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "hext.circle"
+      },
+      {
+       "id": "c110p",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "hext.circle"
+      },
+      {
+       "id": "c2moj",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "hext.circle"
+      },
+      {
+       "id": "c3evi",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "hext.circle"
+      },
+      {
+       "id": "c461a",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "hext.circle"
+      },
+      {
+       "id": "c5sbv",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "hext.circle"
+      },
+      {
+       "id": "c65tt",
+       "type": "equal",
+       "e1": "hext.0",
+       "e2": "hext.1"
+      },
+      {
+       "id": "c7epf",
+       "type": "equal",
+       "e1": "hext.0",
+       "e2": "hext.2"
+      },
+      {
+       "id": "c8n1a",
+       "type": "equal",
+       "e1": "hext.0",
+       "e2": "hext.3"
+      },
+      {
+       "id": "c93td",
+       "type": "equal",
+       "e1": "hext.0",
+       "e2": "hext.4"
+      },
+      {
+       "id": "c10tct",
+       "type": "equal",
+       "e1": "hext.0",
+       "e2": "hext.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "hext",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 44,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Rim Plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f2uz24\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4bvai",
+   "type": "loft",
+   "name": "Planter Body",
+   "params": {
+    "profiles": [
+     {
+      "kind": "region",
+      "sketch": "f1ct1p",
+      "pt": [
+       -4.736951571734001e-15,
+       -1.1842378929335002e-15
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f35n3q",
+      "pt": [
+       -4.736951571734001e-15,
+       -3.552713678800501e-15
+      ]
+     }
+    ],
+    "op": "new",
+    "targets": [],
+    "__sel": {
+     "profiles": [
+      {
+       "sketch": "Base Hex"
+      },
+      {
+       "sketch": "Rim Hex"
+      }
+     ]
+    },
+    "__selres": {
+     "profiles": "[{\"kind\":\"region\",\"sketch\":\"f1ct1p\",\"pt\":[-4.736951571734001e-15,-1.1842378929335002e-15]},{\"kind\":\"region\",\"sketch\":\"f35n3q\",\"pt\":[-4.736951571734001e-15,-3.552713678800501e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f5kuik",
+   "type": "shell",
+   "name": "Hollow Pot",
+   "params": {
+    "faces": [
+     {
+      "kind": "face",
+      "part": "f4bvai",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       -5.556997299194336,
+       12.375,
+       70
+      ]
+     }
+    ],
+    "part": [],
+    "thickness": "2.0",
+    "__sel": {
+     "faces": [
+      {
+       "face": "top"
+      }
+     ]
+    },
+    "__selres": {
+     "faces": "[{\"kind\":\"face\",\"part\":\"f4bvai\",\"n\":[0,0,1],\"p\":[-5.556997299194336,12.375,70]}]"
+    }
+   }
+  },
+  {
+   "id": "f615mf",
+   "type": "sketch",
+   "name": "Drain Point",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "point1",
+       "type": "point",
+       "p": "O"
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "point",
+       "at": [
+        0,
+        0
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f7yxu0",
+   "type": "hole",
+   "name": "Drain Hole",
+   "params": {
+    "sketch": [
+     {
+      "kind": "sketch",
+      "id": "f615mf"
+     }
+    ],
+    "style": "simple",
+    "dia": "8",
+    "cboreDia": "11",
+    "cboreDepth": "6.4",
+    "csinkDia": "13",
+    "csinkAngle": "90",
+    "endType": "through",
+    "depth": "10",
+    "tipAngle": "118",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "sketch": "Drain Point"
+    },
+    "__selres": {
+     "sketch": "[{\"kind\":\"sketch\",\"id\":\"f615mf\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8tzor",
+   "type": "sketch",
+   "name": "Saucer Hex",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 100,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 100,
+       "y": 40
+      },
+      {
+       "id": "p3",
+       "x": 65.35898384862246,
+       "y": 20.000000000000014
+      },
+      {
+       "id": "p4",
+       "x": 65.35898384862244,
+       "y": -19.99999999999999
+      },
+      {
+       "id": "p5",
+       "x": 99.99999999999999,
+       "y": -40
+      },
+      {
+       "id": "p6",
+       "x": 134.64101615137753,
+       "y": -20.000000000000018
+      },
+      {
+       "id": "p7",
+       "x": 134.64101615137753,
+       "y": 20
+      }
+     ],
+     "ents": [
+      {
+       "id": "hexs.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 40,
+       "construction": true
+      },
+      {
+       "id": "hexs.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "hexs.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "hexs.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "hexs.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "hexs.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "hexs.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0s6q",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "hexs.circle"
+      },
+      {
+       "id": "c1sfv",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "hexs.circle"
+      },
+      {
+       "id": "c23g0",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "hexs.circle"
+      },
+      {
+       "id": "c378d",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "hexs.circle"
+      },
+      {
+       "id": "c4pcy",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "hexs.circle"
+      },
+      {
+       "id": "c5a5o",
+       "type": "onEntity",
+       "a": "p7",
+       "e1": "hexs.circle"
+      },
+      {
+       "id": "c6gf8",
+       "type": "equal",
+       "e1": "hexs.0",
+       "e2": "hexs.1"
+      },
+      {
+       "id": "c7n1l",
+       "type": "equal",
+       "e1": "hexs.0",
+       "e2": "hexs.2"
+      },
+      {
+       "id": "c8dd5",
+       "type": "equal",
+       "e1": "hexs.0",
+       "e2": "hexs.3"
+      },
+      {
+       "id": "c9fl3",
+       "type": "equal",
+       "e1": "hexs.0",
+       "e2": "hexs.4"
+      },
+      {
+       "id": "c10g5n",
+       "type": "equal",
+       "e1": "hexs.0",
+       "e2": "hexs.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "hexs",
+       "center": [
+        100,
+        0
+       ],
+       "radius": 40,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9p77l",
+   "type": "extrude",
+   "name": "Saucer Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f8tzor",
+      "pt": [
+       100,
+       -2.3684757858670005e-15
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "8",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Saucer Hex"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f8tzor\",\"pt\":[100,-2.3684757858670005e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "fc97vj",
+   "type": "plane",
+   "name": "Saucer Floor Plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "2",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fdlteb",
+   "type": "sketch",
+   "name": "Saucer Cavity",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "fc97vj"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 100,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 100,
+       "y": 37.7
+      },
+      {
+       "id": "p3",
+       "x": 67.35084227732668,
+       "y": 18.850000000000016
+      },
+      {
+       "id": "p4",
+       "x": 67.35084227732665,
+       "y": -18.84999999999999
+      },
+      {
+       "id": "p5",
+       "x": 100,
+       "y": -37.7
+      },
+      {
+       "id": "p6",
+       "x": 132.64915772267332,
+       "y": -18.85000000000002
+      },
+      {
+       "id": "p7",
+       "x": 132.64915772267335,
+       "y": 18.85
+      }
+     ],
+     "ents": [
+      {
+       "id": "hexc.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 37.7,
+       "construction": true
+      },
+      {
+       "id": "hexc.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "hexc.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "hexc.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "hexc.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "hexc.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "hexc.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0vnw",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "hexc.circle"
+      },
+      {
+       "id": "c170y",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "hexc.circle"
+      },
+      {
+       "id": "c2pq2",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "hexc.circle"
+      },
+      {
+       "id": "c3gyq",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "hexc.circle"
+      },
+      {
+       "id": "c4tjz",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "hexc.circle"
+      },
+      {
+       "id": "c5b24",
+       "type": "onEntity",
+       "a": "p7",
+       "e1": "hexc.circle"
+      },
+      {
+       "id": "c6xyy",
+       "type": "equal",
+       "e1": "hexc.0",
+       "e2": "hexc.1"
+      },
+      {
+       "id": "c7u19",
+       "type": "equal",
+       "e1": "hexc.0",
+       "e2": "hexc.2"
+      },
+      {
+       "id": "c823v",
+       "type": "equal",
+       "e1": "hexc.0",
+       "e2": "hexc.3"
+      },
+      {
+       "id": "c9ibm",
+       "type": "equal",
+       "e1": "hexc.0",
+       "e2": "hexc.4"
+      },
+      {
+       "id": "c10p6c",
+       "type": "equal",
+       "e1": "hexc.0",
+       "e2": "hexc.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "hexc",
+       "center": [
+        100,
+        0
+       ],
+       "radius": 37.7,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Saucer Floor Plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"fc97vj\"}]"
+    }
+   }
+  },
+  {
+   "id": "feqave",
+   "type": "extrude",
+   "name": "Saucer Cavity Cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fdlteb",
+      "pt": [
+       100,
+       -2.3684757858670005e-15
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "10",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f9p77l"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "Saucer Cavity"
+     },
+     "targets": [
+      "Part 2"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fdlteb\",\"pt\":[100,-2.3684757858670005e-15]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f9p77l\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f4bvai": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f9p77l": {
+   "name": "Part 2",
+   "color": "#c7a76a",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 5,
+  "plane": 2,
+  "loft": 1,
+  "shell": 1,
+  "hole": 1,
+  "extrude": 2
+ }
+}
