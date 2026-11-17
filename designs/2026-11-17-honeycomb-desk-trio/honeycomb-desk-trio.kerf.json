@@ -1,0 +1,1043 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Honeycomb Desk Trio",
+ "features": [
+  {
+   "id": "f12yr9",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "wall",
+    "value": "2"
+   }
+  },
+  {
+   "id": "f2iq25",
+   "type": "sketch",
+   "name": "Outer A",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 24.249
+      },
+      {
+       "id": "p2",
+       "x": 1.5554851319370105e-15,
+       "y": 49.652
+      },
+      {
+       "id": "p3",
+       "x": -21.99964333233609,
+       "y": 36.950500000000005
+      },
+      {
+       "id": "p4",
+       "x": -21.9996433323361,
+       "y": 11.547500000000007
+      },
+      {
+       "id": "p5",
+       "x": -4.6664553958110316e-15,
+       "y": -1.154
+      },
+      {
+       "id": "p6",
+       "x": 21.99964333233609,
+       "y": 11.547499999999989
+      },
+      {
+       "id": "p7",
+       "x": 21.999643332336092,
+       "y": 36.9505
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 25.403,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        24.249
+       ],
+       "radius": 25.403,
+       "sides": 6,
+       "angle": 90
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f39e3c",
+   "type": "extrude",
+   "name": "Cup A",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f2iq25",
+      "pt": [
+       -3.552713678800501e-15,
+       24.248999999999995
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "100",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Outer A"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f2iq25\",\"pt\":[-3.552713678800501e-15,24.248999999999995]}]"
+    }
+   }
+  },
+  {
+   "id": "f47gds",
+   "type": "sketch",
+   "name": "Outer B",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -21,
+       "y": -12.124
+      },
+      {
+       "id": "p2",
+       "x": -21,
+       "y": 13.278999999999998
+      },
+      {
+       "id": "p3",
+       "x": -42.99964333233609,
+       "y": 0.5775000000000077
+      },
+      {
+       "id": "p4",
+       "x": -42.9996433323361,
+       "y": -24.82549999999999
+      },
+      {
+       "id": "p5",
+       "x": -21.000000000000004,
+       "y": -37.527
+      },
+      {
+       "id": "p6",
+       "x": 0.9996433323360883,
+       "y": -24.825500000000012
+      },
+      {
+       "id": "p7",
+       "x": 0.9996433323360918,
+       "y": 0.5774999999999988
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 25.403,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        -21,
+        -12.124
+       ],
+       "radius": 25.403,
+       "sides": 6,
+       "angle": 90
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f539wa",
+   "type": "sketch",
+   "name": "Outer C",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 21,
+       "y": -12.124
+      },
+      {
+       "id": "p2",
+       "x": 21,
+       "y": 13.278999999999998
+      },
+      {
+       "id": "p3",
+       "x": -0.9996433323360883,
+       "y": 0.5775000000000077
+      },
+      {
+       "id": "p4",
+       "x": -0.9996433323360989,
+       "y": -24.82549999999999
+      },
+      {
+       "id": "p5",
+       "x": 20.999999999999996,
+       "y": -37.527
+      },
+      {
+       "id": "p6",
+       "x": 42.99964333233609,
+       "y": -24.825500000000012
+      },
+      {
+       "id": "p7",
+       "x": 42.99964333233609,
+       "y": 0.5774999999999988
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 25.403,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        21,
+        -12.124
+       ],
+       "radius": 25.403,
+       "sides": 6,
+       "angle": 90
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6a7tp",
+   "type": "extrude",
+   "name": "Cup B",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f47gds",
+      "pt": [
+       -21.000000000000004,
+       -12.124000000000002
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "80",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Outer B"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f47gds\",\"pt\":[-21.000000000000004,-12.124000000000002]}]"
+    }
+   }
+  },
+  {
+   "id": "f7mwod",
+   "type": "extrude",
+   "name": "Cup C",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f539wa",
+      "pt": [
+       20.999999999999996,
+       -12.124000000000002
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "60",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Outer C"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f539wa\",\"pt\":[20.999999999999996,-12.124000000000002]}]"
+    }
+   }
+  },
+  {
+   "id": "f8m8yh",
+   "type": "plane",
+   "name": "Floor Plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "2",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9kxeu",
+   "type": "sketch",
+   "name": "Cavities",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f8m8yh"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 24.249
+      },
+      {
+       "id": "p2",
+       "x": 1.4140996589754489e-15,
+       "y": 47.343
+      },
+      {
+       "id": "p3",
+       "x": -19.999990674997825,
+       "y": 35.79600000000001
+      },
+      {
+       "id": "p4",
+       "x": -19.999990674997832,
+       "y": 12.702000000000005
+      },
+      {
+       "id": "p5",
+       "x": -4.242298976926346e-15,
+       "y": 1.1549999999999976
+      },
+      {
+       "id": "p6",
+       "x": 19.99999067499782,
+       "y": 12.701999999999988
+      },
+      {
+       "id": "p7",
+       "x": 19.999990674997825,
+       "y": 35.796
+      },
+      {
+       "id": "p8",
+       "x": -21,
+       "y": -12.124
+      },
+      {
+       "id": "p9",
+       "x": -21,
+       "y": 10.97
+      },
+      {
+       "id": "p10",
+       "x": -40.999990674997825,
+       "y": -0.5769999999999929
+      },
+      {
+       "id": "p11",
+       "x": -40.99999067499783,
+       "y": -23.670999999999992
+      },
+      {
+       "id": "p12",
+       "x": -21.000000000000004,
+       "y": -35.218
+      },
+      {
+       "id": "p13",
+       "x": -1.0000093250021784,
+       "y": -23.671000000000014
+      },
+      {
+       "id": "p14",
+       "x": -1.0000093250021749,
+       "y": -0.577
+      },
+      {
+       "id": "p15",
+       "x": 21,
+       "y": -12.124
+      },
+      {
+       "id": "p16",
+       "x": 21,
+       "y": 10.97
+      },
+      {
+       "id": "p17",
+       "x": 1.0000093250021749,
+       "y": -0.5769999999999929
+      },
+      {
+       "id": "p18",
+       "x": 1.0000093250021678,
+       "y": -23.670999999999992
+      },
+      {
+       "id": "p19",
+       "x": 20.999999999999996,
+       "y": -35.218
+      },
+      {
+       "id": "p20",
+       "x": 40.99999067499782,
+       "y": -23.671000000000014
+      },
+      {
+       "id": "p21",
+       "x": 40.999990674997825,
+       "y": -0.577
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 23.094,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polygon2.circle",
+       "type": "circle",
+       "c": "p8",
+       "r": 23.094,
+       "construction": true
+      },
+      {
+       "id": "polygon2.0",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "polygon2.1",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "polygon2.2",
+       "type": "line",
+       "p1": "p11",
+       "p2": "p12",
+       "construction": false
+      },
+      {
+       "id": "polygon2.3",
+       "type": "line",
+       "p1": "p12",
+       "p2": "p13",
+       "construction": false
+      },
+      {
+       "id": "polygon2.4",
+       "type": "line",
+       "p1": "p13",
+       "p2": "p14",
+       "construction": false
+      },
+      {
+       "id": "polygon2.5",
+       "type": "line",
+       "p1": "p14",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polygon3.circle",
+       "type": "circle",
+       "c": "p15",
+       "r": 23.094,
+       "construction": true
+      },
+      {
+       "id": "polygon3.0",
+       "type": "line",
+       "p1": "p16",
+       "p2": "p17",
+       "construction": false
+      },
+      {
+       "id": "polygon3.1",
+       "type": "line",
+       "p1": "p17",
+       "p2": "p18",
+       "construction": false
+      },
+      {
+       "id": "polygon3.2",
+       "type": "line",
+       "p1": "p18",
+       "p2": "p19",
+       "construction": false
+      },
+      {
+       "id": "polygon3.3",
+       "type": "line",
+       "p1": "p19",
+       "p2": "p20",
+       "construction": false
+      },
+      {
+       "id": "polygon3.4",
+       "type": "line",
+       "p1": "p20",
+       "p2": "p21",
+       "construction": false
+      },
+      {
+       "id": "polygon3.5",
+       "type": "line",
+       "p1": "p21",
+       "p2": "p16",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        24.249
+       ],
+       "radius": 23.094,
+       "sides": 6,
+       "angle": 90
+      },
+      {
+       "type": "polygon",
+       "center": [
+        -21,
+        -12.124
+       ],
+       "radius": 23.094,
+       "sides": 6,
+       "angle": 90
+      },
+      {
+       "type": "polygon",
+       "center": [
+        21,
+        -12.124
+       ],
+       "radius": 23.094,
+       "sides": 6,
+       "angle": 90
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "Floor Plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f8m8yh\"}]"
+    }
+   }
+  },
+  {
+   "id": "fa3no6",
+   "type": "extrude",
+   "name": "Hollow Cups",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f9kxeu",
+      "pt": [
+       -3.552713678800501e-15,
+       24.248999999999995
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f9kxeu",
+      "pt": [
+       -21.000000000000004,
+       -12.124000000000002
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f9kxeu",
+      "pt": [
+       20.999999999999996,
+       -12.124000000000002
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cavities",
+      "region": "all"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f9kxeu\",\"pt\":[-3.552713678800501e-15,24.248999999999995]},{\"kind\":\"region\",\"sketch\":\"f9kxeu\",\"pt\":[-21.000000000000004,-12.124000000000002]},{\"kind\":\"region\",\"sketch\":\"f9kxeu\",\"pt\":[20.999999999999996,-12.124000000000002]}]"
+    }
+   }
+  },
+  {
+   "id": "fd96ij",
+   "type": "chamfer",
+   "name": "Bed Chamfer",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f39e3c",
+      "a": [
+       21.999643325805664,
+       36.95050048828125,
+       0
+      ],
+      "b": [
+       21.999643325805664,
+       12.701855659484863,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f39e3c",
+      "a": [
+       21.999643325805664,
+       36.95050048828125,
+       0
+      ],
+      "b": [
+       1.5554851633489295e-15,
+       49.652000427246094,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f39e3c",
+      "a": [
+       -21.999643325805664,
+       12.701855659484863,
+       0
+      ],
+      "b": [
+       -21.999643325805664,
+       11.547499656677246,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f39e3c",
+      "a": [
+       -21.999643325805664,
+       11.547499656677246,
+       0
+      ],
+      "b": [
+       -1.0610547949161178e-13,
+       -1.1540000438690186,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f39e3c",
+      "a": [
+       -1.0610547949161178e-13,
+       -1.1540000438690186,
+       0
+      ],
+      "b": [
+       0.9996433258056641,
+       -0.5768557190895081,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f39e3c",
+      "a": [
+       -21.999643325805664,
+       12.701855659484863,
+       0
+      ],
+      "b": [
+       -21.999643325805664,
+       36.95050048828125,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f39e3c",
+      "a": [
+       1.5554851633489295e-15,
+       49.652000427246094,
+       0
+      ],
+      "b": [
+       -21.999643325805664,
+       36.95050048828125,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f39e3c",
+      "a": [
+       21.999643325805664,
+       12.701855659484863,
+       0
+      ],
+      "b": [
+       21.999643325805664,
+       11.547499656677246,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f39e3c",
+      "a": [
+       21.999643325805664,
+       11.547499656677246,
+       0
+      ],
+      "b": [
+       0.9996433258056641,
+       -0.5768557190895081,
+       0
+      ]
+     }
+    ],
+    "distance": "0.6",
+    "asym": false,
+    "distance2": "4",
+    "__sel": {
+     "edges": {
+      "edges_of": {
+       "normal": [
+        0,
+        0,
+        -1
+       ]
+      }
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f39e3c\",\"a\":[21.999643325805664,36.95050048828125,0],\"b\":[21.999643325805664,12.701855659484863,0]},{\"kind\":\"edge\",\"part\":\"f39e3c\",\"a\":[21.999643325805664,36.95050048828125,0],\"b\":[1.5554851633489295e-15,49.652000427246094,0]},{\"kind\":\"edge\",\"part\":\"f39e3c\",\"a\":[-21.999643325805664,12.701855659484863,0],\"b\":[-21.999643325805664,11.547499656677246,0]},{\"kind\":\"edge\",\"part\":\"f39e3c\",\"a\":[-21.999643325805664,11.547499656677246,0],\"b\":[-1.0610547949161178e-13,-1.1540000438690186,0]},{\"kind\":\"edge\",\"part\":\"f39e3c\",\"a\":[-1.0610547949161178e-13,-1.1540000438690186,0],\"b\":[0.9996433258056641,-0.5768557190895081,0]},{\"kind\":\"edge\",\"part\":\"f39e3c\",\"a\":[-21.999643325805664,12.701855659484863,0],\"b\":[-21.999643325805664,36.95050048828125,0]},{\"kind\":\"edge\",\"part\":\"f39e3c\",\"a\":[1.5554851633489295e-15,49.652000427246094,0],\"b\":[-21.999643325805664,36.95050048828125,0]},{\"kind\":\"edge\",\"part\":\"f39e3c\",\"a\":[21.999643325805664,12.701855659484863,0],\"b\":[21.999643325805664,11.547499656677246,0]},{\"kind\":\"edge\",\"part\":\"f39e3c\",\"a\":[21.999643325805664,11.547499656677246,0],\"b\":[0.9996433258056641,-0.5768557190895081,0]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f39e3c": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 4,
+  "extrude": 4,
+  "plane": 1,
+  "chamfer": 1
+ }
+}
