@@ -7,7 +7,7 @@ Original generic design (three hexagonal pen/tool cups of 100 / 75 / 50 mm heigh
 - Flat bottom, vertical walls: no supports, no overhangs, no bridging
 
 ## Suggested slicer settings (Snapmaker U1, 0.4 mm nozzle)
-- Layer height 0.2 mm, 2 perimeters min (3 for sturdier cups), 3 top/bottom layers not needed on open cups; 15% gyroid infill is irrelevant (walls are fully perimeter)
+- Layer height 0.2 mm, 2-3 perimeters (walls are fully perimeter-filled), 3 bottom layers
 - Supports off, brim off, PLA (silk or matte sells well)
 - Print flat on the bed as exported (Z up)
 
