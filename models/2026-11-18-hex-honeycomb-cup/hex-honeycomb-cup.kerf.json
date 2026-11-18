@@ -1,0 +1,950 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Hex Honeycomb Pen Cup",
+ "features": [
+  {
+   "id": "f15l4f",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "wall",
+    "value": "2.4 mm"
+   }
+  },
+  {
+   "id": "f2zkjv",
+   "type": "sketch",
+   "name": "Hex Outline",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 2.828321782630812e-15,
+       "y": 46.19
+      },
+      {
+       "id": "p2",
+       "x": -40.00171340080321,
+       "y": 23.095000000000013
+      },
+      {
+       "id": "p3",
+       "x": -40.001713400803226,
+       "y": -23.094999999999985
+      },
+      {
+       "id": "p4",
+       "x": -8.484965347892436e-15,
+       "y": -46.19
+      },
+      {
+       "id": "p5",
+       "x": 40.001713400803204,
+       "y": -23.09500000000002
+      },
+      {
+       "id": "p6",
+       "x": 40.00171340080322,
+       "y": 23.095
+      }
+     ],
+     "ents": [
+      {
+       "id": "hex.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 46.19,
+       "construction": true
+      },
+      {
+       "id": "hex.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "hex.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "hex.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "hex.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "hex.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "hex.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0k3t",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c1ah6",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c2n2z",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c3qux",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c4dk9",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c5zwe",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "hex.circle"
+      },
+      {
+       "id": "c632o",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.1"
+      },
+      {
+       "id": "c7dej",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.2"
+      },
+      {
+       "id": "c8prj",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.3"
+      },
+      {
+       "id": "c9ix6",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.4"
+      },
+      {
+       "id": "c10ujl",
+       "type": "equal",
+       "e1": "hex.0",
+       "e2": "hex.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "hex",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 46.19,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f3qwxa",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f2zkjv",
+      "pt": [
+       -7.105427357601002e-15,
+       -2.3684757858670005e-15
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "95",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Hex Outline"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f2zkjv\",\"pt\":[-7.105427357601002e-15,-2.3684757858670005e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f4v6pd",
+   "type": "shell",
+   "name": "Hollow",
+   "params": {
+    "faces": [
+     {
+      "kind": "face",
+      "part": "f3qwxa",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       0,
+       0,
+       95
+      ]
+     }
+    ],
+    "part": [],
+    "thickness": "#wall",
+    "__sel": {
+     "faces": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "faces": "[{\"kind\":\"face\",\"part\":\"f3qwxa\",\"n\":[0,0,1],\"p\":[0,0,95]}]"
+    }
+   }
+  },
+  {
+   "id": "f52dn6",
+   "type": "sketch",
+   "name": "Windows",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 30
+      },
+      {
+       "id": "p2",
+       "x": 8.572527594031472e-16,
+       "y": 44
+      },
+      {
+       "id": "p3",
+       "x": -12.124355652982139,
+       "y": 37.00000000000001
+      },
+      {
+       "id": "p4",
+       "x": -12.124355652982143,
+       "y": 23.000000000000004
+      },
+      {
+       "id": "p5",
+       "x": -2.5717582782094417e-15,
+       "y": 16
+      },
+      {
+       "id": "p6",
+       "x": 12.124355652982137,
+       "y": 22.999999999999993
+      },
+      {
+       "id": "p7",
+       "x": 12.12435565298214,
+       "y": 37
+      },
+      {
+       "id": "p8",
+       "x": 0,
+       "y": 68
+      },
+      {
+       "id": "p9",
+       "x": 8.572527594031472e-16,
+       "y": 82
+      },
+      {
+       "id": "p10",
+       "x": -12.124355652982139,
+       "y": 75
+      },
+      {
+       "id": "p11",
+       "x": -12.124355652982143,
+       "y": 61
+      },
+      {
+       "id": "p12",
+       "x": -2.5717582782094417e-15,
+       "y": 54
+      },
+      {
+       "id": "p13",
+       "x": 12.124355652982137,
+       "y": 60.99999999999999
+      },
+      {
+       "id": "p14",
+       "x": 12.12435565298214,
+       "y": 75
+      }
+     ],
+     "ents": [
+      {
+       "id": "w1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 14,
+       "construction": true
+      },
+      {
+       "id": "w1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "w1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "w1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "w1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "w1.4",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "w1.5",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "w2.circle",
+       "type": "circle",
+       "c": "p8",
+       "r": 14,
+       "construction": true
+      },
+      {
+       "id": "w2.0",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "w2.1",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "w2.2",
+       "type": "line",
+       "p1": "p11",
+       "p2": "p12",
+       "construction": false
+      },
+      {
+       "id": "w2.3",
+       "type": "line",
+       "p1": "p12",
+       "p2": "p13",
+       "construction": false
+      },
+      {
+       "id": "w2.4",
+       "type": "line",
+       "p1": "p13",
+       "p2": "p14",
+       "construction": false
+      },
+      {
+       "id": "w2.5",
+       "type": "line",
+       "p1": "p14",
+       "p2": "p9",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0tbe",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "w1.circle"
+      },
+      {
+       "id": "c1j7b",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "w1.circle"
+      },
+      {
+       "id": "c2o6f",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "w1.circle"
+      },
+      {
+       "id": "c3ypt",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "w1.circle"
+      },
+      {
+       "id": "c4rbr",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "w1.circle"
+      },
+      {
+       "id": "c5kxl",
+       "type": "onEntity",
+       "a": "p7",
+       "e1": "w1.circle"
+      },
+      {
+       "id": "c6zud",
+       "type": "equal",
+       "e1": "w1.0",
+       "e2": "w1.1"
+      },
+      {
+       "id": "c70ts",
+       "type": "equal",
+       "e1": "w1.0",
+       "e2": "w1.2"
+      },
+      {
+       "id": "c81nt",
+       "type": "equal",
+       "e1": "w1.0",
+       "e2": "w1.3"
+      },
+      {
+       "id": "c9632",
+       "type": "equal",
+       "e1": "w1.0",
+       "e2": "w1.4"
+      },
+      {
+       "id": "c10ccy",
+       "type": "equal",
+       "e1": "w1.0",
+       "e2": "w1.5"
+      },
+      {
+       "id": "c11z3y",
+       "type": "onEntity",
+       "a": "p9",
+       "e1": "w2.circle"
+      },
+      {
+       "id": "c12yrv",
+       "type": "onEntity",
+       "a": "p10",
+       "e1": "w2.circle"
+      },
+      {
+       "id": "c131w1",
+       "type": "onEntity",
+       "a": "p11",
+       "e1": "w2.circle"
+      },
+      {
+       "id": "c14v6r",
+       "type": "onEntity",
+       "a": "p12",
+       "e1": "w2.circle"
+      },
+      {
+       "id": "c15lm7",
+       "type": "onEntity",
+       "a": "p13",
+       "e1": "w2.circle"
+      },
+      {
+       "id": "c168v3",
+       "type": "onEntity",
+       "a": "p14",
+       "e1": "w2.circle"
+      },
+      {
+       "id": "c175ig",
+       "type": "equal",
+       "e1": "w2.0",
+       "e2": "w2.1"
+      },
+      {
+       "id": "c18r7r",
+       "type": "equal",
+       "e1": "w2.0",
+       "e2": "w2.2"
+      },
+      {
+       "id": "c19nfc",
+       "type": "equal",
+       "e1": "w2.0",
+       "e2": "w2.3"
+      },
+      {
+       "id": "c20zp8",
+       "type": "equal",
+       "e1": "w2.0",
+       "e2": "w2.4"
+      },
+      {
+       "id": "c21yw4",
+       "type": "equal",
+       "e1": "w2.0",
+       "e2": "w2.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "w1",
+       "center": [
+        0,
+        30
+       ],
+       "radius": 14,
+       "sides": 6,
+       "angle": 0
+      },
+      {
+       "type": "polygon",
+       "id": "w2",
+       "center": [
+        0,
+        68
+       ],
+       "radius": 14,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8sz4d",
+   "type": "extrude",
+   "name": "Cutter A",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f52dn6",
+      "pt": [
+       -1.7763568394002505e-15,
+       30
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f52dn6",
+      "pt": [
+       -1.7763568394002505e-15,
+       68
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "symmetric",
+    "depth": "100",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Windows",
+      "region": "all"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f52dn6\",\"pt\":[-1.7763568394002505e-15,30]},{\"kind\":\"region\",\"sketch\":\"f52dn6\",\"pt\":[-1.7763568394002505e-15,68]}]"
+    }
+   }
+  },
+  {
+   "id": "f9lca8",
+   "type": "transform",
+   "name": "Cutters 60",
+   "params": {
+    "parts": [
+     {
+      "kind": "part",
+      "id": "f8sz4d"
+     },
+     {
+      "kind": "part",
+      "id": "f8sz4d.1"
+     }
+    ],
+    "kind": "rotate",
+    "dx": "0",
+    "dy": "0",
+    "dz": "20",
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "60",
+    "copy": true,
+    "__sel": {
+     "parts": [
+      "f8sz4d",
+      "f8sz4d.1"
+     ]
+    },
+    "__selres": {
+     "parts": "[{\"kind\":\"part\",\"id\":\"f8sz4d\"},{\"kind\":\"part\",\"id\":\"f8sz4d.1\"}]"
+    }
+   }
+  },
+  {
+   "id": "far0jf",
+   "type": "transform",
+   "name": "Cutters 120",
+   "params": {
+    "parts": [
+     {
+      "kind": "part",
+      "id": "f8sz4d"
+     },
+     {
+      "kind": "part",
+      "id": "f8sz4d.1"
+     }
+    ],
+    "kind": "rotate",
+    "dx": "0",
+    "dy": "0",
+    "dz": "20",
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "120",
+    "copy": true,
+    "__sel": {
+     "parts": [
+      "f8sz4d",
+      "f8sz4d.1"
+     ]
+    },
+    "__selres": {
+     "parts": "[{\"kind\":\"part\",\"id\":\"f8sz4d\"},{\"kind\":\"part\",\"id\":\"f8sz4d.1\"}]"
+    }
+   }
+  },
+  {
+   "id": "fbttg4",
+   "type": "boolean",
+   "name": "Cut Windows",
+   "params": {
+    "bop": "subtract",
+    "tools": [
+     {
+      "kind": "part",
+      "id": "f8sz4d"
+     },
+     {
+      "kind": "part",
+      "id": "f8sz4d.1"
+     },
+     {
+      "kind": "part",
+      "id": "f8sz4d+ca8"
+     },
+     {
+      "kind": "part",
+      "id": "f8sz4d.1+ca8"
+     },
+     {
+      "kind": "part",
+      "id": "f8sz4d+0jf"
+     },
+     {
+      "kind": "part",
+      "id": "f8sz4d.1+0jf"
+     }
+    ],
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f3qwxa"
+     }
+    ],
+    "keep": false,
+    "__sel": {
+     "targets": [
+      "f3qwxa"
+     ],
+     "tools": [
+      "f8sz4d",
+      "f8sz4d.1",
+      "f8sz4d+ca8",
+      "f8sz4d.1+ca8",
+      "f8sz4d+0jf",
+      "f8sz4d.1+0jf"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"f3qwxa\"}]",
+     "tools": "[{\"kind\":\"part\",\"id\":\"f8sz4d\"},{\"kind\":\"part\",\"id\":\"f8sz4d.1\"},{\"kind\":\"part\",\"id\":\"f8sz4d+ca8\"},{\"kind\":\"part\",\"id\":\"f8sz4d.1+ca8\"},{\"kind\":\"part\",\"id\":\"f8sz4d+0jf\"},{\"kind\":\"part\",\"id\":\"f8sz4d.1+0jf\"}]"
+    }
+   }
+  },
+  {
+   "id": "fdbkma",
+   "type": "chamfer",
+   "name": "Base Chamfer",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f3qwxa",
+      "a": [
+       2.8283217849462035e-15,
+       46.189998626708984,
+       0
+      ],
+      "b": [
+       40.001712799072266,
+       23.094999313354492,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f3qwxa",
+      "a": [
+       40.001712799072266,
+       -23.094999313354492,
+       0
+      ],
+      "b": [
+       40.001712799072266,
+       23.094999313354492,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f3qwxa",
+      "a": [
+       -40.001712799072266,
+       -23.094999313354492,
+       0
+      ],
+      "b": [
+       -40.001712799072266,
+       23.094999313354492,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f3qwxa",
+      "a": [
+       2.8283217849462035e-15,
+       46.189998626708984,
+       0
+      ],
+      "b": [
+       -40.001712799072266,
+       23.094999313354492,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f3qwxa",
+      "a": [
+       40.001712799072266,
+       -23.094999313354492,
+       0
+      ],
+      "b": [
+       -8.48496535483861e-15,
+       -46.189998626708984,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f3qwxa",
+      "a": [
+       -40.001712799072266,
+       -23.094999313354492,
+       0
+      ],
+      "b": [
+       -8.48496535483861e-15,
+       -46.189998626708984,
+       0
+      ]
+     }
+    ],
+    "distance": "0.8",
+    "asym": false,
+    "distance2": "4",
+    "__sel": {
+     "edges": {
+      "edges_of": "-z"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f3qwxa\",\"a\":[2.8283217849462035e-15,46.189998626708984,0],\"b\":[40.001712799072266,23.094999313354492,0]},{\"kind\":\"edge\",\"part\":\"f3qwxa\",\"a\":[40.001712799072266,-23.094999313354492,0],\"b\":[40.001712799072266,23.094999313354492,0]},{\"kind\":\"edge\",\"part\":\"f3qwxa\",\"a\":[-40.001712799072266,-23.094999313354492,0],\"b\":[-40.001712799072266,23.094999313354492,0]},{\"kind\":\"edge\",\"part\":\"f3qwxa\",\"a\":[2.8283217849462035e-15,46.189998626708984,0],\"b\":[-40.001712799072266,23.094999313354492,0]},{\"kind\":\"edge\",\"part\":\"f3qwxa\",\"a\":[40.001712799072266,-23.094999313354492,0],\"b\":[-8.48496535483861e-15,-46.189998626708984,0]},{\"kind\":\"edge\",\"part\":\"f3qwxa\",\"a\":[-40.001712799072266,-23.094999313354492,0],\"b\":[-8.48496535483861e-15,-46.189998626708984,0]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f3qwxa": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f8sz4d": {
+   "name": "Part 2",
+   "color": "#c7a76a",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f8sz4d.1": {
+   "name": "Part 3",
+   "color": "#7f9fb8",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f8sz4d+ca8": {
+   "name": "Part 4",
+   "color": "#b98a7c",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f8sz4d.1+ca8": {
+   "name": "Part 5",
+   "color": "#8fae8b",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f8sz4d+0jf": {
+   "name": "Part 6",
+   "color": "#a596bf",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f8sz4d.1+0jf": {
+   "name": "Part 7",
+   "color": "#c1b49a",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 2,
+  "extrude": 3,
+  "shell": 1,
+  "cpattern": 1,
+  "transform": 2,
+  "boolean": 1,
+  "chamfer": 1
+ }
+}
