@@ -1,0 +1,532 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "fluted-planter",
+ "features": [
+  {
+   "id": "fbqgvs",
+   "type": "sketch",
+   "name": "Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 30,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 32.5,
+       "y": 3
+      },
+      {
+       "id": "p3",
+       "x": 35.5,
+       "y": 10
+      },
+      {
+       "id": "p4",
+       "x": 38.5,
+       "y": 20
+      },
+      {
+       "id": "p5",
+       "x": 41,
+       "y": 32
+      },
+      {
+       "id": "p6",
+       "x": 42,
+       "y": 45
+      },
+      {
+       "id": "p7",
+       "x": 41,
+       "y": 58
+      },
+      {
+       "id": "p8",
+       "x": 38.5,
+       "y": 70
+      },
+      {
+       "id": "p9",
+       "x": 36,
+       "y": 80
+      },
+      {
+       "id": "p10",
+       "x": 35.5,
+       "y": 86
+      },
+      {
+       "id": "p11",
+       "x": 36.5,
+       "y": 92
+      },
+      {
+       "id": "p12",
+       "x": 0,
+       "y": 92
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "polyline1.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polyline1.9",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "polyline1.10",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "polyline1.11",
+       "type": "line",
+       "p1": "p11",
+       "p2": "p12",
+       "construction": false
+      },
+      {
+       "id": "polyline1.12",
+       "type": "line",
+       "p1": "p12",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c09k5",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c1smv",
+       "type": "horizontal",
+       "e1": "polyline1.11"
+      },
+      {
+       "id": "c2x22",
+       "type": "vertical",
+       "e1": "polyline1.12"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         30,
+         0
+        ],
+        [
+         32.5,
+         3
+        ],
+        [
+         35.5,
+         10
+        ],
+        [
+         38.5,
+         20
+        ],
+        [
+         41,
+         32
+        ],
+        [
+         42,
+         45
+        ],
+        [
+         41,
+         58
+        ],
+        [
+         38.5,
+         70
+        ],
+        [
+         36,
+         80
+        ],
+        [
+         35.5,
+         86
+        ],
+        [
+         36.5,
+         92
+        ],
+        [
+         0,
+         92
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "fczyr5",
+   "type": "revolve",
+   "name": "Vase body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fbqgvs",
+      "pt": [
+       12.166666666666666,
+       61.333333333333336
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fbqgvs\",\"pt\":[12.166666666666666,61.333333333333336]}]"
+    }
+   }
+  },
+  {
+   "id": "fef8f1",
+   "type": "primitive",
+   "name": "Flute",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "92",
+    "r": "3.2",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "43.6",
+    "y": "0",
+    "z": "0",
+    "op": "remove",
+    "targets": []
+   }
+  },
+  {
+   "id": "ffq97f",
+   "type": "cpattern",
+   "name": "Flute ring",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "fef8f1"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "24",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Flute"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"fef8f1\"}]"
+    }
+   }
+  },
+  {
+   "id": "fdtsup",
+   "type": "shell",
+   "name": "Hollow",
+   "params": {
+    "faces": [
+     {
+      "kind": "face",
+      "part": "fczyr5",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       22.459672292073567,
+       9.3031005859375,
+       92
+      ]
+     }
+    ],
+    "part": [],
+    "thickness": "1.6",
+    "__sel": {
+     "faces": [
+      {
+       "face": "top"
+      }
+     ]
+    },
+    "__selres": {
+     "faces": "[{\"kind\":\"face\",\"part\":\"fczyr5\",\"n\":[0,0,1],\"p\":[22.459672292073567,9.3031005859375,92]}]"
+    }
+   }
+  },
+  {
+   "id": "fgjm2i",
+   "type": "sketch",
+   "name": "Drain",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "O",
+       "r": 4,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 4
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fhaoh5",
+   "type": "extrude",
+   "name": "Drain hole",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fgjm2i",
+      "pt": [
+       0.40648765236145495,
+       -0.711202061784074
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "6",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Drain"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fgjm2i\",\"pt\":[0.40648765236145495,-0.711202061784074]}]"
+    }
+   }
+  },
+  {
+   "id": "figqg1",
+   "type": "primitive",
+   "name": "Saucer outer",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "9",
+    "r": "38",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "95",
+    "y": "0",
+    "z": "0",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "fjsxcq",
+   "type": "primitive",
+   "name": "Saucer cavity",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "8",
+    "r": "36.4",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "95",
+    "y": "0",
+    "z": "1.6",
+    "op": "remove",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "figqg1"
+     }
+    ],
+    "__sel": {
+     "targets": [
+      "Part 2"
+     ]
+    },
+    "__selres": {
+     "targets": "[{\"kind\":\"part\",\"id\":\"figqg1\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "fczyr5": {
+   "name": "Fluted Planter",
+   "color": "#9aa7b4",
+   "material": "pla",
+   "hidden": false
+  },
+  "figqg1": {
+   "name": "Drip Saucer",
+   "color": "#c7a76a",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 2,
+  "revolve": 1,
+  "shell": 1,
+  "primitive": 3,
+  "cpattern": 1,
+  "extrude": 1
+ }
+}
