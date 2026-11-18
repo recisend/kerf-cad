@@ -1,0 +1,807 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Facet Planter",
+ "features": [
+  {
+   "id": "f11krk",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "H",
+    "value": "80"
+   }
+  },
+  {
+   "id": "f2xbfi",
+   "type": "plane",
+   "name": "PlaneTop",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "#H",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f3fg2n",
+   "type": "sketch",
+   "name": "OuterBottom",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 34,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 17,
+       "y": 29.445
+      },
+      {
+       "id": "p3",
+       "x": -17,
+       "y": 29.445
+      },
+      {
+       "id": "p4",
+       "x": -34,
+       "y": 0
+      },
+      {
+       "id": "p5",
+       "x": -17,
+       "y": -29.445
+      },
+      {
+       "id": "p6",
+       "x": 17,
+       "y": -29.445
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0ogi",
+       "type": "horizontal",
+       "e1": "polyline1.1"
+      },
+      {
+       "id": "c1al3",
+       "type": "horizontal",
+       "e1": "polyline1.4"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         34,
+         0
+        ],
+        [
+         17,
+         29.445
+        ],
+        [
+         -17,
+         29.445
+        ],
+        [
+         -34,
+         0
+        ],
+        [
+         -17,
+         -29.445
+        ],
+        [
+         17,
+         -29.445
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4keps",
+   "type": "sketch",
+   "name": "OuterTop",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f2xbfi"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 39.837,
+       "y": 23
+      },
+      {
+       "id": "p2",
+       "x": 0,
+       "y": 46
+      },
+      {
+       "id": "p3",
+       "x": -39.837,
+       "y": 23
+      },
+      {
+       "id": "p4",
+       "x": -39.837,
+       "y": -23
+      },
+      {
+       "id": "p5",
+       "x": 0,
+       "y": -46
+      },
+      {
+       "id": "p6",
+       "x": 39.837,
+       "y": -23
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0tpc",
+       "type": "vertical",
+       "e1": "polyline1.2"
+      },
+      {
+       "id": "c17au",
+       "type": "vertical",
+       "e1": "polyline1.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         39.837,
+         23
+        ],
+        [
+         0,
+         46
+        ],
+        [
+         -39.837,
+         23
+        ],
+        [
+         -39.837,
+         -23
+        ],
+        [
+         0,
+         -46
+        ],
+        [
+         39.837,
+         -23
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "PlaneTop"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f2xbfi\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5k2lx",
+   "type": "loft",
+   "name": "OuterLoft",
+   "params": {
+    "profiles": [
+     {
+      "kind": "region",
+      "sketch": "f3fg2n",
+      "pt": [
+       0,
+       0
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f4keps",
+      "pt": [
+       0,
+       0
+      ]
+     }
+    ],
+    "op": "new",
+    "targets": [],
+    "__sel": {
+     "profiles": [
+      {
+       "sketch": "OuterBottom"
+      },
+      {
+       "sketch": "OuterTop"
+      }
+     ]
+    },
+    "__selres": {
+     "profiles": "[{\"kind\":\"region\",\"sketch\":\"f3fg2n\",\"pt\":[0,0]},{\"kind\":\"region\",\"sketch\":\"f4keps\",\"pt\":[0,0]}]"
+    }
+   }
+  },
+  {
+   "id": "f67yih",
+   "type": "plane",
+   "name": "PlaneFloor",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "2.4",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f7v3jg",
+   "type": "plane",
+   "name": "PlaneAbove",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "82",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f86jqn",
+   "type": "sketch",
+   "name": "InnerBottom",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f67yih"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 31.546,
+       "y": 0.496
+      },
+      {
+       "id": "p2",
+       "x": 15.344,
+       "y": 27.568
+      },
+      {
+       "id": "p3",
+       "x": -16.202,
+       "y": 27.072
+      },
+      {
+       "id": "p4",
+       "x": -31.546,
+       "y": -0.496
+      },
+      {
+       "id": "p5",
+       "x": -15.344,
+       "y": -27.568
+      },
+      {
+       "id": "p6",
+       "x": 16.202,
+       "y": -27.072
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         31.546,
+         0.496
+        ],
+        [
+         15.344,
+         27.568
+        ],
+        [
+         -16.202,
+         27.072
+        ],
+        [
+         -31.546,
+         -0.496
+        ],
+        [
+         -15.344,
+         -27.568
+        ],
+        [
+         16.202,
+         -27.072
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "PlaneFloor"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f67yih\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9m9j3",
+   "type": "sketch",
+   "name": "InnerTop",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f7v3jg"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 37.384,
+       "y": 22.241
+      },
+      {
+       "id": "p2",
+       "x": -0.569,
+       "y": 43.496
+      },
+      {
+       "id": "p3",
+       "x": -37.954,
+       "y": 21.255
+      },
+      {
+       "id": "p4",
+       "x": -37.384,
+       "y": -22.241
+      },
+      {
+       "id": "p5",
+       "x": 0.569,
+       "y": -43.496
+      },
+      {
+       "id": "p6",
+       "x": 37.954,
+       "y": -21.255
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         37.384,
+         22.241
+        ],
+        [
+         -0.569,
+         43.496
+        ],
+        [
+         -37.954,
+         21.255
+        ],
+        [
+         -37.384,
+         -22.241
+        ],
+        [
+         0.569,
+         -43.496
+        ],
+        [
+         37.954,
+         -21.255
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "PlaneAbove"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f7v3jg\"}]"
+    }
+   }
+  },
+  {
+   "id": "fa98sc",
+   "type": "loft",
+   "name": "Cavity",
+   "params": {
+    "profiles": [
+     {
+      "kind": "region",
+      "sketch": "f86jqn",
+      "pt": [
+       -1.1842378929335002e-15,
+       -1.1842378929335002e-15
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f9m9j3",
+      "pt": [
+       -0.0003333333333325565,
+       -1.1842378929335002e-15
+      ]
+     }
+    ],
+    "op": "remove",
+    "targets": [],
+    "__sel": {
+     "profiles": [
+      {
+       "sketch": "InnerBottom"
+      },
+      {
+       "sketch": "InnerTop"
+      }
+     ]
+    },
+    "__selres": {
+     "profiles": "[{\"kind\":\"region\",\"sketch\":\"f86jqn\",\"pt\":[-1.1842378929335002e-15,-1.1842378929335002e-15]},{\"kind\":\"region\",\"sketch\":\"f9m9j3\",\"pt\":[-0.0003333333333325565,-1.1842378929335002e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "fbsz9s",
+   "type": "sketch",
+   "name": "Drain",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "O",
+       "r": 4,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        0
+       ],
+       "diameter": 8
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fcxaj4",
+   "type": "extrude",
+   "name": "DrainHole",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fbsz9s",
+      "pt": [
+       0.40648765236145495,
+       -0.711202061784074
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "5",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Drain"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fbsz9s\",\"pt\":[0.40648765236145495,-0.711202061784074]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f5k2lx": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "plane": 3,
+  "sketch": 5,
+  "loft": 2,
+  "extrude": 1
+ }
+}
