@@ -1,0 +1,853 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "hex-lattice-phone-stand",
+ "features": [
+  {
+   "id": "f1eyvy",
+   "type": "sketch",
+   "name": "Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 75,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 64.2,
+       "y": 92
+      },
+      {
+       "id": "p3",
+       "x": 55.2,
+       "y": 92
+      },
+      {
+       "id": "p4",
+       "x": 25,
+       "y": 9
+      },
+      {
+       "id": "p5",
+       "x": 10,
+       "y": 9
+      },
+      {
+       "id": "p6",
+       "x": 10,
+       "y": 22
+      },
+      {
+       "id": "p7",
+       "x": 0,
+       "y": 22
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c09fm",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c1am5",
+       "type": "horizontal",
+       "e1": "polyline1.2"
+      },
+      {
+       "id": "c2iga",
+       "type": "horizontal",
+       "e1": "polyline1.4"
+      },
+      {
+       "id": "c376l",
+       "type": "vertical",
+       "e1": "polyline1.5"
+      },
+      {
+       "id": "c4sku",
+       "type": "horizontal",
+       "e1": "polyline1.6"
+      },
+      {
+       "id": "c5i2o",
+       "type": "vertical",
+       "e1": "polyline1.7"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         75,
+         0
+        ],
+        [
+         64.2,
+         92
+        ],
+        [
+         55.2,
+         92
+        ],
+        [
+         25,
+         9
+        ],
+        [
+         10,
+         9
+        ],
+        [
+         10,
+         22
+        ],
+        [
+         0,
+         22
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2egsu",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1eyvy",
+      "pt": [
+       51.73333333333333,
+       33.666666666666664
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "symmetric",
+    "depth": "80",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1eyvy\",\"pt\":[51.73333333333333,33.666666666666664]}]"
+    }
+   }
+  },
+  {
+   "id": "f3btmi",
+   "type": "sketch",
+   "name": "Hex windows",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 59,
+       "y": 30
+      },
+      {
+       "id": "p2",
+       "x": 54.5,
+       "y": 37.794
+      },
+      {
+       "id": "p3",
+       "x": 45.5,
+       "y": 37.794
+      },
+      {
+       "id": "p4",
+       "x": 41,
+       "y": 30
+      },
+      {
+       "id": "p5",
+       "x": 45.5,
+       "y": 22.206
+      },
+      {
+       "id": "p6",
+       "x": 54.5,
+       "y": 22.206
+      },
+      {
+       "id": "p7",
+       "x": 62.5,
+       "y": 58
+      },
+      {
+       "id": "p8",
+       "x": 59.75,
+       "y": 62.763
+      },
+      {
+       "id": "p9",
+       "x": 54.25,
+       "y": 62.763
+      },
+      {
+       "id": "p10",
+       "x": 51.5,
+       "y": 58
+      },
+      {
+       "id": "p11",
+       "x": 54.25,
+       "y": 53.237
+      },
+      {
+       "id": "p12",
+       "x": 59.75,
+       "y": 53.237
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline2.0",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "polyline2.1",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polyline2.2",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "polyline2.3",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "polyline2.4",
+       "type": "line",
+       "p1": "p11",
+       "p2": "p12",
+       "construction": false
+      },
+      {
+       "id": "polyline2.5",
+       "type": "line",
+       "p1": "p12",
+       "p2": "p7",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0dzc",
+       "type": "horizontal",
+       "e1": "polyline1.1"
+      },
+      {
+       "id": "c1vxw",
+       "type": "horizontal",
+       "e1": "polyline1.4"
+      },
+      {
+       "id": "c2f7o",
+       "type": "horizontal",
+       "e1": "polyline2.1"
+      },
+      {
+       "id": "c3u94",
+       "type": "horizontal",
+       "e1": "polyline2.4"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         59,
+         30
+        ],
+        [
+         54.5,
+         37.794
+        ],
+        [
+         45.5,
+         37.794
+        ],
+        [
+         41,
+         30
+        ],
+        [
+         45.5,
+         22.206
+        ],
+        [
+         54.5,
+         22.206
+        ]
+       ],
+       "closed": true
+      },
+      {
+       "type": "polyline",
+       "points": [
+        [
+         62.5,
+         58
+        ],
+        [
+         59.75,
+         62.763
+        ],
+        [
+         54.25,
+         62.763
+        ],
+        [
+         51.5,
+         58
+        ],
+        [
+         54.25,
+         53.237
+        ],
+        [
+         59.75,
+         53.237
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4o3x4",
+   "type": "extrude",
+   "name": "Hex cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3btmi",
+      "pt": [
+       50,
+       30
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f3btmi",
+      "pt": [
+       57,
+       58
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "100",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Hex windows"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3btmi\",\"pt\":[50,30]},{\"kind\":\"region\",\"sketch\":\"f3btmi\",\"pt\":[57,58]}]"
+    }
+   }
+  },
+  {
+   "id": "f53bx9",
+   "type": "sketch",
+   "name": "Cable slot",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 12,
+       "y": -9
+      },
+      {
+       "id": "p2",
+       "x": 24,
+       "y": -9
+      },
+      {
+       "id": "p3",
+       "x": 24,
+       "y": 9
+      },
+      {
+       "id": "p4",
+       "x": 12,
+       "y": 9
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0c2f",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0u3l",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0m3y",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0vmr",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        12,
+        -9
+       ],
+       "corner2": [
+        24,
+        9
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6imk8",
+   "type": "extrude",
+   "name": "Cable cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f53bx9",
+      "pt": [
+       16,
+       3
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "30",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cable slot"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f53bx9\",\"pt\":[16,3]}]"
+    }
+   }
+  },
+  {
+   "id": "f71nrd",
+   "type": "sketch",
+   "name": "Pocket",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 31.4,
+       "y": -1
+      },
+      {
+       "id": "p2",
+       "x": 90,
+       "y": -1
+      },
+      {
+       "id": "p3",
+       "x": 90,
+       "y": 89
+      },
+      {
+       "id": "p4",
+       "x": 60.5,
+       "y": 89
+      },
+      {
+       "id": "p5",
+       "x": 31.4,
+       "y": 9
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c023z",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c1cg7",
+       "type": "vertical",
+       "e1": "polyline1.1"
+      },
+      {
+       "id": "c22ua",
+       "type": "horizontal",
+       "e1": "polyline1.2"
+      },
+      {
+       "id": "c3pva",
+       "type": "vertical",
+       "e1": "polyline1.4"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         31.4,
+         -1
+        ],
+        [
+         90,
+         -1
+        ],
+        [
+         90,
+         89
+        ],
+        [
+         60.5,
+         89
+        ],
+        [
+         31.4,
+         9
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8n36n",
+   "type": "extrude",
+   "name": "Rear pocket",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f71nrd",
+      "pt": [
+       70.46666666666667,
+       29
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "56",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pocket"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f71nrd\",\"pt\":[70.46666666666667,29]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2egsu": {
+   "name": "Hex Lattice Phone Stand",
+   "color": "#9aa7b4",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 4,
+  "extrude": 4
+ }
+}
