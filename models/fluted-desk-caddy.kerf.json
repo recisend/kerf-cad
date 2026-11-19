@@ -1,0 +1,348 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Fluted Desk Caddy",
+ "features": [
+  {
+   "id": "f16a0j",
+   "type": "sketch",
+   "name": "Body",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "c1",
+       "type": "circle",
+       "c": "O",
+       "r": 40,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "c1",
+       "center": [
+        0,
+        0
+       ],
+       "diameter": 80
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2q9p7",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f16a0j",
+      "pt": [
+       4.560268577675581,
+       -7.898616872693968
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "95",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Body"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f16a0j\",\"pt\":[4.560268577675581,-7.898616872693968]}]"
+    }
+   }
+  },
+  {
+   "id": "f3j1jr",
+   "type": "sketch",
+   "name": "Flute",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 40,
+       "y": 0
+      }
+     ],
+     "ents": [
+      {
+       "id": "f1",
+       "type": "circle",
+       "c": "p1",
+       "r": 3.5,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "f1",
+       "center": [
+        40,
+        0
+       ],
+       "radius": 3.5
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4hkec",
+   "type": "extrude",
+   "name": "Flute cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3j1jr",
+      "pt": [
+       40.04872873738105,
+       -0.9546156992451937
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "95",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Flute"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3j1jr\",\"pt\":[40.04872873738105,-0.9546156992451937]}]"
+    }
+   }
+  },
+  {
+   "id": "f5bxu8",
+   "type": "cpattern",
+   "name": "Flute pattern",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f4hkec"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "24",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Flute cut"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f4hkec\"}]"
+    }
+   }
+  },
+  {
+   "id": "f66udu",
+   "type": "sketch",
+   "name": "Cavity",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "k1",
+       "type": "circle",
+       "c": "O",
+       "r": 34,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "k1",
+       "center": [
+        0,
+        0
+       ],
+       "diameter": 68
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f774r5",
+   "type": "sketch",
+   "name": "Cavity top",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f2q9p7",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       4.331031799316406,
+       -6.699919382731119,
+       95
+      ]
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "k2",
+       "type": "circle",
+       "c": "O",
+       "r": 34,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "k2",
+       "center": [
+        0,
+        0
+       ],
+       "diameter": 68
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f2q9p7\",\"n\":[0,0,1],\"p\":[4.331031799316406,-6.699919382731119,95]}]"
+    }
+   }
+  },
+  {
+   "id": "f8k6s2",
+   "type": "extrude",
+   "name": "Cavity",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f774r5",
+      "pt": [
+       3.876228291024244,
+       -6.713824341789874
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "92.6",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cavity top"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f774r5\",\"pt\":[3.876228291024244,-6.713824341789874]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2q9p7": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 4,
+  "extrude": 3,
+  "cpattern": 1
+ }
+}
