@@ -1,0 +1,1385 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "frost-crystal-ornament",
+ "features": [
+  {
+   "id": "f2aqn4",
+   "type": "sketch",
+   "name": "Spoke",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 42,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 0,
+       "y": 2.5
+      },
+      {
+       "id": "p3",
+       "x": 42,
+       "y": 2.5
+      },
+      {
+       "id": "p4",
+       "x": 42,
+       "y": -2.5
+      },
+      {
+       "id": "p5",
+       "x": 0,
+       "y": -2.5
+      }
+     ],
+     "ents": [
+      {
+       "id": "slot1.line1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc2",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p4",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "slot1.line2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc1",
+       "type": "arc",
+       "c": "O",
+       "p1": "p2",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "slot1.axis",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0nsi",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c1k2o",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c22li",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c3mez",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4fu5",
+       "type": "equal",
+       "e1": "slot1.arc1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4wht",
+       "type": "parallel",
+       "e1": "slot1.line1",
+       "e2": "slot1.axis"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "radius": 2.5,
+       "center1": [
+        0,
+        0
+       ],
+       "center2": [
+        42,
+        0
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f33e5v",
+   "type": "sketch",
+   "name": "B1a",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 14,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 22,
+       "y": 8
+      },
+      {
+       "id": "p3",
+       "x": 12.727207793864215,
+       "y": 1.2727922061357855
+      },
+      {
+       "id": "p4",
+       "x": 20.727207793864213,
+       "y": 9.272792206135785
+      },
+      {
+       "id": "p5",
+       "x": 23.272792206135787,
+       "y": 6.727207793864214
+      },
+      {
+       "id": "p6",
+       "x": 15.272792206135785,
+       "y": -1.2727922061357855
+      }
+     ],
+     "ents": [
+      {
+       "id": "slot1.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c07aa",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c1ffm",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c2rd7",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c3coy",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4l17",
+       "type": "equal",
+       "e1": "slot1.arc1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c44ap",
+       "type": "parallel",
+       "e1": "slot1.line1",
+       "e2": "slot1.axis"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "radius": 1.8,
+       "center1": [
+        14,
+        0
+       ],
+       "center2": [
+        22,
+        8
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f45nnn",
+   "type": "sketch",
+   "name": "B1b",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 14,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 22,
+       "y": -8
+      },
+      {
+       "id": "p3",
+       "x": 15.272792206135785,
+       "y": 1.2727922061357855
+      },
+      {
+       "id": "p4",
+       "x": 23.272792206135787,
+       "y": -6.727207793864214
+      },
+      {
+       "id": "p5",
+       "x": 20.727207793864213,
+       "y": -9.272792206135785
+      },
+      {
+       "id": "p6",
+       "x": 12.727207793864215,
+       "y": -1.2727922061357855
+      }
+     ],
+     "ents": [
+      {
+       "id": "slot1.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0pir",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c1bfi",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c2s0s",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c3d8e",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4orb",
+       "type": "equal",
+       "e1": "slot1.arc1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4aoq",
+       "type": "parallel",
+       "e1": "slot1.line1",
+       "e2": "slot1.axis"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "radius": 1.8,
+       "center1": [
+        14,
+        0
+       ],
+       "center2": [
+        22,
+        -8
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5irvb",
+   "type": "sketch",
+   "name": "B2a",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 27,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 33,
+       "y": 6
+      },
+      {
+       "id": "p3",
+       "x": 25.727207793864213,
+       "y": 1.2727922061357855
+      },
+      {
+       "id": "p4",
+       "x": 31.727207793864213,
+       "y": 7.272792206135786
+      },
+      {
+       "id": "p5",
+       "x": 34.27279220613578,
+       "y": 4.727207793864214
+      },
+      {
+       "id": "p6",
+       "x": 28.272792206135787,
+       "y": -1.2727922061357855
+      }
+     ],
+     "ents": [
+      {
+       "id": "slot1.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0tcm",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c18zc",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c2tpp",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c34sx",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4rmn",
+       "type": "equal",
+       "e1": "slot1.arc1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c458t",
+       "type": "parallel",
+       "e1": "slot1.line1",
+       "e2": "slot1.axis"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "radius": 1.8,
+       "center1": [
+        27,
+        0
+       ],
+       "center2": [
+        33,
+        6
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6xte7",
+   "type": "sketch",
+   "name": "B2b",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 27,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 33,
+       "y": -6
+      },
+      {
+       "id": "p3",
+       "x": 28.272792206135787,
+       "y": 1.2727922061357855
+      },
+      {
+       "id": "p4",
+       "x": 34.27279220613578,
+       "y": -4.727207793864214
+      },
+      {
+       "id": "p5",
+       "x": 31.727207793864213,
+       "y": -7.272792206135786
+      },
+      {
+       "id": "p6",
+       "x": 25.727207793864213,
+       "y": -1.2727922061357855
+      }
+     ],
+     "ents": [
+      {
+       "id": "slot1.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot1.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "slot1.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0dey",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c1hao",
+       "type": "tangent",
+       "e1": "slot1.line1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c25m9",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc1"
+      },
+      {
+       "id": "c3792",
+       "type": "tangent",
+       "e1": "slot1.line2",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4jtt",
+       "type": "equal",
+       "e1": "slot1.arc1",
+       "e2": "slot1.arc2"
+      },
+      {
+       "id": "c4ajx",
+       "type": "parallel",
+       "e1": "slot1.line1",
+       "e2": "slot1.axis"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "radius": 1.8,
+       "center1": [
+        27,
+        0
+       ],
+       "center2": [
+        33,
+        -6
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f7sqwo",
+   "type": "extrude",
+   "name": "ArmSpoke",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f2aqn4",
+      "pt": [
+       13.020103664650534,
+       -0.17858753467741492
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "3",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Spoke"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f2aqn4\",\"pt\":[13.020103664650534,-0.17858753467741492]}]"
+    }
+   }
+  },
+  {
+   "id": "f8fw7r",
+   "type": "extrude",
+   "name": "B1a",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f33e5v",
+      "pt": [
+       19.76867458000724,
+       5.165063223911159
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "3",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "B1a"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f33e5v\",\"pt\":[19.76867458000724,5.165063223911159]}]"
+    }
+   }
+  },
+  {
+   "id": "f975ln",
+   "type": "extrude",
+   "name": "B1b",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f45nnn",
+      "pt": [
+       19.165063223911158,
+       -5.7686745800072385
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "3",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "B1b"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f45nnn\",\"pt\":[19.165063223911158,-5.7686745800072385]}]"
+    }
+   }
+  },
+  {
+   "id": "fa3cg1",
+   "type": "extrude",
+   "name": "B2a",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f5irvb",
+      "pt": [
+       31.435341246673904,
+       3.8317298905778236
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "3",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "B2a"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f5irvb\",\"pt\":[31.435341246673904,3.8317298905778236]}]"
+    }
+   }
+  },
+  {
+   "id": "fbtmcz",
+   "type": "extrude",
+   "name": "B2b",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f6xte7",
+      "pt": [
+       30.831729890577822,
+       -4.435341246673905
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "3",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "B2b"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f6xte7\",\"pt\":[30.831729890577822,-4.435341246673905]}]"
+    }
+   }
+  },
+  {
+   "id": "fcz0qy",
+   "type": "cpattern",
+   "name": "SixFold",
+   "params": {
+    "mode": "part",
+    "parts": [
+     {
+      "kind": "part",
+      "id": "f7sqwo"
+     }
+    ],
+    "features": [],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "6",
+    "equal": true,
+    "flip": false,
+    "merge": true,
+    "__sel": {
+     "parts": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "parts": "[{\"kind\":\"part\",\"id\":\"f7sqwo\"}]"
+    }
+   }
+  },
+  {
+   "id": "fdi2zv",
+   "type": "sketch",
+   "name": "LoopTab",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 45,
+       "y": 0
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 4.5,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        45,
+        0
+       ],
+       "radius": 4.5
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fedkyy",
+   "type": "sketch",
+   "name": "LoopHole",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 46,
+       "y": 0
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 1.3,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        46,
+        0
+       ],
+       "diameter": 2.6
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fg5ma5",
+   "type": "extrude",
+   "name": "LoopTabExt",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fdi2zv",
+      "pt": [
+       45.54490689600402,
+       -0.7500000000000001
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "3",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f7sqwo"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "LoopTab"
+     },
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fdi2zv\",\"pt\":[45.54490689600402,-0.7500000000000001]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f7sqwo\"}]"
+    }
+   }
+  },
+  {
+   "id": "fhobi8",
+   "type": "plane",
+   "name": "TopOfBase",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "3",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fi2trr",
+   "type": "sketch",
+   "name": "Accent",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f7sqwo",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       -18.97119140625,
+       34.01044591267903,
+       3
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 4.898587196589413e-16,
+       "y": 8
+      },
+      {
+       "id": "p2",
+       "x": -6.928203230275508,
+       "y": 4.000000000000003
+      },
+      {
+       "id": "p3",
+       "x": -6.9282032302755105,
+       "y": -3.999999999999998
+      },
+      {
+       "id": "p4",
+       "x": -1.4695761589768238e-15,
+       "y": -8
+      },
+      {
+       "id": "p5",
+       "x": 6.928203230275507,
+       "y": -4.0000000000000036
+      },
+      {
+       "id": "p6",
+       "x": 6.928203230275509,
+       "y": 4
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 8,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0h83",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c1se4",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c2xuw",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c3v4y",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c4qyy",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c5xd5",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c6q8g",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.1"
+      },
+      {
+       "id": "c7q55",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.2"
+      },
+      {
+       "id": "c8uef",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.3"
+      },
+      {
+       "id": "c9ibz",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.4"
+      },
+      {
+       "id": "c108y8",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 8,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f7sqwo\",\"n\":[0,0,1],\"p\":[-18.97119140625,34.01044591267903,3]}]"
+    }
+   }
+  },
+  {
+   "id": "fjhvvc",
+   "type": "extrude",
+   "name": "LoopHoleCut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fedkyy",
+      "pt": [
+       46,
+       -2.220446049250313e-16
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f7sqwo"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "LoopHole"
+     },
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fedkyy\",\"pt\":[46,-2.220446049250313e-16]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f7sqwo\"}]"
+    }
+   }
+  },
+  {
+   "id": "fknl57",
+   "type": "extrude",
+   "name": "AccentExt",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fi2trr",
+      "pt": [
+       -8.881784197001252e-16,
+       -4.440892098500626e-16
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "0.8",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Accent"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fi2trr\",\"pt\":[-8.881784197001252e-16,-4.440892098500626e-16]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f7sqwo": {
+   "name": "Crystal_Body",
+   "color": "#e8f3ff",
+   "material": "pla",
+   "hidden": false
+  },
+  "fknl57": {
+   "name": "Crystal_Accent",
+   "color": "#3b82f6",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 10,
+  "extrude": 8,
+  "cpattern": 1,
+  "plane": 1
+ }
+}
