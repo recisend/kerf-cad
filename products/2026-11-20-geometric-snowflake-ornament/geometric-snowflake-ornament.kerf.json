@@ -1,0 +1,990 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Geometric Snowflake Ornament",
+ "features": [
+  {
+   "id": "f1m9ma",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "thick",
+    "value": "3"
+   }
+  },
+  {
+   "id": "f2fhc0",
+   "type": "sketch",
+   "name": "Arm",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 40
+      },
+      {
+       "id": "p2",
+       "x": -2.5,
+       "y": 0
+      },
+      {
+       "id": "p3",
+       "x": -2.5,
+       "y": 40
+      },
+      {
+       "id": "p4",
+       "x": 2.5,
+       "y": 40
+      },
+      {
+       "id": "p5",
+       "x": 2.5,
+       "y": 0
+      }
+     ],
+     "ents": [
+      {
+       "id": "s.line1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "s.arc2",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p4",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "s.line2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "s.arc1",
+       "type": "arc",
+       "c": "O",
+       "p1": "p2",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "s.axis",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": true
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "id": "s",
+       "radius": 2.5,
+       "center1": [
+        0,
+        0
+       ],
+       "center2": [
+        0,
+        40
+       ]
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f3wu82",
+   "type": "extrude",
+   "name": "Arm body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f2fhc0",
+      "pt": [
+       0.17858753467741492,
+       12.353436997983868
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "#thick",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Arm"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f2fhc0\",\"pt\":[0.17858753467741492,12.353436997983868]}]"
+    }
+   }
+  },
+  {
+   "id": "f403cb",
+   "type": "sketch",
+   "name": "Sk R1",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 20
+      },
+      {
+       "id": "p2",
+       "x": 10.4,
+       "y": 26
+      },
+      {
+       "id": "p3",
+       "x": -0.9994449069791544,
+       "y": 21.732371172097203
+      },
+      {
+       "id": "p4",
+       "x": 9.400555093020845,
+       "y": 27.732371172097203
+      },
+      {
+       "id": "p5",
+       "x": 11.399444906979156,
+       "y": 24.267628827902797
+      },
+      {
+       "id": "p6",
+       "x": 0.9994449069791544,
+       "y": 18.267628827902797
+      }
+     ],
+     "ents": [
+      {
+       "id": "s.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "s.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "s.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "s.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "s.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "id": "s",
+       "radius": 2,
+       "center1": [
+        0,
+        20
+       ],
+       "center2": [
+        10.4,
+        26
+       ]
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5rynk",
+   "type": "extrude",
+   "name": "Branch R1",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f403cb",
+      "pt": [
+       7.352075147425414,
+       23.694075741205122
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "#thick",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f3wu82"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "Sk R1"
+     },
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f403cb\",\"pt\":[7.352075147425414,23.694075741205122]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f3wu82\"}]"
+    }
+   }
+  },
+  {
+   "id": "f68bfw",
+   "type": "sketch",
+   "name": "Sk L1",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 20
+      },
+      {
+       "id": "p2",
+       "x": -10.4,
+       "y": 26
+      },
+      {
+       "id": "p3",
+       "x": -0.9994449069791544,
+       "y": 18.267628827902797
+      },
+      {
+       "id": "p4",
+       "x": -11.399444906979156,
+       "y": 24.267628827902797
+      },
+      {
+       "id": "p5",
+       "x": -9.400555093020845,
+       "y": 27.732371172097203
+      },
+      {
+       "id": "p6",
+       "x": 0.9994449069791544,
+       "y": 21.732371172097203
+      }
+     ],
+     "ents": [
+      {
+       "id": "s.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "s.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "s.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "s.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "s.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "id": "s",
+       "radius": 2,
+       "center1": [
+        0,
+        20
+       ],
+       "center2": [
+        -10.4,
+        26
+       ]
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f7chjy",
+   "type": "extrude",
+   "name": "Branch L1",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f68bfw",
+      "pt": [
+       -6.878096525670208,
+       24.515638685580814
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "#thick",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f3wu82"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "Sk L1"
+     },
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f68bfw\",\"pt\":[-6.878096525670208,24.515638685580814]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f3wu82\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8j0z1",
+   "type": "sketch",
+   "name": "Sk R2",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 31
+      },
+      {
+       "id": "p2",
+       "x": 6.9,
+       "y": 35
+      },
+      {
+       "id": "p3",
+       "x": -1.0030608712637843,
+       "y": 32.73028000293003
+      },
+      {
+       "id": "p4",
+       "x": 5.896939128736216,
+       "y": 36.73028000293003
+      },
+      {
+       "id": "p5",
+       "x": 7.903060871263785,
+       "y": 33.26971999706997
+      },
+      {
+       "id": "p6",
+       "x": 1.0030608712637843,
+       "y": 29.269719997069974
+      }
+     ],
+     "ents": [
+      {
+       "id": "s.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "s.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "s.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "s.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "s.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "id": "s",
+       "radius": 2,
+       "center1": [
+        0,
+        31
+       ],
+       "center2": [
+        6.9,
+        35
+       ]
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9dxqu",
+   "type": "extrude",
+   "name": "Branch R2",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f8j0z1",
+      "pt": [
+       5.019379838967606,
+       33.36161763838461
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "#thick",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f3wu82"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "Sk R2"
+     },
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f8j0z1\",\"pt\":[5.019379838967606,33.36161763838461]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f3wu82\"}]"
+    }
+   }
+  },
+  {
+   "id": "fa7ue3",
+   "type": "sketch",
+   "name": "Sk L2",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 31
+      },
+      {
+       "id": "p2",
+       "x": -6.9,
+       "y": 35
+      },
+      {
+       "id": "p3",
+       "x": -1.0030608712637843,
+       "y": 29.269719997069974
+      },
+      {
+       "id": "p4",
+       "x": -7.903060871263785,
+       "y": 33.26971999706997
+      },
+      {
+       "id": "p5",
+       "x": -5.896939128736216,
+       "y": 36.73028000293003
+      },
+      {
+       "id": "p6",
+       "x": 1.0030608712637843,
+       "y": 32.73028000293003
+      }
+     ],
+     "ents": [
+      {
+       "id": "s.line1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "s.arc2",
+       "type": "arc",
+       "c": "p2",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "s.line2",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "s.arc1",
+       "type": "arc",
+       "c": "p1",
+       "p1": "p3",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "s.axis",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": true
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "slot",
+       "id": "s",
+       "radius": 2,
+       "center1": [
+        0,
+        31
+       ],
+       "center2": [
+        -6.9,
+        35
+       ]
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fbtxvw",
+   "type": "extrude",
+   "name": "Branch L2",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fa7ue3",
+      "pt": [
+       -4.543686375547815,
+       34.18218886278375
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "#thick",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f3wu82"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "Sk L2"
+     },
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fa7ue3\",\"pt\":[-4.543686375547815,34.18218886278375]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f3wu82\"}]"
+    }
+   }
+  },
+  {
+   "id": "fcvari",
+   "type": "cpattern",
+   "name": "Six arms",
+   "params": {
+    "mode": "part",
+    "parts": [
+     {
+      "kind": "part",
+      "id": "f3wu82"
+     }
+    ],
+    "features": [],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "6",
+    "equal": true,
+    "flip": false,
+    "merge": true,
+    "__sel": {
+     "parts": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "parts": "[{\"kind\":\"part\",\"id\":\"f3wu82\"}]"
+    }
+   }
+  },
+  {
+   "id": "fddnss",
+   "type": "sketch",
+   "name": "Loop",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 46.5
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 5.5,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        46.5
+       ],
+       "radius": 5.5
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fe61nr",
+   "type": "extrude",
+   "name": "Loop",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fddnss",
+      "pt": [
+       0.5678226911327124,
+       46.5
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "#thick",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f3wu82"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "Loop"
+     },
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fddnss\",\"pt\":[0.5678226911327124,46.5]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f3wu82\"}]"
+    }
+   }
+  },
+  {
+   "id": "ff3ocg",
+   "type": "sketch",
+   "name": "Loop hole",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 46.5
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 2.25,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        46.5
+       ],
+       "radius": 2.25
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fgpzw4",
+   "type": "extrude",
+   "name": "Loop hole",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "ff3ocg",
+      "pt": [
+       -0.4162185990655285,
+       46.5
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Loop hole"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"ff3ocg\",\"pt\":[-0.4162185990655285,46.5]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f3wu82": {
+   "name": "Snowflake ornament",
+   "color": "#e8f1f8",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 7,
+  "extrude": 7,
+  "cpattern": 1
+ }
+}
