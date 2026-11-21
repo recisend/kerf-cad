@@ -1,0 +1,480 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Nordic Stacked Tree",
+ "features": [
+  {
+   "id": "f1utk3",
+   "type": "sketch",
+   "name": "Tree Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 46,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 46,
+       "y": 3
+      },
+      {
+       "id": "p3",
+       "x": 33,
+       "y": 23
+      },
+      {
+       "id": "p4",
+       "x": 38,
+       "y": 28
+      },
+      {
+       "id": "p5",
+       "x": 26,
+       "y": 48
+      },
+      {
+       "id": "p6",
+       "x": 31,
+       "y": 53
+      },
+      {
+       "id": "p7",
+       "x": 20,
+       "y": 73
+      },
+      {
+       "id": "p8",
+       "x": 24,
+       "y": 77
+      },
+      {
+       "id": "p9",
+       "x": 13,
+       "y": 95
+      },
+      {
+       "id": "p10",
+       "x": 17,
+       "y": 99
+      },
+      {
+       "id": "p11",
+       "x": 4,
+       "y": 117
+      },
+      {
+       "id": "p12",
+       "x": 0,
+       "y": 117
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "polyline1.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polyline1.9",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "polyline1.10",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "polyline1.11",
+       "type": "line",
+       "p1": "p11",
+       "p2": "p12",
+       "construction": false
+      },
+      {
+       "id": "polyline1.12",
+       "type": "line",
+       "p1": "p12",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0k1j",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c188n",
+       "type": "vertical",
+       "e1": "polyline1.1"
+      },
+      {
+       "id": "c2idr",
+       "type": "horizontal",
+       "e1": "polyline1.11"
+      },
+      {
+       "id": "c3yc3",
+       "type": "vertical",
+       "e1": "polyline1.12"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         46,
+         0
+        ],
+        [
+         46,
+         3
+        ],
+        [
+         33,
+         23
+        ],
+        [
+         38,
+         28
+        ],
+        [
+         26,
+         48
+        ],
+        [
+         31,
+         53
+        ],
+        [
+         20,
+         73
+        ],
+        [
+         24,
+         77
+        ],
+        [
+         13,
+         95
+        ],
+        [
+         17,
+         99
+        ],
+        [
+         4,
+         117
+        ],
+        [
+         0,
+         117
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2hcp1",
+   "type": "revolve",
+   "name": "Tree Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1utk3",
+      "pt": [
+       13,
+       47.666666666666664
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Tree Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1utk3\",\"pt\":[13,47.666666666666664]}]"
+    }
+   }
+  },
+  {
+   "id": "f3s91r",
+   "type": "sketch",
+   "name": "Topper Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 117
+      },
+      {
+       "id": "p2",
+       "x": 4,
+       "y": 117
+      },
+      {
+       "id": "p3",
+       "x": 7,
+       "y": 121
+      },
+      {
+       "id": "p4",
+       "x": 4,
+       "y": 128
+      },
+      {
+       "id": "p5",
+       "x": 0,
+       "y": 136
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0qlv",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c1g7c",
+       "type": "vertical",
+       "e1": "polyline1.4"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         117
+        ],
+        [
+         4,
+         117
+        ],
+        [
+         7,
+         121
+        ],
+        [
+         4,
+         128
+        ],
+        [
+         0,
+         136
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f41ksz",
+   "type": "revolve",
+   "name": "Gem Topper",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3s91r",
+      "pt": [
+       1.3333333333333333,
+       127
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Topper Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3s91r\",\"pt\":[1.3333333333333333,127]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2hcp1": {
+   "name": "Tree",
+   "color": "#1f6b4a",
+   "material": "pla",
+   "hidden": false
+  },
+  "f41ksz": {
+   "name": "Gem Topper",
+   "color": "#d4af37",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 2,
+  "revolve": 2
+ }
+}
