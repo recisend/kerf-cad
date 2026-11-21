@@ -1,0 +1,485 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Untitled part studio",
+ "features": [
+  {
+   "id": "f1zgnr",
+   "type": "sketch",
+   "name": "Sketch 1",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 3
+      },
+      {
+       "id": "p2",
+       "x": 19,
+       "y": 3
+      },
+      {
+       "id": "p3",
+       "x": 12.5,
+       "y": 13
+      },
+      {
+       "id": "p4",
+       "x": 15.5,
+       "y": 16
+      },
+      {
+       "id": "p5",
+       "x": 9,
+       "y": 26
+      },
+      {
+       "id": "p6",
+       "x": 12,
+       "y": 29
+      },
+      {
+       "id": "p7",
+       "x": 5.5,
+       "y": 39
+      },
+      {
+       "id": "p8",
+       "x": 8.5,
+       "y": 42
+      },
+      {
+       "id": "p9",
+       "x": 2,
+       "y": 52
+      },
+      {
+       "id": "p10",
+       "x": 5,
+       "y": 55
+      },
+      {
+       "id": "p11",
+       "x": 2.5,
+       "y": 64
+      },
+      {
+       "id": "p12",
+       "x": 0,
+       "y": 64
+      }
+     ],
+     "ents": [
+      {
+       "id": "tree.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "tree.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "tree.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "tree.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "tree.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "tree.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "tree.6",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "tree.7",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "tree.8",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "tree.9",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "tree.10",
+       "type": "line",
+       "p1": "p11",
+       "p2": "p12",
+       "construction": false
+      },
+      {
+       "id": "tree.11",
+       "type": "line",
+       "p1": "p12",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0ffh",
+       "type": "horizontal",
+       "e1": "tree.0"
+      },
+      {
+       "id": "c1i7p",
+       "type": "horizontal",
+       "e1": "tree.10"
+      },
+      {
+       "id": "c2vpm",
+       "type": "vertical",
+       "e1": "tree.11"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "id": "tree",
+       "points": [
+        [
+         0,
+         3
+        ],
+        [
+         19,
+         3
+        ],
+        [
+         12.5,
+         13
+        ],
+        [
+         15.5,
+         16
+        ],
+        [
+         9,
+         26
+        ],
+        [
+         12,
+         29
+        ],
+        [
+         5.5,
+         39
+        ],
+        [
+         8.5,
+         42
+        ],
+        [
+         2,
+         52
+        ],
+        [
+         5,
+         55
+        ],
+        [
+         2.5,
+         64
+        ],
+        [
+         0,
+         64
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2h9gb",
+   "type": "revolve",
+   "name": "Revolve 1",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1zgnr",
+      "pt": [
+       7.166666666666667,
+       14
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": "Sketch 1"
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1zgnr\",\"pt\":[7.166666666666667,14]}]"
+    }
+   }
+  },
+  {
+   "id": "f39vik",
+   "type": "primitive",
+   "name": "Primitive 1",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "3",
+    "r": "24",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "0",
+    "z": "0",
+    "op": "new",
+    "targets": []
+   }
+  },
+  {
+   "id": "f4tyi4",
+   "type": "sketch",
+   "name": "Sketch 2",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -2.5,
+       "y": 64
+      },
+      {
+       "id": "p2",
+       "x": 2.5,
+       "y": 64
+      },
+      {
+       "id": "p3",
+       "x": 5,
+       "y": 70
+      },
+      {
+       "id": "p4",
+       "x": 0,
+       "y": 78
+      },
+      {
+       "id": "p5",
+       "x": -5,
+       "y": 70
+      }
+     ],
+     "ents": [
+      {
+       "id": "gem.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "gem.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "gem.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "gem.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "gem.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0ato",
+       "type": "horizontal",
+       "e1": "gem.0"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "id": "gem",
+       "points": [
+        [
+         -2.5,
+         64
+        ],
+        [
+         2.5,
+         64
+        ],
+        [
+         5,
+         70
+        ],
+        [
+         0,
+         78
+        ],
+        [
+         -5,
+         70
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5xl55",
+   "type": "extrude",
+   "name": "Extrude 1",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f4tyi4",
+      "pt": [
+       0.8333333333333334,
+       70.66666666666667
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "symmetric",
+    "depth": "3",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": "Sketch 2"
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f4tyi4\",\"pt\":[0.8333333333333334,70.66666666666667]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2h9gb": {
+   "name": "Tree",
+   "color": "#1f7a4d",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f39vik": {
+   "name": "Base",
+   "color": "#6b4a2f",
+   "material": "aluminum",
+   "hidden": false
+  },
+  "f5xl55": {
+   "name": "Gem Topper",
+   "color": "#e0b13a",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 2,
+  "revolve": 1,
+  "primitive": 1,
+  "extrude": 1
+ }
+}
