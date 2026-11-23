@@ -1,0 +1,710 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Ribbed Desk Caddy",
+ "features": [
+  {
+   "id": "f18mjh",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "wall",
+    "value": "2"
+   }
+  },
+  {
+   "id": "f29mkn",
+   "type": "sketch",
+   "name": "Outline",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -55,
+       "y": -40
+      },
+      {
+       "id": "p2",
+       "x": 55,
+       "y": -40
+      },
+      {
+       "id": "p3",
+       "x": 55,
+       "y": 40
+      },
+      {
+       "id": "p4",
+       "x": -55,
+       "y": 40
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.diag",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p3",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0ttp",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0duv",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0btn",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0rrp",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      },
+      {
+       "id": "c4gzd",
+       "type": "midpoint",
+       "a": "O",
+       "e1": "rectangle1.diag"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "center": [
+        0,
+        0
+       ],
+       "width": 110,
+       "height": 80
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f3l2nh",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f29mkn",
+      "pt": [
+       -18.333333333333332,
+       13.333333333333334
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "100",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Outline"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f29mkn\",\"pt\":[-18.333333333333332,13.333333333333334]}]"
+    }
+   }
+  },
+  {
+   "id": "f4u8vn",
+   "type": "sketch",
+   "name": "Pockets",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f3l2nh",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       -18.333333333333332,
+       13.333333333333332,
+       100
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -30,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 8,
+       "y": -30
+      },
+      {
+       "id": "p3",
+       "x": 22,
+       "y": -30
+      },
+      {
+       "id": "p4",
+       "x": 22,
+       "y": 30
+      },
+      {
+       "id": "p5",
+       "x": 8,
+       "y": 30
+      },
+      {
+       "id": "p6",
+       "x": 15,
+       "y": 0
+      },
+      {
+       "id": "p7",
+       "x": 27,
+       "y": -30
+      },
+      {
+       "id": "p8",
+       "x": 51,
+       "y": -30
+      },
+      {
+       "id": "p9",
+       "x": 51,
+       "y": 30
+      },
+      {
+       "id": "p10",
+       "x": 27,
+       "y": 30
+      },
+      {
+       "id": "p11",
+       "x": 39,
+       "y": 0
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 21,
+       "construction": false
+      },
+      {
+       "id": "rectangle2.bottom",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle2.right",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle2.top",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "rectangle2.left",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle2.diag",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p4",
+       "construction": true
+      },
+      {
+       "id": "rectangle3.bottom",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "rectangle3.right",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "rectangle3.top",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "rectangle3.left",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "rectangle3.diag",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p9",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0y7i",
+       "type": "horizontal",
+       "e1": "rectangle2.bottom"
+      },
+      {
+       "id": "c04ds",
+       "type": "vertical",
+       "e1": "rectangle2.right"
+      },
+      {
+       "id": "c0y0o",
+       "type": "horizontal",
+       "e1": "rectangle2.top"
+      },
+      {
+       "id": "c0e4l",
+       "type": "vertical",
+       "e1": "rectangle2.left"
+      },
+      {
+       "id": "c4h5t",
+       "type": "midpoint",
+       "a": "p6",
+       "e1": "rectangle2.diag"
+      },
+      {
+       "id": "c57qv",
+       "type": "horizontal",
+       "e1": "rectangle3.bottom"
+      },
+      {
+       "id": "c5x7g",
+       "type": "vertical",
+       "e1": "rectangle3.right"
+      },
+      {
+       "id": "c56s8",
+       "type": "horizontal",
+       "e1": "rectangle3.top"
+      },
+      {
+       "id": "c5tnc",
+       "type": "vertical",
+       "e1": "rectangle3.left"
+      },
+      {
+       "id": "c9x07",
+       "type": "midpoint",
+       "a": "p11",
+       "e1": "rectangle3.diag"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        -30,
+        0
+       ],
+       "diameter": 42
+      },
+      {
+       "type": "rectangle",
+       "center": [
+        15,
+        0
+       ],
+       "width": 14,
+       "height": 60
+      },
+      {
+       "type": "rectangle",
+       "center": [
+        39,
+        0
+       ],
+       "width": 24,
+       "height": 60
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f3l2nh\",\"n\":[0,0,1],\"p\":[-18.333333333333332,13.333333333333332,100]}]"
+    }
+   }
+  },
+  {
+   "id": "f5ascx",
+   "type": "extrude",
+   "name": "Pen cup",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f4u8vn",
+      "pt": [
+       -27.60585899672032,
+       -4.146773858164335
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "96",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pockets",
+      "region": 2
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f4u8vn\",\"pt\":[-27.60585899672032,-4.146773858164335]}]"
+    }
+   }
+  },
+  {
+   "id": "f6a3zz",
+   "type": "extrude",
+   "name": "Phone slot",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f4u8vn",
+      "pt": [
+       12.666666666666666,
+       10
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "70",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pockets",
+      "region": 0
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f4u8vn\",\"pt\":[12.666666666666666,10]}]"
+    }
+   }
+  },
+  {
+   "id": "f7inui",
+   "type": "extrude",
+   "name": "Card tray",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f4u8vn",
+      "pt": [
+       35,
+       10
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "50",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Pockets",
+      "region": 1
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f4u8vn\",\"pt\":[35,10]}]"
+    }
+   }
+  },
+  {
+   "id": "f9cau8",
+   "type": "fillet",
+   "name": "Corner round",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "a": [
+       55,
+       40,
+       0
+      ],
+      "b": [
+       55,
+       40,
+       100
+      ]
+     },
+     {
+      "kind": "edge",
+      "a": [
+       -55,
+       40,
+       0
+      ],
+      "b": [
+       -55,
+       40,
+       100
+      ]
+     },
+     {
+      "kind": "edge",
+      "a": [
+       55,
+       -40,
+       0
+      ],
+      "b": [
+       55,
+       -40,
+       100
+      ]
+     },
+     {
+      "kind": "edge",
+      "a": [
+       -55,
+       -40,
+       0
+      ],
+      "b": [
+       -55,
+       -40,
+       100
+      ]
+     }
+    ],
+    "radius": "8",
+    "__sel": {
+     "edges": [
+      {
+       "from": [
+        55,
+        40,
+        0
+       ],
+       "to": [
+        55,
+        40,
+        100
+       ]
+      },
+      {
+       "from": [
+        -55,
+        40,
+        0
+       ],
+       "to": [
+        -55,
+        40,
+        100
+       ]
+      },
+      {
+       "from": [
+        55,
+        -40,
+        0
+       ],
+       "to": [
+        55,
+        -40,
+        100
+       ]
+      },
+      {
+       "from": [
+        -55,
+        -40,
+        0
+       ],
+       "to": [
+        -55,
+        -40,
+        100
+       ]
+      }
+     ]
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"a\":[55,40,0],\"b\":[55,40,100]},{\"kind\":\"edge\",\"a\":[-55,40,0],\"b\":[-55,40,100]},{\"kind\":\"edge\",\"a\":[55,-40,0],\"b\":[55,-40,100]},{\"kind\":\"edge\",\"a\":[-55,-40,0],\"b\":[-55,-40,100]}]"
+    }
+   }
+  },
+  {
+   "id": "fa1bu0",
+   "type": "primitive",
+   "name": "Flute",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "92",
+    "r": "2.5",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "-40",
+    "y": "40",
+    "z": "4",
+    "op": "remove",
+    "targets": []
+   }
+  },
+  {
+   "id": "fb4ryq",
+   "type": "lpattern",
+   "name": "Flute row",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "fa1bu0"
+     }
+    ],
+    "dirSel": "X",
+    "dir": [],
+    "distance": "10",
+    "count": "9",
+    "flip": false,
+    "dir2Sel": "Y",
+    "dir2": [],
+    "distance2": "-80",
+    "count2": "2",
+    "flip2": false,
+    "merge": false,
+    "__sel": {
+     "features": "Flute"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"fa1bu0\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f3l2nh": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 2,
+  "extrude": 4,
+  "fillet": 1,
+  "primitive": 1,
+  "lpattern": 1
+ }
+}
