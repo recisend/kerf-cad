@@ -1,0 +1,579 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Tiered Holiday Tree",
+ "features": [
+  {
+   "id": "f183m1",
+   "type": "sketch",
+   "name": "Tree profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 37.2,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 38,
+       "y": 0.8
+      },
+      {
+       "id": "p3",
+       "x": 26,
+       "y": 20
+      },
+      {
+       "id": "p4",
+       "x": 30,
+       "y": 26
+      },
+      {
+       "id": "p5",
+       "x": 20,
+       "y": 43
+      },
+      {
+       "id": "p6",
+       "x": 24,
+       "y": 49
+      },
+      {
+       "id": "p7",
+       "x": 14,
+       "y": 64
+      },
+      {
+       "id": "p8",
+       "x": 18,
+       "y": 70
+      },
+      {
+       "id": "p9",
+       "x": 8,
+       "y": 83
+      },
+      {
+       "id": "p10",
+       "x": 11,
+       "y": 89
+      },
+      {
+       "id": "p11",
+       "x": 3,
+       "y": 99
+      },
+      {
+       "id": "p12",
+       "x": 0,
+       "y": 99
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "polyline1.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polyline1.9",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "polyline1.10",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "polyline1.11",
+       "type": "line",
+       "p1": "p11",
+       "p2": "p12",
+       "construction": false
+      },
+      {
+       "id": "polyline1.12",
+       "type": "line",
+       "p1": "p12",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0bwx",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c1qlh",
+       "type": "horizontal",
+       "e1": "polyline1.11"
+      },
+      {
+       "id": "c2r2k",
+       "type": "vertical",
+       "e1": "polyline1.12"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         37.2,
+         0
+        ],
+        [
+         38,
+         0.8
+        ],
+        [
+         26,
+         20
+        ],
+        [
+         30,
+         26
+        ],
+        [
+         20,
+         43
+        ],
+        [
+         24,
+         49
+        ],
+        [
+         14,
+         64
+        ],
+        [
+         18,
+         70
+        ],
+        [
+         8,
+         83
+        ],
+        [
+         11,
+         89
+        ],
+        [
+         3,
+         99
+        ],
+        [
+         0,
+         99
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2urps",
+   "type": "revolve",
+   "name": "Tree body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f183m1",
+      "pt": [
+       13.333333333333334,
+       28
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Tree profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f183m1\",\"pt\":[13.333333333333334,28]}]"
+    }
+   }
+  },
+  {
+   "id": "f3uk8r",
+   "type": "sketch",
+   "name": "Star profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 114
+      },
+      {
+       "id": "p2",
+       "x": -3.644,
+       "y": 107.016
+      },
+      {
+       "id": "p3",
+       "x": -11.413,
+       "y": 105.708
+      },
+      {
+       "id": "p4",
+       "x": -5.897,
+       "y": 100.084
+      },
+      {
+       "id": "p5",
+       "x": -7.053,
+       "y": 92.292
+      },
+      {
+       "id": "p6",
+       "x": 0,
+       "y": 95.8
+      },
+      {
+       "id": "p7",
+       "x": 7.053,
+       "y": 92.292
+      },
+      {
+       "id": "p8",
+       "x": 5.897,
+       "y": 100.084
+      },
+      {
+       "id": "p9",
+       "x": 11.413,
+       "y": 105.708
+      },
+      {
+       "id": "p10",
+       "x": 3.644,
+       "y": 107.016
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polyline1.8",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "polyline1.9",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         114
+        ],
+        [
+         -3.644,
+         107.016
+        ],
+        [
+         -11.413,
+         105.708
+        ],
+        [
+         -5.897,
+         100.084
+        ],
+        [
+         -7.053,
+         92.292
+        ],
+        [
+         0,
+         95.8
+        ],
+        [
+         7.053,
+         92.292
+        ],
+        [
+         5.897,
+         100.084
+        ],
+        [
+         11.413,
+         105.708
+        ],
+        [
+         3.644,
+         107.016
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4mse4",
+   "type": "extrude",
+   "name": "Star",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3uk8r",
+      "pt": [
+       1.2146666666666668,
+       102.39466666666668
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "symmetric",
+    "depth": "3",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Star profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3uk8r\",\"pt\":[1.2146666666666668,102.39466666666668]}]"
+    }
+   }
+  },
+  {
+   "id": "f507tm",
+   "type": "boolean",
+   "name": "Star pocket",
+   "params": {
+    "bop": "subtract",
+    "tools": [
+     {
+      "kind": "part",
+      "id": "f4mse4"
+     }
+    ],
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f2urps"
+     }
+    ],
+    "keep": true,
+    "__sel": {
+     "tools": [
+      "Part 2"
+     ],
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "tools": "[{\"kind\":\"part\",\"id\":\"f4mse4\"}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f2urps\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2urps": {
+   "name": "Tree",
+   "color": "#2e7d32",
+   "material": "pla",
+   "hidden": false
+  },
+  "f4mse4": {
+   "name": "Star",
+   "color": "#ffc107",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 2,
+  "revolve": 1,
+  "extrude": 1,
+  "boolean": 1
+ }
+}
