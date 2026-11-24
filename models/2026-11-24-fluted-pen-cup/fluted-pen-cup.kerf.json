@@ -1,0 +1,299 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Fluted Pen Cup",
+ "features": [
+  {
+   "id": "f33buf",
+   "type": "variable",
+   "name": "Variable 3",
+   "params": {
+    "vname": "wall",
+    "value": "2.4 mm"
+   }
+  },
+  {
+   "id": "f2006s",
+   "type": "variable",
+   "name": "Variable 2",
+   "params": {
+    "vname": "h",
+    "value": "95 mm"
+   }
+  },
+  {
+   "id": "f1xeuu",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "od",
+    "value": "80 mm"
+   }
+  },
+  {
+   "id": "f4o2nk",
+   "type": "sketch",
+   "name": "Sketch 1",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "outer",
+       "type": "circle",
+       "c": "O",
+       "r": 40,
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0utd",
+       "lp": [
+        6,
+        6
+       ],
+       "type": "diameter",
+       "e1": "outer",
+       "value": "#od"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "outer",
+       "center": [
+        0,
+        0
+       ],
+       "diameter": 80
+      }
+     ],
+     "constraints": [
+      {
+       "type": "diameter",
+       "entity": "outer",
+       "value": "#od"
+      }
+     ]
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5p005",
+   "type": "extrude",
+   "name": "Extrude 1",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f4o2nk",
+      "pt": [
+       4.560268577675581,
+       -7.898616872693968
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "#h",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": "Sketch 1"
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f4o2nk\",\"pt\":[4.560268577675581,-7.898616872693968]}]"
+    }
+   }
+  },
+  {
+   "id": "f6uxda",
+   "type": "sketch",
+   "name": "Sketch 2",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f5p005",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       4.560268719991048,
+       -7.898616790771484,
+       95
+      ]
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "inner",
+       "type": "circle",
+       "c": "O",
+       "r": 37.6,
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0kp3",
+       "lp": [
+        6,
+        6
+       ],
+       "type": "diameter",
+       "e1": "inner",
+       "value": "#od - 2 * #wall"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "inner",
+       "center": [
+        0,
+        0
+       ],
+       "diameter": 75.2
+      }
+     ],
+     "constraints": [
+      {
+       "type": "diameter",
+       "entity": "inner",
+       "value": "#od - 2 * #wall"
+      }
+     ]
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f5p005\",\"n\":[0,0,1],\"p\":[4.560268719991048,-7.898616790771484,95]}]"
+    }
+   }
+  },
+  {
+   "id": "f7j7pm",
+   "type": "extrude",
+   "name": "Extrude 2",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f6uxda",
+      "pt": [
+       4.286652463015047,
+       -7.424699860332332
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "#h - 3 mm",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": "Sketch 2"
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f6uxda\",\"pt\":[4.286652463015047,-7.424699860332332]}]"
+    }
+   }
+  },
+  {
+   "id": "f8meuf",
+   "type": "primitive",
+   "name": "Primitive 1",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "#h",
+    "r": "2.4 mm",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "#od / 2 + 0.4 mm",
+    "y": "0",
+    "z": "0",
+    "op": "add",
+    "targets": []
+   }
+  },
+  {
+   "id": "f95egl",
+   "type": "cpattern",
+   "name": "Circular pattern 1",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f8meuf"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "24",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": [
+      "Primitive 1"
+     ]
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f8meuf\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f5p005": {
+   "name": "Fluted Pen Cup",
+   "color": "#9aa7b4",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 3,
+  "sketch": 2,
+  "extrude": 2,
+  "primitive": 1,
+  "cpattern": 1
+ }
+}
