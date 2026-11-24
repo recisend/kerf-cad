@@ -1,0 +1,311 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "tiered-pine-tree",
+ "features": [
+  {
+   "id": "f1kvdf",
+   "type": "sketch",
+   "name": "Tree profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 28,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 28,
+       "y": 2
+      },
+      {
+       "id": "p3",
+       "x": 7,
+       "y": 2
+      },
+      {
+       "id": "p4",
+       "x": 7,
+       "y": 10
+      },
+      {
+       "id": "p5",
+       "x": 24,
+       "y": 27
+      },
+      {
+       "id": "p6",
+       "x": 11,
+       "y": 52
+      },
+      {
+       "id": "p7",
+       "x": 21,
+       "y": 62
+      },
+      {
+       "id": "p8",
+       "x": 9,
+       "y": 82
+      },
+      {
+       "id": "p9",
+       "x": 17,
+       "y": 90
+      },
+      {
+       "id": "p10",
+       "x": 6,
+       "y": 108
+      },
+      {
+       "id": "p11",
+       "x": 12,
+       "y": 114
+      },
+      {
+       "id": "p12",
+       "x": 1.5,
+       "y": 128
+      },
+      {
+       "id": "p13",
+       "x": 0,
+       "y": 128
+      }
+     ],
+     "ents": [
+      {
+       "id": "prof.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "prof.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "prof.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "prof.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "prof.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "prof.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "prof.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "prof.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "prof.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "prof.9",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "prof.10",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "prof.11",
+       "type": "line",
+       "p1": "p11",
+       "p2": "p12",
+       "construction": false
+      },
+      {
+       "id": "prof.12",
+       "type": "line",
+       "p1": "p12",
+       "p2": "p13",
+       "construction": false
+      },
+      {
+       "id": "prof.13",
+       "type": "line",
+       "p1": "p13",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "id": "prof",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         28,
+         0
+        ],
+        [
+         28,
+         2
+        ],
+        [
+         7,
+         2
+        ],
+        [
+         7,
+         10
+        ],
+        [
+         24,
+         27
+        ],
+        [
+         11,
+         52
+        ],
+        [
+         21,
+         62
+        ],
+        [
+         9,
+         82
+        ],
+        [
+         17,
+         90
+        ],
+        [
+         6,
+         108
+        ],
+        [
+         12,
+         114
+        ],
+        [
+         1.5,
+         128
+        ],
+        [
+         0,
+         128
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f23nl0",
+   "type": "revolve",
+   "name": "Tree",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1kvdf",
+      "pt": [
+       2.8333333333333335,
+       43.333333333333336
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Tree profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1kvdf\",\"pt\":[2.8333333333333335,43.333333333333336]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f23nl0": {
+   "name": "Tiered Pine Tree",
+   "color": "#2f7d4f",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 1,
+  "revolve": 1
+ }
+}
