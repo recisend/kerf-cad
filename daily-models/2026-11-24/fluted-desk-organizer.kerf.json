@@ -1,0 +1,262 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Fluted Desk Organizer",
+ "features": [
+  {
+   "id": "f19xv9",
+   "type": "sketch",
+   "name": "Body",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "O",
+       "r": 38,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 38
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2239l",
+   "type": "extrude",
+   "name": "Body Extrude",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f19xv9",
+      "pt": [
+       4.332255148791801,
+       -7.5036860290592715
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "100",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Body"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f19xv9\",\"pt\":[4.332255148791801,-7.5036860290592715]}]"
+    }
+   }
+  },
+  {
+   "id": "f36ztc",
+   "type": "sketch",
+   "name": "Rib",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 39,
+       "y": 0
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 2.4,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        39,
+        0
+       ],
+       "radius": 2.4
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4eldu",
+   "type": "shell",
+   "name": "Hollow",
+   "params": {
+    "faces": [
+     {
+      "kind": "face",
+      "part": "f2239l",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       4.332255045572916,
+       -7.503686269124349,
+       100
+      ]
+     }
+    ],
+    "part": [
+     {
+      "kind": "part",
+      "id": "f2239l"
+     }
+    ],
+    "thickness": "2.4",
+    "__sel": {
+     "faces": [
+      {
+       "face": "top"
+      }
+     ],
+     "part": "Part 1"
+    },
+    "__selres": {
+     "faces": "[{\"kind\":\"face\",\"part\":\"f2239l\",\"n\":[0,0,1],\"p\":[4.332255045572916,-7.503686269124349,100]}]",
+     "part": "[{\"kind\":\"part\",\"id\":\"f2239l\"}]"
+    }
+   }
+  },
+  {
+   "id": "f54atw",
+   "type": "extrude",
+   "name": "Rib Extrude",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f36ztc",
+      "pt": [
+       38.48809088958713,
+       -0.3719237391883426
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "100",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f2239l"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "Rib"
+     },
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f36ztc\",\"pt\":[38.48809088958713,-0.3719237391883426]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f2239l\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6nnci",
+   "type": "cpattern",
+   "name": "Rib Pattern",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f54atw"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "24",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Rib Extrude"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f54atw\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2239l": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 2,
+  "extrude": 2,
+  "shell": 1,
+  "cpattern": 1
+ }
+}
