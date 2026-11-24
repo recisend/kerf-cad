@@ -1,0 +1,942 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "celestial-moon-ornament",
+ "features": [
+  {
+   "id": "f15rxe",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "thick",
+    "value": "3"
+   }
+  },
+  {
+   "id": "f2urjh",
+   "type": "sketch",
+   "name": "Outer",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "c1",
+       "type": "circle",
+       "c": "O",
+       "r": 40,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "c1",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 40
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f3weyc",
+   "type": "sketch",
+   "name": "Bite",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 17,
+       "y": 7
+      }
+     ],
+     "ents": [
+      {
+       "id": "c2",
+       "type": "circle",
+       "c": "p1",
+       "r": 33,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "c2",
+       "center": [
+        17,
+        7
+       ],
+       "radius": 33
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4mg03",
+   "type": "extrude",
+   "name": "Moon disc",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f2urjh",
+      "pt": [
+       4.560268577675581,
+       -7.898616872693968
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "#thick",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Outer"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f2urjh\",\"pt\":[4.560268577675581,-7.898616872693968]}]"
+    }
+   }
+  },
+  {
+   "id": "f5c2s7",
+   "type": "extrude",
+   "name": "Crescent cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3weyc",
+      "pt": [
+       20.762221576582352,
+       0.48364108002747486
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Bite"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3weyc\",\"pt\":[20.762221576582352,0.48364108002747486]}]"
+    }
+   }
+  },
+  {
+   "id": "f6kbzl",
+   "type": "sketch",
+   "name": "Loop",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -27,
+       "y": 27
+      }
+     ],
+     "ents": [
+      {
+       "id": "boss",
+       "type": "circle",
+       "c": "p1",
+       "r": 6,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "boss",
+       "center": [
+        -27,
+        27
+       ],
+       "radius": 6
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f7cqoa",
+   "type": "sketch",
+   "name": "LoopHole",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -27,
+       "y": 27
+      }
+     ],
+     "ents": [
+      {
+       "id": "lh",
+       "type": "circle",
+       "c": "p1",
+       "r": 2,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "lh",
+       "center": [
+        -27,
+        27
+       ],
+       "radius": 2
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8945u",
+   "type": "extrude",
+   "name": "Hanging boss",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f6kbzl",
+      "pt": [
+       -26.718671767812662,
+       27.122198095601295
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "#thick",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Loop"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f6kbzl\",\"pt\":[-26.718671767812662,27.122198095601295]}]"
+    }
+   }
+  },
+  {
+   "id": "f9g7ln",
+   "type": "extrude",
+   "name": "Hanging hole",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f7cqoa",
+      "pt": [
+       -27.145106406373618,
+       27.128553058399433
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "LoopHole"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f7cqoa\",\"pt\":[-27.145106406373618,27.128553058399433]}]"
+    }
+   }
+  },
+  {
+   "id": "fapqi3",
+   "type": "sketch",
+   "name": "Stars",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -25,
+       "y": 9.5
+      },
+      {
+       "id": "p2",
+       "x": -26.705,
+       "y": 5.346
+      },
+      {
+       "id": "p3",
+       "x": -31.182,
+       "y": 5.009
+      },
+      {
+       "id": "p4",
+       "x": -27.758,
+       "y": 2.104
+      },
+      {
+       "id": "p5",
+       "x": -28.821,
+       "y": -2.259
+      },
+      {
+       "id": "p6",
+       "x": -25,
+       "y": 0.1
+      },
+      {
+       "id": "p7",
+       "x": -21.179,
+       "y": -2.259
+      },
+      {
+       "id": "p8",
+       "x": -22.242,
+       "y": 2.104
+      },
+      {
+       "id": "p9",
+       "x": -18.818,
+       "y": 5.009
+      },
+      {
+       "id": "p10",
+       "x": -23.295,
+       "y": 5.346
+      },
+      {
+       "id": "p11",
+       "x": -15,
+       "y": -13
+      },
+      {
+       "id": "p12",
+       "x": -16.293,
+       "y": -16.22
+      },
+      {
+       "id": "p13",
+       "x": -19.755,
+       "y": -16.455
+      },
+      {
+       "id": "p14",
+       "x": -17.092,
+       "y": -18.68
+      },
+      {
+       "id": "p15",
+       "x": -17.939,
+       "y": -22.045
+      },
+      {
+       "id": "p16",
+       "x": -15,
+       "y": -20.2
+      },
+      {
+       "id": "p17",
+       "x": -12.061,
+       "y": -22.045
+      },
+      {
+       "id": "p18",
+       "x": -12.908,
+       "y": -18.68
+      },
+      {
+       "id": "p19",
+       "x": -10.245,
+       "y": -16.455
+      },
+      {
+       "id": "p20",
+       "x": -13.707,
+       "y": -16.22
+      },
+      {
+       "id": "p21",
+       "x": -28,
+       "y": -8.4
+      },
+      {
+       "id": "p22",
+       "x": -28.94,
+       "y": -10.706
+      },
+      {
+       "id": "p23",
+       "x": -31.424,
+       "y": -10.888
+      },
+      {
+       "id": "p24",
+       "x": -29.522,
+       "y": -12.494
+      },
+      {
+       "id": "p25",
+       "x": -30.116,
+       "y": -14.912
+      },
+      {
+       "id": "p26",
+       "x": -28,
+       "y": -13.6
+      },
+      {
+       "id": "p27",
+       "x": -25.884,
+       "y": -14.912
+      },
+      {
+       "id": "p28",
+       "x": -26.478,
+       "y": -12.494
+      },
+      {
+       "id": "p29",
+       "x": -24.576,
+       "y": -10.888
+      },
+      {
+       "id": "p30",
+       "x": -27.06,
+       "y": -10.706
+      }
+     ],
+     "ents": [
+      {
+       "id": "s0.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "s0.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "s0.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "s0.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "s0.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "s0.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "s0.6",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "s0.7",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "s0.8",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "s0.9",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "s1.0",
+       "type": "line",
+       "p1": "p11",
+       "p2": "p12",
+       "construction": false
+      },
+      {
+       "id": "s1.1",
+       "type": "line",
+       "p1": "p12",
+       "p2": "p13",
+       "construction": false
+      },
+      {
+       "id": "s1.2",
+       "type": "line",
+       "p1": "p13",
+       "p2": "p14",
+       "construction": false
+      },
+      {
+       "id": "s1.3",
+       "type": "line",
+       "p1": "p14",
+       "p2": "p15",
+       "construction": false
+      },
+      {
+       "id": "s1.4",
+       "type": "line",
+       "p1": "p15",
+       "p2": "p16",
+       "construction": false
+      },
+      {
+       "id": "s1.5",
+       "type": "line",
+       "p1": "p16",
+       "p2": "p17",
+       "construction": false
+      },
+      {
+       "id": "s1.6",
+       "type": "line",
+       "p1": "p17",
+       "p2": "p18",
+       "construction": false
+      },
+      {
+       "id": "s1.7",
+       "type": "line",
+       "p1": "p18",
+       "p2": "p19",
+       "construction": false
+      },
+      {
+       "id": "s1.8",
+       "type": "line",
+       "p1": "p19",
+       "p2": "p20",
+       "construction": false
+      },
+      {
+       "id": "s1.9",
+       "type": "line",
+       "p1": "p20",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "s2.0",
+       "type": "line",
+       "p1": "p21",
+       "p2": "p22",
+       "construction": false
+      },
+      {
+       "id": "s2.1",
+       "type": "line",
+       "p1": "p22",
+       "p2": "p23",
+       "construction": false
+      },
+      {
+       "id": "s2.2",
+       "type": "line",
+       "p1": "p23",
+       "p2": "p24",
+       "construction": false
+      },
+      {
+       "id": "s2.3",
+       "type": "line",
+       "p1": "p24",
+       "p2": "p25",
+       "construction": false
+      },
+      {
+       "id": "s2.4",
+       "type": "line",
+       "p1": "p25",
+       "p2": "p26",
+       "construction": false
+      },
+      {
+       "id": "s2.5",
+       "type": "line",
+       "p1": "p26",
+       "p2": "p27",
+       "construction": false
+      },
+      {
+       "id": "s2.6",
+       "type": "line",
+       "p1": "p27",
+       "p2": "p28",
+       "construction": false
+      },
+      {
+       "id": "s2.7",
+       "type": "line",
+       "p1": "p28",
+       "p2": "p29",
+       "construction": false
+      },
+      {
+       "id": "s2.8",
+       "type": "line",
+       "p1": "p29",
+       "p2": "p30",
+       "construction": false
+      },
+      {
+       "id": "s2.9",
+       "type": "line",
+       "p1": "p30",
+       "p2": "p21",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "id": "s0",
+       "points": [
+        [
+         -25,
+         9.5
+        ],
+        [
+         -26.705,
+         5.346
+        ],
+        [
+         -31.182,
+         5.009
+        ],
+        [
+         -27.758,
+         2.104
+        ],
+        [
+         -28.821,
+         -2.259
+        ],
+        [
+         -25,
+         0.1
+        ],
+        [
+         -21.179,
+         -2.259
+        ],
+        [
+         -22.242,
+         2.104
+        ],
+        [
+         -18.818,
+         5.009
+        ],
+        [
+         -23.295,
+         5.346
+        ]
+       ],
+       "closed": true
+      },
+      {
+       "type": "polyline",
+       "id": "s1",
+       "points": [
+        [
+         -15,
+         -13
+        ],
+        [
+         -16.293,
+         -16.22
+        ],
+        [
+         -19.755,
+         -16.455
+        ],
+        [
+         -17.092,
+         -18.68
+        ],
+        [
+         -17.939,
+         -22.045
+        ],
+        [
+         -15,
+         -20.2
+        ],
+        [
+         -12.061,
+         -22.045
+        ],
+        [
+         -12.908,
+         -18.68
+        ],
+        [
+         -10.245,
+         -16.455
+        ],
+        [
+         -13.707,
+         -16.22
+        ]
+       ],
+       "closed": true
+      },
+      {
+       "type": "polyline",
+       "id": "s2",
+       "points": [
+        [
+         -28,
+         -8.4
+        ],
+        [
+         -28.94,
+         -10.706
+        ],
+        [
+         -31.424,
+         -10.888
+        ],
+        [
+         -29.522,
+         -12.494
+        ],
+        [
+         -30.116,
+         -14.912
+        ],
+        [
+         -28,
+         -13.6
+        ],
+        [
+         -25.884,
+         -14.912
+        ],
+        [
+         -26.478,
+         -12.494
+        ],
+        [
+         -24.576,
+         -10.888
+        ],
+        [
+         -27.06,
+         -10.706
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fbk5bn",
+   "type": "extrude",
+   "name": "Star cutouts",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "fapqi3",
+      "pt": [
+       -24.43166666666667,
+       3.1846666666666668
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "fapqi3",
+      "pt": [
+       -14.569,
+       -17.86
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "fapqi3",
+      "pt": [
+       -27.686666666666667,
+       -11.898000000000001
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "through",
+    "depth": "20",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Stars",
+      "region": "all"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"fapqi3\",\"pt\":[-24.43166666666667,3.1846666666666668]},{\"kind\":\"region\",\"sketch\":\"fapqi3\",\"pt\":[-14.569,-17.86]},{\"kind\":\"region\",\"sketch\":\"fapqi3\",\"pt\":[-27.686666666666667,-11.898000000000001]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f4mg03": {
+   "name": "Celestial Moon Ornament",
+   "color": "#1c1f2b",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 5,
+  "extrude": 5
+ }
+}
