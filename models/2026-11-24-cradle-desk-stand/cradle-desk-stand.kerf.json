@@ -1,0 +1,488 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Cradle Desk Stand",
+ "features": [
+  {
+   "id": "f1y59o",
+   "type": "sketch",
+   "name": "Side Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 88,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 88,
+       "y": 18
+      },
+      {
+       "id": "p3",
+       "x": 72,
+       "y": 18
+      },
+      {
+       "id": "p4",
+       "x": 72,
+       "y": 8
+      },
+      {
+       "id": "p5",
+       "x": 54,
+       "y": 8
+      },
+      {
+       "id": "p6",
+       "x": 27,
+       "y": 100
+      },
+      {
+       "id": "p7",
+       "x": 17,
+       "y": 100
+      }
+     ],
+     "ents": [
+      {
+       "id": "p.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "p.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "p.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "p.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "p.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "p.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "p.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "p.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0xnx",
+       "type": "horizontal",
+       "e1": "p.0"
+      },
+      {
+       "id": "c1qe5",
+       "type": "vertical",
+       "e1": "p.1"
+      },
+      {
+       "id": "c2zpv",
+       "type": "horizontal",
+       "e1": "p.2"
+      },
+      {
+       "id": "c39c7",
+       "type": "vertical",
+       "e1": "p.3"
+      },
+      {
+       "id": "c45c1",
+       "type": "horizontal",
+       "e1": "p.4"
+      },
+      {
+       "id": "c5g1c",
+       "type": "horizontal",
+       "e1": "p.6"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "id": "p",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         88,
+         0
+        ],
+        [
+         88,
+         18
+        ],
+        [
+         72,
+         18
+        ],
+        [
+         72,
+         8
+        ],
+        [
+         54,
+         8
+        ],
+        [
+         27,
+         100
+        ],
+        [
+         17,
+         100
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f29ggj",
+   "type": "extrude",
+   "name": "Stand Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1y59o",
+      "pt": [
+       27,
+       36
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "symmetric",
+    "depth": "80",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Side Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1y59o\",\"pt\":[27,36]}]"
+    }
+   }
+  },
+  {
+   "id": "f3tkz8",
+   "type": "sketch",
+   "name": "Window",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 10,
+       "y": 10
+      },
+      {
+       "id": "p2",
+       "x": 45,
+       "y": 10
+      },
+      {
+       "id": "p3",
+       "x": 30,
+       "y": 62
+      },
+      {
+       "id": "p4",
+       "x": 19,
+       "y": 62
+      }
+     ],
+     "ents": [
+      {
+       "id": "w.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "w.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "w.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "w.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0fd8",
+       "type": "horizontal",
+       "e1": "w.0"
+      },
+      {
+       "id": "c1ttf",
+       "type": "horizontal",
+       "e1": "w.2"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "id": "w",
+       "points": [
+        [
+         10,
+         10
+        ],
+        [
+         45,
+         10
+        ],
+        [
+         30,
+         62
+        ],
+        [
+         19,
+         62
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f54stg",
+   "type": "extrude",
+   "name": "Lightening Window",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3tkz8",
+      "pt": [
+       28.333333333333332,
+       27.333333333333332
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "100",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Window"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3tkz8\",\"pt\":[28.333333333333332,27.333333333333332]}]"
+    }
+   }
+  },
+  {
+   "id": "f7it7o",
+   "type": "primitive",
+   "name": "Cable Notch",
+   "params": {
+    "shape": "box",
+    "w": "16",
+    "d": "20",
+    "h": "12",
+    "r": "15",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "0",
+    "y": "80",
+    "z": "8",
+    "op": "remove",
+    "targets": []
+   }
+  },
+  {
+   "id": "faqxhu",
+   "type": "chamfer",
+   "name": "Elephant Foot Chamfer",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f29ggj",
+      "a": [
+       40,
+       0,
+       0
+      ],
+      "b": [
+       40,
+       88,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f29ggj",
+      "a": [
+       -40,
+       0,
+       0
+      ],
+      "b": [
+       40,
+       0,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f29ggj",
+      "a": [
+       -40,
+       0,
+       0
+      ],
+      "b": [
+       -40,
+       88,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f29ggj",
+      "a": [
+       40,
+       88,
+       0
+      ],
+      "b": [
+       -40,
+       88,
+       0
+      ]
+     }
+    ],
+    "distance": "0.6",
+    "asym": false,
+    "distance2": "4",
+    "__sel": {
+     "edges": {
+      "edges_of": "bottom"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f29ggj\",\"a\":[40,0,0],\"b\":[40,88,0]},{\"kind\":\"edge\",\"part\":\"f29ggj\",\"a\":[-40,0,0],\"b\":[40,0,0]},{\"kind\":\"edge\",\"part\":\"f29ggj\",\"a\":[-40,0,0],\"b\":[-40,88,0]},{\"kind\":\"edge\",\"part\":\"f29ggj\",\"a\":[40,88,0],\"b\":[-40,88,0]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f29ggj": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 2,
+  "extrude": 2,
+  "primitive": 1,
+  "chamfer": 1
+ }
+}
