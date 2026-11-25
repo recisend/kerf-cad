@@ -1,0 +1,504 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Untitled part studio",
+ "features": [
+  {
+   "id": "f1b7bt",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "width",
+    "value": "72 mm"
+   }
+  },
+  {
+   "id": "f2hikz",
+   "type": "sketch",
+   "name": "profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 95,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 95,
+       "y": 14
+      },
+      {
+       "id": "p3",
+       "x": 83,
+       "y": 14
+      },
+      {
+       "id": "p4",
+       "x": 83,
+       "y": 5
+      },
+      {
+       "id": "p5",
+       "x": 69,
+       "y": 5
+      },
+      {
+       "id": "p6",
+       "x": 32.6,
+       "y": 105
+      },
+      {
+       "id": "p7",
+       "x": 24.6,
+       "y": 105
+      },
+      {
+       "id": "p8",
+       "x": 61,
+       "y": 5
+      },
+      {
+       "id": "p9",
+       "x": 0,
+       "y": 5
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "polyline1.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polyline1.9",
+       "type": "line",
+       "p1": "p9",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         95,
+         0
+        ],
+        [
+         95,
+         14
+        ],
+        [
+         83,
+         14
+        ],
+        [
+         83,
+         5
+        ],
+        [
+         69,
+         5
+        ],
+        [
+         32.6,
+         105
+        ],
+        [
+         24.6,
+         105
+        ],
+        [
+         61,
+         5
+        ],
+        [
+         0,
+         5
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": [],
+     "auto_constraints": false
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f35472",
+   "type": "extrude",
+   "name": "stand body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f2hikz",
+      "pt": [
+       42.06666666666666,
+       71.66666666666667
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "symmetric",
+    "depth": "#width",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": "profile"
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f2hikz\",\"pt\":[42.06666666666666,71.66666666666667]}]"
+    }
+   }
+  },
+  {
+   "id": "f4k0z7",
+   "type": "primitive",
+   "name": "cable notch",
+   "params": {
+    "shape": "box",
+    "w": "16",
+    "d": "26",
+    "h": "12",
+    "r": "15",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "89",
+    "y": "0",
+    "z": "5",
+    "op": "remove",
+    "targets": []
+   }
+  },
+  {
+   "id": "f5o9to",
+   "type": "fillet",
+   "name": "soften edges",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       0,
+       36,
+       5
+      ],
+      "b": [
+       0,
+       -36,
+       5
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       61,
+       36,
+       5
+      ],
+      "b": [
+       61,
+       -36,
+       5
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       24.600000381469727,
+       36,
+       105
+      ],
+      "b": [
+       24.600000381469727,
+       -36,
+       105
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       32.599998474121094,
+       36,
+       105
+      ],
+      "b": [
+       32.599998474121094,
+       -36,
+       105
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       69,
+       36,
+       5
+      ],
+      "b": [
+       69,
+       -36,
+       5
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       0,
+       36,
+       0
+      ],
+      "b": [
+       0,
+       -36,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       95,
+       36,
+       0
+      ],
+      "b": [
+       95,
+       -36,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       83,
+       36,
+       5
+      ],
+      "b": [
+       83,
+       13,
+       5
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       83,
+       -36,
+       5
+      ],
+      "b": [
+       83,
+       -13,
+       5
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       83,
+       -13,
+       5
+      ],
+      "b": [
+       83,
+       13,
+       5
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       83,
+       36,
+       14
+      ],
+      "b": [
+       83,
+       13,
+       14
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       83,
+       -36,
+       14
+      ],
+      "b": [
+       83,
+       -13,
+       14
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       95,
+       13,
+       5
+      ],
+      "b": [
+       95,
+       -13,
+       5
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       95,
+       36,
+       14
+      ],
+      "b": [
+       95,
+       13,
+       14
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f35472",
+      "a": [
+       95,
+       -36,
+       14
+      ],
+      "b": [
+       95,
+       -13,
+       14
+      ]
+     }
+    ],
+    "radius": "2",
+    "__sel": {
+     "edges": {
+      "parallel_to": "y"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[0,36,5],\"b\":[0,-36,5]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[61,36,5],\"b\":[61,-36,5]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[24.600000381469727,36,105],\"b\":[24.600000381469727,-36,105]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[32.599998474121094,36,105],\"b\":[32.599998474121094,-36,105]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[69,36,5],\"b\":[69,-36,5]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[0,36,0],\"b\":[0,-36,0]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[95,36,0],\"b\":[95,-36,0]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[83,36,5],\"b\":[83,13,5]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[83,-36,5],\"b\":[83,-13,5]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[83,-13,5],\"b\":[83,13,5]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[83,36,14],\"b\":[83,13,14]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[83,-36,14],\"b\":[83,-13,14]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[95,13,5],\"b\":[95,-13,5]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[95,36,14],\"b\":[95,13,14]},{\"kind\":\"edge\",\"part\":\"f35472\",\"a\":[95,-36,14],\"b\":[95,-13,14]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f35472": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 1,
+  "extrude": 1,
+  "primitive": 1,
+  "fillet": 1
+ }
+}
