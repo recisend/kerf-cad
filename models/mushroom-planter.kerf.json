@@ -1,0 +1,453 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "mushroom-planter",
+ "features": [
+  {
+   "id": "f57c6g",
+   "type": "sketch",
+   "name": "Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 4,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 19,
+       "y": 0
+      },
+      {
+       "id": "p3",
+       "x": 20,
+       "y": 1
+      },
+      {
+       "id": "p4",
+       "x": 20,
+       "y": 30
+      },
+      {
+       "id": "p5",
+       "x": 47,
+       "y": 58
+      },
+      {
+       "id": "p6",
+       "x": 47,
+       "y": 70
+      },
+      {
+       "id": "p7",
+       "x": 44.8,
+       "y": 70
+      },
+      {
+       "id": "p8",
+       "x": 44.8,
+       "y": 58
+      },
+      {
+       "id": "p9",
+       "x": 18.4,
+       "y": 30.62
+      },
+      {
+       "id": "p10",
+       "x": 18.4,
+       "y": 3
+      },
+      {
+       "id": "p11",
+       "x": 4,
+       "y": 3
+      }
+     ],
+     "ents": [
+      {
+       "id": "p.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "p.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "p.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "p.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "p.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "p.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "p.6",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "p.7",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "p.8",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "p.9",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p11",
+       "construction": false
+      },
+      {
+       "id": "p.10",
+       "type": "line",
+       "p1": "p11",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c00jv",
+       "type": "horizontal",
+       "e1": "p.0"
+      },
+      {
+       "id": "c10n4",
+       "type": "vertical",
+       "e1": "p.2"
+      },
+      {
+       "id": "c27hx",
+       "type": "vertical",
+       "e1": "p.4"
+      },
+      {
+       "id": "c3mt4",
+       "type": "horizontal",
+       "e1": "p.5"
+      },
+      {
+       "id": "c48wt",
+       "type": "vertical",
+       "e1": "p.6"
+      },
+      {
+       "id": "c5otb",
+       "type": "vertical",
+       "e1": "p.8"
+      },
+      {
+       "id": "c6t7y",
+       "type": "horizontal",
+       "e1": "p.9"
+      },
+      {
+       "id": "c7dda",
+       "type": "vertical",
+       "e1": "p.10"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "id": "p",
+       "points": [
+        [
+         4,
+         0
+        ],
+        [
+         19,
+         0
+        ],
+        [
+         20,
+         1
+        ],
+        [
+         20,
+         30
+        ],
+        [
+         47,
+         58
+        ],
+        [
+         47,
+         70
+        ],
+        [
+         44.8,
+         70
+        ],
+        [
+         44.8,
+         58
+        ],
+        [
+         18.4,
+         30.62
+        ],
+        [
+         18.4,
+         3
+        ],
+        [
+         4,
+         3
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6xe8h",
+   "type": "revolve",
+   "name": "Planter Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f57c6g",
+      "pt": [
+       37.266666666666666,
+       48.666666666666664
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f57c6g\",\"pt\":[37.266666666666666,48.666666666666664]}]"
+    }
+   }
+  },
+  {
+   "id": "f7gu99",
+   "type": "plane",
+   "name": "Dot Plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "offset": "46",
+    "flip": false,
+    "__sel": {
+     "ref": "right"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8lzjh",
+   "type": "sketch",
+   "name": "Dot",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f7gu99"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 64
+      }
+     ],
+     "ents": [
+      {
+       "id": "c",
+       "type": "circle",
+       "c": "p1",
+       "r": 4.5,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "c",
+       "center": [
+        0,
+        64
+       ],
+       "diameter": 9
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Dot Plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f7gu99\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9qz9t",
+   "type": "extrude",
+   "name": "Spot",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f8lzjh",
+      "pt": [
+       0.5449068960040203,
+       63.25
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "2.5",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f6xe8h"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "Dot"
+     },
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f8lzjh\",\"pt\":[0.5449068960040203,63.25]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f6xe8h\"}]"
+    }
+   }
+  },
+  {
+   "id": "fazm4g",
+   "type": "cpattern",
+   "name": "Spot Ring",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "f9qz9t"
+     }
+    ],
+    "axisSel": "Z",
+    "axis": [],
+    "angle": "360",
+    "count": "7",
+    "equal": true,
+    "flip": false,
+    "merge": false,
+    "__sel": {
+     "features": "Spot"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"f9qz9t\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f6xe8h": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 2,
+  "revolve": 1,
+  "plane": 1,
+  "extrude": 1,
+  "cpattern": 1
+ }
+}
