@@ -1,0 +1,748 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "wedge-phone-stand",
+ "features": [
+  {
+   "id": "f17sdi",
+   "type": "sketch",
+   "name": "Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 120,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 96,
+       "y": 90
+      },
+      {
+       "id": "p3",
+       "x": 88,
+       "y": 90
+      },
+      {
+       "id": "p4",
+       "x": 62,
+       "y": 8
+      },
+      {
+       "id": "p5",
+       "x": 44,
+       "y": 8
+      },
+      {
+       "id": "p6",
+       "x": 44,
+       "y": 20
+      },
+      {
+       "id": "p7",
+       "x": 30,
+       "y": 20
+      },
+      {
+       "id": "p8",
+       "x": 30,
+       "y": 8
+      },
+      {
+       "id": "p9",
+       "x": 0,
+       "y": 8
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "polyline1.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polyline1.9",
+       "type": "line",
+       "p1": "p9",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0ki4",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c15sx",
+       "type": "horizontal",
+       "e1": "polyline1.2"
+      },
+      {
+       "id": "c2qy1",
+       "type": "horizontal",
+       "e1": "polyline1.4"
+      },
+      {
+       "id": "c3jsk",
+       "type": "vertical",
+       "e1": "polyline1.5"
+      },
+      {
+       "id": "c40fk",
+       "type": "horizontal",
+       "e1": "polyline1.6"
+      },
+      {
+       "id": "c5rgo",
+       "type": "vertical",
+       "e1": "polyline1.7"
+      },
+      {
+       "id": "c66h5",
+       "type": "horizontal",
+       "e1": "polyline1.8"
+      },
+      {
+       "id": "c7dyn",
+       "type": "vertical",
+       "e1": "polyline1.9"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         120,
+         0
+        ],
+        [
+         96,
+         90
+        ],
+        [
+         88,
+         90
+        ],
+        [
+         62,
+         8
+        ],
+        [
+         44,
+         8
+        ],
+        [
+         44,
+         20
+        ],
+        [
+         30,
+         20
+        ],
+        [
+         30,
+         8
+        ],
+        [
+         0,
+         8
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2k8un",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f17sdi",
+      "pt": [
+       90,
+       32.666666666666664
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "symmetric",
+    "depth": "80",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f17sdi\",\"pt\":[90,32.666666666666664]}]"
+    }
+   }
+  },
+  {
+   "id": "f6rdxk",
+   "type": "plane",
+   "name": "Base Top Plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "8",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f7p2ne",
+   "type": "sketch",
+   "name": "Cable Notch",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f6rdxk"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -10,
+       "y": 28
+      },
+      {
+       "id": "p2",
+       "x": 10,
+       "y": 28
+      },
+      {
+       "id": "p3",
+       "x": 10,
+       "y": 46
+      },
+      {
+       "id": "p4",
+       "x": -10,
+       "y": 46
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0xps",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0k89",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0cuj",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0dn9",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        -10,
+        28
+       ],
+       "corner2": [
+        10,
+        46
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Base Top Plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f6rdxk\"}]"
+    }
+   }
+  },
+  {
+   "id": "f85grz",
+   "type": "extrude",
+   "name": "Cable Notch Cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f7p2ne",
+      "pt": [
+       -3.3333333333333335,
+       40
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "15",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cable Notch"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f7p2ne\",\"pt\":[-3.3333333333333335,40]}]"
+    }
+   }
+  },
+  {
+   "id": "f9u2yo",
+   "type": "sketch",
+   "name": "Diamond Cutouts",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 91,
+       "y": 28
+      },
+      {
+       "id": "p2",
+       "x": 91,
+       "y": 39
+      },
+      {
+       "id": "p3",
+       "x": 80,
+       "y": 28
+      },
+      {
+       "id": "p4",
+       "x": 91,
+       "y": 17
+      },
+      {
+       "id": "p5",
+       "x": 102,
+       "y": 27.999999999999996
+      },
+      {
+       "id": "p6",
+       "x": 91,
+       "y": 55
+      },
+      {
+       "id": "p7",
+       "x": 91,
+       "y": 63.5
+      },
+      {
+       "id": "p8",
+       "x": 82.5,
+       "y": 55
+      },
+      {
+       "id": "p9",
+       "x": 91,
+       "y": 46.5
+      },
+      {
+       "id": "p10",
+       "x": 99.5,
+       "y": 55
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "p1",
+       "r": 11,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polygon2.circle",
+       "type": "circle",
+       "c": "p6",
+       "r": 8.5,
+       "construction": true
+      },
+      {
+       "id": "polygon2.0",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "polygon2.1",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polygon2.2",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "polygon2.3",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p7",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c050g",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c1l5u",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c2mnm",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c3rpo",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c4c2h",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.1"
+      },
+      {
+       "id": "c5aqc",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.2"
+      },
+      {
+       "id": "c6075",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.3"
+      },
+      {
+       "id": "c71b7",
+       "type": "onEntity",
+       "a": "p7",
+       "e1": "polygon2.circle"
+      },
+      {
+       "id": "c893h",
+       "type": "onEntity",
+       "a": "p8",
+       "e1": "polygon2.circle"
+      },
+      {
+       "id": "c9hks",
+       "type": "onEntity",
+       "a": "p9",
+       "e1": "polygon2.circle"
+      },
+      {
+       "id": "c10lfd",
+       "type": "onEntity",
+       "a": "p10",
+       "e1": "polygon2.circle"
+      },
+      {
+       "id": "c110nn",
+       "type": "equal",
+       "e1": "polygon2.0",
+       "e2": "polygon2.1"
+      },
+      {
+       "id": "c12la4",
+       "type": "equal",
+       "e1": "polygon2.0",
+       "e2": "polygon2.2"
+      },
+      {
+       "id": "c13wfz",
+       "type": "equal",
+       "e1": "polygon2.0",
+       "e2": "polygon2.3"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        91,
+        28
+       ],
+       "radius": 11,
+       "sides": 4,
+       "angle": 90
+      },
+      {
+       "type": "polygon",
+       "center": [
+        91,
+        55
+       ],
+       "radius": 8.5,
+       "sides": 4,
+       "angle": 90
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "fbwvdm",
+   "type": "extrude",
+   "name": "Diamond Lightening Cuts",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f9u2yo",
+      "pt": [
+       94.66666666666667,
+       28
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f9u2yo",
+      "pt": [
+       93.83333333333333,
+       55
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "100",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Diamond Cutouts",
+      "region": "all"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f9u2yo\",\"pt\":[94.66666666666667,28]},{\"kind\":\"region\",\"sketch\":\"f9u2yo\",\"pt\":[93.83333333333333,55]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2k8un": {
+   "name": "Wedge Phone Stand",
+   "color": "#2f6f6a",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 5,
+  "extrude": 5,
+  "plane": 1
+ }
+}
