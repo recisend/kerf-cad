@@ -1,0 +1,1039 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Hex Desk Caddy",
+ "features": [
+  {
+   "id": "f1ri8e",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "wall",
+    "value": "2.4"
+   }
+  },
+  {
+   "id": "f2sf6w",
+   "type": "sketch",
+   "name": "Cup Outer",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 1.959434878635765e-15,
+       "y": 32
+      },
+      {
+       "id": "p2",
+       "x": -27.71281292110203,
+       "y": 16.00000000000001
+      },
+      {
+       "id": "p3",
+       "x": -27.712812921102042,
+       "y": -15.999999999999991
+      },
+      {
+       "id": "p4",
+       "x": -5.878304635907295e-15,
+       "y": -32
+      },
+      {
+       "id": "p5",
+       "x": 27.712812921102028,
+       "y": -16.000000000000014
+      },
+      {
+       "id": "p6",
+       "x": 27.712812921102035,
+       "y": 16
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 32,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c08pn",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c1rxd",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c2qss",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c3nnd",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c42yi",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c5lx9",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c6ey8",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.1"
+      },
+      {
+       "id": "c7xmx",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.2"
+      },
+      {
+       "id": "c8qdp",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.3"
+      },
+      {
+       "id": "c9wwa",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.4"
+      },
+      {
+       "id": "c100mu",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 32,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f3bxhl",
+   "type": "sketch",
+   "name": "Block Outline",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 22,
+       "y": -35
+      },
+      {
+       "id": "p2",
+       "x": 95,
+       "y": -35
+      },
+      {
+       "id": "p3",
+       "x": 95,
+       "y": 35
+      },
+      {
+       "id": "p4",
+       "x": 22,
+       "y": 35
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0b4z",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0rz9",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0fsw",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0995",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        22,
+        -35
+       ],
+       "corner2": [
+        95,
+        35
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4c6yx",
+   "type": "extrude",
+   "name": "Cup Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f2sf6w",
+      "pt": [
+       -3.552713678800501e-15,
+       -1.7763568394002505e-15
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "90",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cup Outer"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f2sf6w\",\"pt\":[-3.552713678800501e-15,-1.7763568394002505e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f52s0c",
+   "type": "extrude",
+   "name": "Phone Block",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3bxhl",
+      "pt": [
+       46.333333333333336,
+       11.666666666666666
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "blind",
+    "depth": "60",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Block Outline"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3bxhl\",\"pt\":[46.333333333333336,11.666666666666666]}]"
+    }
+   }
+  },
+  {
+   "id": "f6r9zt",
+   "type": "sketch",
+   "name": "Cup Pocket",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f4c6yx",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       1.1842378929335002e-15,
+       0,
+       90
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 1.7898212969538567e-15,
+       "y": 29.23
+      },
+      {
+       "id": "p2",
+       "x": -25.313922552619136,
+       "y": 14.615000000000009
+      },
+      {
+       "id": "p3",
+       "x": -25.313922552619147,
+       "y": -14.614999999999991
+      },
+      {
+       "id": "p4",
+       "x": -5.36946389086157e-15,
+       "y": -29.23
+      },
+      {
+       "id": "p5",
+       "x": 25.313922552619132,
+       "y": -14.615000000000013
+      },
+      {
+       "id": "p6",
+       "x": 25.31392255261914,
+       "y": 14.615
+      }
+     ],
+     "ents": [
+      {
+       "id": "polygon1.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 29.23,
+       "construction": true
+      },
+      {
+       "id": "polygon1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polygon1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polygon1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polygon1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polygon1.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polygon1.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0c3q",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c1kqz",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c2ohj",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c3ssd",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c4eko",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c59zf",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "polygon1.circle"
+      },
+      {
+       "id": "c6w3i",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.1"
+      },
+      {
+       "id": "c7l30",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.2"
+      },
+      {
+       "id": "c8ytz",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.3"
+      },
+      {
+       "id": "c9wbd",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.4"
+      },
+      {
+       "id": "c10cu0",
+       "type": "equal",
+       "e1": "polygon1.0",
+       "e2": "polygon1.5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 29.23,
+       "sides": 6,
+       "angle": 0
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f4c6yx\",\"n\":[0,0,1],\"p\":[1.1842378929335002e-15,0,90]}]"
+    }
+   }
+  },
+  {
+   "id": "f7eufq",
+   "type": "sketch",
+   "name": "Phone Slot",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 52,
+       "y": 12
+      },
+      {
+       "id": "p2",
+       "x": 66,
+       "y": 12
+      },
+      {
+       "id": "p3",
+       "x": 79.4,
+       "y": 62
+      },
+      {
+       "id": "p4",
+       "x": 65.4,
+       "y": 62
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0mmv",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c1oae",
+       "type": "horizontal",
+       "e1": "polyline1.2"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         52,
+         12
+        ],
+        [
+         66,
+         12
+        ],
+        [
+         79.4,
+         62
+        ],
+        [
+         65.4,
+         62
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8z2fr",
+   "type": "extrude",
+   "name": "Pen Cup Pocket",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f6r9zt",
+      "pt": [
+       -3.552713678800501e-15,
+       -1.1842378929335002e-15
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "87.6",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cup Pocket"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f6r9zt\",\"pt\":[-3.552713678800501e-15,-1.1842378929335002e-15]}]"
+    }
+   }
+  },
+  {
+   "id": "f9oheb",
+   "type": "extrude",
+   "name": "Phone Slot Cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f7eufq",
+      "pt": [
+       65.60000000000001,
+       45.333333333333336
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "100",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Phone Slot"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f7eufq\",\"pt\":[65.60000000000001,45.333333333333336]}]"
+    }
+   }
+  },
+  {
+   "id": "fa5zvd",
+   "type": "fillet",
+   "name": "Soften Vertical Edges",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       -5.878304468892332e-15,
+       -32,
+       0
+      ],
+      "b": [
+       -5.878304468892332e-15,
+       -32,
+       90
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       -27.712812423706055,
+       -16,
+       0
+      ],
+      "b": [
+       -27.712812423706055,
+       -16,
+       90
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       -27.712812423706055,
+       16,
+       0
+      ],
+      "b": [
+       -27.712812423706055,
+       16,
+       90
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       1.9594349641362686e-15,
+       32,
+       0
+      ],
+      "b": [
+       1.9594349641362686e-15,
+       32,
+       90
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       22,
+       19.298294067382812,
+       0
+      ],
+      "b": [
+       22,
+       19.298294067382812,
+       60
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       22,
+       -19.298294067382812,
+       0
+      ],
+      "b": [
+       22,
+       -19.298294067382812,
+       60
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       27.712812423706055,
+       -16,
+       90
+      ],
+      "b": [
+       27.712812423706055,
+       -16,
+       60
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       27.712812423706055,
+       16,
+       90
+      ],
+      "b": [
+       27.712812423706055,
+       16,
+       60
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       25.313922882080078,
+       14.614999771118164,
+       90
+      ],
+      "b": [
+       25.313922882080078,
+       14.614999771118164,
+       2.4000000953674316
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       25.313922882080078,
+       -14.614999771118164,
+       2.4000000953674316
+      ],
+      "b": [
+       25.313922882080078,
+       -14.614999771118164,
+       90
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       -5.3694638253894145e-15,
+       -29.229999542236328,
+       2.4000000953674316
+      ],
+      "b": [
+       -7.993605777301127e-15,
+       -29.229999542236328,
+       90
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       -25.313922882080078,
+       -14.614999771118164,
+       2.4000000953674316
+      ],
+      "b": [
+       -25.313922882080078,
+       -14.614999771118164,
+       90
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       -25.313922882080078,
+       14.614999771118164,
+       2.4000000953674316
+      ],
+      "b": [
+       -25.313922882080078,
+       14.614999771118164,
+       90
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       1.789821275129805e-15,
+       29.229999542236328,
+       2.4000000953674316
+      ],
+      "b": [
+       1.765254609153999e-14,
+       29.229999542236328,
+       90
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       22,
+       35,
+       0
+      ],
+      "b": [
+       22,
+       35,
+       60
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       22,
+       -35,
+       0
+      ],
+      "b": [
+       22,
+       -35,
+       60
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       95,
+       35,
+       0
+      ],
+      "b": [
+       95,
+       35,
+       60
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f4c6yx",
+      "a": [
+       95,
+       -35,
+       0
+      ],
+      "b": [
+       95,
+       -35,
+       60
+      ]
+     }
+    ],
+    "radius": "2",
+    "__sel": {
+     "edges": {
+      "parallel_to": "z"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[-5.878304468892332e-15,-32,0],\"b\":[-5.878304468892332e-15,-32,90]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[-27.712812423706055,-16,0],\"b\":[-27.712812423706055,-16,90]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[-27.712812423706055,16,0],\"b\":[-27.712812423706055,16,90]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[1.9594349641362686e-15,32,0],\"b\":[1.9594349641362686e-15,32,90]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[22,19.298294067382812,0],\"b\":[22,19.298294067382812,60]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[22,-19.298294067382812,0],\"b\":[22,-19.298294067382812,60]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[27.712812423706055,-16,90],\"b\":[27.712812423706055,-16,60]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[27.712812423706055,16,90],\"b\":[27.712812423706055,16,60]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[25.313922882080078,14.614999771118164,90],\"b\":[25.313922882080078,14.614999771118164,2.4000000953674316]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[25.313922882080078,-14.614999771118164,2.4000000953674316],\"b\":[25.313922882080078,-14.614999771118164,90]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[-5.3694638253894145e-15,-29.229999542236328,2.4000000953674316],\"b\":[-7.993605777301127e-15,-29.229999542236328,90]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[-25.313922882080078,-14.614999771118164,2.4000000953674316],\"b\":[-25.313922882080078,-14.614999771118164,90]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[-25.313922882080078,14.614999771118164,2.4000000953674316],\"b\":[-25.313922882080078,14.614999771118164,90]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[1.789821275129805e-15,29.229999542236328,2.4000000953674316],\"b\":[1.765254609153999e-14,29.229999542236328,90]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[22,35,0],\"b\":[22,35,60]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[22,-35,0],\"b\":[22,-35,60]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[95,35,0],\"b\":[95,35,60]},{\"kind\":\"edge\",\"part\":\"f4c6yx\",\"a\":[95,-35,0],\"b\":[95,-35,60]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f4c6yx": {
+   "name": "Hex Desk Caddy",
+   "color": "#2f7d6d",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 4,
+  "extrude": 4,
+  "fillet": 1
+ }
+}
