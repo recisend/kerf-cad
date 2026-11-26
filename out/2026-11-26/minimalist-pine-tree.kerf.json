@@ -1,0 +1,260 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Minimalist Tiered Pine Tree",
+ "features": [
+  {
+   "id": "f171vy",
+   "type": "sketch",
+   "name": "Sketch 1",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 32,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 22.92,
+       "y": 17.08
+      },
+      {
+       "id": "p3",
+       "x": 27,
+       "y": 13
+      },
+      {
+       "id": "p4",
+       "x": 19.05,
+       "y": 27.95
+      },
+      {
+       "id": "p5",
+       "x": 22,
+       "y": 25
+      },
+      {
+       "id": "p6",
+       "x": 15.19,
+       "y": 37.81
+      },
+      {
+       "id": "p7",
+       "x": 17,
+       "y": 36
+      },
+      {
+       "id": "p8",
+       "x": 1.5,
+       "y": 65.15
+      },
+      {
+       "id": "p9",
+       "x": 0,
+       "y": 65.15
+      }
+     ],
+     "ents": [
+      {
+       "id": "prof.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "prof.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "prof.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "prof.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "prof.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "prof.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "prof.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "prof.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "prof.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "prof.9",
+       "type": "line",
+       "p1": "p9",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0g2r",
+       "type": "horizontal",
+       "e1": "prof.0"
+      },
+      {
+       "id": "c1kg8",
+       "type": "horizontal",
+       "e1": "prof.8"
+      },
+      {
+       "id": "c2cqr",
+       "type": "vertical",
+       "e1": "prof.9"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "id": "prof",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         32,
+         0
+        ],
+        [
+         22.92,
+         17.08
+        ],
+        [
+         27,
+         13
+        ],
+        [
+         19.05,
+         27.95
+        ],
+        [
+         22,
+         25
+        ],
+        [
+         15.19,
+         37.81
+        ],
+        [
+         17,
+         36
+        ],
+        [
+         1.5,
+         65.15
+        ],
+        [
+         0,
+         65.15
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2jujs",
+   "type": "revolve",
+   "name": "Revolve 1",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f171vy",
+      "pt": [
+       8.14,
+       27.41
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": "Sketch 1"
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f171vy\",\"pt\":[8.14,27.41]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2jujs": {
+   "name": "Minimalist Pine Tree",
+   "color": "#2e7d4f",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 1,
+  "revolve": 1
+ }
+}
