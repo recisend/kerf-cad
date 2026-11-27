@@ -1,0 +1,446 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "tiered-tree-ornament",
+ "features": [
+  {
+   "id": "f2awj2",
+   "type": "sketch",
+   "name": "TreeProfile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 27,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 15,
+       "y": 16
+      },
+      {
+       "id": "p3",
+       "x": 20,
+       "y": 22
+      },
+      {
+       "id": "p4",
+       "x": 10,
+       "y": 40
+      },
+      {
+       "id": "p5",
+       "x": 15,
+       "y": 46
+      },
+      {
+       "id": "p6",
+       "x": 6,
+       "y": 62
+      },
+      {
+       "id": "p7",
+       "x": 10,
+       "y": 67
+      },
+      {
+       "id": "p8",
+       "x": 3,
+       "y": 80
+      },
+      {
+       "id": "p9",
+       "x": 0,
+       "y": 80
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "polyline1.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polyline1.9",
+       "type": "line",
+       "p1": "p9",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0g01",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c1nj9",
+       "type": "horizontal",
+       "e1": "polyline1.8"
+      },
+      {
+       "id": "c2epy",
+       "type": "vertical",
+       "e1": "polyline1.9"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         27,
+         0
+        ],
+        [
+         15,
+         16
+        ],
+        [
+         20,
+         22
+        ],
+        [
+         10,
+         40
+        ],
+        [
+         15,
+         46
+        ],
+        [
+         6,
+         62
+        ],
+        [
+         10,
+         67
+        ],
+        [
+         3,
+         80
+        ],
+        [
+         0,
+         80
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f3zv4p",
+   "type": "revolve",
+   "name": "TreeBody",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f2awj2",
+      "pt": [
+       8.333333333333334,
+       18.666666666666668
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "TreeProfile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f2awj2\",\"pt\":[8.333333333333334,18.666666666666668]}]"
+    }
+   }
+  },
+  {
+   "id": "f4fwmd",
+   "type": "sketch",
+   "name": "EyeletOuter",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 84
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 6,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        84
+       ],
+       "radius": 6
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5qqj0",
+   "type": "extrude",
+   "name": "EyeletRing",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f4fwmd",
+      "pt": [
+       0.28132823218733805,
+       84.12219809560129
+      ]
+     }
+    ],
+    "op": "add",
+    "endType": "symmetric",
+    "depth": "3",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f3zv4p"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "EyeletOuter"
+     },
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f4fwmd\",\"pt\":[0.28132823218733805,84.12219809560129]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f3zv4p\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6wd2d",
+   "type": "sketch",
+   "name": "EyeletHole",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 84.5
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 2.5,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        84.5
+       ],
+       "radius": 2.5
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f7a35f",
+   "type": "extrude",
+   "name": "EyeletHoleCut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f6wd2d",
+      "pt": [
+       -0.5332386566800741,
+       84.11257943834548
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "10",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "f3zv4p"
+     }
+    ],
+    "__sel": {
+     "entities": {
+      "sketch": "EyeletHole"
+     },
+     "targets": [
+      "Part 1"
+     ]
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f6wd2d\",\"pt\":[-0.5332386566800741,84.11257943834548]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"f3zv4p\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f3zv4p": {
+   "name": "TieredTreeOrnament",
+   "color": "#2f7d4f",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 3,
+  "revolve": 1,
+  "extrude": 2
+ }
+}
