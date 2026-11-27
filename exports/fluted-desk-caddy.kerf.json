@@ -1,0 +1,792 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Fluted Desk Caddy",
+ "features": [
+  {
+   "id": "f139w5",
+   "type": "sketch",
+   "name": "Base outline",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -60,
+       "y": -35
+      },
+      {
+       "id": "p2",
+       "x": 60,
+       "y": -35
+      },
+      {
+       "id": "p3",
+       "x": 60,
+       "y": 35
+      },
+      {
+       "id": "p4",
+       "x": -60,
+       "y": 35
+      }
+     ],
+     "ents": [
+      {
+       "id": "outer.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "outer.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "outer.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "outer.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "outer.diag",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p3",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0686",
+       "type": "horizontal",
+       "e1": "outer.bottom"
+      },
+      {
+       "id": "c05n7",
+       "type": "vertical",
+       "e1": "outer.right"
+      },
+      {
+       "id": "c0fbn",
+       "type": "horizontal",
+       "e1": "outer.top"
+      },
+      {
+       "id": "c0x8o",
+       "type": "vertical",
+       "e1": "outer.left"
+      },
+      {
+       "id": "c4azm",
+       "type": "midpoint",
+       "a": "O",
+       "e1": "outer.diag"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "id": "outer",
+       "center": [
+        0,
+        0
+       ],
+       "width": 120,
+       "height": 70
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f20wz9",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f139w5",
+      "pt": [
+       -20,
+       11.666666666666666
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "90",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Base outline"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f139w5\",\"pt\":[-20,11.666666666666666]}]"
+    }
+   }
+  },
+  {
+   "id": "f3lq4h",
+   "type": "fillet",
+   "name": "Corner round",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f20wz9",
+      "a": [
+       60,
+       -35,
+       0
+      ],
+      "b": [
+       60,
+       -35,
+       90
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f20wz9",
+      "a": [
+       -60,
+       -35,
+       0
+      ],
+      "b": [
+       -60,
+       -35,
+       90
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f20wz9",
+      "a": [
+       60,
+       35,
+       0
+      ],
+      "b": [
+       60,
+       35,
+       90
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f20wz9",
+      "a": [
+       -60,
+       35,
+       0
+      ],
+      "b": [
+       -60,
+       35,
+       90
+      ]
+     }
+    ],
+    "radius": "8",
+    "__sel": {
+     "edges": {
+      "parallel_to": "z"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f20wz9\",\"a\":[60,-35,0],\"b\":[60,-35,90]},{\"kind\":\"edge\",\"part\":\"f20wz9\",\"a\":[-60,-35,0],\"b\":[-60,-35,90]},{\"kind\":\"edge\",\"part\":\"f20wz9\",\"a\":[60,35,0],\"b\":[60,35,90]},{\"kind\":\"edge\",\"part\":\"f20wz9\",\"a\":[-60,35,0],\"b\":[-60,35,90]}]"
+    }
+   }
+  },
+  {
+   "id": "f41b0d",
+   "type": "sketch",
+   "name": "Cup sketch",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f20wz9",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       19.02414576212565,
+       -12.276575724283854,
+       90
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -34,
+       "y": 0
+      }
+     ],
+     "ents": [
+      {
+       "id": "cup",
+       "type": "circle",
+       "c": "p1",
+       "r": 22,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "id": "cup",
+       "center": [
+        -34,
+        0
+       ],
+       "diameter": 44
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f20wz9\",\"n\":[0,0,1],\"p\":[19.02414576212565,-12.276575724283854,90]}]"
+    }
+   }
+  },
+  {
+   "id": "f50mio",
+   "type": "sketch",
+   "name": "Slot sketch",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f20wz9",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       19.02414576212565,
+       -12.276575724283854,
+       90
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -7,
+       "y": -27
+      },
+      {
+       "id": "p2",
+       "x": 7,
+       "y": -27
+      },
+      {
+       "id": "p3",
+       "x": 7,
+       "y": 27
+      },
+      {
+       "id": "p4",
+       "x": -7,
+       "y": 27
+      }
+     ],
+     "ents": [
+      {
+       "id": "slot.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "slot.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "slot.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "slot.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "slot.diag",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p3",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0lm3",
+       "type": "horizontal",
+       "e1": "slot.bottom"
+      },
+      {
+       "id": "c060e",
+       "type": "vertical",
+       "e1": "slot.right"
+      },
+      {
+       "id": "c062x",
+       "type": "horizontal",
+       "e1": "slot.top"
+      },
+      {
+       "id": "c0jur",
+       "type": "vertical",
+       "e1": "slot.left"
+      },
+      {
+       "id": "c4wku",
+       "type": "midpoint",
+       "a": "O",
+       "e1": "slot.diag"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "id": "slot",
+       "center": [
+        0,
+        0
+       ],
+       "width": 14,
+       "height": 54
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f20wz9\",\"n\":[0,0,1],\"p\":[19.02414576212565,-12.276575724283854,90]}]"
+    }
+   }
+  },
+  {
+   "id": "f6nutu",
+   "type": "sketch",
+   "name": "Tray sketch",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f20wz9",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       19.02414576212565,
+       -12.276575724283854,
+       90
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 12,
+       "y": -27
+      },
+      {
+       "id": "p2",
+       "x": 56,
+       "y": -27
+      },
+      {
+       "id": "p3",
+       "x": 56,
+       "y": 27
+      },
+      {
+       "id": "p4",
+       "x": 12,
+       "y": 27
+      },
+      {
+       "id": "p5",
+       "x": 34,
+       "y": 0
+      }
+     ],
+     "ents": [
+      {
+       "id": "tray.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "tray.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "tray.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "tray.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "tray.diag",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p3",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c04ry",
+       "type": "horizontal",
+       "e1": "tray.bottom"
+      },
+      {
+       "id": "c0eg6",
+       "type": "vertical",
+       "e1": "tray.right"
+      },
+      {
+       "id": "c0jjv",
+       "type": "horizontal",
+       "e1": "tray.top"
+      },
+      {
+       "id": "c00l7",
+       "type": "vertical",
+       "e1": "tray.left"
+      },
+      {
+       "id": "c4qm5",
+       "type": "midpoint",
+       "a": "p5",
+       "e1": "tray.diag"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "id": "tray",
+       "center": [
+        34,
+        0
+       ],
+       "width": 44,
+       "height": 54
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f20wz9\",\"n\":[0,0,1],\"p\":[19.02414576212565,-12.276575724283854,90]}]"
+    }
+   }
+  },
+  {
+   "id": "f7pg5f",
+   "type": "extrude",
+   "name": "Pen cup cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f41b0d",
+      "pt": [
+       -31.49185228227843,
+       -4.344239279981682
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "85",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cup sketch"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f41b0d\",\"pt\":[-31.49185228227843,-4.344239279981682]}]"
+    }
+   }
+  },
+  {
+   "id": "f8kf9n",
+   "type": "extrude",
+   "name": "Slot cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f50mio",
+      "pt": [
+       -2.3333333333333335,
+       9
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "80",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Slot sketch"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f50mio\",\"pt\":[-2.3333333333333335,9]}]"
+    }
+   }
+  },
+  {
+   "id": "f9ct1l",
+   "type": "extrude",
+   "name": "Tray cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f6nutu",
+      "pt": [
+       26.666666666666668,
+       9
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "55",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Tray sketch"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f6nutu\",\"pt\":[26.666666666666668,9]}]"
+    }
+   }
+  },
+  {
+   "id": "fb769p",
+   "type": "primitive",
+   "name": "Flute groove",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "90",
+    "r": "3",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "-45",
+    "y": "-36.5",
+    "z": "6",
+    "op": "remove",
+    "targets": []
+   }
+  },
+  {
+   "id": "fc5pgo",
+   "type": "lpattern",
+   "name": "Front flutes",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "fb769p"
+     }
+    ],
+    "dirSel": "X",
+    "dir": [],
+    "distance": "9",
+    "count": "11",
+    "flip": false,
+    "dir2Sel": "none",
+    "dir2": [],
+    "distance2": "20",
+    "count2": "2",
+    "flip2": false,
+    "merge": false,
+    "__sel": {
+     "features": "Flute groove"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"fb769p\"}]"
+    }
+   }
+  },
+  {
+   "id": "ffhnwm",
+   "type": "primitive",
+   "name": "Back groove",
+   "params": {
+    "shape": "cylinder",
+    "w": "40",
+    "d": "30",
+    "h": "90",
+    "r": "3",
+    "r2": "5",
+    "R": "25",
+    "rt": "6",
+    "x": "-45",
+    "y": "36.5",
+    "z": "6",
+    "op": "remove",
+    "targets": []
+   }
+  },
+  {
+   "id": "fg2iy2",
+   "type": "lpattern",
+   "name": "Back flutes",
+   "params": {
+    "mode": "feature",
+    "parts": [],
+    "features": [
+     {
+      "kind": "feature",
+      "id": "ffhnwm"
+     }
+    ],
+    "dirSel": "X",
+    "dir": [],
+    "distance": "9",
+    "count": "11",
+    "flip": false,
+    "dir2Sel": "none",
+    "dir2": [],
+    "distance2": "20",
+    "count2": "2",
+    "flip2": false,
+    "merge": false,
+    "__sel": {
+     "features": "Back groove"
+    },
+    "__selres": {
+     "features": "[{\"kind\":\"feature\",\"id\":\"ffhnwm\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f20wz9": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 4,
+  "extrude": 4,
+  "fillet": 1,
+  "primitive": 2,
+  "lpattern": 2
+ }
+}
