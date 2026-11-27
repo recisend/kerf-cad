@@ -1,0 +1,771 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Untitled part studio",
+ "features": [
+  {
+   "id": "f13il4",
+   "type": "variable",
+   "name": "Variable 1",
+   "params": {
+    "vname": "h",
+    "value": "85 mm"
+   }
+  },
+  {
+   "id": "f2w5fu",
+   "type": "sketch",
+   "name": "Sketch 1",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 2.204364238465236e-15,
+       "y": 36
+      },
+      {
+       "id": "p2",
+       "x": -21.16026908252903,
+       "y": 29.12461179749811
+      },
+      {
+       "id": "p3",
+       "x": -34.238034586625524,
+       "y": 11.12461179749811
+      },
+      {
+       "id": "p4",
+       "x": -34.23803458662553,
+       "y": -11.124611797498103
+      },
+      {
+       "id": "p5",
+       "x": -21.160269082529037,
+       "y": -29.124611797498105
+      },
+      {
+       "id": "p6",
+       "x": -6.613092715395707e-15,
+       "y": -36
+      },
+      {
+       "id": "p7",
+       "x": 21.160269082529027,
+       "y": -29.124611797498112
+      },
+      {
+       "id": "p8",
+       "x": 34.238034586625524,
+       "y": -11.124611797498114
+      },
+      {
+       "id": "p9",
+       "x": 34.23803458662553,
+       "y": 11.124611797498098
+      },
+      {
+       "id": "p10",
+       "x": 21.16026908252904,
+       "y": 29.1246117974981
+      }
+     ],
+     "ents": [
+      {
+       "id": "base.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 36,
+       "construction": true
+      },
+      {
+       "id": "base.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "base.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "base.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "base.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "base.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "base.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "base.6",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "base.7",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "base.8",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "base.9",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c03cq",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "base.circle"
+      },
+      {
+       "id": "c1c65",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "base.circle"
+      },
+      {
+       "id": "c2dbg",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "base.circle"
+      },
+      {
+       "id": "c3xvg",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "base.circle"
+      },
+      {
+       "id": "c4geo",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "base.circle"
+      },
+      {
+       "id": "c5pi2",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "base.circle"
+      },
+      {
+       "id": "c6q36",
+       "type": "onEntity",
+       "a": "p7",
+       "e1": "base.circle"
+      },
+      {
+       "id": "c7d1o",
+       "type": "onEntity",
+       "a": "p8",
+       "e1": "base.circle"
+      },
+      {
+       "id": "c8xhj",
+       "type": "onEntity",
+       "a": "p9",
+       "e1": "base.circle"
+      },
+      {
+       "id": "c9dm1",
+       "type": "onEntity",
+       "a": "p10",
+       "e1": "base.circle"
+      },
+      {
+       "id": "c10scs",
+       "type": "equal",
+       "e1": "base.0",
+       "e2": "base.1"
+      },
+      {
+       "id": "c1177r",
+       "type": "equal",
+       "e1": "base.0",
+       "e2": "base.2"
+      },
+      {
+       "id": "c12922",
+       "type": "equal",
+       "e1": "base.0",
+       "e2": "base.3"
+      },
+      {
+       "id": "c13k1w",
+       "type": "equal",
+       "e1": "base.0",
+       "e2": "base.4"
+      },
+      {
+       "id": "c14l18",
+       "type": "equal",
+       "e1": "base.0",
+       "e2": "base.5"
+      },
+      {
+       "id": "c15gbe",
+       "type": "equal",
+       "e1": "base.0",
+       "e2": "base.6"
+      },
+      {
+       "id": "c16j0l",
+       "type": "equal",
+       "e1": "base.0",
+       "e2": "base.7"
+      },
+      {
+       "id": "c17lbx",
+       "type": "equal",
+       "e1": "base.0",
+       "e2": "base.8"
+      },
+      {
+       "id": "c18ye0",
+       "type": "equal",
+       "e1": "base.0",
+       "e2": "base.9"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "base",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 36,
+       "sides": 10
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f3cmef",
+   "type": "plane",
+   "name": "TopPlane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "#h",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4fl6e",
+   "type": "sketch",
+   "name": "Sketch 2",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f3cmef"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 2.9391523179536475e-15,
+       "y": 48
+      },
+      {
+       "id": "p2",
+       "x": -28.213692110038707,
+       "y": 38.83281572999748
+      },
+      {
+       "id": "p3",
+       "x": -45.65071278216737,
+       "y": 14.832815729997481
+      },
+      {
+       "id": "p4",
+       "x": -45.650712782167375,
+       "y": -14.83281572999747
+      },
+      {
+       "id": "p5",
+       "x": -28.213692110038714,
+       "y": -38.83281572999747
+      },
+      {
+       "id": "p6",
+       "x": -8.817456953860943e-15,
+       "y": -48
+      },
+      {
+       "id": "p7",
+       "x": 28.2136921100387,
+       "y": -38.832815729997485
+      },
+      {
+       "id": "p8",
+       "x": 45.65071278216737,
+       "y": -14.832815729997485
+      },
+      {
+       "id": "p9",
+       "x": 45.650712782167375,
+       "y": 14.832815729997463
+      },
+      {
+       "id": "p10",
+       "x": 28.21369211003872,
+       "y": 38.83281572999746
+      }
+     ],
+     "ents": [
+      {
+       "id": "rim.circle",
+       "type": "circle",
+       "c": "O",
+       "r": 48,
+       "construction": true
+      },
+      {
+       "id": "rim.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rim.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rim.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rim.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "rim.4",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "rim.5",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "rim.6",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "rim.7",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "rim.8",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "rim.9",
+       "type": "line",
+       "p1": "p10",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c04od",
+       "type": "onEntity",
+       "a": "p1",
+       "e1": "rim.circle"
+      },
+      {
+       "id": "c1rai",
+       "type": "onEntity",
+       "a": "p2",
+       "e1": "rim.circle"
+      },
+      {
+       "id": "c2gep",
+       "type": "onEntity",
+       "a": "p3",
+       "e1": "rim.circle"
+      },
+      {
+       "id": "c3ukg",
+       "type": "onEntity",
+       "a": "p4",
+       "e1": "rim.circle"
+      },
+      {
+       "id": "c46j4",
+       "type": "onEntity",
+       "a": "p5",
+       "e1": "rim.circle"
+      },
+      {
+       "id": "c5v9d",
+       "type": "onEntity",
+       "a": "p6",
+       "e1": "rim.circle"
+      },
+      {
+       "id": "c6g5p",
+       "type": "onEntity",
+       "a": "p7",
+       "e1": "rim.circle"
+      },
+      {
+       "id": "c7u10",
+       "type": "onEntity",
+       "a": "p8",
+       "e1": "rim.circle"
+      },
+      {
+       "id": "c8zkb",
+       "type": "onEntity",
+       "a": "p9",
+       "e1": "rim.circle"
+      },
+      {
+       "id": "c93hb",
+       "type": "onEntity",
+       "a": "p10",
+       "e1": "rim.circle"
+      },
+      {
+       "id": "c10qj3",
+       "type": "equal",
+       "e1": "rim.0",
+       "e2": "rim.1"
+      },
+      {
+       "id": "c11r8j",
+       "type": "equal",
+       "e1": "rim.0",
+       "e2": "rim.2"
+      },
+      {
+       "id": "c1223t",
+       "type": "equal",
+       "e1": "rim.0",
+       "e2": "rim.3"
+      },
+      {
+       "id": "c13rth",
+       "type": "equal",
+       "e1": "rim.0",
+       "e2": "rim.4"
+      },
+      {
+       "id": "c14hyr",
+       "type": "equal",
+       "e1": "rim.0",
+       "e2": "rim.5"
+      },
+      {
+       "id": "c151wh",
+       "type": "equal",
+       "e1": "rim.0",
+       "e2": "rim.6"
+      },
+      {
+       "id": "c165ts",
+       "type": "equal",
+       "e1": "rim.0",
+       "e2": "rim.7"
+      },
+      {
+       "id": "c17sd9",
+       "type": "equal",
+       "e1": "rim.0",
+       "e2": "rim.8"
+      },
+      {
+       "id": "c18dd2",
+       "type": "equal",
+       "e1": "rim.0",
+       "e2": "rim.9"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polygon",
+       "id": "rim",
+       "center": [
+        0,
+        0
+       ],
+       "radius": 48,
+       "sides": 10
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "TopPlane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f3cmef\"}]"
+    }
+   }
+  },
+  {
+   "id": "f57y6t",
+   "type": "loft",
+   "name": "PlanterBody",
+   "params": {
+    "profiles": [
+     {
+      "kind": "region",
+      "sketch": "f2w5fu",
+      "pt": [
+       7.053423027509678,
+       -2.2917960675006346
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f4fl6e",
+      "pt": [
+       9.404564036679567,
+       -3.0557280900008466
+      ]
+     }
+    ],
+    "op": "new",
+    "targets": [],
+    "__sel": {
+     "profiles": [
+      "Sketch 1",
+      "Sketch 2"
+     ]
+    },
+    "__selres": {
+     "profiles": "[{\"kind\":\"region\",\"sketch\":\"f2w5fu\",\"pt\":[7.053423027509678,-2.2917960675006346]},{\"kind\":\"region\",\"sketch\":\"f4fl6e\",\"pt\":[9.404564036679567,-3.0557280900008466]}]"
+    }
+   }
+  },
+  {
+   "id": "f6m2sq",
+   "type": "shell",
+   "name": "Hollow",
+   "params": {
+    "faces": [
+     {
+      "kind": "face",
+      "part": "f57y6t",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       -8.314750671386719,
+       0.04644076029459635,
+       85
+      ]
+     }
+    ],
+    "part": [
+     {
+      "kind": "part",
+      "id": "f57y6t"
+     }
+    ],
+    "thickness": "1.6",
+    "__sel": {
+     "faces": [
+      {
+       "face": "top"
+      }
+     ],
+     "part": "Part 1"
+    },
+    "__selres": {
+     "faces": "[{\"kind\":\"face\",\"part\":\"f57y6t\",\"n\":[0,0,1],\"p\":[-8.314750671386719,0.04644076029459635,85]}]",
+     "part": "[{\"kind\":\"part\",\"id\":\"f57y6t\"}]"
+    }
+   }
+  },
+  {
+   "id": "f7e339",
+   "type": "sketch",
+   "name": "Sketch 3",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [],
+     "ents": [
+      {
+       "id": "point1",
+       "type": "point",
+       "p": "O"
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "point",
+       "at": [
+        0,
+        0
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f8bpn7",
+   "type": "hole",
+   "name": "DrainHole",
+   "params": {
+    "sketch": [
+     {
+      "kind": "sketch",
+      "id": "f7e339"
+     }
+    ],
+    "style": "simple",
+    "dia": "8",
+    "cboreDia": "11",
+    "cboreDepth": "6.4",
+    "csinkDia": "13",
+    "csinkAngle": "90",
+    "endType": "through",
+    "depth": "10",
+    "tipAngle": "118",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "sketch": "Sketch 3"
+    },
+    "__selres": {
+     "sketch": "[{\"kind\":\"sketch\",\"id\":\"f7e339\"}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f57y6t": {
+   "name": "Faceted Planter",
+   "color": "#7fa88c",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "variable": 1,
+  "sketch": 3,
+  "plane": 1,
+  "loft": 1,
+  "shell": 1,
+  "hole": 1
+ }
+}
