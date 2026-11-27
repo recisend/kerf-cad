@@ -1,0 +1,767 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Faceted Desk Phone Stand",
+ "features": [
+  {
+   "id": "f1su6r",
+   "type": "sketch",
+   "name": "Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 80,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 80,
+       "y": 14
+      },
+      {
+       "id": "p3",
+       "x": 72,
+       "y": 14
+      },
+      {
+       "id": "p4",
+       "x": 72,
+       "y": 5
+      },
+      {
+       "id": "p5",
+       "x": 34,
+       "y": 5
+      },
+      {
+       "id": "p6",
+       "x": 14,
+       "y": 84
+      },
+      {
+       "id": "p7",
+       "x": 8,
+       "y": 84
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0pqa",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c1ysy",
+       "type": "vertical",
+       "e1": "polyline1.1"
+      },
+      {
+       "id": "c2y4m",
+       "type": "horizontal",
+       "e1": "polyline1.2"
+      },
+      {
+       "id": "c34ib",
+       "type": "vertical",
+       "e1": "polyline1.3"
+      },
+      {
+       "id": "c40oc",
+       "type": "horizontal",
+       "e1": "polyline1.4"
+      },
+      {
+       "id": "c5a9q",
+       "type": "horizontal",
+       "e1": "polyline1.6"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         80,
+         0
+        ],
+        [
+         80,
+         14
+        ],
+        [
+         72,
+         14
+        ],
+        [
+         72,
+         5
+        ],
+        [
+         34,
+         5
+        ],
+        [
+         14,
+         84
+        ],
+        [
+         8,
+         84
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f261ry",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1su6r",
+      "pt": [
+       16,
+       29.666666666666668
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "symmetric",
+    "depth": "70",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1su6r\",\"pt\":[16,29.666666666666668]}]"
+    }
+   }
+  },
+  {
+   "id": "f3if0d",
+   "type": "sketch",
+   "name": "Window",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 6.2,
+       "y": 10
+      },
+      {
+       "id": "p2",
+       "x": 27.5,
+       "y": 10
+      },
+      {
+       "id": "p3",
+       "x": 11.7,
+       "y": 68
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c07ps",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         6.2,
+         10
+        ],
+        [
+         27.5,
+         10
+        ],
+        [
+         11.7,
+         68
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4eau0",
+   "type": "extrude",
+   "name": "Window cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3if0d",
+      "pt": [
+       15.133333333333335,
+       29.333333333333332
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "200",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Window"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3if0d\",\"pt\":[15.133333333333335,29.333333333333332]}]"
+    }
+   }
+  },
+  {
+   "id": "f5pj5o",
+   "type": "sketch",
+   "name": "Cable slot",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 46,
+       "y": -7
+      },
+      {
+       "id": "p2",
+       "x": 90,
+       "y": -7
+      },
+      {
+       "id": "p3",
+       "x": 90,
+       "y": 7
+      },
+      {
+       "id": "p4",
+       "x": 46,
+       "y": 7
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0av3",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0qes",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c01fu",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0n9p",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        46,
+        -7
+       ],
+       "corner2": [
+        90,
+        7
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6fn78",
+   "type": "extrude",
+   "name": "Cable slot cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f5pj5o",
+      "pt": [
+       60.666666666666664,
+       2.3333333333333335
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "30",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cable slot"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f5pj5o\",\"pt\":[60.666666666666664,2.3333333333333335]}]"
+    }
+   }
+  },
+  {
+   "id": "f7q78p",
+   "type": "fillet",
+   "name": "Soften edges",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       8,
+       35,
+       84
+      ],
+      "b": [
+       8,
+       -35,
+       84
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       14,
+       35,
+       84
+      ],
+      "b": [
+       14,
+       -35,
+       84
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       34,
+       35,
+       5
+      ],
+      "b": [
+       34,
+       -35,
+       5
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       11.699999809265137,
+       -35,
+       68
+      ],
+      "b": [
+       11.699999809265137,
+       35,
+       68
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       27.5,
+       -35,
+       10
+      ],
+      "b": [
+       27.5,
+       35,
+       10
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       6.199999809265137,
+       -35,
+       10
+      ],
+      "b": [
+       6.199999809265137,
+       35,
+       10
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       0,
+       35,
+       0
+      ],
+      "b": [
+       0,
+       -35,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       46,
+       7,
+       0
+      ],
+      "b": [
+       46,
+       -7,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       80,
+       35,
+       0
+      ],
+      "b": [
+       80,
+       7,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       80,
+       -35,
+       0
+      ],
+      "b": [
+       80,
+       -7,
+       0
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       46,
+       7,
+       5
+      ],
+      "b": [
+       46,
+       -7,
+       5
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       72,
+       35,
+       5
+      ],
+      "b": [
+       72,
+       7,
+       5
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       72,
+       -35,
+       5
+      ],
+      "b": [
+       72,
+       -7,
+       5
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       72,
+       35,
+       14
+      ],
+      "b": [
+       72,
+       7,
+       14
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       72,
+       -35,
+       14
+      ],
+      "b": [
+       72,
+       -7,
+       14
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       80,
+       35,
+       14
+      ],
+      "b": [
+       80,
+       7,
+       14
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f261ry",
+      "a": [
+       80,
+       -35,
+       14
+      ],
+      "b": [
+       80,
+       -7,
+       14
+      ]
+     }
+    ],
+    "radius": "1.5",
+    "__sel": {
+     "edges": {
+      "parallel_to": "y"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[8,35,84],\"b\":[8,-35,84]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[14,35,84],\"b\":[14,-35,84]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[34,35,5],\"b\":[34,-35,5]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[11.699999809265137,-35,68],\"b\":[11.699999809265137,35,68]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[27.5,-35,10],\"b\":[27.5,35,10]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[6.199999809265137,-35,10],\"b\":[6.199999809265137,35,10]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[0,35,0],\"b\":[0,-35,0]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[46,7,0],\"b\":[46,-7,0]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[80,35,0],\"b\":[80,7,0]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[80,-35,0],\"b\":[80,-7,0]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[46,7,5],\"b\":[46,-7,5]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[72,35,5],\"b\":[72,7,5]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[72,-35,5],\"b\":[72,-7,5]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[72,35,14],\"b\":[72,7,14]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[72,-35,14],\"b\":[72,-7,14]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[80,35,14],\"b\":[80,7,14]},{\"kind\":\"edge\",\"part\":\"f261ry\",\"a\":[80,-35,14],\"b\":[80,-7,14]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f261ry": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 3,
+  "extrude": 3,
+  "fillet": 1
+ }
+}
