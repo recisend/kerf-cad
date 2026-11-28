@@ -1,0 +1,811 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Faceted Phone Dock and Catch-All Tray",
+ "features": [
+  {
+   "id": "f180ls",
+   "type": "sketch",
+   "name": "Body",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -50,
+       "y": -40
+      },
+      {
+       "id": "p2",
+       "x": 50,
+       "y": -40
+      },
+      {
+       "id": "p3",
+       "x": 50,
+       "y": 40
+      },
+      {
+       "id": "p4",
+       "x": -50,
+       "y": 40
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.diag",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p3",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c08dt",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0q2c",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0yyh",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0hxh",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      },
+      {
+       "id": "c4tfc",
+       "type": "midpoint",
+       "a": "O",
+       "e1": "rectangle1.diag"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "center": [
+        0,
+        0
+       ],
+       "width": 100,
+       "height": 80
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2q2t9",
+   "type": "extrude",
+   "name": "Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f180ls",
+      "pt": [
+       -16.666666666666668,
+       13.333333333333334
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "50",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Body"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f180ls\",\"pt\":[-16.666666666666668,13.333333333333334]}]"
+    }
+   }
+  },
+  {
+   "id": "f3m7bl",
+   "type": "sketch",
+   "name": "PhoneSlot",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -4,
+       "y": 10
+      },
+      {
+       "id": "p2",
+       "x": 10,
+       "y": 10
+      },
+      {
+       "id": "p3",
+       "x": 26,
+       "y": 52
+      },
+      {
+       "id": "p4",
+       "x": 12,
+       "y": 52
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0cfx",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c1own",
+       "type": "horizontal",
+       "e1": "polyline1.2"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         -4,
+         10
+        ],
+        [
+         10,
+         10
+        ],
+        [
+         26,
+         52
+        ],
+        [
+         12,
+         52
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f4z0fd",
+   "type": "extrude",
+   "name": "Phone slot cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f3m7bl",
+      "pt": [
+       11.333333333333334,
+       38
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "120",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "PhoneSlot"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f3m7bl\",\"pt\":[11.333333333333334,38]}]"
+    }
+   }
+  },
+  {
+   "id": "f5u4d6",
+   "type": "sketch",
+   "name": "Tray",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -40,
+       "y": -36
+      },
+      {
+       "id": "p2",
+       "x": 40,
+       "y": -36
+      },
+      {
+       "id": "p3",
+       "x": 40,
+       "y": -4
+      },
+      {
+       "id": "p4",
+       "x": -40,
+       "y": -4
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c00jc",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c05i2",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0b9a",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0fam",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        -40,
+        -36
+       ],
+       "corner2": [
+        40,
+        -4
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f6w0fu",
+   "type": "sketch",
+   "name": "Tray top",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f2q2t9",
+      "n": [
+       0,
+       0,
+       0.9999999999999999
+      ],
+      "p": [
+       4.682539621988932,
+       -22.92063490549723,
+       50
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -40,
+       "y": -36
+      },
+      {
+       "id": "p2",
+       "x": 40,
+       "y": -36
+      },
+      {
+       "id": "p3",
+       "x": 40,
+       "y": -4
+      },
+      {
+       "id": "p4",
+       "x": -40,
+       "y": -4
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0ijl",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0m4n",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c08id",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c02vc",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "corner1": [
+        -40,
+        -36
+       ],
+       "corner2": [
+        40,
+        -4
+       ]
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "top"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f2q2t9\",\"n\":[0,0,0.9999999999999999],\"p\":[4.682539621988932,-22.92063490549723,50]}]"
+    }
+   }
+  },
+  {
+   "id": "f7tkda",
+   "type": "extrude",
+   "name": "Tray cut",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f6w0fu",
+      "pt": [
+       -13.333333333333334,
+       -14.666666666666666
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "16",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Tray top"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f6w0fu\",\"pt\":[-13.333333333333334,-14.666666666666666]}]"
+    }
+   }
+  },
+  {
+   "id": "f8mg54",
+   "type": "sketch",
+   "name": "Cable",
+   "params": {
+    "plane": [
+     {
+      "kind": "face",
+      "part": "f2q2t9",
+      "n": [
+       0,
+       1,
+       0
+      ],
+      "p": [
+       -16.666666666666664,
+       40,
+       16.666666666666664
+      ]
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 0,
+       "y": 20
+      }
+     ],
+     "ents": [
+      {
+       "id": "circle1",
+       "type": "circle",
+       "c": "p1",
+       "r": 5,
+       "construction": false
+      }
+     ],
+     "cons": []
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "circle",
+       "center": [
+        0,
+        20
+       ],
+       "diameter": 10
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": {
+      "face": "+y"
+     }
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"face\",\"part\":\"f2q2t9\",\"n\":[0,1,0],\"p\":[-16.666666666666664,40,16.666666666666664]}]"
+    }
+   }
+  },
+  {
+   "id": "f9wjz5",
+   "type": "extrude",
+   "name": "Cable channel",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f8mg54",
+      "pt": [
+       0.6999082704168605,
+       19.66294194147376
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "blind",
+    "depth": "30",
+    "flip": true,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Cable"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f8mg54\",\"pt\":[0.6999082704168605,19.66294194147376]}]"
+    }
+   }
+  },
+  {
+   "id": "faddih",
+   "type": "fillet",
+   "name": "Corner round",
+   "params": {
+    "edges": [
+     {
+      "kind": "edge",
+      "part": "f2q2t9",
+      "a": [
+       -50,
+       40,
+       0
+      ],
+      "b": [
+       -50,
+       40,
+       50
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f2q2t9",
+      "a": [
+       50,
+       40,
+       0
+      ],
+      "b": [
+       50,
+       40,
+       50
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f2q2t9",
+      "a": [
+       50,
+       -40,
+       0
+      ],
+      "b": [
+       50,
+       -40,
+       50
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f2q2t9",
+      "a": [
+       -50,
+       -40,
+       0
+      ],
+      "b": [
+       -50,
+       -40,
+       50
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f2q2t9",
+      "a": [
+       40,
+       -36,
+       50
+      ],
+      "b": [
+       40,
+       -36,
+       34
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f2q2t9",
+      "a": [
+       -40,
+       -36,
+       34
+      ],
+      "b": [
+       -40,
+       -36,
+       50
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f2q2t9",
+      "a": [
+       -40,
+       -4,
+       34
+      ],
+      "b": [
+       -40,
+       -4,
+       50
+      ]
+     },
+     {
+      "kind": "edge",
+      "part": "f2q2t9",
+      "a": [
+       40,
+       -4,
+       50
+      ],
+      "b": [
+       40,
+       -4,
+       34
+      ]
+     }
+    ],
+    "radius": "6",
+    "__sel": {
+     "edges": {
+      "parallel_to": "z"
+     }
+    },
+    "__selres": {
+     "edges": "[{\"kind\":\"edge\",\"part\":\"f2q2t9\",\"a\":[-50,40,0],\"b\":[-50,40,50]},{\"kind\":\"edge\",\"part\":\"f2q2t9\",\"a\":[50,40,0],\"b\":[50,40,50]},{\"kind\":\"edge\",\"part\":\"f2q2t9\",\"a\":[50,-40,0],\"b\":[50,-40,50]},{\"kind\":\"edge\",\"part\":\"f2q2t9\",\"a\":[-50,-40,0],\"b\":[-50,-40,50]},{\"kind\":\"edge\",\"part\":\"f2q2t9\",\"a\":[40,-36,50],\"b\":[40,-36,34]},{\"kind\":\"edge\",\"part\":\"f2q2t9\",\"a\":[-40,-36,34],\"b\":[-40,-36,50]},{\"kind\":\"edge\",\"part\":\"f2q2t9\",\"a\":[-40,-4,34],\"b\":[-40,-4,50]},{\"kind\":\"edge\",\"part\":\"f2q2t9\",\"a\":[40,-4,50],\"b\":[40,-4,34]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2q2t9": {
+   "name": "Phone Dock",
+   "color": "#3b6ea5",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 5,
+  "extrude": 4,
+  "fillet": 1
+ }
+}
