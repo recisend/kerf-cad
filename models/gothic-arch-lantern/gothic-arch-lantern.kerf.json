@@ -1,0 +1,1236 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Gothic Arch Lantern",
+ "features": [
+  {
+   "id": "f1iw68",
+   "type": "sketch",
+   "name": "Body Outline",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -30,
+       "y": -30
+      },
+      {
+       "id": "p2",
+       "x": 30,
+       "y": -30
+      },
+      {
+       "id": "p3",
+       "x": 30,
+       "y": 30
+      },
+      {
+       "id": "p4",
+       "x": -30,
+       "y": 30
+      }
+     ],
+     "ents": [
+      {
+       "id": "r.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "r.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "r.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "r.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "r.diag",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p3",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c07i7",
+       "type": "horizontal",
+       "e1": "r.bottom"
+      },
+      {
+       "id": "c0h1z",
+       "type": "vertical",
+       "e1": "r.right"
+      },
+      {
+       "id": "c0h5v",
+       "type": "horizontal",
+       "e1": "r.top"
+      },
+      {
+       "id": "c0x57",
+       "type": "vertical",
+       "e1": "r.left"
+      },
+      {
+       "id": "c4lhk",
+       "type": "midpoint",
+       "a": "O",
+       "e1": "r.diag"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "id": "r",
+       "center": [
+        0,
+        0
+       ],
+       "width": 60,
+       "height": 60
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f2nf6r",
+   "type": "extrude",
+   "name": "Lantern Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1iw68",
+      "pt": [
+       -10,
+       10
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "72",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Body Outline"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1iw68\",\"pt\":[-10,10]}]"
+    }
+   }
+  },
+  {
+   "id": "f3rq9q",
+   "type": "shell",
+   "name": "Hollow Out",
+   "params": {
+    "faces": [
+     {
+      "kind": "face",
+      "part": "f2nf6r",
+      "n": [
+       0,
+       0,
+       1
+      ],
+      "p": [
+       -10,
+       10,
+       72
+      ]
+     }
+    ],
+    "part": [],
+    "thickness": "2.4",
+    "__sel": {
+     "faces": [
+      {
+       "face": "top"
+      }
+     ]
+    },
+    "__selres": {
+     "faces": "[{\"kind\":\"face\",\"part\":\"f2nf6r\",\"n\":[0,0,1],\"p\":[-10,10,72]}]"
+    }
+   }
+  },
+  {
+   "id": "f4to32",
+   "type": "sketch",
+   "name": "Window Front",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -15,
+       "y": 8
+      },
+      {
+       "id": "p2",
+       "x": 15,
+       "y": 8
+      },
+      {
+       "id": "p3",
+       "x": 15,
+       "y": 32
+      },
+      {
+       "id": "p4",
+       "x": -15,
+       "y": 32
+      },
+      {
+       "id": "p5",
+       "x": 0,
+       "y": 57.9808
+      },
+      {
+       "id": "p6",
+       "x": 0,
+       "y": 65
+      }
+     ],
+     "ents": [
+      {
+       "id": "line1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "line2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "arc3",
+       "type": "arc",
+       "c": "p4",
+       "p1": "p3",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "arc4",
+       "type": "arc",
+       "c": "p3",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "line5",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "circle6",
+       "type": "circle",
+       "c": "p6",
+       "r": 3.5,
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0me0",
+       "type": "horizontal",
+       "e1": "line1"
+      },
+      {
+       "id": "c1etd",
+       "type": "vertical",
+       "e1": "line2"
+      },
+      {
+       "id": "c2lrc",
+       "type": "vertical",
+       "e1": "line5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "line",
+       "from": [
+        -15,
+        8
+       ],
+       "to": [
+        15,
+        8
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        15,
+        8
+       ],
+       "to": [
+        15,
+        32
+       ]
+      },
+      {
+       "type": "arc",
+       "center": [
+        -15,
+        32
+       ],
+       "start": [
+        15,
+        32
+       ],
+       "end": [
+        0,
+        57.9808
+       ]
+      },
+      {
+       "type": "arc",
+       "center": [
+        15,
+        32
+       ],
+       "start": [
+        0,
+        57.9808
+       ],
+       "end": [
+        -15,
+        32
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        -15,
+        32
+       ],
+       "to": [
+        -15,
+        8
+       ]
+      },
+      {
+       "type": "circle",
+       "center": [
+        0,
+        65
+       ],
+       "diameter": 7
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f5t86i",
+   "type": "extrude",
+   "name": "Cut Windows Front/Back",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f4to32",
+      "pt": [
+       -5.000002144486763,
+       26.980854030719996
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f4to32",
+      "pt": [
+       0.04872873738104818,
+       64.0453843007548
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "80",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Window Front",
+      "region": "all"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f4to32\",\"pt\":[-5.000002144486763,26.980854030719996]},{\"kind\":\"region\",\"sketch\":\"f4to32\",\"pt\":[0.04872873738104818,64.0453843007548]}]"
+    }
+   }
+  },
+  {
+   "id": "f6qe1q",
+   "type": "sketch",
+   "name": "Window Side",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "right"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": -15,
+       "y": 8
+      },
+      {
+       "id": "p2",
+       "x": 15,
+       "y": 8
+      },
+      {
+       "id": "p3",
+       "x": 15,
+       "y": 32
+      },
+      {
+       "id": "p4",
+       "x": -15,
+       "y": 32
+      },
+      {
+       "id": "p5",
+       "x": 0,
+       "y": 57.9808
+      },
+      {
+       "id": "p6",
+       "x": 0,
+       "y": 65
+      }
+     ],
+     "ents": [
+      {
+       "id": "line1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "line2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "arc3",
+       "type": "arc",
+       "c": "p4",
+       "p1": "p3",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "arc4",
+       "type": "arc",
+       "c": "p3",
+       "p1": "p5",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "line5",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "circle6",
+       "type": "circle",
+       "c": "p6",
+       "r": 3.5,
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0bkm",
+       "type": "horizontal",
+       "e1": "line1"
+      },
+      {
+       "id": "c14of",
+       "type": "vertical",
+       "e1": "line2"
+      },
+      {
+       "id": "c2qoz",
+       "type": "vertical",
+       "e1": "line5"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "line",
+       "from": [
+        -15,
+        8
+       ],
+       "to": [
+        15,
+        8
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        15,
+        8
+       ],
+       "to": [
+        15,
+        32
+       ]
+      },
+      {
+       "type": "arc",
+       "center": [
+        -15,
+        32
+       ],
+       "start": [
+        15,
+        32
+       ],
+       "end": [
+        0,
+        57.9808
+       ]
+      },
+      {
+       "type": "arc",
+       "center": [
+        15,
+        32
+       ],
+       "start": [
+        0,
+        57.9808
+       ],
+       "end": [
+        -15,
+        32
+       ]
+      },
+      {
+       "type": "line",
+       "from": [
+        -15,
+        32
+       ],
+       "to": [
+        -15,
+        8
+       ]
+      },
+      {
+       "type": "circle",
+       "center": [
+        0,
+        65
+       ],
+       "diameter": 7
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "right"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"right\"}]"
+    }
+   }
+  },
+  {
+   "id": "f73har",
+   "type": "extrude",
+   "name": "Cut Windows Left/Right",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f6qe1q",
+      "pt": [
+       -5.000002144486763,
+       26.980854030719996
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "f6qe1q",
+      "pt": [
+       0.04872873738104818,
+       64.0453843007548
+      ]
+     }
+    ],
+    "op": "remove",
+    "endType": "symmetric",
+    "depth": "80",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Window Side",
+      "region": "all"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f6qe1q\",\"pt\":[-5.000002144486763,26.980854030719996]},{\"kind\":\"region\",\"sketch\":\"f6qe1q\",\"pt\":[0.04872873738104818,64.0453843007548]}]"
+    }
+   }
+  },
+  {
+   "id": "f8uv15",
+   "type": "sketch",
+   "name": "Lid Plug",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 53,
+       "y": -27
+      },
+      {
+       "id": "p2",
+       "x": 107,
+       "y": -27
+      },
+      {
+       "id": "p3",
+       "x": 107,
+       "y": 27
+      },
+      {
+       "id": "p4",
+       "x": 53,
+       "y": 27
+      },
+      {
+       "id": "p5",
+       "x": 80,
+       "y": 0
+      }
+     ],
+     "ents": [
+      {
+       "id": "p.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "p.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "p.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "p.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "p.diag",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p3",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c068b",
+       "type": "horizontal",
+       "e1": "p.bottom"
+      },
+      {
+       "id": "c0alg",
+       "type": "vertical",
+       "e1": "p.right"
+      },
+      {
+       "id": "c08kh",
+       "type": "horizontal",
+       "e1": "p.top"
+      },
+      {
+       "id": "c0ehl",
+       "type": "vertical",
+       "e1": "p.left"
+      },
+      {
+       "id": "c4var",
+       "type": "midpoint",
+       "a": "p5",
+       "e1": "p.diag"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "id": "p",
+       "center": [
+        80,
+        0
+       ],
+       "width": 54,
+       "height": 54
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "top"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "f9l6tc",
+   "type": "plane",
+   "name": "Roof Base Plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "4",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fa84wp",
+   "type": "plane",
+   "name": "Roof Tip Plane",
+   "params": {
+    "ref": [
+     {
+      "kind": "plane",
+      "id": "top"
+     }
+    ],
+    "offset": "34",
+    "flip": false,
+    "__sel": {
+     "ref": "top"
+    },
+    "__selres": {
+     "ref": "[{\"kind\":\"plane\",\"id\":\"top\"}]"
+    }
+   }
+  },
+  {
+   "id": "fbvsxh",
+   "type": "extrude",
+   "name": "Lid Plug Extrude",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f8uv15",
+      "pt": [
+       71,
+       9
+      ]
+     }
+    ],
+    "op": "new",
+    "endType": "blind",
+    "depth": "4",
+    "flip": false,
+    "depth2On": false,
+    "depth2": "10",
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Lid Plug"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f8uv15\",\"pt\":[71,9]}]"
+    }
+   }
+  },
+  {
+   "id": "fcixkz",
+   "type": "sketch",
+   "name": "Roof Base",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "f9l6tc"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 50,
+       "y": -30
+      },
+      {
+       "id": "p2",
+       "x": 110,
+       "y": -30
+      },
+      {
+       "id": "p3",
+       "x": 110,
+       "y": 30
+      },
+      {
+       "id": "p4",
+       "x": 50,
+       "y": 30
+      },
+      {
+       "id": "p5",
+       "x": 80,
+       "y": 0
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.diag",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p3",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0y9j",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0but",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c06bz",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0brs",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      },
+      {
+       "id": "c4mu0",
+       "type": "midpoint",
+       "a": "p5",
+       "e1": "rectangle1.diag"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "center": [
+        80,
+        0
+       ],
+       "width": 60,
+       "height": 60
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Roof Base Plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"f9l6tc\"}]"
+    }
+   }
+  },
+  {
+   "id": "fdbjgh",
+   "type": "sketch",
+   "name": "Roof Tip",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "fa84wp"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 76,
+       "y": -4
+      },
+      {
+       "id": "p2",
+       "x": 84,
+       "y": -4
+      },
+      {
+       "id": "p3",
+       "x": 84,
+       "y": 4
+      },
+      {
+       "id": "p4",
+       "x": 76,
+       "y": 4
+      },
+      {
+       "id": "p5",
+       "x": 80,
+       "y": 0
+      }
+     ],
+     "ents": [
+      {
+       "id": "rectangle1.bottom",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.right",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.top",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.left",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "rectangle1.diag",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p3",
+       "construction": true
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0izs",
+       "type": "horizontal",
+       "e1": "rectangle1.bottom"
+      },
+      {
+       "id": "c0xuq",
+       "type": "vertical",
+       "e1": "rectangle1.right"
+      },
+      {
+       "id": "c0uqi",
+       "type": "horizontal",
+       "e1": "rectangle1.top"
+      },
+      {
+       "id": "c0zf7",
+       "type": "vertical",
+       "e1": "rectangle1.left"
+      },
+      {
+       "id": "c41mu",
+       "type": "midpoint",
+       "a": "p5",
+       "e1": "rectangle1.diag"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "rectangle",
+       "center": [
+        80,
+        0
+       ],
+       "width": 8,
+       "height": 8
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "Roof Tip Plane"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"fa84wp\"}]"
+    }
+   }
+  },
+  {
+   "id": "fexdam",
+   "type": "loft",
+   "name": "Pointed Roof",
+   "params": {
+    "profiles": [
+     {
+      "kind": "region",
+      "sketch": "fcixkz",
+      "pt": [
+       70,
+       10
+      ]
+     },
+     {
+      "kind": "region",
+      "sketch": "fdbjgh",
+      "pt": [
+       78.66666666666667,
+       1.3333333333333333
+      ]
+     }
+    ],
+    "op": "add",
+    "targets": [
+     {
+      "kind": "part",
+      "id": "fbvsxh"
+     }
+    ],
+    "__sel": {
+     "profiles": [
+      {
+       "sketch": "Roof Base"
+      },
+      {
+       "sketch": "Roof Tip"
+      }
+     ],
+     "targets": [
+      "fbvsxh"
+     ]
+    },
+    "__selres": {
+     "profiles": "[{\"kind\":\"region\",\"sketch\":\"fcixkz\",\"pt\":[70,10]},{\"kind\":\"region\",\"sketch\":\"fdbjgh\",\"pt\":[78.66666666666667,1.3333333333333333]}]",
+     "targets": "[{\"kind\":\"part\",\"id\":\"fbvsxh\"}]"
+    }
+   }
+  },
+  {
+   "id": "ff6p3l",
+   "type": "shell",
+   "name": "Hollow Roof",
+   "params": {
+    "faces": [
+     {
+      "kind": "face",
+      "part": "fbvsxh",
+      "n": [
+       0,
+       0,
+       -0.9999999999999999
+      ],
+      "p": [
+       71,
+       9,
+       0
+      ]
+     }
+    ],
+    "part": [
+     {
+      "kind": "part",
+      "id": "fbvsxh"
+     }
+    ],
+    "thickness": "2.4",
+    "__sel": {
+     "part": "fbvsxh",
+     "faces": [
+      {
+       "face": {
+        "direction": "-z",
+        "part": "fbvsxh"
+       }
+      }
+     ]
+    },
+    "__selres": {
+     "part": "[{\"kind\":\"part\",\"id\":\"fbvsxh\"}]",
+     "faces": "[{\"kind\":\"face\",\"part\":\"fbvsxh\",\"n\":[0,0,-0.9999999999999999],\"p\":[71,9,0]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f2nf6r": {
+   "name": "Lantern Body",
+   "color": "#2b2b30",
+   "material": "pla",
+   "hidden": false
+  },
+  "fbvsxh": {
+   "name": "Lantern Roof",
+   "color": "#6e1423",
+   "material": "pla",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 6,
+  "extrude": 4,
+  "shell": 2,
+  "plane": 2,
+  "loft": 1
+ }
+}
