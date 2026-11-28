@@ -1,0 +1,277 @@
+{
+ "app": "kerf",
+ "v": 1,
+ "name": "Tiered Fir Desk Tree",
+ "features": [
+  {
+   "id": "f1l378",
+   "type": "sketch",
+   "name": "Tree Profile",
+   "params": {
+    "plane": [
+     {
+      "kind": "plane",
+      "id": "front"
+     }
+    ],
+    "data": {
+     "pts": [
+      {
+       "id": "p1",
+       "x": 24,
+       "y": 0
+      },
+      {
+       "id": "p2",
+       "x": 11,
+       "y": 16
+      },
+      {
+       "id": "p3",
+       "x": 19,
+       "y": 24
+      },
+      {
+       "id": "p4",
+       "x": 9,
+       "y": 38
+      },
+      {
+       "id": "p5",
+       "x": 15,
+       "y": 44
+      },
+      {
+       "id": "p6",
+       "x": 7,
+       "y": 56
+      },
+      {
+       "id": "p7",
+       "x": 11,
+       "y": 60
+      },
+      {
+       "id": "p8",
+       "x": 3,
+       "y": 72
+      },
+      {
+       "id": "p9",
+       "x": 1.2,
+       "y": 75
+      },
+      {
+       "id": "p10",
+       "x": 0,
+       "y": 75
+      }
+     ],
+     "ents": [
+      {
+       "id": "polyline1.0",
+       "type": "line",
+       "p1": "O",
+       "p2": "p1",
+       "construction": false
+      },
+      {
+       "id": "polyline1.1",
+       "type": "line",
+       "p1": "p1",
+       "p2": "p2",
+       "construction": false
+      },
+      {
+       "id": "polyline1.2",
+       "type": "line",
+       "p1": "p2",
+       "p2": "p3",
+       "construction": false
+      },
+      {
+       "id": "polyline1.3",
+       "type": "line",
+       "p1": "p3",
+       "p2": "p4",
+       "construction": false
+      },
+      {
+       "id": "polyline1.4",
+       "type": "line",
+       "p1": "p4",
+       "p2": "p5",
+       "construction": false
+      },
+      {
+       "id": "polyline1.5",
+       "type": "line",
+       "p1": "p5",
+       "p2": "p6",
+       "construction": false
+      },
+      {
+       "id": "polyline1.6",
+       "type": "line",
+       "p1": "p6",
+       "p2": "p7",
+       "construction": false
+      },
+      {
+       "id": "polyline1.7",
+       "type": "line",
+       "p1": "p7",
+       "p2": "p8",
+       "construction": false
+      },
+      {
+       "id": "polyline1.8",
+       "type": "line",
+       "p1": "p8",
+       "p2": "p9",
+       "construction": false
+      },
+      {
+       "id": "polyline1.9",
+       "type": "line",
+       "p1": "p9",
+       "p2": "p10",
+       "construction": false
+      },
+      {
+       "id": "polyline1.10",
+       "type": "line",
+       "p1": "p10",
+       "p2": "O",
+       "construction": false
+      }
+     ],
+     "cons": [
+      {
+       "id": "c0ru2",
+       "type": "horizontal",
+       "e1": "polyline1.0"
+      },
+      {
+       "id": "c1y2e",
+       "type": "horizontal",
+       "e1": "polyline1.9"
+      },
+      {
+       "id": "c20i7",
+       "type": "vertical",
+       "e1": "polyline1.10"
+      }
+     ]
+    },
+    "spec": {
+     "entities": [
+      {
+       "type": "polyline",
+       "points": [
+        [
+         0,
+         0
+        ],
+        [
+         24,
+         0
+        ],
+        [
+         11,
+         16
+        ],
+        [
+         19,
+         24
+        ],
+        [
+         9,
+         38
+        ],
+        [
+         15,
+         44
+        ],
+        [
+         7,
+         56
+        ],
+        [
+         11,
+         60
+        ],
+        [
+         3,
+         72
+        ],
+        [
+         1.2,
+         75
+        ],
+        [
+         0,
+         75
+        ]
+       ],
+       "closed": true
+      }
+     ],
+     "constraints": []
+    },
+    "__sel": {
+     "plane": "front"
+    },
+    "__selres": {
+     "plane": "[{\"kind\":\"plane\",\"id\":\"front\"}]"
+    }
+   }
+  },
+  {
+   "id": "f27pv1",
+   "type": "revolve",
+   "name": "Tree Body",
+   "params": {
+    "entities": [
+     {
+      "kind": "region",
+      "sketch": "f1l378",
+      "pt": [
+       4,
+       36.666666666666664
+      ]
+     }
+    ],
+    "op": "new",
+    "axisSel": "Z",
+    "axis": [],
+    "revType": "full",
+    "angle": "180",
+    "flip": false,
+    "targets": [],
+    "__sel": {
+     "entities": {
+      "sketch": "Tree Profile"
+     }
+    },
+    "__selres": {
+     "entities": "[{\"kind\":\"region\",\"sketch\":\"f1l378\",\"pt\":[4,36.666666666666664]}]"
+    }
+   }
+  }
+ ],
+ "rollback": null,
+ "partProps": {
+  "f27pv1": {
+   "name": "Part 1",
+   "color": "#9aa7b4",
+   "material": "aluminum",
+   "hidden": false
+  }
+ },
+ "vis": {},
+ "counters": {
+  "sketch": 1,
+  "revolve": 1
+ }
+}
